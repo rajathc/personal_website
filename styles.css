@@ -16,7 +16,7 @@
 
 body{
     font-family: 'Karla', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     background-color: var(--bg-color);
     color: var(--font-color);
     display: flex;
@@ -27,7 +27,7 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Fraunces', serif;
-    font-weight: 600;
+    font-weight: 400;
 }
 h1{
     font-size: 24px;
@@ -56,9 +56,7 @@ h1{
 .dark-mode .header-link{
     color: var(--dark-font-color);
 }
-ul{
-    list-style: none;
-}
+
 a{
     text-decoration: none;
 }
@@ -74,8 +72,14 @@ a{
     justify-content: center;
     align-items: center;
     gap: 16px;
+    list-style: none;
 }
 
-.bio{
-    padding: 16px;
+.dark-mode-toggle{
+    align-items: center;
+    justify-content: center;
+}
+
+.bio, .blog-post{
+    padding: 0px 16px;
 }
