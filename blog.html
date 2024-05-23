@@ -6,10 +6,16 @@ permalink: blog
 
 <h2>My Posts:</h2>
 <ul>
-    {% for post in site.posts %}
+    <!-- {% for post in site.posts %}
     
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
+    {% endfor %} -->
+
+    {% for post in site.posts %}
+
+    <li class="blog-index"><div class="date"> {{ post.date | date: "%d-%m-%Y" }} </div> <a href="{{ post.url }}">{{ post.title }}</a></li>
+
     {% endfor %}
 </ul>
