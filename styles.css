@@ -1,10 +1,11 @@
-:root{
+:root {
     --link-color: #3273dc;
     --visited-color: #8b6fcb;
     --secondary-color: #536390;
     --font-color: #222;
     --bg-color: #fafafa;
     --heading-color: #222;
+    --caption-color: #777;
 
     --dark-link-color: #4a90e2;
     --dark-visited-color: #b19cd9;
@@ -12,10 +13,12 @@
     --dark-font-color: #fafafa;
     --dark-bg-color: #121212;
     --dark-heading-color: #fafafa;
-    padding: 0px 16px;
+
+    padding: 0 16px;
 }
 
-body{
+/* Global styles */
+body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     background-color: var(--bg-color);
@@ -26,14 +29,30 @@ body{
     overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Fraunces', serif;
     font-weight: 400;
 }
-h1{
+
+h1 {
     font-size: 24px;
 }
 
+/* Link styles */
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--link-color);
+}
+
+/* Dark mode styles */
 .dark-mode {
     background-color: var(--dark-bg-color);
     color: var(--dark-font-color);
@@ -44,34 +63,27 @@ h1{
 }
 
 .dark-mode a:visited {
-    color: var(--dark-link-color);
+    color: var(--dark-visited-color);
 }
 
-.logo{
-    display: flex;
-    gap: 4px;
-}
-.header-link{
-    color: var(--font-color);
-}
-.dark-mode .header-link{
+.dark-mode .header-link {
     color: var(--dark-font-color);
 }
 
-a{
-    text-decoration: none;
+/* Component styles */
+.logo, .socials, .blog-index {
+    display: flex;
+    gap: 4px; /* Default gap, overridden if needed */
 }
 
-a:visited {
-    color: var(--link-color);
-}
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 64px;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,22 +91,33 @@ a:visited {
     list-style: none;
 }
 
-.dark-mode-toggle{
-    align-items: center;
-    justify-content: center;
-}
-
-.blog-image{
-    width: 500px;
-}
-
-.socials{
-    display: flex;
-    gap: 8px;
-}
-
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.blog-image {
+    width: 300px;
+}
+
+.date {
+    font-family: 'Space Mono', monospace;
+    color: var(--caption-color);
+    font-size: 14px;
+}
+
+/* Header link styles */
+.header-link {
+    color: var(--font-color);
+}
+
+/* Specific component gap adjustments */
+.socials {
+    gap: 8px;
+}
+
+.blog-index {
+    gap: 16px;
+}
+
