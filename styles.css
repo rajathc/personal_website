@@ -12,6 +12,7 @@
     --dark-font-color: #fafafa;
     --dark-bg-color: #121212;
     --dark-heading-color: #fafafa;
+    padding: 0px 16px;
 }
 
 body{
@@ -64,7 +65,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 16px;
     height: 64px;
 }
 .links{
@@ -78,10 +78,6 @@ a{
 .dark-mode-toggle{
     align-items: center;
     justify-content: center;
-}
-
-.bio, .blog-post{
-    padding: 0px 16px;
 }
 
 .blog-image{
