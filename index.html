@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajath's blog</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
-</head>
-
-<body>
-    <div class="header">
-            <div class="logo">
-                <img src="favicon.svg" width="24px" height="auto" alt="8 pointed star in rainbow colors">
-                <h1><a class="header-link" href="index.html">Rajath's Blog</a></h1>
-            </div>
-        <ul class="links">
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <img src="CircleHalf.svg" width="20px" height="20px" alt="theme mode toggle" id="dark-mode-toggle">
-        </ul>
-    </div>
+---
+layout: default
+title: Home | Rajath's Blog
+---
     <div class="bio">
         <h2>Hi! I am Rajath Chandrahasa</h2>
         <h3>I love hitting the open road on my motorcycle, jamming to great music, and getting lost in creative projects.</h3>
@@ -30,19 +11,13 @@
     <div class="blog-post">
         <h2>Recent Blog Posts:</h2>
         <ul>
-            <li>Test Post #1</li>
-            <li>Test Post #2</li>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
         </ul>
-    </div>
-
-    <script>
-        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-            this.textContent = document.body.classList.contains('dark-mode') ? 'Light' : 'Dark';
-        });
-
-    </script>
-    
+    </div>    
 </body>
 </html>
 
