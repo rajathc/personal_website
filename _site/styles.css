@@ -79,7 +79,10 @@ a:visited {
 }
 
 .blog-image {
-    width: 700px;
+    width: 90%;
+}
+
+.image-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +121,7 @@ a:visited {
     }
 
     .blog-image {
-        width: 700px;
+        width: 90%;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -127,7 +130,7 @@ a:visited {
     }
 
     .blog-image {
-        width: 600px;
+        width: 90%;
     }
 }
 
@@ -136,7 +139,7 @@ a:visited {
         width: 100%;
     }
     .blog-image {
-        width: 500px;
+        width: 90%;
     }
 }
 
@@ -145,7 +148,7 @@ a:visited {
         width: 100%;
     }
     .blog-image {
-        width: 300px;
+        width: 90%;
     }
 
     .copyright{
