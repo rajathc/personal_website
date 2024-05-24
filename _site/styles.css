@@ -147,4 +147,9 @@ a:visited {
     .blog-image {
         width: 200px;
     }
+
+    .copyright{
+        display: none;
+        visibility: hidden;
+    }
 }
