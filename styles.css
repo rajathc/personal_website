@@ -6,19 +6,14 @@
     --bg-color: #fafafa;
     --heading-color: #222;
     --caption-color: #777;
-
-    --dark-link-color: #4a90e2;
-    --dark-visited-color: #b19cd9;
-    --dark-secondary-color: #a1b1d1;
-    --dark-font-color: #fafafa;
-    --dark-bg-color: #121212;
-    --dark-heading-color: #fafafa;
-
-    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Global styles */
 body {
+    height: 100vh;
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     background-color: var(--bg-color);
@@ -27,6 +22,9 @@ body {
     flex-direction: column;
     margin: 0;
     overflow: hidden;
+    /* width: 60%; */
+    padding: 0 16px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,24 +50,6 @@ a:visited {
     color: var(--link-color);
 }
 
-/* Dark mode styles */
-.dark-mode {
-    background-color: var(--dark-bg-color);
-    color: var(--dark-font-color);
-}
-
-.dark-mode a {
-    color: var(--dark-link-color);
-}
-
-.dark-mode a:visited {
-    color: var(--dark-visited-color);
-}
-
-.dark-mode .header-link {
-    color: var(--dark-font-color);
-}
-
 /* Component styles */
 .logo, .socials, .blog-index {
     display: flex;
@@ -80,7 +60,7 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
+    height: 48px;
 }
 
 .links {
@@ -95,6 +75,7 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 32px;
 }
 
 .blog-image {
@@ -105,6 +86,12 @@ a:visited {
     font-family: 'Space Mono', monospace;
     color: var(--caption-color);
     font-size: 14px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
 }
 
 /* Header link styles */
@@ -121,3 +108,32 @@ a:visited {
     gap: 16px;
 }
 
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .body{
+        width: 60%;
+    }
+    .blog-image {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .body{
+        width: 100%;
+    }
+    .blog-image {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .blog{
+        width: 100%;
+    }
+    .blog-image {
+        width: 150px;
+    }
+}
