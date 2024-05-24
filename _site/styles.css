@@ -96,7 +96,7 @@ a:visited {
     color: var(--caption-color);
     font-size: 16px;
 }
-.caption{
+.caption, .copyright{
     color: var(--caption-color);
     font-size: 16px;
 }
