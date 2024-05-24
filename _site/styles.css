@@ -86,10 +86,15 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .date {
     font-family: 'Space Mono', monospace;
+    color: var(--caption-color);
+    font-size: 14px;
+}
+.caption{
     color: var(--caption-color);
     font-size: 14px;
 }
