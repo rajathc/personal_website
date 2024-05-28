@@ -6,8 +6,8 @@
     --bg-color: #fafafa;
     --heading-color: #222;
     --caption-color: #777;
-    --hover-color: #DCD6FC;
-    --button-color: #EAE8F4;
+    --hover-color: #B9AFEB;
+    --button-color: #DCD6FC;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,6 +150,7 @@ button, input[type=submit]{
     padding: 2px 4px;
     font-family: "Karla";
     font-size: 14px;
+    color: var(--font-color);
 }
 button, input[type=submit]:hover{
     background-color: var(--hover-color);
