@@ -189,6 +189,10 @@ input[type=email]{
         width: 100%;
     }
     .blog-image {
-        width: 90%;
+        width: 90%
+    }
+    .content {
+        padding: 0px 16px;
     }
 }
+
