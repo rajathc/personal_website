@@ -1,5 +1,6 @@
 :root {
-    --link-color: #3273dc;
+    --link-color: #20B2AA;
+    /* #3273dc */
     --visited-color: #8b6fcb;
     --secondary-color: #536390;
     --font-color: #222;
@@ -131,14 +132,22 @@ a:visited {
     justify-content: center;
 }
 .mailing-card{
+    display: flex;
+    flex-direction: column;
     width: fit-content;
-    padding: 16px 24px 16px;
+    padding: 24px 32px 24px;
     background-color: #e8f4ea;
     border-radius: 12px;
     margin: 16px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 .mailing-list-top{
-    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    gap: 2px;
 }
 
 /* Button style */
@@ -147,10 +156,11 @@ button, input[type=submit]{
     border-radius:9999px;
     border-color: #ddd;
     border-width: 1px;
-    padding: 2px 4px;
+    padding: 4px 12px;
     font-family: "Karla";
-    font-size: 14px;
+    font-size: 16px;
     color: var(--font-color);
+    cursor: pointer;
 }
 button, input[type=submit]:hover{
     background-color: var(--hover-color);
@@ -160,14 +170,14 @@ input[type=email]{
     border-color: #ddd;
     border-radius: 9999px;
     border-width: 1px;
-    padding: 2px 8px;
-    font-size: 14px;
+    padding: 4px 12px;
+    font-size: 16px;
 }
 
 
 /* Responsive styles */
 @media only screen and (min-width:840px) {
-    body {
+    body{
         width: 840px;
     }
 
@@ -177,7 +187,7 @@ input[type=email]{
 }
 
 @media only screen and (max-width: 840px) {
-    body {
+    body{
         width: 100%;
     }
     .blog-image {
@@ -186,7 +196,7 @@ input[type=email]{
 }
 
 @media only screen and (max-width: 480px) {
-    body {
+    body{
         width: 100%;
     }
     .blog-image {
