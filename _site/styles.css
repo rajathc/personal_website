@@ -31,10 +31,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fraunces', serif;
     font-weight: 400;
+    padding: 0;
+    margin: 0;
 }
 p{
     padding: 0;
     margin: 0;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 /* Link styles */
@@ -107,6 +114,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-top: 24px;
 }
 
 /* Header link styles */
@@ -183,7 +191,7 @@ input[type=email]{
 /* Responsive styles */
 @media only screen and (min-width:840px) {
     body{
-        width: 840px;
+        width: 760px;
     }
 
     .blog-image {

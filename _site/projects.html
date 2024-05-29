@@ -17,10 +17,23 @@
     <meta property="og:image" content="http://localhost:4000"/>
     <meta property="og:site_name" content=""/>
     <meta property="og:description" content=""/>
-
-    <!-- Optional additional Open Graph tags -->
-    <meta property="og:site_name" content="My Projects | Rajath's Blog">
     <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    
+  <meta property="og:title" content="{{ page_title }}" />
+  <meta property="og:description" content="{{ meta_description }}" />
+  {% if page.twitter_image %}
+  <meta property="og:image" content="{{ page.twitter_image | absolute_url }}" />
+  <meta name="twitter:card"  content="summary_large_image" />
+  {% else %}
+  <meta property="og:image" content="{{ site.avatar_url | absolute_url }}" />
+  <meta name="twitter:card"  content="summary" />
+  {% endif %}
+  <meta name="twitter:site" content="@{{ site.social_media.twitter }}" />
+  <meta name="twitter:creator" content="@{{ page.author | default: site.social_media.twitter }}" />
+
+
 </head>
 
 <!-- Google tag (gtag.js) -->
