@@ -9,11 +9,14 @@
     <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="This is my blog where I post about music, travel and tech!">
-    <meta property="og:image" content="https://imgur.com/YtkvoJB">
-    <meta property="og:url" content="https://rajath.blog">
-    <meta property="og:type" content="blog">
+
+    <meta property="og:title" content="{{ page.title }}"/>
+    {% if page.image %}<meta property="og:image" content="{{ page.image }}"/>{% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}"/>
 
     <!-- Optional additional Open Graph tags -->
     <meta property="og:site_name" content="{{ page.title }}">
