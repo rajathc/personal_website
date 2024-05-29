@@ -2,7 +2,7 @@ title: ""
 email: ""
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://rajath.blog
+url: "https://rajath.blog"
 twitter_username: rajath_c
 github_username:  rajathc
 
