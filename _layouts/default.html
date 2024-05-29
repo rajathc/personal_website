@@ -8,31 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.svg">
 
-    <!-- Open Graph Meta Tags -->
-
-    <meta property="og:title" content="{{ page.title }}"/>
-    {% if page.image %}<meta property="og:image" content="{{ page.image }}"/>{% endif %}
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
-    <meta property="og:site_name" content="{{ site.title }}"/>
-    <meta property="og:description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}"/>
-    <meta property="og:locale" content="en_US">
-
-    <!-- Twitter Card -->
-    {% raw %}
-  <meta property="og:title" content="{{ page_title }}" />
-  <meta property="og:description" content="{{ meta_description }}" />
-  {% if page.twitter_image %}
-  <meta property="og:image" content="{{ page.twitter_image | absolute_url }}" />
-  <meta name="twitter:card"  content="summary_large_image" />
-  {% else %}
-  <meta property="og:image" content="{{ site.avatar_url | absolute_url }}" />
-  <meta name="twitter:card"  content="summary" />
-  {% endif %}
-  <meta name="twitter:site" content="@{{ site.social_media.twitter }}" />
-  <meta name="twitter:creator" content="@{{ page.author | default: site.social_media.twitter }}" />
-{% endraw %}
+    {% seo %}
 
 </head>
 
