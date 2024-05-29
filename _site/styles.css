@@ -117,6 +117,11 @@ a:visited {
     margin-top: 24px;
 }
 
+.divider{
+    display: flex;
+    width: 100%;
+}
+
 /* Header link styles */
 .header-link {
     color: var(--font-color);
