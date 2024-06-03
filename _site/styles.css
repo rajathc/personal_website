@@ -3,7 +3,7 @@
     /* #3273dc */
     --visited-color: #8b6fcb;
     --secondary-color: #536390;
-    --font-color: #222;
+    --font-color: #18181c;
     --bg-color: #fafafa;
     --heading-color: #222;
     --caption-color: #777;
@@ -18,8 +18,8 @@
 /* Global styles */
 body {
     min-height: 100vh;
-    font-family: 'Karla', sans-serif;
-    font-size: 17px;
+    font-family: 'Spectral', sans-serif;
+    font-size: 19px;
     background-color: var(--bg-color);
     color: var(--font-color);
     display: flex;
@@ -28,20 +28,26 @@ body {
     overflow: hidden;
 }
 
+.favicon{
+    width:24px;
+    height:auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    /* padding: 0;
-    margin: 0; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 4px 0px;
 }
 p{
     padding: 0;
-    margin: 4px;
+    margin: 4px 0px;
 }
 .bio{
     display: flex;
     flex-direction: column;
     gap: 2px;
+    margin: 16px 0px;
 }
 
 /* Link styles */
@@ -62,6 +68,10 @@ a:visited {
 .logo, .socials, .blog-index {
     display: flex;
     gap: 4px; /* Default gap, overridden if needed */
+    align-items: center;
+}
+.logo{
+    gap: 6px;
 }
 
 .header {
@@ -71,7 +81,9 @@ a:visited {
     height: 48px;
     padding: 0 8px;
 }
-
+.header-link{
+    font-family: "Inter";
+}
 .links {
     display: flex;
     justify-content: center;
@@ -100,13 +112,13 @@ a:visited {
 }
 
 .date {
-    font-family: 'Space Mono', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     color: var(--caption-color);
     font-size: 16px;
 }
 .caption, .copyright{
     color: var(--caption-color);
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .content {
@@ -177,7 +189,7 @@ button, input[type=submit]{
     border-color: #ddd;
     border-width: 1px;
     padding: 4px 12px;
-    font-family: "Karla";
+    font-family: "Inter";
     font-size: 16px;
     color: var(--font-color);
     cursor: pointer;
@@ -186,7 +198,7 @@ button, input[type=submit]:hover{
     background-color: var(--hover-color);
 }
 input[type=email]{
-    font-family: 'Karla';
+    font-family: 'Inter';
     border-color: #ddd;
     border-radius: 9999px;
     border-width: 1px;
@@ -223,12 +235,17 @@ input[type=email]{
 @media only screen and (max-width: 480px) {
     body{
         width: 100%;
+        font-size: 17px;
     }
     .blog-image {
         width: 100%
     }
     .content {
         padding: 0px 16px;
+    }
+    .favicon{
+        width: 24px;
+        height: auto;
     }
 }
 
