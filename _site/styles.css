@@ -1,14 +1,14 @@
 :root {
-    --link-color: #20B2AA;
+    --link-color: #028090;
     /* #3273dc */
-    --visited-color: #8b6fcb;
+    --visited-color: #028090;
     --secondary-color: #536390;
     --font-color: #18181c;
     --bg-color: #fafafa;
     --heading-color: ##18181c;
     --caption-color: #777;
-    --hover-color: #B9AFEB;
-    --button-color: #DCD6FC;
+    --hover-color: #114B5F;
+    --button-color: #456990;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +63,9 @@ a:hover {
 a:visited {
     color: var(--link-color);
 }
-
+.blog-link{
+    font-family: "Inter";
+}
 /* Component styles */
 .logo, .socials, .blog-index {
     display: flex;
@@ -168,7 +170,7 @@ a:visited {
     flex-direction: column;
     width: fit-content;
     padding: 16px 24px;
-    background-color: #e8f4ea;
+    background-color: #E4FDE1;
     border-radius: 12px;
     margin: 16px 0px;
     justify-content: center;
@@ -187,11 +189,11 @@ button, input[type=submit]{
     background-color: var(--button-color);
     border-radius:9999px;
     border-color: #ddd;
+    color: #fafafa;
     border-width: 1px;
     padding: 4px 12px;
     font-family: "Inter";
     font-size: 14px;
-    color: var(--font-color);
     cursor: pointer;
     font-weight: 400;
 }

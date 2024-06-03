@@ -16,7 +16,7 @@ image: /images/Mask group.png
         <ul>
             {% for post in site.posts limit:10 %}
               <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a class="blog-link" href="{{ post.url }}">{{ post.title }}</a>
               </li>
             {% endfor %}
         </ul>
