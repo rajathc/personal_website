@@ -5,7 +5,7 @@
     --secondary-color: #536390;
     --font-color: #18181c;
     --bg-color: #fafafa;
-    --heading-color: #222;
+    --heading-color: ##18181c;
     --caption-color: #777;
     --hover-color: #B9AFEB;
     --button-color: #DCD6FC;
@@ -29,7 +29,7 @@ body {
 }
 
 .favicon{
-    width:24px;
+    width:22px;
     height:auto;
 }
 
@@ -167,13 +167,13 @@ a:visited {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    padding: 24px 32px 24px;
+    padding: 16px 24px;
     background-color: #e8f4ea;
     border-radius: 12px;
     margin: 16px 0px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    /* gap: 8px; */
 }
 .mailing-list-top{
     display: flex;
@@ -193,6 +193,7 @@ button, input[type=submit]{
     font-size: 16px;
     color: var(--font-color);
     cursor: pointer;
+    font-weight: 400;
 }
 button, input[type=submit]:hover{
     background-color: var(--hover-color);
@@ -204,6 +205,7 @@ input[type=email]{
     border-width: 1px;
     padding: 4px 12px;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .post-details{
@@ -244,7 +246,7 @@ input[type=email]{
         padding: 0px 16px;
     }
     .favicon{
-        width: 24px;
+        width: 20px;
         height: auto;
     }
 }
