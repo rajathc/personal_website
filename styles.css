@@ -31,12 +31,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fraunces', serif;
     font-weight: 400;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
 }
 p{
     padding: 0;
-    margin: 0;
+    margin: 4px;
 }
 .bio{
     display: flex;
@@ -120,6 +120,13 @@ a:visited {
 .divider{
     display: flex;
     width: 100%;
+    margin: 0px;
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid var(--font-color);
+    margin: 0;
+    padding: 0;
 }
 
 /* Header link styles */
