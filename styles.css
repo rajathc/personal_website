@@ -63,9 +63,9 @@ a:hover {
 a:visited {
     color: var(--link-color);
 }
-.blog-link{
+/* .blog-link{
     font-family: "Inter";
-}
+} */
 /* Component styles */
 .logo, .socials, .blog-index {
     display: flex;
