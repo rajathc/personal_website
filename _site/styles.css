@@ -29,7 +29,7 @@ body {
 }
 
 .favicon{
-    width:22px;
+    width:24px;
     height:auto;
 }
 
@@ -255,7 +255,7 @@ input[type=email]{
         padding: 0px 16px;
     }
     .favicon{
-        width: 20px;
+        width: 22px;
         height: auto;
     }
     .header-link{
