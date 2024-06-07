@@ -17,7 +17,9 @@ image: /images/Mask group.png
             {% for post in site.posts limit:9 %}
               <div class="blog-list">
                 <img src="{{- post.image -}}" alt="" class="blog-roll-image">
-                <a class="blog-link" href="{{ post.url }}">{{ post.title }}</a>
+                <h3>{{ post.title }}</h3>
+                <div class="caption">{{ post.description }}</div>
+                <a class="secondary-button" href="{{ post.url}}">Continue Reading</a>
               </div>
             {% endfor %}
             </div>
