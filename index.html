@@ -11,15 +11,16 @@ image: /images/Mask group.png
         <p>I am living in Hyderabad and I am currently working as a Product Manager at <a href="https://brokenatom.io/" target="_blank">Brokenatom</a>.</p>
     </div>
 
-    <div class="blog-post">
+    <div>
         <h2>Latest Posts:</h2>
-        <ul>
-            {% for post in site.posts limit:10 %}
-              <li>
+        <div class="blog-posts">
+            {% for post in site.posts limit:9 %}
+              <div class="blog-list">
+                <img src="{{- post.image -}}" alt="" class="blog-roll-image">
                 <a class="blog-link" href="{{ post.url }}">{{ post.title }}</a>
-              </li>
+              </div>
             {% endfor %}
-        </ul>
+            </div>
     </div>    
 </body>
 </html>

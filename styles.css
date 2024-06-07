@@ -3,11 +3,11 @@
     /* #3273dc */
     --visited-color: #01cda9;
     --secondary-color: #01cda9;
-    --font-color: #000;
+    --font-color: #1f1f1f;
     --bg-color: #fafafa;
-    --heading-color: #000;
+    --heading-color: #1f1f1f;
     --caption-color: #656565;
-    --hover-color: #000;
+    --hover-color: #1f1f1f;
     --button-color: #01cda9;
     display: flex;
     flex-direction: column;
@@ -178,7 +178,7 @@ a:visited {
     border-radius: 12px;
     border-style: solid;
     border-width: 1px;
-    border-color: #000;
+    border-color: #1f1f1f;
     margin: 16px 0px;
     justify-content: center;
     align-items: center;
@@ -190,12 +190,29 @@ a:visited {
     gap: 2px;
 }
 
+.blog-list{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+.blog-posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    padding: 8px;
+}
+
+.blog-roll-image{
+    width: 100%;
+    height: auto;
+}
+
 /* Button style */
 button, input[type=submit]{
     background-color: var(--button-color);
     border-radius:9999px;
     color: var(--font-color);
-    border-color: #000;
+    border-color: #1f1f1f;
     border-width: 1px;
     padding: 4px 12px;
     font-family: "Nunito Sans", sans-serif;
@@ -241,6 +258,9 @@ input[type=email]{
     .blog-image {
         width: 100%;
     }
+    .blog-posts{
+        grid-gap: 8px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -263,5 +283,10 @@ input[type=email]{
     }
     .blog-link{
         font-size: 17px;
+    }
+    .blog-posts{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8px;
     }
 }
