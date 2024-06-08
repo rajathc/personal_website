@@ -20,17 +20,17 @@
 body {
     min-height: 100vh;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 19px;
+    font-size: 18px;
     background-color: var(--bg-color);
     color: var(--font-color);
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .favicon {
-    width: 24px;
+    width: 22px;
     height: auto;
     text-justify: left;
 }
@@ -71,26 +71,42 @@ a:visited {
 
 .blog-link {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 /* Component styles */
-.logo, .socials, .blog-index, .header, .footer, .links, .image-container, .divider, .mailing-list, .mailing-card, .post-details {
+.logo, .socials, .header, .footer, .links, .image-container, .divider, .mailing-list, .mailing-card, .post-details, .mailing-list-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.content, .blog-list{
+.content, .blog-index, .blog-list{
     display: flex;
 }
+.blog-index{
+    align-items: center;
+}
+
 .blog-list{
-    gap: 8px;
+    gap: 4px;
+}
+
+.bibliotheca-list{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.goodreads-icon{
+    width: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .mailing-list-top{
     display: flex;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
 }
 
 .image-container{
@@ -105,7 +121,7 @@ a:visited {
 
 .links {
     justify-content: center;
-    gap: 19px;
+    gap: 17px;
     list-style: none;
 }
 
@@ -131,8 +147,12 @@ a:visited {
 
 .caption, .copyright, .date {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--caption-color);
+}
+
+.copyright{
+    font-size: 17px;
 }
 
 .content {
@@ -146,37 +166,37 @@ a:visited {
     width: 100%;
     height: 1px;
     border: 0;
-    border-top: 1px solid var(--font-color);
+    border-top: 1px solid var(--caption-color);
     margin: 0;
     padding: 0;
 }
 
 .header-link, .header-logo {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 19px;
-    color: var(--font-color);
+    font-size: 17px;
+    color: var(--link-color);
 }
 
 .header-logo {
     font-family: "Quattrocento", serif;
 }
 
-.mailing-list, .mailing-card, .mailing-list-top, .blog-list {
+.mailing-list, .mailing-card, .mailing-list-top, .blog-list, .mailing-list-bottom {
     flex-direction: column;
 }
 
 .mailing-card {
     width: fit-content;
     padding: 16px 24px;
-    border-radius: 12px;
-    border: 1px solid #1f1f1f;
+    /* border-radius: 12px;
+    border: 1px solid #1f1f1f; */
     margin: 16px 0;
-    gap: 16px;
+    gap: 8px;
 }
 
 .blog-posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding: 8px;
 }
@@ -186,15 +206,19 @@ a:visited {
     height: auto;
 }
 
+.mailing-list-bottom{
+    gap: 12px;
+}
+
 /* Button style */
 button, input[type=submit] {
-    background-color: var(--button-color);
     border-radius: 9999px;
+    background-color: var(--bg-color);
     color: var(--font-color);
     border: 1px solid #1f1f1f;
     padding: 4px 12px;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     font-weight: 400;
 }
@@ -227,17 +251,22 @@ button:hover, input[type=submit]:hover {
 
 input[type=email] {
     font-family: "Nunito Sans", sans-serif;
-    border: 1px solid var(--font-color);
-    border-radius: 9999px;
+    border: none;
+    border-bottom: 1px solid var(--font-color);
     padding: 4px 12px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
+    background-color: var(--bg-color);
+    width: 240px;
+}
+input[type=email]:focus{
+    outline: none;
 }
 
 /* Responsive styles */
 @media only screen and (min-width: 840px) {
     body {
-        width: 760px;
+        width: 840px;
     }
     .blog-image {
         width: 100%;
@@ -257,17 +286,17 @@ input[type=email] {
 }
 
 @media only screen and (max-width: 480px) {
-    body {
-        font-size: 17px;
+    body, .blog-link{
+        font-size: 16px;
     }
     .content {
         padding: 0 16px;
     }
     .favicon {
-        width: 22px;
+        width: 20px;
     }
-    .header-link, .blog-link {
-        font-size: 17px;
+    .header-link, .copyright {
+        font-size: 15px;
     }
     .blog-posts {
         grid-template-columns: repeat(1, 1fr);
