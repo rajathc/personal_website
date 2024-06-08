@@ -26,14 +26,15 @@
     <header class="header">
             <div class="logo">
                 <img src="/favicon.svg" class="favicon" alt="white circle with C in green">
-                <a class="header-logo" style="color: #18181c; font-size:24px; font-weight: 700;" href="/">Rajath's Blog</a>
+                <a class="header-logo" style="color: #18181c; font-size:20px; font-weight: 700;" href="/">Rajath's Blog</a>
             </div>
         <nav class="links">
             <li><a class="header-link" style="display: hidden; visibility: hidden;" href="/projects.html">Projects</a></li>
+            <li><a class="header-link" href="/bibliotheca.html">Bibliotheca</a></li>
             <li><a class="header-link" href="/blog.html">Blog</a></li>
         </nav>
     </header>
-    <hr class="divider">
+    <!-- <hr class="divider"> -->
     <div class="content">
     {{ content }}
     </div>
@@ -48,8 +49,7 @@
             class="embeddable-buttondown-form"
             >
             <div class="mailing-list-top">
-                <p>Subscribe to my mailing list</p>
-                <p class="caption">I'll send my new posts to your inbox.</p>
+                <h4>Get an email when I publish a new article</h4>
             </div>
             <div class="mailing-list-bottom">
                 <input type="email" name="email" placeholder="you@example.com" />
@@ -59,11 +59,11 @@
         </form>
     </div>
     </div>
-    <hr class="divider">
+    <!-- <hr class="divider"> -->
     <footer class="footer">
         <div class="socials">
-        <a href="https://x.com/rajath_c" target="_blank">Twitter</a>
-        <a href="https://www.linkedin.com/in/rajath-chandrahasa/" target="_blank">LinkedIn</a>
+        <a class="header-link" href="https://x.com/rajath_c" target="_blank">Twitter</a>
+        <a class="header-link" href="https://www.linkedin.com/in/rajath-chandrahasa/" target="_blank">LinkedIn</a>
         </div>
         <div class="copyright">
                 ©️ Rajath Chandrahasa
