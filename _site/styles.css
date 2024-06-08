@@ -80,6 +80,9 @@ a:visited {
     align-items: center;
     justify-content: center;
 }
+.footer{
+    margin-bottom: 32px;
+}
 
 .content, .blog-index, .blog-list{
     display: flex;
