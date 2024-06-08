@@ -252,6 +252,7 @@ button:hover, input[type=submit]:hover {
 input[type=email] {
     font-family: "Nunito Sans", sans-serif;
     border: none;
+    border-radius: 0%;
     border-bottom: 1px solid var(--font-color);
     padding: 4px 12px;
     font-size: 14px;
