@@ -20,7 +20,7 @@ image: /images/logo.png
                 <h3>{{ post.title }}</h3>
                 <div class="caption">{{ post.description }}</div>
                 <p class="caption">{{ post.date | date_to_string }}</p>
-                <a class="secondary-button" href="{{ post.url}}">Continue Reading</a>
+                <a class="secondary-button" id="secondary-text" href="{{ post.url}}">Continue Reading</a>
               </div>
             {% endfor %}
             </div>

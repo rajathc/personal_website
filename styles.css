@@ -177,6 +177,12 @@ a:visited {
 .header-link, .header-logo {
     font-family: "Nunito Sans", sans-serif;
     font-size: 17px;
+}
+
+#header-link{
+    color: var(--caption-color);
+}
+#header-link:hover{
     color: var(--link-color);
 }
 
@@ -250,6 +256,13 @@ button:hover, input[type=submit]:hover {
     background-color: var(--hover-color);
     color: #fafafa;
     text-decoration: none;
+}
+
+#secondary-text{
+    color: var(--caption-color);
+}
+#secondary-text:hover{
+    color: var(--bg-color);
 }
 
 input[type=email] {
