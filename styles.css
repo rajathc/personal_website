@@ -84,7 +84,6 @@ a:visited {
     position: fixed;
     justify-content: space-between;
     height: 48px;
-    padding: 0 8px;
     background-color: var(--bg-color);
 }
 .footer{
@@ -131,8 +130,9 @@ a:visited {
 
 .links {
     justify-content: center;
-    gap: 17px;
+    gap: 16px;
     list-style: none;
+    padding-right: 8px;
 }
 
 .logo, .socials, .blog-index {
@@ -141,6 +141,7 @@ a:visited {
 
 .logo {
     gap: 6px;
+    padding-left: 8px;
 }
 
 .socials {
@@ -310,7 +311,7 @@ input[type=email]:focus{
 }
 
 @media only screen and (max-width: 480px) {
-    body, .header, .blog-link{
+    body, .blog-link{
         font-size: 16px;
     }
     .content {
