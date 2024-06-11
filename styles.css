@@ -80,6 +80,13 @@ a:visited {
     align-items: center;
     justify-content: center;
 }
+.header{
+    position: fixed;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 8px;
+    background-color: var(--bg-color);
+}
 .footer{
     margin-bottom: 16px;
 }
@@ -116,7 +123,7 @@ a:visited {
     flex-direction: column;
 }
 
-.header, .footer {
+.footer {
     justify-content: space-between;
     height: 48px;
     padding: 0 8px;
@@ -162,7 +169,7 @@ a:visited {
     flex-direction: column;
     gap: 16px;
     padding: 0 24px;
-    margin-top: 8px;
+    margin-top: 48px;
 }
 
 .divider {
@@ -282,7 +289,7 @@ input[type=email]:focus{
 
 /* Responsive styles */
 @media only screen and (min-width: 840px) {
-    body {
+    body, .header{
         width: 840px;
     }
     .blog-image {
@@ -291,7 +298,7 @@ input[type=email]:focus{
 }
 
 @media only screen and (max-width: 840px) {
-    body {
+    body, .header {
         width: 100%;
     }
     .blog-image {
@@ -303,7 +310,7 @@ input[type=email]:focus{
 }
 
 @media only screen and (max-width: 480px) {
-    body, .blog-link{
+    body, .header, .blog-link{
         font-size: 16px;
     }
     .content {
