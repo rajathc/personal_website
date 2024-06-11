@@ -81,7 +81,6 @@ a:visited {
     justify-content: center;
 }
 .header{
-    position: fixed;
     justify-content: space-between;
     height: 48px;
     background-color: var(--bg-color);
@@ -170,7 +169,6 @@ a:visited {
     flex-direction: column;
     gap: 16px;
     padding: 0 24px;
-    margin-top: 48px;
 }
 
 .divider {
