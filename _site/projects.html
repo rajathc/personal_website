@@ -82,6 +82,37 @@
                 ©️ Rajath Chandrahasa
         </div>
     </footer>
+
+    <script>
+        // JavaScript for updating the progress bar
+        window.addEventListener('scroll', function() {
+          var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+          var clientHeight = document.documentElement.clientHeight || window.innerHeight;
+          var scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
+          document.getElementById('progress-bar').style.width = scrollPercentage + '%';
+        });
+
+            // Show or hide the back-to-top button based on scroll position
+    window.addEventListener('scroll', function() {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+      // Show the button after scrolling 300px
+      if (scrollTop > 300) {
+        document.getElementById('back-to-top').style.display = 'block';
+      } else {
+        document.getElementById('back-to-top').style.display = 'none';
+      }
+    });
+
+    // Scroll back to top when the button is clicked
+    document.getElementById('back-to-top').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+
+
+
 </body>
 </html>
 
