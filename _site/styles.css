@@ -61,21 +61,27 @@ p {
 
 /* Link styles */
 a {
-    text-decoration: none;
-    color: var(--link-color);
+    color: var(--caption-color);
 }
 
 a:hover {
-    text-decoration: underline;
+    color: var(--link-color);
 }
 
 a:visited {
-    color: var(--link-color);
+    color: var(--caption-color);
 }
 
 .blog-link {
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
+}
+
+#logo{
+    text-decoration: none;
+}
+#logo:hover{
+    text-decoration: underline;
 }
 
 /* Component styles */
