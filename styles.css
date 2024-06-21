@@ -257,7 +257,6 @@ a:visited {
 /* Back to top */
 
 #back-to-top {
-    display: none;
     position: fixed;
     bottom: 60px;
     right: 20px;
