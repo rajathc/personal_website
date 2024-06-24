@@ -1,15 +1,15 @@
 
 
 :root {
-    --link-color: #01cda9;
-    --visited-color: #01cda9;
-    --secondary-color: #01cda9;
+    --link-color: #00CC99;
+    --visited-color: #00CC99;
+    --secondary-color: #00CC99;
     --font-color: #1f1f1f;
     --bg-color: #fafafa;
     --heading-color: #1f1f1f;
     --caption-color: #656565;
     --hover-color: #1f1f1f;
-    --button-color: #01cda9;
+    --button-color: #00CC99c;
     display: flex;
     flex-direction: column;
     align-items: center;
