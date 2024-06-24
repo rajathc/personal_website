@@ -1,0 +1,26 @@
+{% assign rating = include.rating | split: '/' %}
+{% assign stars = rating[0] | plus: 0 %}
+{% assign max_stars = rating[1] | plus: 0 %}
+{% assign empty_stars = max_stars | minus: stars %}
+
+<div class="rating">
+  {% for i in (1..stars) %}
+    <span class="star filled">★</span>
+  {% endfor %}
+  {% for i in (1..empty_stars) %}
+    <span class="star empty">☆</span>
+  {% endfor %}
+</div>
+
+<style>
+  .rating {
+    display: inline-block;
+  }
+  .star {
+    color: gold;
+    font-size: 1.5em;
+  }
+  .star.empty {
+    color: lightgray;
+  }
+</style>
