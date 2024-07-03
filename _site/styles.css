@@ -74,7 +74,7 @@ a:visited {
 
 .blog-link {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 18px;
+    font-size: 18-px;
 }
 
 #logo{
@@ -233,6 +233,29 @@ a:visited {
 
 .mailing-list-bottom{
     gap: 12px;
+}
+
+.errorpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 64px;
+}
+
+.four-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four{
+    font-size: 96px;
+}
+
+.four-icon{
+    width: 96px;
+    height: auto;
 }
 
 /* Progress Bar */
