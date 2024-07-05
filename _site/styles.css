@@ -27,7 +27,29 @@ body {
     flex-direction: column;
     margin: 0 auto;
     overflow: hidden;
+
 }
+
+/* Table of Content */
+
+.table-of-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .table-of-content a, .table-of-content a:visited {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .table-of-content a:hover, .table-of-content a:visited:hover {
+    text-decoration: underline;
+    color: var(--link-color);
+  }
+  
 
 .grey-text{
     color: var(--caption-color);
