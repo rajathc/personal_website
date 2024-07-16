@@ -187,6 +187,22 @@ a:visited {
     width: 90%;
 }
 
+.blog-image-portrait{
+    width: 100%;
+}
+
+.portrait-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container-portrait{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+
 .caption, .copyright, .date {
     font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
@@ -425,4 +441,11 @@ input[type=email]:focus{
         grid-template-columns: repeat(1, 1fr);
         gap: 8px;
     }
+    .image-container-portrait{
+        width: 100%;
+    }
+    .portrait-group{
+        flex-direction: column;
+    }
+    
 }
