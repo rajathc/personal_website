@@ -191,6 +191,10 @@ a:visited {
     width: 100%;
 }
 
+.caption-p{
+    padding: 0px 8px;
+}
+
 .portrait-group{
     display: flex;
     flex-direction: row;
@@ -447,5 +451,7 @@ input[type=email]:focus{
     .portrait-group{
         flex-direction: column;
     }
-    
+    .caption-p{
+        padding: 0px;
+    }
 }
