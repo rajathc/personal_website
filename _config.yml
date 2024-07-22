@@ -18,6 +18,3 @@ sitemap:
     - /path/to/another-page.html
 
 # Other configuration settings...
-
-sass:
-    style: compressed
