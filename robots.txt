@@ -1,0 +1,13 @@
+# Allow all robots to visit everything
+User-agent: *
+Disallow:
+
+# Disallow access to the Jekyll admin interface (if you have one)
+Disallow: /admin/
+
+# Disallow access to the configuration files
+Disallow: /_config.yml
+Disallow: /_site/
+
+# Specify the location of the sitemap
+Sitemap: https://rajath.blog/sitemap.xml

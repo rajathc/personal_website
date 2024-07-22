@@ -1,14 +1,20 @@
-title: ""
-email: ""
-description: ""
-baseurl: "" # the subpath of your site, e.g. /blog
-url: https://rajath.blog
-twitter_username: rajath_c
-github_username:  rajathc
+title: ""                   # Add your site title
+email: ""                   # Add your email
+description: ""             # Add your site description
+baseurl: ""                 # The subpath of your site, e.g. /blog
+url: "https://rajath.blog"  # The base hostname & protocol for your site
+twitter_username: "rajath_c"
+github_username: "rajathc"
 
-
-...
 # Plugins
-gems:
+plugins:
   - jekyll-seo-tag
-...
+  - jekyll-sitemap
+
+# Exclude specific pages or posts from the sitemap
+sitemap:
+  exclude:
+    - /path/to/page.html
+    - /path/to/another-page.html
+
+# Other configuration settings...
