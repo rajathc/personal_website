@@ -55,7 +55,6 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    margin: 16px 0;
 }
 
 /* Link styles */
