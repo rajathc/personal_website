@@ -10,7 +10,8 @@ github_username: "rajathc"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-
+  - jekyll-feed
+  
 # Exclude specific pages or posts from the sitemap
 sitemap:
   exclude:
