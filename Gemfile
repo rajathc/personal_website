@@ -7,5 +7,4 @@ group :jekyll_plugins do
 end
 
 gem 'jekyll-sitemap'
-
 gem 'jekyll-feed'
