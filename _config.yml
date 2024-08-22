@@ -11,11 +11,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-<<<<<<< HEAD
   
-=======
-
->>>>>>> dev
 # Exclude specific pages or posts from the sitemap
 sitemap:
   exclude:
@@ -23,4 +19,3 @@ sitemap:
     - /path/to/another-page.html
 
 # Other configuration settings...
-
