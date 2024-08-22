@@ -155,6 +155,7 @@ a:visited {
 
 .blog-list {
     gap: 4px;
+    height: 440px;
 }
 
 .bibliotheca-list {
@@ -194,6 +195,22 @@ a:visited {
 .logo, .socials, .blog-index {
     gap: 4px;
 }
+
+.responsive-iframe {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 
 .logo {
     gap: 6px;
