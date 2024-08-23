@@ -149,9 +149,26 @@ a:visited {
     display: flex;
 }
 
-.blog-index {
+  /* Flex container for each blog post */
+  .blog-index {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* This allows elements to wrap if necessary */
+  }
+
+  /* Date styling */
+  .blog-index .date {
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+
+  /* Title styling */
+  .blog-index .blog-link {
+    flex-grow: 1;
+    text-decoration: none;
+  }
 
 .blog-list {
     gap: 4px;
