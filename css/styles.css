@@ -162,6 +162,7 @@ a:visited {
   .blog-index .date {
     flex-shrink: 0;
     margin-right: 8px;
+    white-space: nowrap;
   }
 
   /* Title styling */
