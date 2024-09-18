@@ -522,4 +522,8 @@ input[type=email]:focus {
     .caption-p {
         padding: 0;
     }
+    
+    .mobile-hide{
+        display: none;
+    }
 }
