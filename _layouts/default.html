@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="{{ page.keywords }}">
-    <meta name="msvalidate.01" content="D1F7C282FF0B7A169A16B3258CFAAFD7" />
-    <meta name="p:domain_verify" content="0b31bb97de76ab967ce2bbee20846985"/>
-    <link rel="stylesheet" href="/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg">
-    <link rel="alternate" type="application/atom+xml" title="RSS" href="https://rajath.blog/feed.xml" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="{{ page.keywords }}">
+  <meta name="msvalidate.01" content="D1F7C282FF0B7A169A16B3258CFAAFD7" />
+  <meta name="p:domain_verify" content="0b31bb97de76ab967ce2bbee20846985" />
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="alternate" type="application/atom+xml" title="RSS" href="https://rajath.blog/feed.xml" />
 
-    {% seo %}
+  {% seo %}
 
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "nb8atzyeik");
-</script>
+  </script>
 
 </head>
 
@@ -28,76 +33,68 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS570M83ND"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-YS570M83ND');
 </script>
 
 <body>
-    <header class="header">
-            <div class="logo">
-                <img src="/favicon.svg" class="favicon" alt="white circle with C in green">
-                <a class="header-logo" id="logo" style="color: #18181c; font-size:20px; font-weight: 700;" href="/">Rajath's Blog</a>
-            </div>
-        <nav class="links">
-            <li><a class="header-link" id="header-link" style="display: hidden; visibility: hidden;" href="/projects.html">Projects</a></li>
-            <li><a class="header-link" id="header-link" href="/bibliotheca.html">Bibliotheca</a></li>
-            <li><a class="header-link" id="header-link" href="/blog.html">Blog</a></li>
-        </nav>
-    </header>
-    <!-- <hr class="divider"> -->
-    <div class="content">
+  <header class="header">
+    <div class="header-container-logo logo">
+      <a class="header-logo" id="logo" style="font-size:22px;" href="/">Rajath</a>
+    </div>
+    <a class="header-link" id="header-link" href="/bibliotheca.html">Readings</a>
+    <a class="header-link" id="header-link" href="/blog.html">Writings</a>
+  </header>
+  <!-- <hr class="divider"> -->
+  <div class="content">
     {{ content }}
-    </div>
-    <div class="mailing-list">
+  </div>
+  <div class="mailing-list">
     <div class="mailing-card">
-        <form
-            action="
+      <form action="
                 https://buttondown.email/api/emails/embed-subscribe/rajath
-                "
-            method="post"
-            target="popupwindow"
-            class="embeddable-buttondown-form"
-            >
-            <div class="mailing-list-top">
-                <h4>Get an email when I publish a new article</h4>
-            </div>
-            <div class="mailing-list-bottom">
-                <input type="email" name="email" placeholder="you@example.com" />
-                <input type="hidden" value="1" name="embed" />
-                <input type="submit" value="Subscribe" />
-            </div>
-        </form>
-    </div>
-    </div>
-    <!-- <hr class="divider"> -->
-    <footer class="footer">
-        <div class="socials">
-        <a class="header-link" id="header-link" href="https://x.com/rajath_c" target="_blank">Twitter</a>
-        <a class="header-link" id="header-link" href="https://www.linkedin.com/in/rajath-chandrahasa/" target="_blank">LinkedIn</a>
-        <a class="header-link" id="header-link" href="https://rajath.blog/feed.xml" target="_blank">RSS</a>
+                " method="post" target="popupwindow" class="embeddable-buttondown-form">
+        <div class="mailing-list-top">
+          <h4>Get an email when I publish a new article</h4>
         </div>
-        <div class="copyright">
-                ©️ Rajath Chandrahasa
+        <div class="mailing-list-bottom">
+          <input type="email" name="email" placeholder="you@example.com" />
+          <input type="hidden" value="1" name="embed" />
+          <input type="submit" value="Subscribe" />
         </div>
-    </footer>
+      </form>
+    </div>
+  </div>
+  <!-- <hr class="divider"> -->
+  <footer class="footer">
+    <div class="socials">
+      <a class="header-link" id="header-link" href="https://x.com/rajath_c" target="_blank">Twitter</a>
+      <a class="header-link" id="header-link" href="https://www.linkedin.com/in/rajath-chandrahasa/"
+        target="_blank">LinkedIn</a>
+      <a class="header-link" id="header-link" href="https://rajath.blog/feed.xml" target="_blank">RSS</a>
+    </div>
+    <div class="copyright">
+      ©️ Rajath Chandrahasa
+    </div>
+  </footer>
 
-    <script>
+  <script>
     // JavaScript for updating the progress bar
-        window.addEventListener('scroll', function() {
-          var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-          var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-          var clientHeight = document.documentElement.clientHeight || window.innerHeight;
-          var scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
-          document.getElementById('progress-bar').style.width = scrollPercentage + '%';
-        });
+    window.addEventListener('scroll', function () {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+      var clientHeight = document.documentElement.clientHeight || window.innerHeight;
+      var scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
+      document.getElementById('progress-bar').style.width = scrollPercentage + '%';
+    });
 
     // Show or hide the back-to-top button based on scroll position
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-    // Show the button after scrolling 400px
+      // Show the button after scrolling 400px
       if (scrollTop > 400) {
         document.getElementById('back-to-top').style.display = 'block';
       } else {
@@ -106,13 +103,13 @@
     });
 
     // Scroll back to top when the button is clicked
-    document.getElementById('back-to-top').addEventListener('click', function() {
+    document.getElementById('back-to-top').addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-    </script>
+  </script>
 
 
 
 </body>
-</html>
 
+</html>
