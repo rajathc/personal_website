@@ -8,3 +8,5 @@ end
 
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'
+
+gem "addressable", "~> 2.8.7"
