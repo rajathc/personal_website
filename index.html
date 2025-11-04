@@ -1,37 +1,7 @@
 ---
-layout: default
-title: Rajath's blog - Product, Tech, Travel, Video games, Music
-permalink: /
-description: This is my blog where I write about travel, video games, music and tech
-image: /images/logo.png
-keywords: "Rajath, Rajath Chandrahasa, blog, travel, video games, music, tech, Hyderabad, product manager"
+layout: home
 ---
-<div class="bio">
-  <h1 class="index-font">Hello 👋 I am <span class="pacifico">Rajath</span> 🙋🏽‍♂️</h1>
-  <h2 class="index-font">I share my <a class="wavy-underline yellow-link" id="header-link"
-      href="/bibliotheca.html">Readings</a>
-    and
-    <a class="wavy-underline red-link" id="header-link" href="/blog.html">Writings</a> here.
-  </h2>
-  <h2 class="index-font">I am living in <span class="black-font">Bengaluru</span> and I am currently working as a
-    Product Manager at
-    NeoSapien.</h2>
-</div>
 
-<div>
-  <h2>Latest Posts:</h2>
-  <div class="blog-posts">
-    {% for post in site.posts limit:6 %}
-    <div class="blog-list">
-      <img src="{{- post.image -}}" alt="Feature Image of the Blogpost" class="blog-roll-image">
-      <h3>{{ post.title }}</h3>
-      <div class="caption">{{ post.description }}</div>
-      <p class="caption">{{ post.date | date_to_string }}</p>
-      <a class="secondary-button" id="secondary-text" href="{{ post.url}}">Continue Reading</a>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-</body>
+<p>A product person with a love for indie rock, I am passionate about infusing creativity in tech. Travelling is my way of unwinding from the monotony of life.</p>
 
-</html>
+<p>I am living in Bengaluru and I am currently working as a Product Manager at <a href="https://neosapien.xyz" target="_blank">Neosapien</a>.</p>

@@ -1,21 +1,54 @@
-title: ""                   # Add your site title
-email: ""                   # Add your email
-description: ""             # Add your site description
-baseurl: ""                 # The subpath of your site, e.g. /blog
-url: "https://rajath.blog"  # The base hostname & protocol for your site
-twitter_username: "rajath_c"
-github_username: "rajathc"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Plugins
+# Site settings
+title:       Rajath
+author:      Rajath Chandrahasa
+email:       ''
+description: 'Product, Tech, Travel, Video games, Music'
+baseurl:     '' # The subpath of your site, e.g. /blog
+url:         'https://rajath.blog' # The base hostname & protocol for your site
+
+# Social links
+twitter:   'rajath_c'
+github:    'rajathc'
+instagram: ''
+linkedin:  ''
+
+markdown:  kramdown
+permalink: pretty
+paginate:  10
+
+sass:
+  style: compressed
+
 plugins:
+  - jekyll-paginate
+  - jekyll/tagging
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  
-# Exclude specific pages or posts from the sitemap
-sitemap:
-  exclude:
-    - /path/to/page.html
-    - /path/to/another-page.html
 
-# Other configuration settings...
+include:
+  - _pages
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
+# Pages path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
