@@ -656,45 +656,33 @@ button:hover {
     }
 
     .tabs-header {
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
-    }
-
-    .tabs-nav {
-        order: 2;
-    }
-
-    .theme-toggle {
-        order: 1;
+        flex-wrap: wrap;
     }
 
     .tab-button {
-        font-size: 0.9375rem;
-        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
+        padding: 0.625rem 1rem;
     }
 
     .post-container {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .post-header {
-        padding: 0.75rem 0;
-        margin-bottom: 1.5rem;
+        padding: 0.5rem 0 1rem;
+        margin-bottom: 1rem;
     }
 
     .post-title {
         font-size: 2.5rem;
-        padding: 0 0.75rem;
     }
 
     .post-meta {
-        padding: 0 0.75rem;
+        margin-bottom: 2rem;
     }
 
     .post-content {
         font-size: 1.0625rem;
-        padding: 0 0.75rem;
     }
 
     .post-content h2 {
@@ -706,11 +694,11 @@ button:hover {
     }
 
     .post-content img {
-        margin: 2.5rem 0;
-        margin-left: calc(-0.5rem - 0.75rem);
-        margin-right: calc(-0.5rem - 0.75rem);
-        width: calc(100% + 1rem + 1.5rem);
-        max-width: calc(100% + 1rem + 1.5rem);
+        margin: 2rem 0;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        width: calc(100% + 2rem);
+        max-width: calc(100% + 2rem);
         border-radius: 0;
     }
 
