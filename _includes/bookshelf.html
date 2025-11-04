@@ -1,0 +1,8 @@
+<div class="bookshelf">
+    {% assign bookshelf_page = site.pages | where: "title", "Bookshelf" | first %}
+    {% if bookshelf_page %}
+        {{ bookshelf_page.content }}
+    {% else %}
+        <p>No bookshelf content available.</p>
+    {% endif %}
+</div>

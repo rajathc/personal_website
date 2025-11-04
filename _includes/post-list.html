@@ -1,0 +1,11 @@
+<div class="post-list">
+    {% for post in site.posts %}
+    <article class="post-item">
+        <a href="{{ post.url | relative_url }}" class="post-link">
+            <h2 class="post-item-title">{{ post.title }}</h2>
+            <time class="post-item-date">{{ post.date | date: "%d %b %Y" }}</time>
+            <p class="post-item-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
+        </a>
+    </article>
+    {% endfor %}
+</div>

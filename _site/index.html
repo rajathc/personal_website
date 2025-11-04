@@ -1,200 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Rajath, Rajath Chandrahasa, blog, travel, video games, music, tech, Hyderabad, product manager">
-  <meta name="msvalidate.01" content="D1F7C282FF0B7A169A16B3258CFAAFD7" />
-  <meta name="p:domain_verify" content="0b31bb97de76ab967ce2bbee20846985" />
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="/favicon.svg">
-  <link rel="alternate" type="application/atom+xml" title="RSS" href="https://rajath.blog/feed.xml" />
-
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Rajath’s blog - Product, Tech, Travel, Video games, Music</title>
-<meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Rajath’s blog - Product, Tech, Travel, Video games, Music" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="This is my blog where I write about travel, video games, music and tech" />
-<meta property="og:description" content="This is my blog where I write about travel, video games, music and tech" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:image" content="http://localhost:4000/images/logo.png" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/images/logo.png" />
-<meta property="twitter:title" content="Rajath’s blog - Product, Tech, Travel, Video games, Music" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"This is my blog where I write about travel, video games, music and tech","headline":"Rajath’s blog - Product, Tech, Travel, Video games, Music","image":"http://localhost:4000/images/logo.png","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
-
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function (c, l, a, r, i, t, y) {
-      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "nb8atzyeik");
-  </script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajath</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script>
+        // Set theme before page renders to avoid flash
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YS570M83ND"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-YS570M83ND');
-</script>
-
 <body>
-  <header class="header">
-    <div class="header-container-logo logo">
-      <a class="header-logo" id="logo" style="font-size:22px;" href="/">Rajath</a>
+    <main class="main-content">
+        <header class="site-header">
+    <a href="/" class="site-logo">
+        <img src="/favicon.svg" alt="Logo" class="crescent-icon" width="32" height="32">
+        <h1 class="site-title">Rajath Chandrahasa</h1>
+    </a>
+</header>
+
+
+<div class="home-container">
+    <div class="about-section">
+        <p>A product person with a love for indie rock, I am passionate about infusing creativity in tech. Travelling is my way of unwinding from the monotony of life.</p>
+
+<p>I am living in Bengaluru and I am currently working as a Product Manager at <a href="https://neosapien.xyz" target="_blank">Neosapien</a>.</p>
+
     </div>
-    <a class="header-link" id="header-link" href="/bibliotheca.html">Readings</a>
-    <a class="header-link" id="header-link" href="/blog.html">Writings</a>
-  </header>
-  <!-- <hr class="divider"> -->
-  <div class="content">
-    <div class="bio">
-  <h1 class="index-font">Hello 👋 I am <span class="pacifico">Rajath</span> 🙋🏽‍♂️</h1>
-  <h2 class="index-font">I share my <a class="wavy-underline yellow-link" id="header-link"
-      href="/bibliotheca.html">Readings</a>
-    and
-    <a class="wavy-underline red-link" id="header-link" href="/blog.html">Writings</a> here.
-  </h2>
-  <h2 class="index-font">I am living in <span class="black-font">Bengaluru</span> and I am currently working as a
-    Product Manager at
-    NeoSapien.</h2>
+
+    <div class="tabs-container">
+        <div class="tabs-header">
+            <div class="tabs-nav">
+                <button class="tab-button active" data-tab="writings" data-text="Writings">Writings</button>
+                <button class="tab-button" data-tab="bookshelf" data-text="Bookshelf">Bookshelf</button>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <svg class="theme-icon lightbulb-icon" width="24" height="24" viewBox="0 0 256 256" fill="currentColor">
+                    <path d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h24V147.31L90.34,117.66a8,8,0,0,1,11.32-11.32L128,132.69l26.34-26.35a8,8,0,0,1,11.32,11.32L136,147.31V192h24v-6a32.12,32.12,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Z"></path>
+                </svg>
+                <svg class="theme-icon sunglasses-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18.75 3.75C18.5511 3.75 18.3603 3.82902 18.2197 3.96967C18.079 4.11032 18 4.30109 18 4.5C18 4.69891 18.079 4.88968 18.2197 5.03033C18.3603 5.17098 18.5511 5.25 18.75 5.25C19.1478 5.25 19.5294 5.40804 19.8107 5.68934C20.092 5.97064 20.25 6.35218 20.25 6.75V12H3.75V6.75C3.75 6.35218 3.90804 5.97064 4.18934 5.68934C4.47064 5.40804 4.85218 5.25 5.25 5.25C5.44891 5.25 5.63968 5.17098 5.78033 5.03033C5.92098 4.88968 6 4.69891 6 4.5C6 4.30109 5.92098 4.11032 5.78033 3.96967C5.63968 3.82902 5.44891 3.75 5.25 3.75C4.45435 3.75 3.69129 4.06607 3.12868 4.62868C2.56607 5.19129 2.25 5.95435 2.25 6.75V15.375C2.25 16.469 2.6846 17.5182 3.45818 18.2918C4.23177 19.0654 5.28098 19.5 6.375 19.5C7.46902 19.5 8.51823 19.0654 9.29182 18.2918C10.0654 17.5182 10.5 16.469 10.5 15.375V13.5H13.5V15.375C13.5 16.469 13.9346 17.5182 14.7082 18.2918C15.4818 19.0654 16.531 19.5 17.625 19.5C18.719 19.5 19.7682 19.0654 20.5418 18.2918C21.3154 17.5182 21.75 16.469 21.75 15.375V6.75C21.75 5.95435 21.4339 5.19129 20.8713 4.62868C20.3087 4.06607 19.5456 3.75 18.75 3.75ZM19.9341 16.6228L16.8103 13.5H20.25V15.375C20.2507 15.8108 20.142 16.2398 19.9341 16.6228ZM3.75 15.375V13.8103L7.62281 17.6841C7.22297 17.9001 6.7739 18.0086 6.31953 17.999C5.86516 17.9894 5.42107 17.862 5.03071 17.6293C4.64036 17.3965 4.31712 17.0664 4.09262 16.6713C3.86813 16.2761 3.75007 15.8295 3.75 15.375ZM9 15.375C9.00067 15.8108 8.89205 16.2398 8.68406 16.6228L5.56031 13.5H9V15.375ZM15 15.375V13.8103L18.8728 17.6841C18.473 17.9001 18.0239 18.0086 17.5695 17.999C17.1152 17.9894 16.6711 17.862 16.2807 17.6293C15.8904 17.3965 15.5671 17.0664 15.3426 16.6713C15.1181 16.2761 15.0001 15.8295 15 15.375Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="tab-content active" id="writings-tab">
+            <div class="post-list">
+    
+    <article class="post-item">
+        <a href="/blog/problem-solving-in-tech" class="post-link">
+            <h2 class="post-item-title">Why Great Engineering Starts with a Problem, Not a Code</h2>
+            <time class="post-item-date">13 Dec 2024</time>
+            <p class="post-item-excerpt">Why chasing shiny features won’t save startups. Discover how solving real user pain points can transform engineering into a startup’s superpower.</p>
+        </a>
+    </article>
+    
+    <article class="post-item">
+        <a href="/blog/kindle" class="post-link">
+            <h2 class="post-item-title">Kindle is my sleeping pill</h2>
+            <time class="post-item-date">14 Sep 2024</time>
+            <p class="post-item-excerpt">How Kindle became my ultimate sleep aid and travel essential; here's how it changed the way I read.</p>
+        </a>
+    </article>
+    
+    <article class="post-item">
+        <a href="/blog/kazakh-photoessay" class="post-link">
+            <h2 class="post-item-title">A Week in Kazakhstan</h2>
+            <time class="post-item-date">21 Aug 2024</time>
+            <p class="post-item-excerpt">Explore my week-long adventure through Kazakhstan's stunning landscapes and vibrant culture, brought to life in 36 captivating photos.</p>
+        </a>
+    </article>
+    
+    <article class="post-item">
+        <a href="/blog/hyderabad-photoessay" class="post-link">
+            <h2 class="post-item-title">A Weekend in Old Hyderabad with Fujifilm X100vi</h2>
+            <time class="post-item-date">20 Jul 2024</time>
+            <p class="post-item-excerpt">Explore Hyderabad's iconic spots like Charminar and Chowmahalla Palace through my photo essay, capturing the city's rich history and vibrant markets.</p>
+        </a>
+    </article>
+    
+    <article class="post-item">
+        <a href="/blog/nu-gundam" class="post-link">
+            <h2 class="post-item-title">Nu Beginnings - My First Gundam Build</h2>
+            <time class="post-item-date">06 Jul 2024</time>
+            <p class="post-item-excerpt">Join me on my first Gundam build adventure, exploring user experience, gamification, and hobbyist insights!</p>
+        </a>
+    </article>
+    
+    <article class="post-item">
+        <a href="/blog/firstpost" class="post-link">
+            <h2 class="post-item-title">My First Blog Post</h2>
+            <time class="post-item-date">24 Jun 2024</time>
+            <p class="post-item-excerpt">Hello world, bonjour, namaste, hola, hallo, or whatever; welcome to the first of many quirky musings on this blog!</p>
+        </a>
+    </article>
+    
 </div>
 
-<div>
-  <h2>Latest Posts:</h2>
-  <div class="blog-posts">
+        </div>
+
+        <div class="tab-content" id="bookshelf-tab">
+            <div class="bookshelf">
     
-    <div class="blog-list">
-      <img src="/images/blog/06-problem-solving/feature-image.png" alt="Feature Image of the Blogpost" class="blog-roll-image">
-      <h3>Why Great Engineering Starts with a Problem, Not a Code</h3>
-      <div class="caption">Why chasing shiny features won’t save startups. Discover how solving real user pain points can transform engineering into a startup’s superpower.</div>
-      <p class="caption">13 Dec 2024</p>
-      <a class="secondary-button" id="secondary-text" href="/blog/problem-solving-in-tech">Continue Reading</a>
-    </div>
     
-    <div class="blog-list">
-      <img src="/images/blog/05-kindle/feature-image.png" alt="Feature Image of the Blogpost" class="blog-roll-image">
-      <h3>Kindle is my sleeping pill</h3>
-      <div class="caption">How Kindle became my ultimate sleep aid and travel essential—here’s how it changed the way I read.</div>
-      <p class="caption">14 Sep 2024</p>
-      <a class="secondary-button" id="secondary-text" href="/blog/kindle">Continue Reading</a>
-    </div>
+        <h3 id="currently-reading">Currently Reading</h3>
+
+<ul>
+  <li>The Battle of the Labyrinth by Rick Riordan <a href="https://www.goodreads.com/book/show/8130423-the-battle-of-the-labyrinth">g</a></li>
+</ul>
+
+<h3 id="favourite-books">Favourite Books</h3>
+
+<ul>
+  <li>East of Eden by John Steinbeck <a href="https://www.goodreads.com/book/show/4406.East_of_Eden">g</a></li>
+  <li>One Hundred Years of Solitude by Gabriel García Márquez <a href="https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude">g</a></li>
+  <li>Dune Series by Frank Herbert <a href="https://www.goodreads.com/series/45935-dune">g</a></li>
+  <li>Annihilation of Caste by B.R. Ambedkar <a href="https://www.goodreads.com/book/show/8521879-annihilation-of-caste">g</a></li>
+  <li>Foundation by Issac Asimov <a href="https://www.goodreads.com/book/show/29579.Foundation">g</a></li>
+  <li>I Know Why the Caged Bird Sings by Maya Angelou <a href="https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings">g</a></li>
+  <li>The Stranger by Albert Camus <a href="https://www.goodreads.com/book/show/49552.The_Stranger">g</a></li>
+</ul>
+
+<h3 id="history">History</h3>
+
+<ul>
+  <li>The Titan’s Curse by Rick Riordan <a href="https://www.goodreads.com/book/show/561456.The_Titan_s_Curse">g</a></li>
+  <li>The Sea of Monsters by Rick Riordan <a href="https://www.goodreads.com/book/show/40727118-the-sea-of-monsters">g</a></li>
+  <li>Starter Villain by John Scalzi <a href="https://www.goodreads.com/book/show/61885029-starter-villain">g</a></li>
+  <li>Looking for Alaska by John Green <a href="https://www.goodreads.com/book/show/99561.Looking_for_Alaska">g</a></li>
+  <li>East of Eden by John Steinbeck <a href="https://www.goodreads.com/book/show/4406.East_of_Eden">g</a></li>
+  <li>The Lightning Thief by Rick Riordan <a href="https://www.goodreads.com/book/show/28187.The_Lightning_Thief">g</a></li>
+  <li>Ender’s Game by Orson Scott Card <a href="https://www.goodreads.com/book/show/375802.Ender_s_Game">g</a></li>
+  <li>The Art of UNIX Programming by Eric S. Raymond <a href="https://www.goodreads.com/book/show/104745.The_Art_of_UNIX_Programming?">g</a></li>
+  <li>Deep Work by Cal Newport <a href="https://www.goodreads.com/book/show/25744928-deep-work">g</a></li>
+  <li>The Twisted Ones by T. Kingfisher <a href="https://www.goodreads.com/book/show/42527596-the-twisted-ones">g</a></li>
+  <li>Sakina’s Kiss by Vivek Shanbhag <a href="https://www.goodreads.com/book/show/198534114-sakina-s-kiss">g</a></li>
+  <li>Dune Messiah by Frank Herbert <a href="https://www.goodreads.com/book/show/44492285-dune-messiah">g</a></li>
+  <li>Dune by Frank Herbert <a href="https://www.goodreads.com/book/show/44767458-dune">g</a></li>
+  <li>Lord of Light by Roger Zelazny <a href="https://www.goodreads.com/book/show/13821.Lord_of_Light">g</a></li>
+  <li>The Death of Ivan Ilych by Leo Tolstoy <a href="https://www.goodreads.com/book/show/18386.The_Death_of_Ivan_Ilych">g</a></li>
+  <li>The Great Train Journey by Ruskin Bond <a href="https://www.goodreads.com/book/show/41092454-the-great-train-journey">g</a></li>
+  <li>The A.B.C Murders by Agatha Christie <a href="https://www.goodreads.com/book/show/16322.The_A_B_C_Murders">g</a></li>
+  <li>And Then There Were None by Agatha Christie <a href="https://www.goodreads.com/book/show/16299.And_Then_There_Were_None">g</a></li>
+  <li>Till We Have Faces by C.S. Lewis <a href="https://www.goodreads.com/book/show/17343.Till_We_Have_Faces">g</a></li>
+  <li>In Patagonia by Bruce Chatwin <a href="https://www.goodreads.com/book/show/79909.In_Patagonia">g</a></li>
+  <li>Pachinko by Min Jin Lee <a href="https://www.goodreads.com/book/show/34051011-pachinko">g</a></li>
+  <li>The Storm Runner by J.C. Cervantes <a href="https://www.goodreads.com/book/show/34966353-the-storm-runner">g</a></li>
+  <li>The Devil in the White City by Erik Larson <a href="https://www.goodreads.com/book/show/397483.The_Devil_in_the_White_City">g</a></li>
+  <li>4 Kids Walk Into A Bank by Mattew Rosenberg <a href="https://www.goodreads.com/book/show/36260018-4-kids-walk-into-a-bank">g</a></li>
+  <li>Lord of the Flies by William Golding <a href="https://www.goodreads.com/book/show/7624.Lord_of_the_Flies">g</a></li>
+  <li>Fun Home: A Family Tragicomic by Alison Bechdel <a href="https://www.goodreads.com/book/show/38990.Fun_Home">g</a></li>
+  <li>Dalit Panthers: An Authoritative History by J.V. Pawar <a href="https://www.goodreads.com/book/show/38209845-dalit-panthers">g</a></li>
+  <li>Harry Potter and the Sorcerer’s Stone by J.K. Rowling <a href="https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone">g</a></li>
+  <li>Death on the Nile by Agatha Christie <a href="https://www.goodreads.com/book/show/131359.Death_on_the_Nile">g</a></li>
+  <li>Nimona by N.D. Stevenson <a href="https://www.goodreads.com/book/show/19351043-nimona">g</a></li>
+  <li>Art Before Breakfast by Danny Gregory <a href="https://www.goodreads.com/book/show/22553690-art-before-breakfast">g</a></li>
+  <li>A Flowering Tree and Other Oral Tales from India by A.K. Ramanujan <a href="https://www.goodreads.com/book/show/1335615.A_Flowering_Tree_and_Other_Oral_Tales_from_India">g</a></li>
+  <li>Atomic Habits by James Clear <a href="https://www.goodreads.com/book/show/40121378-atomic-habits">g</a></li>
+  <li>Red Rising by Pierce Brown <a href="https://www.goodreads.com/book/show/15839976-red-rising">g</a></li>
+  <li>Scary Stories to Tell in the Dark by Alvin Schwartz <a href="https://www.goodreads.com/book/show/1325218.Scary_Stories_to_Tell_in_the_Dark">g</a></li>
+  <li>The E-myth Revisited by Michael E. Gerber <a href="https://www.goodreads.com/book/show/81948.The_E_myth_Revisited">g</a></li>
+  <li>Who was Shivaji? by Govind Pansare <a href="https://www.goodreads.com/book/show/26822891-who-was-shivaji">g</a></li>
+  <li>Tintin in the Land of the Soviets by Hergé <a href="https://www.goodreads.com/book/show/1215544.The_Adventures_of_Tintin_Volume_1">g</a></li>
+  <li>The Princess Bride by William Goldman <a href="https://www.goodreads.com/book/show/21787.The_Princess_Bride">g</a></li>
+  <li>Steal Like an Artist by Austin Kleon <a href="https://www.goodreads.com/book/show/13099738-steal-like-an-artist">g</a></li>
+  <li>The Railway Children by E. Nesbit <a href="https://www.goodreads.com/book/show/18736049-the-railway-children">g</a></li>
+  <li>The Cat in the Hat by Dr. Seuss <a href="https://www.goodreads.com/book/show/233093.The_Cat_in_the_Hat">g</a></li>
+  <li>Abigail and the Snowman by Roger Langridge <a href="https://www.goodreads.com/book/show/29238792-abigail-and-the-snowman">g</a></li>
+  <li>Daytripper by Fábio Moon <a href="https://www.goodreads.com/book/show/8477057-daytripper">g</a></li>
+  <li>Wytches by Scott Snyder <a href="https://www.goodreads.com/book/show/25243735-wytches-volume-1">g</a></li>
+  <li>Call Me By Your Name by André Aciman <a href="https://www.goodreads.com/book/show/36336078-call-me-by-your-name">g</a></li>
+  <li>Gender Queer by Maia Kobabe <a href="https://www.goodreads.com/book/show/42837514-gender-queer">g</a></li>
+  <li>The Toll by Neal Shusterman <a href="https://www.goodreads.com/book/show/43822024-the-toll">g</a></li>
+  <li>The Importance of Being Earnest by Oscar Wilde <a href="https://www.goodreads.com/book/show/92303.The_Importance_of_Being_Earnest">g</a></li>
+  <li>Saga, Book Two by Brian K. Vaughan <a href="https://www.goodreads.com/book/show/32926680-saga-book-two">g</a></li>
+  <li>Thunderhead by Neal Shusterman <a href="https://www.goodreads.com/book/show/33555224-thunderhead">g</a></li>
+  <li>Invisible Cities by Italo Calvino <a href="https://www.goodreads.com/book/show/9809.Invisible_Cities">g</a></li>
+  <li>Notes from Underground by Fyodor Dostoevsky <a href="https://www.goodreads.com/book/show/49455.Notes_from_Underground">g</a></li>
+  <li>Understanding Comics: The Invisible Art by Scott McCloud <a href="https://www.goodreads.com/book/show/102920.Understanding_Comics">g</a></li>
+  <li>Uzumaki by Junji Ito <a href="https://www.goodreads.com/book/show/17837762-uzumaki">g</a></li>
+  <li>I Know Why the Caged Bird Sings by Maya Angelou <a href="https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings">g</a></li>
+  <li>The Sirens of Titan by Kurt Vonnegut Jr. <a href="https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan">g</a></li>
+  <li>Saga, Book One by Brian K. Vaughan <a href="https://www.goodreads.com/book/show/22078240-saga-book-one">g</a></li>
+  <li>From Hell by Alan Moore <a href="https://www.goodreads.com/book/show/23529.From_Hell">g</a></li>
+  <li>We Have Always Lived in the Castle by Shirley Jackson <a href="https://www.goodreads.com/book/show/89724.We_Have_Always_Lived_in_the_Castle">g</a></li>
+  <li>Art Matters by Neil Gaiman <a href="https://www.goodreads.com/book/show/40090596-art-matters">g</a></li>
+  <li>Matilda by Roald Dahl <a href="https://www.goodreads.com/book/show/39988.Matilda">g</a></li>
+  <li>Someone Who Will Love You in All Your Damaged Glory by Raphael Bob-Waksberg <a href="https://www.goodreads.com/book/show/41949311-someone-who-will-love-you-in-all-your-damaged-glory">g</a></li>
+  <li>Ashe Warmother Odin by Austin Shafer <a href="https://www.goodreads.com/book/show/45837770-league-of-legends">g</a></li>
+  <li>League of Legends: Lux by John O’Bryan <a href="https://www.goodreads.com/book/show/48725759-league-of-legends">g</a></li>
+  <li>Persepolis 2 by Marjane Satrapi <a href="https://www.goodreads.com/book/show/9517.Persepolis_2">g</a></li>
+  <li>Persepolis by Marjane Satrapi <a href="https://www.goodreads.com/book/show/9516.Persepolis">g</a></li>
+  <li>The Jungle Book by Rudyard Kipling <a href="https://www.goodreads.com/book/show/77270.The_Jungle_Book">g</a></li>
+  <li>One Hundred Years of Solitude by Gabriel García Márquez <a href="https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude">g</a></li>
+  <li>The Night Circus by Erin Morgenstern <a href="https://www.goodreads.com/book/show/9361589-the-night-circus">g</a></li>
+  <li>Funny Boy by Shyam Selvadurai <a href="https://www.goodreads.com/book/show/1075662.Funny_Boy">g</a></li>
+  <li>Love Story by Erich Segal <a href="https://www.goodreads.com/book/show/73968.Love_Story">g</a></li>
+  <li>Aristotle and Dante Discover the Secrets of the Universe by Benjamin Alire Sáenz <a href="https://www.goodreads.com/book/show/12000020-aristotle-and-dante-discover-the-secrets-of-the-universe">g</a></li>
+  <li>Ashoka: the Search for India’s Lost Emperor by Charles Allen <a href="https://www.goodreads.com/book/show/13220954-ashoka">g</a></li>
+  <li>Stardust by Neil Gaiman <a href="https://www.goodreads.com/book/show/16793.Stardust">g</a></li>
+  <li>Beloved by Toni Morrison <a href="https://www.goodreads.com/book/show/6149.Beloved">g</a></li>
+  <li>Scythe by Neal Shusterman <a href="https://www.goodreads.com/book/show/28954189-scythe">g</a></li>
+  <li>Howl’s Moving Castle by Diana Wynne Jones <a href="https://www.goodreads.com/book/show/6294.Howl_s_Moving_Castle">g</a></li>
+  <li>Battle Angel Alita by Yukito Kishiro <a href="https://www.goodreads.com/book/show/844422.Battle_Angel_Alita_Vol_1">g</a></li>
+  <li>Sea of Poppies by Amitav Ghosh <a href="https://www.goodreads.com/book/show/1330324.Sea_of_Poppies">g</a></li>
+  <li>An Artist of the Floating World by Kazuo Ishiguro <a href="https://www.goodreads.com/book/show/28922.An_Artist_of_the_Floating_World">g</a></li>
+  <li>The Elephant’s Journey by José Saramago <a href="https://www.goodreads.com/book/show/7721933-the-elephant-s-journey">g</a></li>
+  <li>Under The Jaguar Sun by Italo Calvino <a href="https://www.goodreads.com/book/show/103273.Under_The_Jaguar_Sun">g</a></li>
+  <li>Of Mice and Men by John Steinbeck <a href="https://www.goodreads.com/book/show/890.Of_Mice_and_Men">g</a></li>
+  <li>Ghachar Ghochar by Vivek Shanbhag <a href="https://www.goodreads.com/book/show/30267604-ghachar-ghochar">g</a></li>
+  <li>Akira by Katsuhiro Otomo <a href="https://www.goodreads.com/series/57444-akira-6-volumes">g</a></li>
+  <li>The Little Prince by Antoine de Saint-Exupéry <a href="https://www.goodreads.com/book/show/157993.The_Little_Prince">g</a></li>
+  <li>Ready Player One by Ernest Cline <a href="https://www.goodreads.com/book/show/9969571-ready-player-one">g</a></li>
+  <li>The Sandman by Neil Gaiman <a href="https://www.goodreads.com/series/40372-the-sandman">g</a></li>
+  <li>Maus Series by Art Spiegelman <a href="https://www.goodreads.com/series/50145-maus">g</a></li>
+  <li>The Facts In The Case Of The Departure of Miss Finch by Neil Gaiman <a href="https://www.goodreads.com/book/show/16794.The_Facts_In_The_Case_Of_The_Departure_Of_Miss_Finch">g</a></li>
+  <li>I Killed Adolf Hitler by Jason <a href="https://www.goodreads.com/book/show/775864.I_Killed_Adolf_Hitler">g</a></li>
+  <li>The Collected Essex County by Jeff Lemire <a href="https://www.goodreads.com/book/show/6096829-the-collected-essex-county">g</a></li>
+  <li>Origin by Dan Brown <a href="https://www.goodreads.com/book/show/32307358-origin">g</a></li>
+  <li>Star Trek II: The Wrath of Khan by Vonda N. McIntyre <a href="https://www.goodreads.com/book/show/77349.Star_Trek_II">g</a></li>
+  <li>The Trial by Franz Kafka <a href="https://www.goodreads.com/book/show/29077666-the-trial">g</a></li>
+  <li>The Art of War by Sun Tzu <a href="https://www.goodreads.com/book/show/28178146-the-art-of-war">g</a></li>
+  <li>The Girl on the Train by Paula Hawkins <a href="https://www.goodreads.com/book/show/22557272-the-girl-on-the-train">g</a></li>
+  <li>Norwegian Wood by Haruki Murakami <a href="https://www.goodreads.com/book/show/11297.Norwegian_Wood">g</a></li>
+  <li>A Clockwork Orange by Anthony Burgess <a href="https://www.goodreads.com/book/show/227463.A_Clockwork_Orange">g</a></li>
+  <li>The Bourne Ultimatum by Robert Ludlum <a href="https://www.goodreads.com/book/show/31259.The_Bourne_Ultimatum">g</a></li>
+  <li>Dark Watch by Clive Cussler <a href="https://www.goodreads.com/book/show/41695.Dark_Watch">g</a></li>
+  <li>Ghost World by Daniel Clowes <a href="https://www.goodreads.com/book/show/62953.Ghost_World">g</a></li>
+  <li>The Minority Report by Philip K. Dick <a href="https://www.goodreads.com/book/show/581125.The_Minority_Report">g</a></li>
+  <li>Fight Club by Chuck Palahniuk <a href="https://www.goodreads.com/book/show/5759.Fight_Club">g</a></li>
+  <li>Batman: A Death in the Family by Jim Starlin <a href="https://www.goodreads.com/book/show/107032.Batman">g</a></li>
+  <li>The Client by John Grisham <a href="https://www.goodreads.com/book/show/5359.The_Client">g</a></li>
+  <li>1984 by George Orwell <a href="https://www.goodreads.com/book/show/5470.1984">g</a></li>
+  <li>Inca Gold by Clive Cussler <a href="https://www.goodreads.com/book/show/198332.Inca_Gold">g</a></li>
+  <li>2001: A Space Odyssey by Arthur C. Clarke <a href="https://www.goodreads.com/book/show/70535.2001">g</a></li>
+  <li>The Godfather by Mario Puzo <a href="https://www.goodreads.com/book/show/22034.The_Godfather">g</a></li>
+  <li>N or M? by Agatha Christie <a href="https://www.goodreads.com/book/show/102313.N_or_M_">g</a></li>
+  <li>The Bourne Identity by Robert Ludlum <a href="https://www.goodreads.com/book/show/7869.The_Bourne_Identity">g</a></li>
+  <li>Temple by Matthew Reilly <a href="https://www.goodreads.com/book/show/144792.Temple">g</a></li>
+  <li>Cat’s Cradle by Kurt Vonnegut Jr.<a href="https://www.goodreads.com/book/show/135479.Cat_s_Cradle">g</a></li>
+  <li>Slaughterhouse-Five by Kurt Vonnegut Jr. <a href="https://www.goodreads.com/book/show/4981.Slaughterhouse_Five">g</a></li>
+  <li>The Girl with the Dragon Tattoo by Stieg Larsson <a href="https://www.goodreads.com/book/show/2429135.The_Girl_with_the_Dragon_Tattoo">g</a></li>
+  <li>The Matarese Circle by Robert Ludlum <a href="https://www.goodreads.com/book/show/31231.The_Matarese_Circle">g</a></li>
+  <li>Murder on the Orient Express by Agatha Christie <a href="https://www.goodreads.com/book/show/16304.Murder_on_the_Orient_Express">g</a></li>
+  <li>The Mystery of Edwin Drood by Charles Dickens <a href="https://www.goodreads.com/book/show/329957.The_Mystery_of_Edwin_Drood">g</a></li>
+  <li>Deception Point by Dan Brown <a href="https://www.goodreads.com/book/show/976.Deception_Point">g</a></li>
+  <li>Last Man Standing by David Baldacci <a href="https://www.goodreads.com/book/show/14839.Last_Man_Standing">g</a></li>
+  <li>The Color Purple by Alice Walker <a href="https://www.goodreads.com/book/show/11486.The_Color_Purple">g</a></li>
+  <li>Raven’s Gate by Anthony Horowitz <a href="https://www.goodreads.com/review/list/16918417-rajath?ref=nav_mybooks&amp;shelf=read">g</a></li>
+  <li>Angels &amp; Demons by Dan Brown <a href="https://www.goodreads.com/book/show/960.Angels_Demons">g</a></li>
+  <li>The Pillars of the Earth by Ken Follett <a href="https://www.goodreads.com/book/show/5043.The_Pillars_of_the_Earth">g</a></li>
+  <li>Watchmen by Alan Moore <a href="https://www.goodreads.com/book/show/472331.Watchmen">g</a></li>
+  <li>Karvalo by K.P. Poornachandra Tejaswi <a href="https://www.goodreads.com/book/show/5298977-karvalo">g</a></li>
+  <li>Fire Ice by Clive Cussler <a href="https://www.goodreads.com/book/show/97595.Fire_Ice">g</a></li>
+  <li>War and Peace by Leo Tolstoy <a href="https://www.goodreads.com/book/show/656.War_and_Peace">g</a></li>
+  <li>Around the World in 80 Days by Jules Verne <a href="https://www.goodreads.com/book/show/54479.Around_the_World_in_Eighty_Days">g</a></li>
+</ul>
+
     
-    <div class="blog-list">
-      <img src="/images/blog/04-Kazakh-photoessay/feature-image.png" alt="Feature Image of the Blogpost" class="blog-roll-image">
-      <h3>A Week in Kazakhstan</h3>
-      <div class="caption">Explore my week-long adventure through Kazakhstan's stunning landscapes and vibrant culture, brought to life in 36 captivating photos.</div>
-      <p class="caption">21 Aug 2024</p>
-      <a class="secondary-button" id="secondary-text" href="/blog/kazakh-photoessay">Continue Reading</a>
-    </div>
-    
-    <div class="blog-list">
-      <img src="/images/blog/03-hyderabad-photoessay/feature-image.png" alt="Feature Image of the Blogpost" class="blog-roll-image">
-      <h3>A Weekend in Old Hyderabad with Fujifilm X100vi</h3>
-      <div class="caption">Explore Hyderabad's iconic spots like Charminar and Chowmahalla Palace through my photo essay, capturing the city's rich history and vibrant markets.</div>
-      <p class="caption">20 Jul 2024</p>
-      <a class="secondary-button" id="secondary-text" href="/blog/hyderabad-photoessay">Continue Reading</a>
-    </div>
-    
-    <div class="blog-list">
-      <img src="/images/blog/02-gundam/my-first-gundam.png" alt="Feature Image of the Blogpost" class="blog-roll-image">
-      <h3>Nu Beginnings - My First Gundam Build</h3>
-      <div class="caption">Join me on my first Gundam build adventure, exploring user experience, gamification, and hobbyist insights!</div>
-      <p class="caption">06 Jul 2024</p>
-      <a class="secondary-button" id="secondary-text" href="/blog/nu-gundam">Continue Reading</a>
-    </div>
-    
-    <div class="blog-list">
-      <img src="/images/blog/01-first-post/first-post.png" alt="Feature Image of the Blogpost" class="blog-roll-image">
-      <h3>My First Blog Post</h3>
-      <div class="caption">Hello world, bonjour, namaste, hola, hallo, or whatever—welcome to the first of many quirky musings on this blog!</div>
-      <p class="caption">24 Jun 2024</p>
-      <a class="secondary-button" id="secondary-text" href="/blog/firstpost">Continue Reading</a>
-    </div>
-    
-  </div>
 </div>
-</body>
 
-</html>
-  </div>
-  <div class="mailing-list">
-    <div class="mailing-card">
-      <form action="
-                https://buttondown.email/api/emails/embed-subscribe/rajath
-                " method="post" target="popupwindow" class="embeddable-buttondown-form">
-        <div class="mailing-list-top">
-          <h4>Get an email when I publish a new article</h4>
         </div>
-        <div class="mailing-list-bottom">
-          <input type="email" name="email" placeholder="you@example.com" />
-          <input type="hidden" value="1" name="embed" />
-          <input type="submit" value="Subscribe" />
+    </div>
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-content">
+        <h2 class="footer-logo">rajath.blog</h2>
+
+        <form class="newsletter-form" action="#" method="post">
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="https://twitter.com/rajath_c" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="/feed.xml">RSS</a>
+            </div>
+            <p class="copyright">© Rajath Chandrahasa</p>
         </div>
-      </form>
     </div>
-  </div>
-  <!-- <hr class="divider"> -->
-  <footer class="footer">
-    <div class="socials">
-      <a class="header-link" id="header-link" href="https://x.com/rajath_c" target="_blank">Twitter</a>
-      <a class="header-link" id="header-link" href="https://www.linkedin.com/in/rajath-chandrahasa/"
-        target="_blank">LinkedIn</a>
-      <a class="header-link" id="header-link" href="https://rajath.blog/feed.xml" target="_blank">RSS</a>
-    </div>
-    <div class="copyright">
-      ©️ Rajath Chandrahasa
-    </div>
-  </footer>
-
-  <script>
-    // JavaScript for updating the progress bar
-    window.addEventListener('scroll', function () {
-      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-      var clientHeight = document.documentElement.clientHeight || window.innerHeight;
-      var scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
-      document.getElementById('progress-bar').style.width = scrollPercentage + '%';
-    });
-
-    // Show or hide the back-to-top button based on scroll position
-    window.addEventListener('scroll', function () {
-      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
-      // Show the button after scrolling 400px
-      if (scrollTop > 400) {
-        document.getElementById('back-to-top').style.display = 'block';
-      } else {
-        document.getElementById('back-to-top').style.display = 'none';
-      }
-    });
-
-    // Scroll back to top when the button is clicked
-    document.getElementById('back-to-top').addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
+</footer>
 
 
-
+    <script src="/assets/js/theme-toggle.js"></script>
+    <script src="/assets/js/tabs.js"></script>
 </body>
-
 </html>

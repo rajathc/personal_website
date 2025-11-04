@@ -1,0 +1,19 @@
+<footer class="site-footer">
+    <div class="footer-content">
+        <h2 class="footer-logo">rajath.blog</h2>
+
+        <form class="newsletter-form" action="#" method="post">
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+            </div>
+            <p class="copyright">© {{ site.author }}</p>
+        </div>
+    </div>
+</footer>

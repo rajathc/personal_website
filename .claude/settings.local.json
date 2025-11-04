@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec jekyll:*)",
+      "mcp__figma-dev-mode-mcp-server__get_screenshot",
+      "Bash(bundle install:*)",
+      "WebFetch(domain:meri.garden)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(lsof:*)",
+      "Bash(pkill:*)",
+      "Bash(bundle info:*)",
+      "WebFetch(domain:erl.im)",
+      "Bash(mcp list-tools:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
