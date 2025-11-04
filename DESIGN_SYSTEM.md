@@ -67,7 +67,7 @@ This document outlines the design system for rajath.blog, including typography, 
 ```css
 --bg-color: #F5F5F5          /* Background */
 --text-color: #2C3444        /* Primary text */
---accent-color: #00BFA5      /* Caribbean Green - accent */
+--accent-color: #00CC99      /* Tech green - accent */
 --footer-bg: #1E2432         /* Footer background */
 --footer-text: #FFFFFF       /* Footer text */
 --card-bg: #FFFFFF           /* Card backgrounds */
@@ -80,7 +80,7 @@ This document outlines the design system for rajath.blog, including typography, 
 ```css
 --bg-color: #2C3444          /* Background */
 --text-color: #E8E8E8        /* Primary text */
---accent-color: #00BFA5      /* Caribbean Green - accent (consistent) */
+--accent-color: #00CC99      /* Tech green - accent (consistent) */
 --footer-bg: #1E2432         /* Footer background (same as light) */
 --footer-text: #FFFFFF       /* Footer text */
 --card-bg: #3A4252           /* Card backgrounds */
@@ -90,7 +90,8 @@ This document outlines the design system for rajath.blog, including typography, 
 ```
 
 ### Color Usage Guidelines
-- **Accent Color (#00BFA5)**: Use for active states, highlights, underlines, and CTAs
+- **Accent Color (#00CC99)**: Use for active states, highlights, underlines, and CTAs
+- **Text on accent backgrounds**: Use var(--text-color) for readable contrast (not white)
 - **Footer stays dark**: Footer uses dark theme colors (#1E2432) in both light and dark modes
 - **Opacity for subtle text**: 0.65 for metadata, 0.5 for hover states on summaries
 

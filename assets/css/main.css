@@ -41,7 +41,7 @@
 :root[data-theme="light"] {
     --bg-color: #F5F5F5;
     --text-color: #2C3444;
-    --accent-color: #00BFA5;
+    --accent-color: #00CC99;
     --footer-bg: #1E2432;
     --footer-text: #FFFFFF;
     --card-bg: #FFFFFF;
@@ -53,7 +53,7 @@
 :root[data-theme="dark"] {
     --bg-color: #2C3444;
     --text-color: #E8E8E8;
-    --accent-color: #00BFA5;
+    --accent-color: #00CC99;
     --footer-bg: #1E2432;
     --footer-text: #FFFFFF;
     --card-bg: #3A4252;
@@ -216,7 +216,7 @@ button:hover {
 
 .tab-button.active {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
     border-radius: 4px 4px 0 0;
 }
@@ -585,7 +585,7 @@ button:hover {
     transform: translateY(-50%);
     padding: 0.75rem 1.75rem;
     background-color: var(--accent-color);
-    color: white;
+    color: var(--text-color);
     border: none;
     border-radius: 8px;
     font-family: 'PP Neue Machina', sans-serif;
