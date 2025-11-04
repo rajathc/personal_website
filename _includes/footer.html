@@ -1,16 +1,18 @@
 <footer class="site-footer">
     <div class="footer-content">
-        <h2 class="footer-logo">rajath.blog</h2>
+        <a href="{{ '/' | relative_url }}" class="footer-logo-link">
+            <h2 class="footer-logo">rajath.blog</h2>
+        </a>
 
-        <form class="newsletter-form" action="#" method="post">
-            <input type="email" name="email" placeholder="you@example.com" required>
+        <form action="https://buttondown.com/api/emails/embed-subscribe/rajath" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/rajath', 'popupwindow')" class="newsletter-form">
+            <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
             <button type="submit">Subscribe</button>
         </form>
 
         <div class="footer-bottom">
             <div class="social-links">
-                <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a>
-                <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://x.com/rajath_c" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.linkedin.com/in/rajath-chandrahasa/" target="_blank" rel="noopener">LinkedIn</a>
                 <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
             </div>
             <p class="copyright">© {{ site.author }}</p>

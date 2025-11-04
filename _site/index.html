@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajath</title>
+    <title>Rajath Chandrahasa</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/assets/css/main.css">
     <script>
         // Set theme before page renders to avoid flash
@@ -19,7 +20,7 @@
     <main class="main-content">
         <header class="site-header">
     <a href="/" class="site-logo">
-        <img src="/favicon.svg" alt="Logo" class="crescent-icon" width="32" height="32">
+        <img src="/favicon.svg" alt="Logo" class="crescent-icon">
         <h1 class="site-title">Rajath Chandrahasa</h1>
     </a>
 </header>
@@ -273,17 +274,19 @@
 
     <footer class="site-footer">
     <div class="footer-content">
-        <h2 class="footer-logo">rajath.blog</h2>
+        <a href="/" class="footer-logo-link">
+            <h2 class="footer-logo">rajath.blog</h2>
+        </a>
 
-        <form class="newsletter-form" action="#" method="post">
-            <input type="email" name="email" placeholder="you@example.com" required>
+        <form action="https://buttondown.com/api/emails/embed-subscribe/rajath" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/rajath', 'popupwindow')" class="newsletter-form">
+            <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
             <button type="submit">Subscribe</button>
         </form>
 
         <div class="footer-bottom">
             <div class="social-links">
-                <a href="https://twitter.com/rajath_c" target="_blank" rel="noopener">Twitter</a>
-                <a href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://x.com/rajath_c" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.linkedin.com/in/rajath-chandrahasa/" target="_blank" rel="noopener">LinkedIn</a>
                 <a href="/feed.xml">RSS</a>
             </div>
             <p class="copyright">© Rajath Chandrahasa</p>
