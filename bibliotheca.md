@@ -1,153 +1,153 @@
 ---
 layout: page
 title: Bookshelf
-permalink: /bibliotheca/
+permalink: /bookshelf/
 ---
 
 ### Currently Reading
 
-- The Battle of the Labyrinth by Rick Riordan [g](https://www.goodreads.com/book/show/8130423-the-battle-of-the-labyrinth)
+- [**The Battle of the Labyrinth**](https://www.goodreads.com/book/show/8130423-the-battle-of-the-labyrinth) by Rick Riordan
 
 ### Favourite Books
 
-- East of Eden by John Steinbeck [g](https://www.goodreads.com/book/show/4406.East_of_Eden)
-- One Hundred Years of Solitude by Gabriel García Márquez [g](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude)
-- Dune Series by Frank Herbert [g](https://www.goodreads.com/series/45935-dune)
-- Annihilation of Caste by B.R. Ambedkar [g](https://www.goodreads.com/book/show/8521879-annihilation-of-caste)
-- Foundation by Issac Asimov [g](https://www.goodreads.com/book/show/29579.Foundation)
-- I Know Why the Caged Bird Sings by Maya Angelou [g](https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings)
-- The Stranger by Albert Camus [g](https://www.goodreads.com/book/show/49552.The_Stranger)
+- [**East of Eden**](https://www.goodreads.com/book/show/4406.East_of_Eden) by John Steinbeck
+- [**One Hundred Years of Solitude**](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
+- [**Dune Series**](https://www.goodreads.com/series/45935-dune) by Frank Herbert
+- [**Annihilation of Caste**](https://www.goodreads.com/book/show/8521879-annihilation-of-caste) by B.R. Ambedkar
+- [**Foundation**](https://www.goodreads.com/book/show/29579.Foundation) by Issac Asimov
+- [**I Know Why the Caged Bird Sings**](https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings) by Maya Angelou
+- [**The Stranger**](https://www.goodreads.com/book/show/49552.The_Stranger) by Albert Camus
 
 ### History
 
-- The Titan's Curse by Rick Riordan [g](https://www.goodreads.com/book/show/561456.The_Titan_s_Curse)
-- The Sea of Monsters by Rick Riordan [g](https://www.goodreads.com/book/show/40727118-the-sea-of-monsters)
-- Starter Villain by John Scalzi [g](https://www.goodreads.com/book/show/61885029-starter-villain)
-- Looking for Alaska by John Green [g](https://www.goodreads.com/book/show/99561.Looking_for_Alaska)
-- East of Eden by John Steinbeck [g](https://www.goodreads.com/book/show/4406.East_of_Eden)
-- The Lightning Thief by Rick Riordan [g](https://www.goodreads.com/book/show/28187.The_Lightning_Thief)
-- Ender's Game by Orson Scott Card [g](https://www.goodreads.com/book/show/375802.Ender_s_Game)
-- The Art of UNIX Programming by Eric S. Raymond [g](https://www.goodreads.com/book/show/104745.The_Art_of_UNIX_Programming?)
-- Deep Work by Cal Newport [g](https://www.goodreads.com/book/show/25744928-deep-work)
-- The Twisted Ones by T. Kingfisher [g](https://www.goodreads.com/book/show/42527596-the-twisted-ones)
-- Sakina's Kiss by Vivek Shanbhag [g](https://www.goodreads.com/book/show/198534114-sakina-s-kiss)
-- Dune Messiah by Frank Herbert [g](https://www.goodreads.com/book/show/44492285-dune-messiah)
-- Dune by Frank Herbert [g](https://www.goodreads.com/book/show/44767458-dune)
-- Lord of Light by Roger Zelazny [g](https://www.goodreads.com/book/show/13821.Lord_of_Light)
-- The Death of Ivan Ilych by Leo Tolstoy [g](https://www.goodreads.com/book/show/18386.The_Death_of_Ivan_Ilych)
-- The Great Train Journey by Ruskin Bond [g](https://www.goodreads.com/book/show/41092454-the-great-train-journey)
-- The A.B.C Murders by Agatha Christie [g](https://www.goodreads.com/book/show/16322.The_A_B_C_Murders)
-- And Then There Were None by Agatha Christie [g](https://www.goodreads.com/book/show/16299.And_Then_There_Were_None)
-- Till We Have Faces by C.S. Lewis [g](https://www.goodreads.com/book/show/17343.Till_We_Have_Faces)
-- In Patagonia by Bruce Chatwin [g](https://www.goodreads.com/book/show/79909.In_Patagonia)
-- Pachinko by Min Jin Lee [g](https://www.goodreads.com/book/show/34051011-pachinko)
-- The Storm Runner by J.C. Cervantes [g](https://www.goodreads.com/book/show/34966353-the-storm-runner)
-- The Devil in the White City by Erik Larson [g](https://www.goodreads.com/book/show/397483.The_Devil_in_the_White_City)
-- 4 Kids Walk Into A Bank by Mattew Rosenberg [g](https://www.goodreads.com/book/show/36260018-4-kids-walk-into-a-bank)
-- Lord of the Flies by William Golding [g](https://www.goodreads.com/book/show/7624.Lord_of_the_Flies)
-- Fun Home: A Family Tragicomic by Alison Bechdel [g](https://www.goodreads.com/book/show/38990.Fun_Home)
-- Dalit Panthers: An Authoritative History by J.V. Pawar [g](https://www.goodreads.com/book/show/38209845-dalit-panthers)
-- Harry Potter and the Sorcerer's Stone by J.K. Rowling [g](https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone)
-- Death on the Nile by Agatha Christie [g](https://www.goodreads.com/book/show/131359.Death_on_the_Nile)
-- Nimona by N.D. Stevenson [g](https://www.goodreads.com/book/show/19351043-nimona)
-- Art Before Breakfast by Danny Gregory [g](https://www.goodreads.com/book/show/22553690-art-before-breakfast)
-- A Flowering Tree and Other Oral Tales from India by A.K. Ramanujan [g](https://www.goodreads.com/book/show/1335615.A_Flowering_Tree_and_Other_Oral_Tales_from_India)
-- Atomic Habits by James Clear [g](https://www.goodreads.com/book/show/40121378-atomic-habits)
-- Red Rising by Pierce Brown [g](https://www.goodreads.com/book/show/15839976-red-rising)
-- Scary Stories to Tell in the Dark by Alvin Schwartz [g](https://www.goodreads.com/book/show/1325218.Scary_Stories_to_Tell_in_the_Dark)
-- The E-myth Revisited by Michael E. Gerber [g](https://www.goodreads.com/book/show/81948.The_E_myth_Revisited)
-- Who was Shivaji? by Govind Pansare [g](https://www.goodreads.com/book/show/26822891-who-was-shivaji)
-- Tintin in the Land of the Soviets by Hergé [g](https://www.goodreads.com/book/show/1215544.The_Adventures_of_Tintin_Volume_1)
-- The Princess Bride by William Goldman [g](https://www.goodreads.com/book/show/21787.The_Princess_Bride)
-- Steal Like an Artist by Austin Kleon [g](https://www.goodreads.com/book/show/13099738-steal-like-an-artist)
-- The Railway Children by E. Nesbit [g](https://www.goodreads.com/book/show/18736049-the-railway-children)
-- The Cat in the Hat by Dr. Seuss [g](https://www.goodreads.com/book/show/233093.The_Cat_in_the_Hat)
-- Abigail and the Snowman by Roger Langridge [g](https://www.goodreads.com/book/show/29238792-abigail-and-the-snowman)
-- Daytripper by Fábio Moon [g](https://www.goodreads.com/book/show/8477057-daytripper)
-- Wytches by Scott Snyder [g](https://www.goodreads.com/book/show/25243735-wytches-volume-1)
-- Call Me By Your Name by André Aciman [g](https://www.goodreads.com/book/show/36336078-call-me-by-your-name)
-- Gender Queer by Maia Kobabe [g](https://www.goodreads.com/book/show/42837514-gender-queer)
-- The Toll by Neal Shusterman [g](https://www.goodreads.com/book/show/43822024-the-toll)
-- The Importance of Being Earnest by Oscar Wilde [g](https://www.goodreads.com/book/show/92303.The_Importance_of_Being_Earnest)
-- Saga, Book Two by Brian K. Vaughan [g](https://www.goodreads.com/book/show/32926680-saga-book-two)
-- Thunderhead by Neal Shusterman [g](https://www.goodreads.com/book/show/33555224-thunderhead)
-- Invisible Cities by Italo Calvino [g](https://www.goodreads.com/book/show/9809.Invisible_Cities)
-- Notes from Underground by Fyodor Dostoevsky [g](https://www.goodreads.com/book/show/49455.Notes_from_Underground)
-- Understanding Comics: The Invisible Art by Scott McCloud [g](https://www.goodreads.com/book/show/102920.Understanding_Comics)
-- Uzumaki by Junji Ito [g](https://www.goodreads.com/book/show/17837762-uzumaki)
-- I Know Why the Caged Bird Sings by Maya Angelou [g](https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings)
-- The Sirens of Titan by Kurt Vonnegut Jr. [g](https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan)
-- Saga, Book One by Brian K. Vaughan [g](https://www.goodreads.com/book/show/22078240-saga-book-one)
-- From Hell by Alan Moore [g](https://www.goodreads.com/book/show/23529.From_Hell)
-- We Have Always Lived in the Castle by Shirley Jackson [g](https://www.goodreads.com/book/show/89724.We_Have_Always_Lived_in_the_Castle)
-- Art Matters by Neil Gaiman [g](https://www.goodreads.com/book/show/40090596-art-matters)
-- Matilda by Roald Dahl [g](https://www.goodreads.com/book/show/39988.Matilda)
-- Someone Who Will Love You in All Your Damaged Glory by Raphael Bob-Waksberg [g](https://www.goodreads.com/book/show/41949311-someone-who-will-love-you-in-all-your-damaged-glory)
-- Ashe Warmother Odin by Austin Shafer [g](https://www.goodreads.com/book/show/45837770-league-of-legends)
-- League of Legends: Lux by John O'Bryan [g](https://www.goodreads.com/book/show/48725759-league-of-legends)
-- Persepolis 2 by Marjane Satrapi [g](https://www.goodreads.com/book/show/9517.Persepolis_2)
-- Persepolis by Marjane Satrapi [g](https://www.goodreads.com/book/show/9516.Persepolis)
-- The Jungle Book by Rudyard Kipling [g](https://www.goodreads.com/book/show/77270.The_Jungle_Book)
-- One Hundred Years of Solitude by Gabriel García Márquez [g](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude)
-- The Night Circus by Erin Morgenstern [g](https://www.goodreads.com/book/show/9361589-the-night-circus)
-- Funny Boy by Shyam Selvadurai [g](https://www.goodreads.com/book/show/1075662.Funny_Boy)
-- Love Story by Erich Segal [g](https://www.goodreads.com/book/show/73968.Love_Story)
-- Aristotle and Dante Discover the Secrets of the Universe by Benjamin Alire Sáenz [g](https://www.goodreads.com/book/show/12000020-aristotle-and-dante-discover-the-secrets-of-the-universe)
-- Ashoka: the Search for India's Lost Emperor by Charles Allen [g](https://www.goodreads.com/book/show/13220954-ashoka)
-- Stardust by Neil Gaiman [g](https://www.goodreads.com/book/show/16793.Stardust)
-- Beloved by Toni Morrison [g](https://www.goodreads.com/book/show/6149.Beloved)
-- Scythe by Neal Shusterman [g](https://www.goodreads.com/book/show/28954189-scythe)
-- Howl's Moving Castle by Diana Wynne Jones [g](https://www.goodreads.com/book/show/6294.Howl_s_Moving_Castle)
-- Battle Angel Alita by Yukito Kishiro [g](https://www.goodreads.com/book/show/844422.Battle_Angel_Alita_Vol_1)
-- Sea of Poppies by Amitav Ghosh [g](https://www.goodreads.com/book/show/1330324.Sea_of_Poppies)
-- An Artist of the Floating World by Kazuo Ishiguro [g](https://www.goodreads.com/book/show/28922.An_Artist_of_the_Floating_World)
-- The Elephant's Journey by José Saramago [g](https://www.goodreads.com/book/show/7721933-the-elephant-s-journey)
-- Under The Jaguar Sun by Italo Calvino [g](https://www.goodreads.com/book/show/103273.Under_The_Jaguar_Sun)
-- Of Mice and Men by John Steinbeck [g](https://www.goodreads.com/book/show/890.Of_Mice_and_Men)
-- Ghachar Ghochar by Vivek Shanbhag [g](https://www.goodreads.com/book/show/30267604-ghachar-ghochar)
-- Akira by Katsuhiro Otomo [g](https://www.goodreads.com/series/57444-akira-6-volumes)
-- The Little Prince by Antoine de Saint-Exupéry [g](https://www.goodreads.com/book/show/157993.The_Little_Prince)
-- Ready Player One by Ernest Cline [g](https://www.goodreads.com/book/show/9969571-ready-player-one)
-- The Sandman by Neil Gaiman [g](https://www.goodreads.com/series/40372-the-sandman)
-- Maus Series by Art Spiegelman [g](https://www.goodreads.com/series/50145-maus)
-- The Facts In The Case Of The Departure of Miss Finch by Neil Gaiman [g](https://www.goodreads.com/book/show/16794.The_Facts_In_The_Case_Of_The_Departure_Of_Miss_Finch)
-- I Killed Adolf Hitler by Jason [g](https://www.goodreads.com/book/show/775864.I_Killed_Adolf_Hitler)
-- The Collected Essex County by Jeff Lemire [g](https://www.goodreads.com/book/show/6096829-the-collected-essex-county)
-- Origin by Dan Brown [g](https://www.goodreads.com/book/show/32307358-origin)
-- Star Trek II: The Wrath of Khan by Vonda N. McIntyre [g](https://www.goodreads.com/book/show/77349.Star_Trek_II)
-- The Trial by Franz Kafka [g](https://www.goodreads.com/book/show/29077666-the-trial)
-- The Art of War by Sun Tzu [g](https://www.goodreads.com/book/show/28178146-the-art-of-war)
-- The Girl on the Train by Paula Hawkins [g](https://www.goodreads.com/book/show/22557272-the-girl-on-the-train)
-- Norwegian Wood by Haruki Murakami [g](https://www.goodreads.com/book/show/11297.Norwegian_Wood)
-- A Clockwork Orange by Anthony Burgess [g](https://www.goodreads.com/book/show/227463.A_Clockwork_Orange)
-- The Bourne Ultimatum by Robert Ludlum [g](https://www.goodreads.com/book/show/31259.The_Bourne_Ultimatum)
-- Dark Watch by Clive Cussler [g](https://www.goodreads.com/book/show/41695.Dark_Watch)
-- Ghost World by Daniel Clowes [g](https://www.goodreads.com/book/show/62953.Ghost_World)
-- The Minority Report by Philip K. Dick [g](https://www.goodreads.com/book/show/581125.The_Minority_Report)
-- Fight Club by Chuck Palahniuk [g](https://www.goodreads.com/book/show/5759.Fight_Club)
-- Batman: A Death in the Family by Jim Starlin [g](https://www.goodreads.com/book/show/107032.Batman)
-- The Client by John Grisham [g](https://www.goodreads.com/book/show/5359.The_Client)
-- 1984 by George Orwell [g](https://www.goodreads.com/book/show/5470.1984)
-- Inca Gold by Clive Cussler [g](https://www.goodreads.com/book/show/198332.Inca_Gold)
-- 2001: A Space Odyssey by Arthur C. Clarke [g](https://www.goodreads.com/book/show/70535.2001)
-- The Godfather by Mario Puzo [g](https://www.goodreads.com/book/show/22034.The_Godfather)
-- N or M? by Agatha Christie [g](https://www.goodreads.com/book/show/102313.N_or_M_)
-- The Bourne Identity by Robert Ludlum [g](https://www.goodreads.com/book/show/7869.The_Bourne_Identity)
-- Temple by Matthew Reilly [g](https://www.goodreads.com/book/show/144792.Temple)
-- Cat's Cradle by Kurt Vonnegut Jr.[g](https://www.goodreads.com/book/show/135479.Cat_s_Cradle)
-- Slaughterhouse-Five by Kurt Vonnegut Jr. [g](https://www.goodreads.com/book/show/4981.Slaughterhouse_Five)
-- The Girl with the Dragon Tattoo by Stieg Larsson [g](https://www.goodreads.com/book/show/2429135.The_Girl_with_the_Dragon_Tattoo)
-- The Matarese Circle by Robert Ludlum [g](https://www.goodreads.com/book/show/31231.The_Matarese_Circle)
-- Murder on the Orient Express by Agatha Christie [g](https://www.goodreads.com/book/show/16304.Murder_on_the_Orient_Express)
-- The Mystery of Edwin Drood by Charles Dickens [g](https://www.goodreads.com/book/show/329957.The_Mystery_of_Edwin_Drood)
-- Deception Point by Dan Brown [g](https://www.goodreads.com/book/show/976.Deception_Point)
-- Last Man Standing by David Baldacci [g](https://www.goodreads.com/book/show/14839.Last_Man_Standing)
-- The Color Purple by Alice Walker [g](https://www.goodreads.com/book/show/11486.The_Color_Purple)
-- Raven's Gate by Anthony Horowitz [g](https://www.goodreads.com/review/list/16918417-rajath?ref=nav_mybooks&shelf=read)
-- Angels & Demons by Dan Brown [g](https://www.goodreads.com/book/show/960.Angels_Demons)
-- The Pillars of the Earth by Ken Follett [g](https://www.goodreads.com/book/show/5043.The_Pillars_of_the_Earth)
-- Watchmen by Alan Moore [g](https://www.goodreads.com/book/show/472331.Watchmen)
-- Karvalo by K.P. Poornachandra Tejaswi [g](https://www.goodreads.com/book/show/5298977-karvalo)
-- Fire Ice by Clive Cussler [g](https://www.goodreads.com/book/show/97595.Fire_Ice)
-- War and Peace by Leo Tolstoy [g](https://www.goodreads.com/book/show/656.War_and_Peace)
-- Around the World in 80 Days by Jules Verne [g](https://www.goodreads.com/book/show/54479.Around_the_World_in_Eighty_Days)
+- [**The Titan's Curse**](https://www.goodreads.com/book/show/561456.The_Titan_s_Curse) by Rick Riordan
+- [**The Sea of Monsters**](https://www.goodreads.com/book/show/40727118-the-sea-of-monsters) by Rick Riordan
+- [**Starter Villain**](https://www.goodreads.com/book/show/61885029-starter-villain) by John Scalzi
+- [**Looking for Alaska**](https://www.goodreads.com/book/show/99561.Looking_for_Alaska) by John Green
+- [**East of Eden**](https://www.goodreads.com/book/show/4406.East_of_Eden) by John Steinbeck
+- [**The Lightning Thief**](https://www.goodreads.com/book/show/28187.The_Lightning_Thief) by Rick Riordan
+- [**Ender's Game**](https://www.goodreads.com/book/show/375802.Ender_s_Game) by Orson Scott Card
+- [**The Art of UNIX Programming**](https://www.goodreads.com/book/show/104745.The_Art_of_UNIX_Programming?) by Eric S. Raymond
+- [**Deep Work**](https://www.goodreads.com/book/show/25744928-deep-work) by Cal Newport
+- [**The Twisted Ones**](https://www.goodreads.com/book/show/42527596-the-twisted-ones) by T. Kingfisher
+- [**Sakina's Kiss**](https://www.goodreads.com/book/show/198534114-sakina-s-kiss) by Vivek Shanbhag
+- [**Dune Messiah**](https://www.goodreads.com/book/show/44492285-dune-messiah) by Frank Herbert
+- [**Dune**](https://www.goodreads.com/book/show/44767458-dune) by Frank Herbert
+- [**Lord of Light**](https://www.goodreads.com/book/show/13821.Lord_of_Light) by Roger Zelazny
+- [**The Death of Ivan Ilych**](https://www.goodreads.com/book/show/18386.The_Death_of_Ivan_Ilych) by Leo Tolstoy
+- [**The Great Train Journey**](https://www.goodreads.com/book/show/41092454-the-great-train-journey) by Ruskin Bond
+- [**The A.B.C Murders**](https://www.goodreads.com/book/show/16322.The_A_B_C_Murders) by Agatha Christie
+- [**And Then There Were None**](https://www.goodreads.com/book/show/16299.And_Then_There_Were_None) by Agatha Christie
+- [**Till We Have Faces**](https://www.goodreads.com/book/show/17343.Till_We_Have_Faces) by C.S. Lewis
+- [**In Patagonia**](https://www.goodreads.com/book/show/79909.In_Patagonia) by Bruce Chatwin
+- [**Pachinko**](https://www.goodreads.com/book/show/34051011-pachinko) by Min Jin Lee
+- [**The Storm Runner**](https://www.goodreads.com/book/show/34966353-the-storm-runner) by J.C. Cervantes
+- [**The Devil in the White City**](https://www.goodreads.com/book/show/397483.The_Devil_in_the_White_City) by Erik Larson
+- [**4 Kids Walk Into A Bank**](https://www.goodreads.com/book/show/36260018-4-kids-walk-into-a-bank) by Mattew Rosenberg
+- [**Lord of the Flies**](https://www.goodreads.com/book/show/7624.Lord_of_the_Flies) by William Golding
+- [**Fun Home: A Family Tragicomic**](https://www.goodreads.com/book/show/38990.Fun_Home) by Alison Bechdel
+- [**Dalit Panthers: An Authoritative History**](https://www.goodreads.com/book/show/38209845-dalit-panthers) by J.V. Pawar
+- [**Harry Potter and the Sorcerer's Stone**](https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone) by J.K. Rowling
+- [**Death on the Nile**](https://www.goodreads.com/book/show/131359.Death_on_the_Nile) by Agatha Christie
+- [**Nimona**](https://www.goodreads.com/book/show/19351043-nimona) by N.D. Stevenson
+- [**Art Before Breakfast**](https://www.goodreads.com/book/show/22553690-art-before-breakfast) by Danny Gregory
+- [**A Flowering Tree and Other Oral Tales from India**](https://www.goodreads.com/book/show/1335615.A_Flowering_Tree_and_Other_Oral_Tales_from_India) by A.K. Ramanujan
+- [**Atomic Habits**](https://www.goodreads.com/book/show/40121378-atomic-habits) by James Clear
+- [**Red Rising**](https://www.goodreads.com/book/show/15839976-red-rising) by Pierce Brown
+- [**Scary Stories to Tell in the Dark**](https://www.goodreads.com/book/show/1325218.Scary_Stories_to_Tell_in_the_Dark) by Alvin Schwartz
+- [**The E-myth Revisited**](https://www.goodreads.com/book/show/81948.The_E_myth_Revisited) by Michael E. Gerber
+- [**Who was Shivaji?**](https://www.goodreads.com/book/show/26822891-who-was-shivaji) by Govind Pansare
+- [**Tintin in the Land of the Soviets**](https://www.goodreads.com/book/show/1215544.The_Adventures_of_Tintin_Volume_1) by Hergé
+- [**The Princess Bride**](https://www.goodreads.com/book/show/21787.The_Princess_Bride) by William Goldman
+- [**Steal Like an Artist**](https://www.goodreads.com/book/show/13099738-steal-like-an-artist) by Austin Kleon
+- [**The Railway Children**](https://www.goodreads.com/book/show/18736049-the-railway-children) by E. Nesbit
+- [**The Cat in the Hat**](https://www.goodreads.com/book/show/233093.The_Cat_in_the_Hat) by Dr. Seuss
+- [**Abigail and the Snowman**](https://www.goodreads.com/book/show/29238792-abigail-and-the-snowman) by Roger Langridge
+- [**Daytripper**](https://www.goodreads.com/book/show/8477057-daytripper) by Fábio Moon
+- [**Wytches**](https://www.goodreads.com/book/show/25243735-wytches-volume-1) by Scott Snyder
+- [**Call Me By Your Name**](https://www.goodreads.com/book/show/36336078-call-me-by-your-name) by André Aciman
+- [**Gender Queer**](https://www.goodreads.com/book/show/42837514-gender-queer) by Maia Kobabe
+- [**The Toll**](https://www.goodreads.com/book/show/43822024-the-toll) by Neal Shusterman
+- [**The Importance of Being Earnest**](https://www.goodreads.com/book/show/92303.The_Importance_of_Being_Earnest) by Oscar Wilde
+- [**Saga, Book Two**](https://www.goodreads.com/book/show/32926680-saga-book-two) by Brian K. Vaughan
+- [**Thunderhead**](https://www.goodreads.com/book/show/33555224-thunderhead) by Neal Shusterman
+- [**Invisible Cities**](https://www.goodreads.com/book/show/9809.Invisible_Cities) by Italo Calvino
+- [**Notes from Underground**](https://www.goodreads.com/book/show/49455.Notes_from_Underground) by Fyodor Dostoevsky
+- [**Understanding Comics: The Invisible Art**](https://www.goodreads.com/book/show/102920.Understanding_Comics) by Scott McCloud
+- [**Uzumaki**](https://www.goodreads.com/book/show/17837762-uzumaki) by Junji Ito
+- [**I Know Why the Caged Bird Sings**](https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings) by Maya Angelou
+- [**The Sirens of Titan**](https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan) by Kurt Vonnegut Jr.
+- [**Saga, Book One**](https://www.goodreads.com/book/show/22078240-saga-book-one) by Brian K. Vaughan
+- [**From Hell**](https://www.goodreads.com/book/show/23529.From_Hell) by Alan Moore
+- [**We Have Always Lived in the Castle**](https://www.goodreads.com/book/show/89724.We_Have_Always_Lived_in_the_Castle) by Shirley Jackson
+- [**Art Matters**](https://www.goodreads.com/book/show/40090596-art-matters) by Neil Gaiman
+- [**Matilda**](https://www.goodreads.com/book/show/39988.Matilda) by Roald Dahl
+- [**Someone Who Will Love You in All Your Damaged Glory**](https://www.goodreads.com/book/show/41949311-someone-who-will-love-you-in-all-your-damaged-glory) by Raphael Bob-Waksberg
+- [**Ashe Warmother Odin**](https://www.goodreads.com/book/show/45837770-league-of-legends) by Austin Shafer
+- [**League of Legends: Lux**](https://www.goodreads.com/book/show/48725759-league-of-legends) by John O'Bryan
+- [**Persepolis 2**](https://www.goodreads.com/book/show/9517.Persepolis_2) by Marjane Satrapi
+- [**Persepolis**](https://www.goodreads.com/book/show/9516.Persepolis) by Marjane Satrapi
+- [**The Jungle Book**](https://www.goodreads.com/book/show/77270.The_Jungle_Book) by Rudyard Kipling
+- [**One Hundred Years of Solitude**](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
+- [**The Night Circus**](https://www.goodreads.com/book/show/9361589-the-night-circus) by Erin Morgenstern
+- [**Funny Boy**](https://www.goodreads.com/book/show/1075662.Funny_Boy) by Shyam Selvadurai
+- [**Love Story**](https://www.goodreads.com/book/show/73968.Love_Story) by Erich Segal
+- [**Aristotle and Dante Discover the Secrets of the Universe**](https://www.goodreads.com/book/show/12000020-aristotle-and-dante-discover-the-secrets-of-the-universe) by Benjamin Alire Sáenz
+- [**Ashoka: the Search for India's Lost Emperor**](https://www.goodreads.com/book/show/13220954-ashoka) by Charles Allen
+- [**Stardust**](https://www.goodreads.com/book/show/16793.Stardust) by Neil Gaiman
+- [**Beloved**](https://www.goodreads.com/book/show/6149.Beloved) by Toni Morrison
+- [**Scythe**](https://www.goodreads.com/book/show/28954189-scythe) by Neal Shusterman
+- [**Howl's Moving Castle**](https://www.goodreads.com/book/show/6294.Howl_s_Moving_Castle) by Diana Wynne Jones
+- [**Battle Angel Alita**](https://www.goodreads.com/book/show/844422.Battle_Angel_Alita_Vol_1) by Yukito Kishiro
+- [**Sea of Poppies**](https://www.goodreads.com/book/show/1330324.Sea_of_Poppies) by Amitav Ghosh
+- [**An Artist of the Floating World**](https://www.goodreads.com/book/show/28922.An_Artist_of_the_Floating_World) by Kazuo Ishiguro
+- [**The Elephant's Journey**](https://www.goodreads.com/book/show/7721933-the-elephant-s-journey) by José Saramago
+- [**Under The Jaguar Sun**](https://www.goodreads.com/book/show/103273.Under_The_Jaguar_Sun) by Italo Calvino
+- [**Of Mice and Men**](https://www.goodreads.com/book/show/890.Of_Mice_and_Men) by John Steinbeck
+- [**Ghachar Ghochar**](https://www.goodreads.com/book/show/30267604-ghachar-ghochar) by Vivek Shanbhag
+- [**Akira**](https://www.goodreads.com/series/57444-akira-6-volumes) by Katsuhiro Otomo
+- [**The Little Prince**](https://www.goodreads.com/book/show/157993.The_Little_Prince) by Antoine de Saint-Exupéry
+- [**Ready Player One**](https://www.goodreads.com/book/show/9969571-ready-player-one) by Ernest Cline
+- [**The Sandman**](https://www.goodreads.com/series/40372-the-sandman) by Neil Gaiman
+- [**Maus Series**](https://www.goodreads.com/series/50145-maus) by Art Spiegelman
+- [**The Facts In The Case Of The Departure of Miss Finch**](https://www.goodreads.com/book/show/16794.The_Facts_In_The_Case_Of_The_Departure_Of_Miss_Finch) by Neil Gaiman
+- [**I Killed Adolf Hitler**](https://www.goodreads.com/book/show/775864.I_Killed_Adolf_Hitler) by Jason
+- [**The Collected Essex County**](https://www.goodreads.com/book/show/6096829-the-collected-essex-county) by Jeff Lemire
+- [**Origin**](https://www.goodreads.com/book/show/32307358-origin) by Dan Brown
+- [**Star Trek II: The Wrath of Khan**](https://www.goodreads.com/book/show/77349.Star_Trek_II) by Vonda N. McIntyre
+- [**The Trial**](https://www.goodreads.com/book/show/29077666-the-trial) by Franz Kafka
+- [**The Art of War**](https://www.goodreads.com/book/show/28178146-the-art-of-war) by Sun Tzu
+- [**The Girl on the Train**](https://www.goodreads.com/book/show/22557272-the-girl-on-the-train) by Paula Hawkins
+- [**Norwegian Wood**](https://www.goodreads.com/book/show/11297.Norwegian_Wood) by Haruki Murakami
+- [**A Clockwork Orange**](https://www.goodreads.com/book/show/227463.A_Clockwork_Orange) by Anthony Burgess
+- [**The Bourne Ultimatum**](https://www.goodreads.com/book/show/31259.The_Bourne_Ultimatum) by Robert Ludlum
+- [**Dark Watch**](https://www.goodreads.com/book/show/41695.Dark_Watch) by Clive Cussler
+- [**Ghost World**](https://www.goodreads.com/book/show/62953.Ghost_World) by Daniel Clowes
+- [**The Minority Report**](https://www.goodreads.com/book/show/581125.The_Minority_Report) by Philip K. Dick
+- [**Fight Club**](https://www.goodreads.com/book/show/5759.Fight_Club) by Chuck Palahniuk
+- [**Batman: A Death in the Family**](https://www.goodreads.com/book/show/107032.Batman) by Jim Starlin
+- [**The Client**](https://www.goodreads.com/book/show/5359.The_Client) by John Grisham
+- [**1984**](https://www.goodreads.com/book/show/5470.1984) by George Orwell
+- [**Inca Gold**](https://www.goodreads.com/book/show/198332.Inca_Gold) by Clive Cussler
+- [**2001: A Space Odyssey**](https://www.goodreads.com/book/show/70535.2001) by Arthur C. Clarke
+- [**The Godfather**](https://www.goodreads.com/book/show/22034.The_Godfather) by Mario Puzo
+- [**N or M?**](https://www.goodreads.com/book/show/102313.N_or_M_) by Agatha Christie
+- [**The Bourne Identity**](https://www.goodreads.com/book/show/7869.The_Bourne_Identity) by Robert Ludlum
+- [**Temple**](https://www.goodreads.com/book/show/144792.Temple) by Matthew Reilly
+- [**Cat's Cradle**](https://www.goodreads.com/book/show/135479.Cat_s_Cradle) by Kurt Vonnegut Jr.
+- [**Slaughterhouse-Five**](https://www.goodreads.com/book/show/4981.Slaughterhouse_Five) by Kurt Vonnegut Jr.
+- [**The Girl with the Dragon Tattoo**](https://www.goodreads.com/book/show/2429135.The_Girl_with_the_Dragon_Tattoo) by Stieg Larsson
+- [**The Matarese Circle**](https://www.goodreads.com/book/show/31231.The_Matarese_Circle) by Robert Ludlum
+- [**Murder on the Orient Express**](https://www.goodreads.com/book/show/16304.Murder_on_the_Orient_Express) by Agatha Christie
+- [**The Mystery of Edwin Drood**](https://www.goodreads.com/book/show/329957.The_Mystery_of_Edwin_Drood) by Charles Dickens
+- [**Deception Point**](https://www.goodreads.com/book/show/976.Deception_Point) by Dan Brown
+- [**Last Man Standing**](https://www.goodreads.com/book/show/14839.Last_Man_Standing) by David Baldacci
+- [**The Color Purple**](https://www.goodreads.com/book/show/11486.The_Color_Purple) by Alice Walker
+- [**Raven's Gate**](https://www.goodreads.com/review/list/16918417-rajath?ref=nav_mybooks&shelf=read) by Anthony Horowitz
+- [**Angels & Demons**](https://www.goodreads.com/book/show/960.Angels_Demons) by Dan Brown
+- [**The Pillars of the Earth**](https://www.goodreads.com/book/show/5043.The_Pillars_of_the_Earth) by Ken Follett
+- [**Watchmen**](https://www.goodreads.com/book/show/472331.Watchmen) by Alan Moore
+- [**Karvalo**](https://www.goodreads.com/book/show/5298977-karvalo) by K.P. Poornachandra Tejaswi
+- [**Fire Ice**](https://www.goodreads.com/book/show/97595.Fire_Ice) by Clive Cussler
+- [**War and Peace**](https://www.goodreads.com/book/show/656.War_and_Peace) by Leo Tolstoy
+- [**Around the World in 80 Days**](https://www.goodreads.com/book/show/54479.Around_the_World_in_Eighty_Days) by Jules Verne
