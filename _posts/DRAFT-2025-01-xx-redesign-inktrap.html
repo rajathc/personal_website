@@ -1,0 +1,146 @@
+---
+layout: post
+title: Redesigning rajath.blog - A Love Letter to Inktrap Fonts
+permalink: writings/redesign-inktrap
+image: /images/writings/xx-redesign/feature-image.png
+description: Why I rebuilt my blog around brutalist typography and fell in love with inktrap fonts in the process.
+date: 2025-01-XX 10:30:00 +0530
+keywords: "Rajath, Rajath Chandrahasa, blog redesign, web design, typography, inktrap fonts, PP Neue Machina, Sligoil, brutalist design, type design, font pairing, web typography, design system, Jekyll, blog refresh, Grilli Type, responsive typography, ink traps, display fonts, monospace fonts"
+---
+
+<p>After nearly six months of running this blog, I decided it was time for a redesign. Not because the old design was broken, but because I wanted to build something that truly reflected how I think about design: <strong>typography first, everything else second</strong>.</p>
+
+<div class="image-container">
+    <img class="blog-image" alt="before and after comparison of the blog redesign" src="/images/writings/xx-redesign/feature-image.png"/>
+</div>
+
+<p>The result? A brutalist, typography-driven design powered by two extraordinary typefaces: <a href="https://www.grillitype.com/typeface/gt-pressura" target="_blank">PP Neue Machina</a> and <a href="https://velvetyne.fr/fonts/sligoil/" target="_blank">Sligoil</a>. But more importantly, this redesign became my gateway into the fascinating world of <strong>inktrap fonts</strong>.</p>
+
+<h2 id="why-redesign">Why Redesign?</h2>
+
+<p>My first design was functional. Clean, minimal, readable. But it felt... safe. Too safe. As someone who works in tech as a Product Manager but also considers themselves a creative, I wanted something that felt more intentional. Something that made a statement.</p>
+
+<p>I started with a simple question: <em>What if typography wasn't just part of the design, but the entire design?</em></p>
+
+<p>This led me down a rabbit hole of brutalist web design, Swiss typography, and eventually, to the discovery that would reshape my entire approach: inktrap fonts.</p>
+
+<h2 id="discovering-inktraps">Discovering Inktrap Fonts</h2>
+
+<p>Let me explain what ink traps are, because they're both technically brilliant and aesthetically fascinating.</p>
+
+<p>Originally, ink traps were functional solutions to a printing problem. When printing small text at high speeds, ink would pool at the joints where strokes meet, causing letters to blob together and become illegible. Type designers carved out small notches at these intersections—ink traps—to give the ink somewhere to go.</p>
+
+<div class="image-container">
+    <img class="blog-image" alt="close-up diagram showing ink traps in letterforms" src="/images/writings/xx-redesign/ink-trap-explanation.png"/>
+    <p class="caption">Ink traps: functional notches that became a design feature</p>
+</div>
+
+<p>Here's the twist: we don't really need ink traps anymore. Modern printing technology and digital screens have made this problem obsolete. But designers kept them anyway, transforming a functional necessity into a distinctive aesthetic choice.</p>
+
+<p><strong>Ink traps became style.</strong></p>
+
+<p>When you scale inktrap fonts to display sizes—think big headlines—those little notches become visible design features. They add character, tension, and a kind of industrial beauty that feels both technical and human. They hint at craft, at the history of printing, at problem-solving through design.</p>
+
+<p>And I absolutely love that.</p>
+
+<h2 id="pp-neue-machina">PP Neue Machina: The Display Workhorse</h2>
+
+<p>For my display font, I chose <a href="https://www.grillitype.com/typeface/gt-pressura" target="_blank">PP Neue Machina</a> from <a href="https://pangrampangram.com/" target="_blank">Pangram Pangram</a>. This font is a masterclass in contemporary type design.</p>
+
+<p>What makes PP Neue Machina special:</p>
+<ul>
+    <li><strong>Geometric precision</strong>: Built on circular and rectangular forms, giving it a modern, tech-forward feel</li>
+    <li><strong>Subtle ink traps</strong>: Not as aggressive as some display faces, but present enough to add character</li>
+    <li><strong>Versatility</strong>: Works at both display and text sizes without losing personality</li>
+    <li><strong>Brutalist energy</strong>: Bold, unapologetic, impossible to ignore</li>
+</ul>
+
+<p>At 4rem (64px) for my post titles and 2.5rem (40px) for the site logo, PP Neue Machina commands attention without being aggressive. The ink traps create tiny moments of visual interest that reward close inspection.</p>
+
+<h2 id="sligoil">Sligoil: The Monospace Counterpoint</h2>
+
+<p>For body text, I needed something that could stand up to PP Neue Machina without competing. Enter <a href="https://velvetyne.fr/fonts/sligoil/" target="_blank">Sligoil</a> from Velvetyne Type Foundry.</p>
+
+<p>Sligoil is a monospace font, but it's far from boring. It has this beautiful, slightly technical quality—like code, but more expressive. The fixed-width spacing gives the text a rhythmic, almost hypnotic quality when you're reading long-form content.</p>
+
+<p>Why Sligoil works:</p>
+<ul>
+    <li><strong>Monospace warmth</strong>: Fixed-width but not cold or robotic</li>
+    <li><strong>Excellent readability</strong>: Designed for screen reading</li>
+    <li><strong>Complements brutalism</strong>: The technical feel pairs perfectly with the bold headlines</li>
+    <li><strong>Open source</strong>: Because supporting open-source type design matters</li>
+</ul>
+
+<h2 id="typography-first-design">Typography-First Design</h2>
+
+<p>With these two fonts as my foundation, everything else fell into place. I made the type <em>really</em> big. Post titles at 4rem. Subheadings at 3rem. Even body text sits at 1.25rem—larger than most blogs.</p>
+
+<p>The philosophy was simple: if the typography is strong enough, you don't need much else. No hero images. No complex layouts. No unnecessary decoration. Just type, whitespace, and photography.</p>
+
+<p>This is brutalism at its core: honest, functional, unapologetic. The design doesn't try to hide what it is. It's HTML rendered beautifully, with great typography as the star.</p>
+
+<h2 id="technical-choices">Technical Choices That Matter</h2>
+
+<p>Beyond aesthetics, I made some technical decisions that improved both performance and user experience:</p>
+
+<h3>Font Loading Strategy</h3>
+<p>I'm self-hosting both fonts using @font-face with WOFF2/WOFF formats. This gives me complete control over loading performance and ensures the fonts are available immediately.</p>
+
+<h3>Responsive Typography</h3>
+<p>The type scales dramatically between mobile and desktop:</p>
+<ul>
+    <li>Desktop: 4rem titles, 3rem H2s</li>
+    <li>Mobile: 2.5rem titles, 2rem H2s</li>
+</ul>
+<p>Still big, but proportional to the viewport.</p>
+
+<h3>Design System</h3>
+<p>I documented everything in a design system (DESIGN_SYSTEM.md in the repo). Font sizes, spacing scale, color values, component specs. If Future Rajath needs to make changes, everything is documented.</p>
+
+<h2 id="color-palette">The Color Palette</h2>
+
+<p>With typography doing the heavy lifting, I kept the colors minimal:</p>
+<ul>
+    <li><strong>Accent: #00CC99</strong> - A vibrant tech green that pops against neutral backgrounds</li>
+    <li><strong>Light mode:</strong> Soft grays (#F5F5F5) with dark text (#2C3444)</li>
+    <li><strong>Dark mode:</strong> Deep navy (#2C3444) with light text (#E8E8E8)</li>
+</ul>
+
+<p>The green serves a specific purpose: it's distinctive enough to be memorable but neutral enough not to compete with my photography. When you're showcasing travel photos from Kazakhstan or Hyderabad, you don't want the UI colors stealing focus.</p>
+
+<h2 id="what-i-learned">What I Learned</h2>
+
+<p>This redesign taught me that constraints breed creativity. By committing to typography-first design, I eliminated dozens of decisions about layout, imagery, and decoration. The constraint itself became the design direction.</p>
+
+<p>I also learned to appreciate the craft of type design. Fonts aren't just "pretty letters"—they're systems of carefully calibrated relationships between forms, spacing, and proportions. Inktrap fonts in particular represent a beautiful collision of function and aesthetics, where historical printing problems became modern design features.</p>
+
+<h2 id="whats-next">What's Next?</h2>
+
+<p>This redesign isn't finished—good design never is. I want to refine the reading experience on tablets, improve the table of contents drawer, and maybe add some subtle animations.</p>
+
+<p>But the foundation is solid. Big, bold, brutalist typography powered by two exceptional fonts. Clean, minimal everything else. A design that gets out of the way and lets the content—and the type—shine.</p>
+
+<p>If you're interested in web typography, inktrap fonts, or just want to geek out about design systems, let me know in the comments or hit me up on <a href="https://x.com/rajath_c" target="_blank">Twitter</a>. I could talk about this stuff for hours.</p>
+
+<h2 id="resources">Resources & Credits</h2>
+
+<p>If this post inspired you to dive deeper into type design, here are some resources I found invaluable:</p>
+
+<ul>
+    <li><a href="https://www.grillitype.com/" target="_blank">Grilli Type</a> - Publishers of GT Pressura (similar to PP Neue Machina)</li>
+    <li><a href="https://pangrampangram.com/" target="_blank">Pangram Pangram</a> - Foundry behind PP Neue Machina</li>
+    <li><a href="https://velvetyne.fr/" target="_blank">Velvetyne Type Foundry</a> - Open source type foundry (Sligoil)</li>
+    <li><a href="https://practicaltypography.com/" target="_blank">Practical Typography</a> by Matthew Butterick</li>
+    <li><a href="https://fontsinuse.com/" target="_blank">Fonts In Use</a> - Real-world typography examples</li>
+</ul>
+
+<p>Special thanks to the type designers who create these beautiful tools we get to work with. Type design is hard, often underappreciated work, and I'm grateful for it.</p>
+
+<div class="image-container">
+    <img class="blog-image" alt="screenshot of the final redesigned blog" src="/images/writings/xx-redesign/final-design.png"/>
+    <p class="caption">The final result: big type, minimal everything else</p>
+</div>
+
+<p>That's it for this one. If you enjoyed this deep dive into typography and design thinking, subscribe below for more posts on tech, travel, photography, and the occasional design rant.</p>
+
+<p>See you in two weeks!</p>

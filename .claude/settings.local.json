@@ -11,7 +11,9 @@
       "Bash(pkill:*)",
       "Bash(bundle info:*)",
       "WebFetch(domain:erl.im)",
-      "Bash(mcp list-tools:*)"
+      "Bash(mcp list-tools:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []
