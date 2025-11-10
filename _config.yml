@@ -14,7 +14,7 @@ baseurl:     '' # The subpath of your site, e.g. /blog
 url:         'https://rajath.blog' # The base hostname & protocol for your site
 
 # Social links
-twitter:   'rajath_c'
+twitter_username: rajath_c
 github:    'rajathc'
 instagram: ''
 linkedin:  ''
