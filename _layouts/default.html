@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <script>
         // Set theme before page renders to avoid flash
-        // Always follow system preference
+        // Check sessionStorage for user's choice during current session, otherwise use system preference
         (function() {
+            const sessionTheme = sessionStorage.getItem('theme');
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const theme = prefersDark ? 'dark' : 'light';
+            const theme = sessionTheme || (prefersDark ? 'dark' : 'light');
             document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
