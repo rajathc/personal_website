@@ -14,7 +14,9 @@
       "Bash(mcp list-tools:*)",
       "Bash(ls:*)",
       "Bash(find:*)",
-      "Bash(JEKYLL_ENV=production bundle exec jekyll build:*)"
+      "Bash(JEKYLL_ENV=production bundle exec jekyll build:*)",
+      "WebFetch(domain:www.figma.com)",
+      "mcp__figma-dev-mode-mcp-server__get_design_context"
     ],
     "deny": [],
     "ask": []
