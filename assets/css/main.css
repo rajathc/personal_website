@@ -62,7 +62,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.75;
-    font-size: 1.0625rem;
+    font-size: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -123,56 +123,61 @@ button:hover {
 /* Organic gradient animation keyframes */
 @keyframes gradient-flow {
     0% {
-        background-position: 0% 50%;
-    }
-    25% {
-        background-position: 50% 100%;
+        background-position: 0% center;
     }
     50% {
-        background-position: 100% 50%;
-    }
-    75% {
-        background-position: 50% 0%;
+        background-position: 100% center;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% center;
     }
 }
 
 /* Light mode gradient - vibrant purple/pink to green/teal */
 :root[data-theme="light"] .site-title {
     background: linear-gradient(90deg,
-        #3a0ca3 0%,
-        #6912a4 15%,
-        #991994 28%,
-        #f72585 45%,
-        #b84b8a 58%,
-        #5d8d92 72%,
-        #0fcc98 88%,
-        #00cc99 100%,
-        #3a0ca3 100%);
+        #3a0ca3,
+        #6912a4,
+        #991994,
+        #f72585,
+        #b84b8a,
+        #5d8d92,
+        #0fcc98,
+        #00cc99,
+        #0fcc98,
+        #5d8d92,
+        #b84b8a,
+        #f72585,
+        #991994,
+        #6912a4,
+        #3a0ca3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-size: 300% 300%;
+    background-size: 200% 100%;
     animation: gradient-flow 12s ease-in-out infinite;
 }
 
 /* Dark mode gradient - warm orange to blue */
 :root[data-theme="dark"] .site-title {
     background: linear-gradient(90deg,
-        #ffb366 0%,
-        #ff9b7a 18%,
-        #dd8ba7 35%,
-        #9b9bbe 52%,
-        #7a9bd4 68%,
-        #6283b9 82%,
-        #4a6b9e 100%,
-        #ffb366 100%);
+        #ffb366,
+        #ff9b7a,
+        #dd8ba7,
+        #9b9bbe,
+        #7a9bd4,
+        #6283b9,
+        #4a6b9e,
+        #6283b9,
+        #7a9bd4,
+        #9b9bbe,
+        #dd8ba7,
+        #ff9b7a,
+        #ffb366);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-size: 300% 300%;
+    background-size: 200% 100%;
     animation: gradient-flow 12s ease-in-out infinite;
 }
 
@@ -191,37 +196,48 @@ button:hover {
 /* Light mode gradient - vibrant purple/pink to green/teal */
 :root[data-theme="light"] .site-name {
     background: linear-gradient(90deg,
-        #3a0ca3 0%,
-        #6912a4 15%,
-        #991994 28%,
-        #f72585 45%,
-        #b84b8a 58%,
-        #5d8d92 72%,
-        #0fcc98 88%,
-        #00cc99 100%,
-        #3a0ca3 100%);
+        #3a0ca3,
+        #6912a4,
+        #991994,
+        #f72585,
+        #b84b8a,
+        #5d8d92,
+        #0fcc98,
+        #00cc99,
+        #0fcc98,
+        #5d8d92,
+        #b84b8a,
+        #f72585,
+        #991994,
+        #6912a4,
+        #3a0ca3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-size: 300% 300%;
+    background-size: 200% 100%;
     animation: gradient-flow 12s ease-in-out infinite;
 }
 
 /* Dark mode gradient - warm orange to blue */
 :root[data-theme="dark"] .site-name {
     background: linear-gradient(90deg,
-        #ffb366 0%,
-        #ff9b7a 18%,
-        #dd8ba7 35%,
-        #9b9bbe 52%,
-        #7a9bd4 68%,
-        #6283b9 82%,
-        #4a6b9e 100%,
-        #ffb366 100%);
+        #ffb366,
+        #ff9b7a,
+        #dd8ba7,
+        #9b9bbe,
+        #7a9bd4,
+        #6283b9,
+        #4a6b9e,
+        #6283b9,
+        #7a9bd4,
+        #9b9bbe,
+        #dd8ba7,
+        #ff9b7a,
+        #ffb366);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-size: 300% 300%;
+    background-size: 200% 100%;
     animation: gradient-flow 12s ease-in-out infinite;
 }
 
@@ -366,7 +382,7 @@ button:hover {
 
 .post-item-date {
     display: block;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     color: var(--text-color);
     opacity: 0.65;
     margin-bottom: 0.75rem;
@@ -378,7 +394,7 @@ button:hover {
 .post-item-excerpt {
     line-height: 1.75;
     opacity: 0.85;
-    font-size: 1.0625rem;
+    font-size: 1rem;
 }
 
 /* Bookshelf */
@@ -472,7 +488,7 @@ button:hover {
     color: var(--text-color);
     opacity: 0.65;
     margin-bottom: 3rem;
-    font-size: 1rem;
+    font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 500;
@@ -480,7 +496,7 @@ button:hover {
 
 .post-content {
     line-height: 1.8;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 .post-content h2 {
@@ -689,7 +705,7 @@ button:hover {
     border-radius: 8px;
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: bold;
-    font-size: 1.0625rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -728,7 +744,7 @@ button:hover {
 }
 
 .copyright {
-    font-size: 0.9rem;
+    font-size: 1rem;
     opacity: 0.7;
 }
 
@@ -755,7 +771,7 @@ button:hover {
     }
 
     .tab-button {
-        font-size: 0.875rem;
+        font-size: 1rem;
         padding: 0.625rem 1rem;
     }
 
@@ -777,7 +793,7 @@ button:hover {
     }
 
     .post-content {
-        font-size: 1.0625rem;
+        font-size: 1rem;
     }
 
     .post-content h2 {
@@ -806,12 +822,12 @@ button:hover {
     }
 
     .newsletter-form input {
-        font-size: 0.9375rem;
+        font-size: 0.875rem;
         padding: 0.875rem 120px 0.875rem 1rem;
     }
 
     .newsletter-form button {
-        font-size: 0.9375rem;
+        font-size: 0.875rem;
         padding: 0.625rem 1.25rem;
     }
 
@@ -833,9 +849,6 @@ button:hover {
         width: 100%;
     }
 
-    .about-section p {
-        font-size: 1rem;
-    }
 }
 
 /* Tablet responsive */
@@ -874,15 +887,15 @@ button:hover {
     }
 
     .tab-button {
-        font-size: 0.9375rem;
+        font-size: 1rem;
     }
 
     .newsletter-form input {
-        font-size: 0.9375rem;
+        font-size: 0.875rem;
     }
 
     .newsletter-form button {
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
 }
 
