@@ -6,20 +6,21 @@ permalink: /bookshelf/
 
 ### Currently Reading
 
-- [**The Battle of the Labyrinth**](https://www.goodreads.com/book/show/8130423-the-battle-of-the-labyrinth) by Rick Riordan
+- [**How to Take Smart Notes**](https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes) by Sönke Ahrens
 
 ### Favourite Books
 
 - [**East of Eden**](https://www.goodreads.com/book/show/4406.East_of_Eden) by John Steinbeck
 - [**One Hundred Years of Solitude**](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
 - [**Dune Series**](https://www.goodreads.com/series/45935-dune) by Frank Herbert
-- [**Annihilation of Caste**](https://www.goodreads.com/book/show/8521879-annihilation-of-caste) by B.R. Ambedkar
 - [**Foundation**](https://www.goodreads.com/book/show/29579.Foundation) by Issac Asimov
 - [**I Know Why the Caged Bird Sings**](https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings) by Maya Angelou
 - [**The Stranger**](https://www.goodreads.com/book/show/49552.The_Stranger) by Albert Camus
 
 ### History
 
+- [**The Last Olympian**](https://www.goodreads.com/book/show/4556058-the-last-olympian) by Rick Riordan
+- [**The Battle of the Labyrinth**](https://www.goodreads.com/book/show/8130423-the-battle-of-the-labyrinth) by Rick Riordan
 - [**The Titan's Curse**](https://www.goodreads.com/book/show/561456.The_Titan_s_Curse) by Rick Riordan
 - [**The Sea of Monsters**](https://www.goodreads.com/book/show/40727118-the-sea-of-monsters) by Rick Riordan
 - [**Starter Villain**](https://www.goodreads.com/book/show/61885029-starter-villain) by John Scalzi
@@ -74,6 +75,7 @@ permalink: /bookshelf/
 - [**Invisible Cities**](https://www.goodreads.com/book/show/9809.Invisible_Cities) by Italo Calvino
 - [**Notes from Underground**](https://www.goodreads.com/book/show/49455.Notes_from_Underground) by Fyodor Dostoevsky
 - [**Understanding Comics: The Invisible Art**](https://www.goodreads.com/book/show/102920.Understanding_Comics) by Scott McCloud
+- [**Annihilation of Caste**](https://www.goodreads.com/book/show/8521879-annihilation-of-caste) by B.R. Ambedkar
 - [**Uzumaki**](https://www.goodreads.com/book/show/17837762-uzumaki) by Junji Ito
 - [**I Know Why the Caged Bird Sings**](https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings) by Maya Angelou
 - [**The Sirens of Titan**](https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan) by Kurt Vonnegut Jr.

@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:       Rajath
+title:       Rajath Chandrahasa
 author:      Rajath Chandrahasa
 email:       ''
-description: 'Product, Tech, Travel, Video games, Music'
+description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
 url:         'https://rajath.blog' # The base hostname & protocol for your site
 
