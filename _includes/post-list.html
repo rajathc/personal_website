@@ -3,7 +3,15 @@
     <article class="post-item">
         <a href="{{ post.url | relative_url }}" class="post-link">
             <h2 class="post-item-title">{{ post.title }}</h2>
-            <time class="post-item-date">{{ post.date | date: "%d %b %Y" }}</time>
+            <div class="post-item-meta">
+                <time class="post-item-date">{{ post.date | date: "%d %b %Y" }}</time>
+                {% assign words = post.content | number_of_words %}
+                {% assign reading_time = words | divided_by: 200 %}
+                {% if reading_time == 0 %}
+                    {% assign reading_time = 1 %}
+                {% endif %}
+                <span class="post-item-read-time"> • {{ reading_time }} min read</span>
+            </div>
             <p class="post-item-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
         </a>
     </article>

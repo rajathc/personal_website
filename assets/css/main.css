@@ -384,7 +384,7 @@ button:hover {
     transition: color 0.3s ease;
 }
 
-.post-item-date {
+.post-item-meta {
     display: block;
     font-size: 0.875rem;
     color: var(--text-color);
@@ -393,6 +393,14 @@ button:hover {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 500;
+}
+
+.post-item-date {
+    display: inline;
+}
+
+.post-item-read-time {
+    display: inline;
 }
 
 .post-item-excerpt {

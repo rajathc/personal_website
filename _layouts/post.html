@@ -28,9 +28,12 @@ layout: default
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
-            {% if page.read_time %}
-            <span class="read-time"> • {{ page.read_time }} minutes read</span>
+            {% assign words = content | number_of_words %}
+            {% assign reading_time = words | divided_by: 200 %}
+            {% if reading_time == 0 %}
+                {% assign reading_time = 1 %}
             {% endif %}
+            <span class="read-time"> • {{ reading_time }} min read</span>
         </div>
         <div class="post-content">
             {{ content }}
