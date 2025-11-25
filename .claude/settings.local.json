@@ -17,7 +17,8 @@
       "Bash(JEKYLL_ENV=production bundle exec jekyll build:*)",
       "WebFetch(domain:www.figma.com)",
       "mcp__figma-dev-mode-mcp-server__get_design_context",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(chmod:*)"
     ],
     "deny": [],
     "ask": []

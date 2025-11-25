@@ -40,6 +40,15 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - fonts/sligoil-main/documentation
+  - fonts/sligoil-main/README.md
+  - fonts/sligoil-main/COPYRIGHT.md
+  - fonts/sligoil-main/TRADEMARKS.md
+  - scripts
+  - images-backup
+  - node_modules
+  - package.json
+  - package-lock.json
 
 # Tags
 tag_page_dir:         tag
