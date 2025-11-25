@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/bricolage-grotesque/bricolage-grotesque-v1-latin-regular.woff2') format('woff2');
+  src: url('/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/bricolage-grotesque/bricolage-grotesque-v1-latin-700.woff2') format('woff2');
+  src: url('/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-700.woff2') format('woff2');
 }
 
 /* Oi */
@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/oi/oi-v20-latin-regular.woff2') format('woff2');
+  src: url('/fonts/oi/oi-v21-latin-regular.woff2') format('woff2');
 }
 
 /* Sligoil Custom Fonts */
