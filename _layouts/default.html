@@ -6,6 +6,12 @@
     {% seo %}
     <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="/fonts/sligoil-main/fonts/web/Sligoil-Micro.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oi/oi-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/bricolage-grotesque/bricolage-grotesque-v1-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
     <script>
         // Set theme before page renders to avoid flash
         // Check sessionStorage for user's choice during current session, otherwise use system preference
@@ -43,7 +49,7 @@
 
     {% include footer.html %}
 
-    <script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/theme-toggle.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/tabs.min.js' | relative_url }}"></script>
 </body>
 </html>

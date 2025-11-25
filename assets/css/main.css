@@ -1,12 +1,38 @@
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700&family=Oi&display=swap');
+/* Bricolage Grotesque */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/bricolage-grotesque/bricolage-grotesque-v1-latin-regular.woff2') format('woff2');
+}
 
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/bricolage-grotesque/bricolage-grotesque-v1-latin-700.woff2') format('woff2');
+}
+
+/* Oi */
+@font-face {
+  font-family: 'Oi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/oi/oi-v20-latin-regular.woff2') format('woff2');
+}
+
+/* Sligoil Custom Fonts */
 @font-face {
     font-family: 'Sligoil';
     src: url('/fonts/sligoil-main/fonts/web/Sligoil-Micro.woff2') format('woff2'),
          url('/fonts/sligoil-main/fonts/web/Sligoil-Micro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -15,6 +41,7 @@
          url('/fonts/sligoil-main/fonts/web/Sligoil-MicroMedium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,6 +50,7 @@
          url('/fonts/sligoil-main/fonts/web/Sligoil-MicroBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 /* CSS Variables for theming */
