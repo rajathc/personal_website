@@ -49,6 +49,9 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
+  - IMAGE-OPTIMIZATION.md
+  - GIF-CONVERSION.md
+  - README-OPTIMIZATION.md
 
 # Tags
 tag_page_dir:         tag

@@ -1,0 +1,67 @@
+# HTML Updates for GIF → Video Conversion
+
+After running convert-gifs-to-video.sh, update these post files:
+
+================================================================================
+FILE 1: _posts/2024-12-28-back-to-writing.html
+================================================================================
+
+CHANGE 1: neo1.gif
+------------------
+FIND:
+<img src="/images/writings/07-back-to-writing/neo1.gif" alt="...">
+
+REPLACE WITH:
+<video autoplay loop muted playsinline style="max-width: 100%; height: auto; border-radius: 8px; margin: 3rem 0 0.5rem 0;">
+  <source src="/images/writings/07-back-to-writing/neo1.webm" type="video/webm">
+  <source src="/images/writings/07-back-to-writing/neo1.mp4" type="video/mp4">
+  <img src="/images/writings/07-back-to-writing/neo1.gif" alt="..." loading="lazy">
+</video>
+
+CHANGE 2: language-launch.gif
+------------------------------
+FIND:
+<img src="/images/writings/07-back-to-writing/language-launch.gif" alt="...">
+
+REPLACE WITH:
+<video autoplay loop muted playsinline style="max-width: 100%; height: auto; border-radius: 8px; margin: 3rem 0 0.5rem 0;">
+  <source src="/images/writings/07-back-to-writing/language-launch.webm" type="video/webm">
+  <source src="/images/writings/07-back-to-writing/language-launch.mp4" type="video/mp4">
+  <img src="/images/writings/07-back-to-writing/language-launch.gif" alt="..." loading="lazy">
+</video>
+
+================================================================================
+FILE 2: _posts/2024-08-06-product-hunt.html
+================================================================================
+
+CHANGE 3: 1.gif
+---------------
+FIND:
+<img src="/images/writings/04-product-hunt/1.gif" alt="...">
+
+REPLACE WITH:
+<video autoplay loop muted playsinline style="max-width: 100%; height: auto; border-radius: 8px; margin: 3rem 0 0.5rem 0;">
+  <source src="/images/writings/04-product-hunt/1.webm" type="video/webm">
+  <source src="/images/writings/04-product-hunt/1.mp4" type="video/mp4">
+  <img src="/images/writings/04-product-hunt/1.gif" alt="..." loading="lazy">
+</video>
+
+================================================================================
+NOTES:
+================================================================================
+
+1. Video attributes explained:
+   - autoplay: Starts playing immediately (like GIF)
+   - loop: Repeats infinitely (like GIF)
+   - muted: Required for autoplay to work
+   - playsinline: Plays inline on iOS (doesn't go fullscreen)
+
+2. The <img> fallback ensures old browsers still show the GIF
+
+3. WebM listed first because it's smaller than MP4
+
+4. Style matches your existing CSS for images (border-radius, margin)
+
+5. After updating and testing, you can delete the original GIF files to save space
+
+6. Jekyll will auto-reload when you save the HTML files
