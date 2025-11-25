@@ -1,2 +1,7 @@
 .jekyll-cache
 _site
+node_modules
+images-backup
+images-optimized
+package-lock.json
+.DS_Store

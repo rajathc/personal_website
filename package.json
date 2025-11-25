@@ -8,7 +8,7 @@
     "optimize:new": "node scripts/optimize-images.js images/writings"
   },
   "devDependencies": {
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.5"
   },
   "engines": {
     "node": ">=18.0.0"
