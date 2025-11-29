@@ -562,7 +562,8 @@ button:hover {
     margin-bottom: 1.75rem;
 }
 
-.post-content img {
+.post-content img,
+.post-content video {
     max-width: 100%;
     height: auto;
     margin: 3rem 0 0.5rem 0;
@@ -587,7 +588,9 @@ button:hover {
 }
 
 .image-container img,
-.image-container-portrait img {
+.image-container video,
+.image-container-portrait img,
+.image-container-portrait video {
     margin: 0 !important;
 }
 
@@ -872,7 +875,8 @@ button:hover {
         font-size: 1.375rem;
     }
 
-    .post-content img {
+    .post-content img,
+    .post-content video {
         margin: 2rem 0 0.5rem 0;
         margin-left: -1rem;
         margin-right: -1rem;
@@ -893,7 +897,9 @@ button:hover {
     }
 
     .image-container img,
-    .image-container-portrait img {
+    .image-container video,
+    .image-container-portrait img,
+    .image-container-portrait video {
         margin: 0 !important;
         margin-left: -1rem !important;
         margin-right: -1rem !important;
