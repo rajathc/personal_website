@@ -727,9 +727,52 @@ button:hover {
 .site-footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
-    padding: 3rem 1rem 2rem;
+    padding: 3rem 1rem 3.5rem;
     margin-top: 4rem;
     border-radius: 24px 24px 0 0;
+    position: relative;
+}
+
+/* Gradient border at bottom of footer */
+.site-footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+
+/* Light mode footer gradient border - horizontal gradient */
+:root[data-theme="light"] .site-footer::after {
+    background: linear-gradient(90deg,
+        #3a0ca3,
+        #6912a4,
+        #991994,
+        #ba3e80,
+        #d3695f,
+        #e09244,
+        #deb836,
+        #b8da3f,
+        #7af26e,
+        #00ffc2
+    );
+}
+
+/* Dark mode footer gradient border - horizontal gradient */
+:root[data-theme="dark"] .site-footer::after {
+    background: linear-gradient(90deg,
+        #ffb366,
+        #ff9b7a,
+        #dd8ba7,
+        #c38fbe,
+        #9e8ec2,
+        #7a8ec0,
+        #5e8bb6,
+        #5699bb,
+        #63c0ce,
+        #8be9dd
+    );
 }
 
 .footer-content {
