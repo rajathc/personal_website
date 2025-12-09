@@ -17,6 +17,8 @@
 
         const tocNav = document.querySelector('.toc-nav');
         const ul = document.createElement('ul');
+        let currentH2Li = null;
+        let currentH3Ul = null;
 
         headings.forEach((heading, index) => {
             // Add ID to heading if it doesn't have one
@@ -35,7 +37,27 @@
             });
 
             li.appendChild(a);
-            ul.appendChild(li);
+
+            if (heading.tagName === 'H2') {
+                // Add h2 to main list
+                ul.appendChild(li);
+                currentH2Li = li;
+                currentH3Ul = null;
+            } else if (heading.tagName === 'H3') {
+                // Create nested list for h3 items if it doesn't exist
+                if (!currentH3Ul) {
+                    currentH3Ul = document.createElement('ul');
+                    currentH3Ul.className = 'toc-h3-list';
+                    if (currentH2Li) {
+                        currentH2Li.appendChild(currentH3Ul);
+                    } else {
+                        // If no h2 parent, add to main list
+                        ul.appendChild(li);
+                        return;
+                    }
+                }
+                currentH3Ul.appendChild(li);
+            }
         });
 
         tocNav.appendChild(ul);
