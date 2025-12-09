@@ -1,0 +1,159 @@
+---
+layout: post
+title: To Summarise or Not to Summarise?
+permalink: writings/to-summarise-or-not
+description: Working on AI summarization taught me when summaries help and when they quietly harm. A framework for knowing when to compress and when to go deep.
+date: 2025-12-09 10:00:00 +0530
+keywords: "Rajath Chandrahasa, AI summarization, deep reading, NeoSapien, conversational summarization, product management, AI tools, slow reading, compression algorithms, WER, meeting summaries, book summaries, cognitive load, information overload, ChatGPT, agentic browsers, product design, engineering decisions, memory aids, navigation tools, Paul Graham essays, East of Eden, Mona Lisa, lossy compression"
+---
+
+<p>
+    There's been a lot of talk (and fear-mongering) about <a href="https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-global-workforce" target="_blank">AI taking away people's jobs</a>, and in some domains that fear has turned out to be partially valid. But there's a parallel fear that I've been thinking about more: that people are slowly losing their ability to think, reason, and stay with hard material.
+</p>
+
+<p>
+    This isn't just an abstract concern. It shows up in students who finished college around and after the Covid-19 years, right in the middle of the <a href="https://arxiv.org/pdf/2506.08872v1" target="_blank">ChatGPT boom</a>, and in how they interact with tools that promise instant answers and instant clarity. Everywhere online you see comments like <a href="https://knowyourmeme.com/memes/grok-explain-this" target="_blank">"@grok explain this"</a> and a growing group of people excitedly describing how agentic browsers handle their browsing for them.
+</p>
+
+<div class="image-container">
+    <img class="blog-image" alt="Feature image for summarization blog post" src="/images/writings/08-to-summarise-or-not/feature-image.png"/>
+</div>
+
+<p>
+    For the last 9 months, I've been working on conversation summarisation at NeoSapien. We build a <a href="https://shop.neosapien.xyz" target="_blank">device that transcribes meetings and conversations</a>, and working on this has made me hyper-aware of where summaries genuinely help, and where they quietly make people worse at thinking.
+</p>
+
+<h2 id="the-pressure-for-width">The Pressure for Width</h2>
+
+<p>
+    In conversations with friends and younger colleagues, a particular pattern keeps showing up: <a href="https://www.sambrinson.com/consuming-information/" target="_blank">a pressure to consume as much information as humanly possible</a>. The goal seems to be maximum "width" across topics, even if that means sacrificing depth almost entirely.
+</p>
+
+<p>
+    Out of this mindset come ideas like building agentic workflows that subscribe to a dozen popular newsletters, auto-summarise them, and email only the "best parts" to the user, without even including links back to the originals. Another conversation involved a request to pull the top five <a href="https://news.ycombinator.com/news" target="_blank">Hacker News</a> posts every day, summarise them, and send a weekly digest.
+</p>
+
+<p>
+    I get it. Social media and professional platforms are optimised to make you feel like you're always behind, that someone else is learning more, hustling faster, and reading everything. In that environment, automated summarisation feels like a cheat code.
+</p>
+
+<p>
+    <b>But the desire to "eat the entire internet" is a cultural pressure, not a necessity.</b> If someone genuinely wants to keep up with trends in a healthy, sustainable way, there have always been slower, more deliberate options: curated magazines, a small number of trusted blogs, or periodicals that arrive at human, not algorithmic, intervals.
+</p>
+
+<h2 id="where-summaries-quietly-harm">Where Summaries Quietly Harm</h2>
+
+<p>
+    The first time this really hit me was around 2019, watching many people treat book summaries as interchangeable with books and counting those as reads on Goodreads. The idea that you could swap a 400-page novel or a dense non-fiction work for a 10-minute text and claim the same experience felt deeply wrong.
+</p>
+
+<p>
+    I wouldn't do this myself, replace reading a book with reading its summary. But I did recently read a summary of <a href="https://www.goodreads.com/book/show/4406.East_of_Eden" target="_blank"><i>East of Eden</i></a> to recall what happened in the book. The summary was terrible compared to the actual book. It gave me plot points, but none of the weight of Steinbeck's language, the moral complexity of the characters, or the way the biblical parallels deepen as you read.
+</p>
+
+<p>
+    The same logic applies to movies and other art forms. A plot summary of <a href="https://www.imdb.com/title/tt0114814/" target="_blank"><i>The Usual Suspects</i></a> cannot give you the same experience as actually watching the film, with its tension, performances, and slow reveal.
+</p>
+
+<p>
+    Think of the Mona Lisa. You can see it in a museum, reproduced in a textbook, or as a tiny pixel-art icon on your screen. All three capture something, but only one gives you the full experience, the scale, the brushwork, the subtle details you notice when you stand in front of it. A pixel-art version is useful for navigation or reference, but it can't replace the real thing.
+</p>
+
+<div class="image-container">
+    <img class="blog-image" alt="Three versions of Mona Lisa: original painting, low-poly version, and pixel art" src="/images/writings/08-to-summarise-or-not/monalisa.png"/>
+    <p class="caption">Mona Lisa in original and two other art forms of representation. Credits: <a href="https://www.behance.net/gallery/21283847/low-poly-Mona-Lisa" target="_blank">low-poly</a>, <a href="https://www.reddit.com/r/PixelArt/comments/11sot7e/i_had_a_go_at_reproducing_mona_lisa_by_leonardo/" target="_blank">pixel art</a></p>
+</div>
+
+<p>
+    <b>Summaries used as replacements aren't tools, they're counterfeits.</b> Good enough to fool you into believing you've experienced something you haven't. Here's the uncomfortable truth: <b>compression is lossy by definition.</b>
+</p>
+
+<h2 id="where-summaries-actually-help">Where Summaries Actually Help</h2>
+
+<p>
+    None of this means summarization is inherently bad. Working on this has made it clear just how powerful it can be when used in the right way and at the right layer of thinking. The key shift is to treat summaries as <b>navigation aids and memory supports, not as replacements</b> for the original material. AI summaries can even reveal blind spots, like surfacing unexpected connections across documents that humans might miss.
+</p>
+
+<p>
+    One of the most obvious examples is long meetings. After 90 minutes of discussion, <a href="https://en.wikipedia.org/wiki/Forgetting_curve" target="_blank">almost everyone forgets</a> the exact order in which points were raised, and smaller but important details blur together. A good summary here is a gift: it makes it possible to revisit key decisions, capture action items, and remember who promised to do what without replaying the entire recording. The cognitive load is reduced, but the people who were in the room still have access to full context if they need it.
+</p>
+
+<div class="image-container">
+    <img class="blog-image" alt="Ebbinghaus forgetting curve showing memory retention over time" src="/images/writings/08-to-summarise-or-not/Ebbinghaus_curve.png"/>
+    <p class="caption">The Ebbinghaus forgetting curve showing how rapidly we lose information over time without reinforcement. Credits: <a href="https://en.wikipedia.org/wiki/Forgetting_curve" target="_blank">Wikipedia</a></p>
+</div>
+
+<p>
+    The same holds for books and long-form content. Thoughtful book summaries can be incredibly helpful for revising material you've already read, especially when they preserve structure and argument rather than just "three key takeaways." <b>Summaries are an art when they help a past version of you talk to your future self:</b> "this is what mattered to you when you read this deeply."
+</p>
+
+<p>
+    There's no one-size-fits-all compression. Deciding what to preserve and what to compress is a product decision as much as a technical one. That's where human judgment still matters.
+</p>
+
+<h2 id="a-framework-for-when-to-summarise">A Framework for When to Summarise</h2>
+
+<p>
+    Different people need different compression levels for the same content, and the same person needs different levels depending on context. But here's a framework that's helped me think about it:
+</p>
+
+<h3 id="use-summaries-when">✅ Use summaries when:</h3>
+<ul style="margin-left: 2em;">
+    <li>You need to review material you've already engaged with deeply</li>
+    <li>You're navigating a large volume of content to find something specific</li>
+    <li>You're triaging time-sensitive information (emails, news, updates)</li>
+    <li>Memory is the bottleneck, you understood it once but need to recall it now</li>
+</ul>
+
+<h3 id="dont-use-summaries-when">⛔ Don't use summaries when:</h3>
+<ul style="margin-left: 2em; margin-bottom: 1.5em;">
+    <li>It's your first encounter with the material</li>
+    <li>The content is meant to shape your thinking, not just inform you</li>
+    <li>The structure, language, or pacing is part of the meaning (art, stories, essays)</li>
+    <li>Nuanced arguments matter, where the "how" is as important as the "what"</li>
+</ul>
+
+<p>
+    In our product, we have the full transcript always one tap away. The summary is a starting point, not an endpoint. If something catches your attention, you can dive into the full conversation and see the context around it. There's also an option to chat with your entire conversation history, ask questions, dig deeper, or clarify what the summary might have missed.
+</p>
+
+<div class="image-container">
+    <img class="blog-image" alt="Screenshot of Neo app showing chat with memory feature" src="/images/writings/08-to-summarise-or-not/ask-neo-in-memory.jpg"/>
+    <p class="caption">A screenshot from our app where you can chat with the entire context of the conversation not just the summary</p>
+</div>
+
+<p>
+    Here's a concrete example: If you're reading a <a href="https://www.paulgraham.com/articles.html" target="_blank">Paul Graham essay</a> for the first time, read it. The structure of his arguments and the way he builds to a point is part of the value. But if you're trying to remember which PG essay discussed a specific idea, use a summary to navigate.
+</p>
+
+<h2 id="slow-reading-in-a-fast-world">Slow Reading in a Fast World</h2>
+
+<p>
+    Nothing in this essay is completely new. For years, there's been a broader <a href="https://en.wikipedia.org/wiki/Slow_movement_(culture)" target="_blank">"slow" movement</a>: slow food, slow living, slow reading. The basic idea is simple: in a world that optimizes speed and volume, deliberately choosing slowness can be an act of care for your attention, your taste, and your ability to think.
+</p>
+
+<p>
+    What worries me more than speed-reading is the idea of replacing reading with reading summaries. I've noticed in myself that the more I've worked on summarization, the more deliberate I've become about when I use them. I summarize meeting notes because I was there and I need to remember. I don't summarize essays I haven't read yet, because reading is the point.
+</p>
+
+<h2 id="the-choice-is-yours">The Choice Is Yours</h2>
+
+<p>
+    The biggest insight from working on conversational summarization has been this: <b>deciding what to preserve versus what to compress is product design, not just engineering.</b> There's no single "summary quality" metric like <a href="/writings/back-to-writing#language-update" target="_blank">WER (Word Error Rate) for transcription</a>. What makes a good summary depends entirely on what the user needs it for.
+</p>
+
+<p>
+    Summaries can save time. They can help you remember. They can let you navigate large volumes of information without drowning in it. But they can also quietly shrink your capacity for deep engagement, for sitting with hard material, for experiencing things that can't be compressed without loss.
+</p>
+
+<p>
+    No one else can dictate where you should go deep and where you can safely skim. This piece isn't an attempt to play that role. The point is to notice the difference between using a tool to extend your mind and using it to quietly replace the work of thinking.
+</p>
+
+<p>
+    If I had to leave you with one rule, it's this: <b>slow read the things that shape your thinking; summarize the things that exhaust your memory.</b> Use summarization to help you remember, review, and navigate, not to avoid ever touching the original material.
+</p>
+
+<p>
+    The tools will only get more powerful. The choice of how to wield them is still yours.
+</p>
