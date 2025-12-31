@@ -12,6 +12,9 @@ on:
       - 'images/**/*.gif'
   workflow_dispatch:  # Allows manual trigger from GitHub UI
 
+permissions:
+  contents: write
+
 jobs:
   optimize:
     runs-on: ubuntu-latest
