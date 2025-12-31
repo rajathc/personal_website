@@ -6,7 +6,7 @@ permalink: /bookshelf/
 
 ### Currently Reading
 
-- [**How to Take Smart Notes**](https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes) by Sönke Ahrens
+- [**The Devil's Alternative**](https://www.goodreads.com/book/show/825473.The_Devil_s_Alternative) by Frederick Forsyth
 
 ### Favourite Books
 
@@ -19,6 +19,8 @@ permalink: /bookshelf/
 
 ### History
 
+- [**Heart Lamp: Selected Stories**](https://www.goodreads.com/book/show/205544315-heart-lamp) by Banu Mushtaq
+- [**How to Take Smart Notes**](https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes) by Sönke Ahrens
 - [**The Last Olympian**](https://www.goodreads.com/book/show/4556058-the-last-olympian) by Rick Riordan
 - [**The Battle of the Labyrinth**](https://www.goodreads.com/book/show/8130423-the-battle-of-the-labyrinth) by Rick Riordan
 - [**The Titan's Curse**](https://www.goodreads.com/book/show/561456.The_Titan_s_Curse) by Rick Riordan
