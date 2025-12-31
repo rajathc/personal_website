@@ -23,6 +23,7 @@ markdown:  kramdown
 permalink: pretty
 paginate:  10
 future:    true
+timezone:  Asia/Kolkata
 
 sass:
   style: compressed
