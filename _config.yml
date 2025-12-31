@@ -22,6 +22,7 @@ linkedin:  ''
 markdown:  kramdown
 permalink: pretty
 paginate:  10
+future:    true
 
 sass:
   style: compressed
