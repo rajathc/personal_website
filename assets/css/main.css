@@ -56,25 +56,25 @@
 /* CSS Variables for theming */
 :root[data-theme="light"] {
     --bg-color: #F5F5F5;
-    --text-color: #2C3444;
+    --text-color: #2C2C2C;
     --accent-color: #00CC99;
-    --footer-bg: #1E2432;
+    --footer-bg: #1a1a1a;
     --footer-text: #FFFFFF;
     --card-bg: #FFFFFF;
     --border-color: #E0E0E0;
     --drawer-bg: #F5F5F5;
-    --drawer-text: #2C3444;
+    --drawer-text: #2C2C2C;
 }
 
 :root[data-theme="dark"] {
-    --bg-color: #2C3444;
+    --bg-color: #1a1a1a;
     --text-color: #E8E8E8;
     --accent-color: #00CC99;
-    --footer-bg: #1E2432;
+    --footer-bg: #0f0f0f;
     --footer-text: #FFFFFF;
-    --card-bg: #3A4252;
-    --border-color: #4A5262;
-    --drawer-bg: #2C3444;
+    --card-bg: #2d2d2d;
+    --border-color: #404040;
+    --drawer-bg: #1a1a1a;
     --drawer-text: #E8E8E8;
 }
 
@@ -85,12 +85,13 @@
     box-sizing: border-box;
 }
 
+/* Base font size: 16px = 1rem */
 body {
     font-family: 'Sligoil', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.75;
-    font-size: 1rem;
+    font-size: 1rem; /* 16px - All body text */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -340,7 +341,7 @@ button:hover {
 
 .tab-button.active {
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: #1a1a1a;
     font-weight: bold;
     border-radius: 4px 4px 0 0;
 }
@@ -541,7 +542,7 @@ button:hover {
 
 .post-content {
     line-height: 1.8;
-    font-size: 1.125rem;
+    font-size: 1rem; /* Consistent with body text */
 }
 
 .post-content h2 {
@@ -570,10 +571,10 @@ button:hover {
     border-radius: 8px;
 }
 
-/* Image captions */
+/* Image captions - consistent small text */
 .caption,
 .caption-p {
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* 14px - Small text */
     font-style: italic;
     text-align: center;
     color: var(--text-color);
@@ -733,47 +734,7 @@ button:hover {
     position: relative;
 }
 
-/* Gradient border at bottom of footer */
-.site-footer::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-}
-
-/* Light mode footer gradient border - horizontal gradient */
-:root[data-theme="light"] .site-footer::after {
-    background: linear-gradient(90deg,
-        #3a0ca3,
-        #6912a4,
-        #991994,
-        #ba3e80,
-        #d3695f,
-        #e09244,
-        #deb836,
-        #b8da3f,
-        #7af26e,
-        #00ffc2
-    );
-}
-
-/* Dark mode footer gradient border - horizontal gradient */
-:root[data-theme="dark"] .site-footer::after {
-    background: linear-gradient(90deg,
-        #ffb366,
-        #ff9b7a,
-        #dd8ba7,
-        #c38fbe,
-        #9e8ec2,
-        #7a8ec0,
-        #5e8bb6,
-        #5699bb,
-        #63c0ce,
-        #8be9dd
-    );
-}
+/* Gradient border removed - now animates around newsletter subscribe box */
 
 .footer-content {
     max-width: 800px;
@@ -807,6 +768,79 @@ button:hover {
     margin: 0 auto 2rem;
 }
 
+/* Animated gradient border wrapper */
+.newsletter-form::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 16px;
+    background: linear-gradient(90deg,
+        #3a0ca3,
+        #6912a4,
+        #991994,
+        #f72585,
+        #b84b8a,
+        #5d8d92,
+        #0fcc98,
+        #00cc99,
+        #0fcc98,
+        #5d8d92,
+        #b84b8a,
+        #f72585,
+        #991994,
+        #6912a4,
+        #3a0ca3);
+    background-size: 375% 100%;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.newsletter-form.animate-border::before {
+    animation: gradient-border-flow 5s ease-in-out forwards;
+}
+
+@keyframes gradient-border-flow {
+    0% {
+        opacity: 1;
+        background-position: 0% center;
+    }
+    50% {
+        opacity: 1;
+        background-position: 125% center;
+    }
+    90% {
+        opacity: 1;
+        background-position: 250% center;
+    }
+    100% {
+        opacity: 0;
+        background-position: 375% center;
+    }
+}
+
+/* Dark mode gradient variation */
+:root[data-theme="dark"] .newsletter-form::before {
+    background: linear-gradient(90deg,
+        #ffb366,
+        #ff9b7a,
+        #dd8ba7,
+        #9b9bbe,
+        #7a9bd4,
+        #6283b9,
+        #4a6b9e,
+        #6283b9,
+        #7a9bd4,
+        #9b9bbe,
+        #dd8ba7,
+        #ff9b7a,
+        #ffb366);
+    background-size: 375% 100%;
+}
+
 .newsletter-form input {
     width: 100%;
     padding: 1rem 140px 1rem 1.25rem;
@@ -817,6 +851,8 @@ button:hover {
     background: white;
     color: #1E2432;
     transition: box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .newsletter-form input:focus {
@@ -831,7 +867,7 @@ button:hover {
     transform: translateY(-50%);
     padding: 0.75rem 1.75rem;
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: #1a1a1a;
     border: none;
     border-radius: 8px;
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -840,6 +876,7 @@ button:hover {
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
+    z-index: 2;
 }
 
 .newsletter-form button:hover {
@@ -875,7 +912,7 @@ button:hover {
 }
 
 .copyright {
-    font-size: 1rem;
+    font-size: 0.875rem; /* Small text like meta */
     opacity: 0.7;
 }
 
@@ -947,7 +984,7 @@ button:hover {
 
     .caption,
     .caption-p {
-        font-size: 0.8125rem;
+        font-size: 0.875rem; /* Keep consistent with desktop */
         margin: 0.5rem 0 2rem 0 !important;
     }
 
