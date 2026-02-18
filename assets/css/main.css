@@ -171,18 +171,51 @@ button:focus-visible {
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
+    overflow: visible;
 }
 
 
 .site-title {
     font-family: 'Oi', serif;
-    font-size: 5rem;
+    font-size: clamp(2.75rem, 7.5vw, 5rem);
     font-weight: normal;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    position: relative;
+    overflow: visible;
+    color: transparent;
+    -webkit-text-stroke: 2px transparent;
+    animation: reveal-stroke 0.8s ease-out 12s forwards;
+    padding-top: 0.1em;
+    transition: -webkit-text-stroke-color 0.3s ease;
+}
+
+/* Gradient overlay that fades out */
+.site-title::before {
+    content: 'Rajath';
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    -webkit-text-stroke: 0;
+    animation: gradient-flow 4s ease-in-out 3, fade-to-stroke 0.8s ease-out 12s forwards;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover: show gradient, hide stroke */
+.site-logo:hover .site-title::before {
+    opacity: 1;
+}
+
+.site-logo:hover .site-title {
+    -webkit-text-stroke-color: transparent;
 }
 
 /* Organic gradient animation keyframes */
@@ -198,8 +231,28 @@ button:focus-visible {
     }
 }
 
+/* Fade to stroke-only animation */
+@keyframes fade-to-stroke {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Stroke reveal animation */
+@keyframes reveal-stroke {
+    0% {
+        -webkit-text-stroke-color: transparent;
+    }
+    100% {
+        -webkit-text-stroke-color: var(--text-color);
+    }
+}
+
 /* Light mode gradient - vibrant purple/pink to green/teal */
-:root[data-theme="light"] .site-title {
+:root[data-theme="light"] .site-title::before {
     background: linear-gradient(90deg,
         #3a0ca3,
         #6912a4,
@@ -220,11 +273,10 @@ button:focus-visible {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-size: 200% 100%;
-    animation: gradient-flow 12s ease-in-out infinite;
 }
 
 /* Dark mode gradient - warm orange to blue */
-:root[data-theme="dark"] .site-title {
+:root[data-theme="dark"] .site-title::before {
     background: linear-gradient(90deg,
         #ffb366,
         #ff9b7a,
@@ -243,23 +295,54 @@ button:focus-visible {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-size: 200% 100%;
-    animation: gradient-flow 12s ease-in-out infinite;
 }
 
 .site-name {
     font-family: 'Oi', serif;
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
     font-weight: normal;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     text-decoration: none;
     line-height: 1.1;
     letter-spacing: -0.03em;
+    position: relative;
+    overflow: visible;
+    color: transparent;
+    -webkit-text-stroke: 1.5px transparent;
+    animation: reveal-stroke 0.8s ease-out 12s forwards;
+    padding-top: 0.1em;
+    transition: -webkit-text-stroke-color 0.3s ease;
+}
+
+/* Gradient overlay that fades out */
+.site-name::before {
+    content: 'Rajath';
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 0;
+    animation: gradient-flow 4s ease-in-out 3, fade-to-stroke 0.8s ease-out 12s forwards;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover: show gradient, hide stroke */
+.post-header-left a:hover .site-name::before {
+    opacity: 1;
+}
+
+.post-header-left a:hover .site-name {
+    -webkit-text-stroke-color: transparent;
 }
 
 /* Light mode gradient - vibrant purple/pink to green/teal */
-:root[data-theme="light"] .site-name {
+:root[data-theme="light"] .site-name::before {
     background: linear-gradient(90deg,
         #3a0ca3,
         #6912a4,
@@ -280,11 +363,10 @@ button:focus-visible {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-size: 200% 100%;
-    animation: gradient-flow 12s ease-in-out infinite;
 }
 
 /* Dark mode gradient - warm orange to blue */
-:root[data-theme="dark"] .site-name {
+:root[data-theme="dark"] .site-name::before {
     background: linear-gradient(90deg,
         #ffb366,
         #ff9b7a,
@@ -303,7 +385,6 @@ button:focus-visible {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-size: 200% 100%;
-    animation: gradient-flow 12s ease-in-out infinite;
 }
 
 /* Main content */
@@ -496,7 +577,7 @@ button:focus-visible {
 }
 
 .post-item-title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: bold;
     margin-bottom: 0.75rem;
     line-height: 1.15;
@@ -617,7 +698,7 @@ button:focus-visible {
 }
 
 .post-title {
-    font-size: 3.5rem;
+    font-size: clamp(2.25rem, 5.5vw, 3.5rem);
     font-weight: bold;
     margin-bottom: 1.5rem;
     line-height: 1.05;
@@ -640,14 +721,14 @@ button:focus-visible {
 }
 
 .post-content h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-weight: bold;
     margin: 3rem 0 1.5rem 0;
     letter-spacing: -0.03em;
 }
 
 .post-content h3 {
-    font-size: 1.875rem;
+    font-size: clamp(1.375rem, 3vw, 1.875rem);
     font-weight: bold;
     margin: 2.5rem 0 1.25rem 0;
     letter-spacing: -0.03em;
@@ -837,13 +918,8 @@ button:focus-visible {
 
 .footer-logo-link {
     text-decoration: none;
-    transition: opacity 0.3s ease;
+    display: inline-block;
 }
-
-.footer-logo-link:hover {
-    opacity: 0.8;
-}
-
 
 .footer-logo {
     font-family: 'Oi', serif;
@@ -851,9 +927,17 @@ button:focus-visible {
     font-weight: normal;
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--footer-text);
     line-height: 1.1;
     letter-spacing: -0.03em;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px var(--footer-text);
+    transition: -webkit-text-fill-color 0.3s ease, -webkit-text-stroke-color 0.3s ease;
+}
+
+.footer-logo-link:hover .footer-logo {
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-fill-color: var(--footer-text);
 }
 
 .newsletter-form {
@@ -1020,14 +1104,6 @@ button:focus-visible {
         padding: 2rem 1rem 1.5rem;
     }
 
-    .site-title {
-        font-size: 2.75rem;
-    }
-
-    .site-name {
-        font-size: 1.75rem;
-    }
-
     .tabs-header {
         flex-wrap: wrap;
     }
@@ -1046,24 +1122,12 @@ button:focus-visible {
         margin-bottom: 1rem;
     }
 
-    .post-title {
-        font-size: 2.25rem;
-    }
-
     .post-meta {
         margin-bottom: 2rem;
     }
 
     .post-content {
         font-size: 1rem;
-    }
-
-    .post-content h2 {
-        font-size: 1.75rem;
-    }
-
-    .post-content h3 {
-        font-size: 1.375rem;
     }
 
     .post-content img,
@@ -1094,10 +1158,6 @@ button:focus-visible {
         margin: 0 !important;
         margin-left: -1rem !important;
         margin-right: -1rem !important;
-    }
-
-    .post-item-title {
-        font-size: 1.5rem;
     }
 
     .newsletter-form {
@@ -1139,30 +1199,6 @@ button:focus-visible {
 
 /* Tablet responsive */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .site-title {
-        font-size: 4rem;
-    }
-
-    .site-name {
-        font-size: 2.25rem;
-    }
-
-    .post-title {
-        font-size: 3rem;
-    }
-
-    .post-item-title {
-        font-size: 1.75rem;
-    }
-
-    .post-content h2 {
-        font-size: 2.25rem;
-    }
-
-    .post-content h3 {
-        font-size: 1.75rem;
-    }
-
     .post-content img {
         margin: 2.5rem 0 0.5rem 0;
         margin-left: -1rem;
