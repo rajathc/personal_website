@@ -6,7 +6,7 @@ permalink: /bookshelf/
 
 ### Currently Reading
 
-- [**The Devil's Alternative**](https://www.goodreads.com/book/show/825473.The_Devil_s_Alternative) by Frederick Forsyth
+- [**The Grapes of Wrath**](https://www.goodreads.com/book/show/4395.The_Grapes_of_Wrath) by John Steinbeck
 
 ### Favourite Books
 
@@ -19,6 +19,8 @@ permalink: /bookshelf/
 
 ### History
 
+- [**White Nights**](https://www.goodreads.com/book/show/1772910.White_Nights) by Fyodor Dostoevsky
+- [**The Devil's Alternative**](https://www.goodreads.com/book/show/825473.The_Devil_s_Alternative) by Frederick Forsyth
 - [**Heart Lamp: Selected Stories**](https://www.goodreads.com/book/show/205544315-heart-lamp) by Banu Mushtaq
 - [**How to Take Smart Notes**](https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes) by Sönke Ahrens
 - [**The Last Olympian**](https://www.goodreads.com/book/show/4556058-the-last-olympian) by Rick Riordan
