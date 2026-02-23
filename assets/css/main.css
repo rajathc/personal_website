@@ -838,7 +838,11 @@ button:focus-visible {
 
 .footer-logo-link {
     text-decoration: none;
-    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo-link:hover {
+    opacity: 0.8;
 }
 
 .footer-logo {
@@ -847,17 +851,9 @@ button:focus-visible {
     font-weight: normal;
     text-align: center;
     margin-bottom: 2rem;
+    color: var(--footer-text);
     line-height: 1.1;
     letter-spacing: -0.03em;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1.5px var(--footer-text);
-    transition: -webkit-text-fill-color 0.3s ease, -webkit-text-stroke-color 0.3s ease;
-}
-
-.footer-logo-link:hover .footer-logo {
-    -webkit-text-stroke-color: transparent;
-    -webkit-text-fill-color: var(--footer-text);
 }
 
 .newsletter-form {
