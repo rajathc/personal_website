@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f0f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bookSpine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1e1e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="kindleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e2e2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#222;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="xtinkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#252525;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- ===== PAPERBACK (left) ===== -->
+  <g filter="url(#softShadow)" transform="translate(155, 105)">
+    <!-- Book spine -->
+    <rect x="0" y="0" width="22" height="320" rx="3" fill="url(#bookSpine)"/>
+    <!-- Book cover -->
+    <rect x="22" y="0" width="190" height="320" rx="3" fill="#c8b89a"/>
+    <!-- Cover texture lines -->
+    <rect x="22" y="0" width="190" height="320" rx="3" fill="none" stroke="#b5a488" stroke-width="1" opacity="0.5"/>
+    <!-- Penguin-style orange band top -->
+    <rect x="22" y="0" width="190" height="90" rx="3" fill="#e8671a"/>
+    <rect x="22" y="85" width="190" height="5" fill="#1a1a1a"/>
+    <!-- Penguin circle -->
+    <circle cx="117" cy="45" r="28" fill="#1a1a1a"/>
+    <ellipse cx="117" cy="52" rx="10" ry="14" fill="white"/>
+    <ellipse cx="117" cy="34" rx="10" ry="11" fill="white"/>
+    <ellipse cx="109" cy="54" rx="4" ry="6" fill="#e8671a"/>
+    <ellipse cx="125" cy="54" rx="4" ry="6" fill="#e8671a"/>
+    <!-- Book title area -->
+    <rect x="40" y="108" width="154" height="6" rx="3" fill="#3a2e1e" opacity="0.7"/>
+    <rect x="55" y="122" width="124" height="4" rx="2" fill="#3a2e1e" opacity="0.5"/>
+    <!-- Author area -->
+    <rect x="50" y="260" width="134" height="5" rx="2.5" fill="#3a2e1e" opacity="0.5"/>
+    <rect x="22" y="250" width="190" height="1" fill="#3a2e1e" opacity="0.3"/>
+    <!-- Page edges -->
+    <rect x="210" y="4" width="5" height="316" fill="#f5f0e8" opacity="0.9"/>
+    <!-- Page lines suggestion -->
+    <g opacity="0.15">
+      <line x1="42" y1="145" x2="195" y2="145" stroke="#3a2e1e" stroke-width="1"/>
+      <line x1="42" y1="158" x2="195" y2="158" stroke="#3a2e1e" stroke-width="1"/>
+      <line x1="42" y1="171" x2="175" y2="171" stroke="#3a2e1e" stroke-width="1"/>
+      <line x1="42" y1="184" x2="195" y2="184" stroke="#3a2e1e" stroke-width="1"/>
+      <line x1="42" y1="197" x2="185" y2="197" stroke="#3a2e1e" stroke-width="1"/>
+      <line x1="42" y1="210" x2="195" y2="210" stroke="#3a2e1e" stroke-width="1"/>
+      <line x1="42" y1="223" x2="160" y2="223" stroke="#3a2e1e" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Paper label -->
+  <text x="261" y="468" font-family="'Courier New', monospace" font-size="13" fill="#666" text-anchor="middle" letter-spacing="3">PAPER</text>
+
+  <!-- ===== KINDLE (center) ===== -->
+  <g filter="url(#softShadow)" transform="translate(468, 70)">
+    <!-- Kindle body -->
+    <rect x="0" y="0" width="200" height="290" rx="10" fill="url(#kindleGrad)" stroke="#3a3a3a" stroke-width="1.5"/>
+    <!-- Screen bezel -->
+    <rect x="12" y="12" width="176" height="226" rx="5" fill="#1a1a1a"/>
+    <!-- E-ink screen -->
+    <rect x="14" y="14" width="172" height="222" rx="4" fill="#e8e4d8"/>
+    <!-- Screen text lines -->
+    <g fill="#2a2520">
+      <rect x="26" y="30" width="148" height="5" rx="2.5" opacity="0.8"/>
+      <rect x="26" y="43" width="148" height="5" rx="2.5" opacity="0.8"/>
+      <rect x="26" y="56" width="120" height="5" rx="2.5" opacity="0.8"/>
+      <rect x="26" y="78" width="148" height="5" rx="2.5" opacity="0.6"/>
+      <rect x="26" y="91" width="148" height="5" rx="2.5" opacity="0.6"/>
+      <rect x="26" y="104" width="140" height="5" rx="2.5" opacity="0.6"/>
+      <rect x="26" y="117" width="148" height="5" rx="2.5" opacity="0.6"/>
+      <rect x="26" y="130" width="100" height="5" rx="2.5" opacity="0.6"/>
+      <rect x="26" y="152" width="148" height="5" rx="2.5" opacity="0.5"/>
+      <rect x="26" y="165" width="148" height="5" rx="2.5" opacity="0.5"/>
+      <rect x="26" y="178" width="130" height="5" rx="2.5" opacity="0.5"/>
+      <rect x="26" y="191" width="148" height="5" rx="2.5" opacity="0.5"/>
+      <rect x="26" y="204" width="110" height="5" rx="2.5" opacity="0.5"/>
+    </g>
+    <!-- Progress bar -->
+    <rect x="14" y="232" width="172" height="4" rx="2" fill="#d0cbbf"/>
+    <rect x="14" y="232" width="86" height="4" rx="2" fill="#888"/>
+    <!-- Bottom button -->
+    <rect x="75" y="258" width="50" height="12" rx="6" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    <!-- USB port -->
+    <rect x="88" y="282" width="24" height="4" rx="2" fill="#2a2a2a"/>
+  </g>
+
+  <!-- Pixel label -->
+  <text x="568" y="420" font-family="'Courier New', monospace" font-size="13" fill="#666" text-anchor="middle" letter-spacing="3">PIXEL</text>
+
+  <!-- ===== XTEINK (right) ===== -->
+  <g filter="url(#softShadow)" transform="translate(810, 148)">
+    <!-- Device body - small MagSafe clip shape -->
+    <rect x="0" y="0" width="138" height="190" rx="12" fill="url(#xtinkGrad)" stroke="#3a3a3a" stroke-width="1.5"/>
+    <!-- Screen area -->
+    <rect x="8" y="8" width="122" height="152" rx="8" fill="#1a1a1a"/>
+    <!-- E-ink display -->
+    <rect x="10" y="10" width="118" height="148" rx="7" fill="#dddad0"/>
+    <!-- Small text lines on tiny screen -->
+    <g fill="#2a2520">
+      <rect x="18" y="22" width="102" height="4" rx="2" opacity="0.8"/>
+      <rect x="18" y="32" width="102" height="4" rx="2" opacity="0.8"/>
+      <rect x="18" y="42" width="80" height="4" rx="2" opacity="0.8"/>
+      <rect x="18" y="58" width="102" height="4" rx="2" opacity="0.6"/>
+      <rect x="18" y="68" width="102" height="4" rx="2" opacity="0.6"/>
+      <rect x="18" y="78" width="90" height="4" rx="2" opacity="0.6"/>
+      <rect x="18" y="88" width="102" height="4" rx="2" opacity="0.6"/>
+      <rect x="18" y="104" width="102" height="4" rx="2" opacity="0.5"/>
+      <rect x="18" y="114" width="85" height="4" rx="2" opacity="0.5"/>
+      <rect x="18" y="124" width="102" height="4" rx="2" opacity="0.5"/>
+      <rect x="18" y="134" width="70" height="4" rx="2" opacity="0.5"/>
+    </g>
+    <!-- Physical buttons (right side) -->
+    <rect x="130" y="40" width="6" height="22" rx="3" fill="#444" stroke="#555" stroke-width="0.5"/>
+    <rect x="130" y="70" width="6" height="22" rx="3" fill="#444" stroke="#555" stroke-width="0.5"/>
+    <!-- MagSafe ring indicator at bottom -->
+    <circle cx="69" cy="174" r="10" fill="none" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <circle cx="69" cy="174" r="5" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+  </g>
+
+  <!-- Pocket label -->
+  <text x="879" y="400" font-family="'Courier New', monospace" font-size="13" fill="#666" text-anchor="middle" letter-spacing="3">POCKET</text>
+
+  <!-- ===== TITLE ===== -->
+  <text x="600" y="530" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#f0ece0" text-anchor="middle" font-weight="400" letter-spacing="-0.5">Paper, Pixel, Pocket</text>
+  <text x="600" y="562" font-family="'Courier New', monospace" font-size="13" fill="#555" text-anchor="middle" letter-spacing="2">RAJATH CHANDRAHASA</text>
+
+  <!-- Decorative line under title -->
+  <line x1="480" y1="545" x2="540" y2="545" stroke="#333" stroke-width="1"/>
+  <line x1="660" y1="545" x2="720" y2="545" stroke="#333" stroke-width="1"/>
+</svg>
