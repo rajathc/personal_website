@@ -52,12 +52,11 @@ jobs:
       - name: Replace images with optimized versions
         if: steps.check_changes.outputs.has_optimized == 'true'
         run: |
-          # Backup original images (optional, comment out if not needed)
-          # mv images images-backup
-
-          # Replace with optimized images
-          rm -rf images/writings
-          mv images-optimized/writings images/
+          # Merge optimized images into existing directory.
+          # Using rsync instead of rm+mv to preserve files the optimizer
+          # doesn't handle (.avif, .webm, .mp4, etc.)
+          rsync -av images-optimized/writings/ images/writings/
+          rm -rf images-optimized
 
       - name: Commit optimized images
         if: steps.check_changes.outputs.has_optimized == 'true'
