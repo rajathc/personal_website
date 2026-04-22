@@ -1,4 +1,5 @@
 .jekyll-cache
+.claude
 _site
 node_modules
 images-backup
