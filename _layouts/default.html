@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% seo %}
+    {% if page.og_description %}
+    <meta property="og:description" content="{{ page.og_description }}" />
+    <meta name="twitter:description" content="{{ page.og_description }}" />
+    {% endif %}
     <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
