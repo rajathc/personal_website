@@ -2,6 +2,7 @@
 layout: page
 title: Bookshelf
 permalink: /bookshelf/
+description: Books Rajath is reading and recommends, from fiction and sci-fi to classics and the occasional graphic novel.
 ---
 
 ### Currently Reading

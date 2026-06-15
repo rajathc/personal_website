@@ -8,7 +8,7 @@
 # Site settings
 title:       Rajath Chandrahasa
 author:      Rajath Chandrahasa
-email:       ''
+email:       rajath@neosapien.xyz
 description: 'Rajath Chandrahasa, a product manager in Bengaluru writing about technology, travel, books, and bringing creativity into tech.'
 image:       /images/og-default.png  # sitewide default for og:image / twitter:image (posts override via their own `image:`)
 baseurl:     '' # The subpath of your site, e.g. /blog
