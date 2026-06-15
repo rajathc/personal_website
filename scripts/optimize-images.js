@@ -133,12 +133,22 @@ async function optimizeImage(inputPath, outputDir) {
     const optimizedPath = path.join(outputDir, relativePath, `${basename}${ext}`);
     await fs.mkdir(path.dirname(optimizedPath), { recursive: true });
 
+    // Downscale the original-format fallback too (not just the WebP variants),
+    // so a high-resolution source doesn't ship as a multi-MB fallback.
+    const fallbackPipeline = sharp(inputPath);
+    if (metadata.width > MAX_WIDTH.large) {
+      fallbackPipeline.resize(MAX_WIDTH.large, null, {
+        withoutEnlargement: true,
+        fit: 'inside'
+      });
+    }
+
     if (ext === '.jpg' || ext === '.jpeg') {
-      await sharp(inputPath)
+      await fallbackPipeline
         .jpeg({ quality: QUALITY.jpeg, mozjpeg: true })
         .toFile(optimizedPath);
     } else if (ext === '.png') {
-      await sharp(inputPath)
+      await fallbackPipeline
         .png({ quality: QUALITY.png, compressionLevel: 9 })
         .toFile(optimizedPath);
     }

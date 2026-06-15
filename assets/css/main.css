@@ -666,6 +666,12 @@ button:focus-visible {
     border-radius: 8px;
 }
 
+/* <picture> wraps responsive images; keep it block-level (it is inline by default)
+   so the inner img keeps the same max-width:100% sizing as a bare <img> */
+.post-content picture {
+    display: block;
+}
+
 /* Image captions - consistent small text */
 .caption,
 .caption-p {

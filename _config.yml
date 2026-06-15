@@ -9,7 +9,7 @@
 title:       Rajath Chandrahasa
 author:      Rajath Chandrahasa
 email:       ''
-description: ''
+description: 'Rajath Chandrahasa, a product manager in Bengaluru writing about technology, travel, books, and bringing creativity into tech.'
 baseurl:     '' # The subpath of your site, e.g. /blog
 url:         'https://rajath.blog' # The base hostname & protocol for your site
 
@@ -54,6 +54,7 @@ exclude:
   - IMAGE-OPTIMIZATION.md
   - GIF-CONVERSION.md
   - README-OPTIMIZATION.md
+  - DESIGN_SYSTEM.md
 
 # Tags
 tag_page_dir:         tag
