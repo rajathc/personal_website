@@ -5,3 +5,5 @@ node_modules
 images-backup
 images-optimized
 .DS_Store
+vendor
+.bundle

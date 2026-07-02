@@ -623,6 +623,17 @@ button:focus-visible {
     display: block;
 }
 
+/* On desktop, center images narrower than the 800px column.
+   !important is needed to override .image-container img { margin: 0 !important };
+   scoped to >768px so the mobile edge-to-edge negative margins stay intact. */
+@media (min-width: 769px) {
+    .post-content picture img {
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
 /* Image captions - consistent small text */
 .caption,
 .caption-p {
@@ -1189,7 +1200,9 @@ button:focus-visible {
     color: var(--footer-text);
     font-size: 0.9375rem;
     opacity: 0.85;
-    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 1rem;
 }
 
 /* Standalone pages (page layout) */
