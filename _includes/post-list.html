@@ -12,7 +12,7 @@
                 {% endif %}
                 <span class="post-item-read-time"> • {{ reading_time }} min read</span>
             </div>
-            <p class="post-item-excerpt">{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
+            <p class="post-item-excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 32 }}</p>
         </a>
     </article>
     {% endfor %}
