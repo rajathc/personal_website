@@ -1195,16 +1195,6 @@ button:focus-visible {
     color: var(--accent-strong);
 }
 
-/* Newsletter blurb above the subscribe form */
-.newsletter-blurb {
-    color: var(--footer-text);
-    font-size: 0.9375rem;
-    opacity: 0.85;
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto 1rem;
-}
-
 /* Standalone pages (page layout) */
 .page-container {
     max-width: 800px;
