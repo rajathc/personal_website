@@ -7,6 +7,17 @@
 
     if (!menuToggle || !tocDrawer) return; // Not on a post page
 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    // Stable, human-readable ids for headings that don't have one,
+    // so shared #fragment links survive heading reordering
+    function slugify(text) {
+        const slug = text.toLowerCase().trim()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-');
+        return slug || 'section';
+    }
+
     // Generate TOC from post content headings
     function generateTOC() {
         const postContent = document.querySelector('.post-content');
@@ -20,10 +31,16 @@
         let currentH2Li = null;
         let currentH3Ul = null;
 
-        headings.forEach((heading, index) => {
+        headings.forEach((heading) => {
             // Add ID to heading if it doesn't have one
             if (!heading.id) {
-                heading.id = `heading-${index}`;
+                const base = slugify(heading.textContent);
+                let id = base;
+                let n = 2;
+                while (document.getElementById(id)) {
+                    id = `${base}-${n++}`;
+                }
+                heading.id = id;
             }
 
             const li = document.createElement('li');
@@ -32,7 +49,7 @@
             a.textContent = heading.textContent;
             a.addEventListener('click', function(e) {
                 e.preventDefault();
-                heading.scrollIntoView({ behavior: 'smooth' });
+                heading.scrollIntoView({ behavior: prefersReducedMotion.matches ? 'auto' : 'smooth' });
                 closeDrawer();
             });
 
@@ -66,6 +83,7 @@
     function openDrawer() {
         tocDrawer.classList.add('open');
         document.body.style.overflow = 'hidden';
+        menuToggle.setAttribute('aria-expanded', 'true');
         // Switch icons
         const closedIcon = document.querySelector('.menu-closed-icon');
         const openIcon = document.querySelector('.menu-open-icon');
@@ -73,11 +91,14 @@
             closedIcon.style.display = 'none';
             openIcon.style.display = 'block';
         }
+        // Move focus into the drawer
+        if (tocClose) tocClose.focus();
     }
 
     function closeDrawer() {
         tocDrawer.classList.remove('open');
         document.body.style.overflow = '';
+        menuToggle.setAttribute('aria-expanded', 'false');
         // Switch icons back
         const closedIcon = document.querySelector('.menu-closed-icon');
         const openIcon = document.querySelector('.menu-open-icon');
@@ -85,12 +106,20 @@
             closedIcon.style.display = 'block';
             openIcon.style.display = 'none';
         }
+        // Return focus to the toggle without scrolling back to it —
+        // closing via a TOC link has just scrolled the page to the target heading
+        menuToggle.focus({ preventScroll: true });
     }
 
     // Event listeners
     menuToggle.addEventListener('click', openDrawer);
     tocClose.addEventListener('click', closeDrawer);
     tocOverlay.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && tocDrawer.classList.contains('open')) {
+            closeDrawer();
+        }
+    });
 
     // Generate TOC on page load
     generateTOC();

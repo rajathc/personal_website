@@ -5,10 +5,11 @@
   "private": true,
   "scripts": {
     "optimize": "node scripts/optimize-images.js",
-    "optimize:new": "node scripts/optimize-images.js images/writings"
+    "minify": "terser assets/js/theme-toggle.js -c -m -o assets/js/theme-toggle.min.js && terser assets/js/tabs.js -c -m -o assets/js/tabs.min.js && terser assets/js/toc-drawer.js -c -m -o assets/js/toc-drawer.min.js && terser assets/js/scroll-progress.js -c -m -o assets/js/scroll-progress.min.js && terser assets/js/newsletter-animation.js -c -m -o assets/js/newsletter-animation.min.js"
   },
   "devDependencies": {
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "terser": "^5.48.0"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -7,22 +7,26 @@
 
 # Site settings
 title:       Rajath Chandrahasa
+tagline:     Product, travel, and books from Bengaluru
 author:      Rajath Chandrahasa
 email:       rajath@neosapien.xyz
 description: 'Rajath Chandrahasa, a product manager in Bengaluru writing about technology, travel, books, and bringing creativity into tech.'
-image:       /images/og-default.png  # sitewide default for og:image / twitter:image (posts override via their own `image:`)
 baseurl:     '' # The subpath of your site, e.g. /blog
 url:         'https://rajath.blog' # The base hostname & protocol for your site
 
-# Social links
-twitter_username: rajath_c
-github:    'rajathc'
-instagram: ''
-linkedin:  ''
+# Social metadata (read by jekyll-seo-tag for twitter:site and JSON-LD sameAs)
+twitter:
+  username: rajath_c
+  card: summary_large_image
+social:
+  name: Rajath Chandrahasa
+  links:
+    - https://x.com/rajath_c
+    - https://github.com/rajathc
+    - https://www.linkedin.com/in/rajath-chandrahasa/
 
 markdown:  kramdown
 permalink: pretty
-paginate:  10
 future:    true
 timezone:  Asia/Kolkata
 
@@ -30,11 +34,13 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-paginate
-  - jekyll/tagging
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+
+# Ship excerpts (not full post HTML) in the Atom feed
+feed:
+  excerpt_only: true
 
 include:
   - _pages
@@ -44,9 +50,15 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - fonts/sligoil-main/documentation
+  - fonts/sligoil-main/sources
+  - fonts/sligoil-main/fonts/otf
+  # LICENSE.txt stays published: OFL requires the license to accompany the served font
+  - fonts/sligoil-main/METADATA.yml
   - fonts/sligoil-main/README.md
   - fonts/sligoil-main/COPYRIGHT.md
   - fonts/sligoil-main/TRADEMARKS.md
+  - Image reference
+  - README.md
   - scripts
   - images-backup
   - node_modules
@@ -54,16 +66,18 @@ exclude:
   - package-lock.json
   - IMAGE-OPTIMIZATION.md
   - GIF-CONVERSION.md
-  - README-OPTIMIZATION.md
   - DESIGN_SYSTEM.md
 
-# Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
-
-# Pages path
+# Front-matter defaults
 defaults:
+  # Sitewide og:image fallback. jekyll-seo-tag only reads page.image, so the
+  # default must be set here (a top-level `image:` key is never read).
+  # Posts override this with their own `image:` front matter.
+  - scope:
+      path: ''
+    values:
+      image: /images/og-default.png
+  # Pages path
   - scope:
       path: '_pages'
     values:

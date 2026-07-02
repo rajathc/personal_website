@@ -5,11 +5,11 @@ permalink: /bookshelf/
 description: Books Rajath is reading and recommends, from fiction and sci-fi to classics and the occasional graphic novel.
 ---
 
-### Currently Reading
+## Currently Reading
 
 - [**The Grapes of Wrath**](https://www.goodreads.com/book/show/4395.The_Grapes_of_Wrath) by John Steinbeck
 
-### Favourite Books
+## Favourite Books
 
 - [**East of Eden**](https://www.goodreads.com/book/show/4406.East_of_Eden) by John Steinbeck
 - [**One Hundred Years of Solitude**](https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude) by Gabriel García Márquez
@@ -18,7 +18,7 @@ description: Books Rajath is reading and recommends, from fiction and sci-fi to 
 - [**I Know Why the Caged Bird Sings**](https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings) by Maya Angelou
 - [**The Stranger**](https://www.goodreads.com/book/show/49552.The_Stranger) by Albert Camus
 
-### History
+## Previously Read
 
 - [**White Nights**](https://www.goodreads.com/book/show/1772910.White_Nights) by Fyodor Dostoevsky
 - [**The Devil's Alternative**](https://www.goodreads.com/book/show/825473.The_Devil_s_Alternative) by Frederick Forsyth
@@ -150,7 +150,7 @@ description: Books Rajath is reading and recommends, from fiction and sci-fi to 
 - [**Deception Point**](https://www.goodreads.com/book/show/976.Deception_Point) by Dan Brown
 - [**Last Man Standing**](https://www.goodreads.com/book/show/14839.Last_Man_Standing) by David Baldacci
 - [**The Color Purple**](https://www.goodreads.com/book/show/11486.The_Color_Purple) by Alice Walker
-- [**Raven's Gate**](https://www.goodreads.com/review/list/16918417-rajath?ref=nav_mybooks&shelf=read) by Anthony Horowitz
+- [**Raven's Gate**](https://www.goodreads.com/book/show/107664.Raven_s_Gate) by Anthony Horowitz
 - [**Angels & Demons**](https://www.goodreads.com/book/show/960.Angels_Demons) by Dan Brown
 - [**The Pillars of the Earth**](https://www.goodreads.com/book/show/5043.The_Pillars_of_the_Earth) by Ken Follett
 - [**Watchmen**](https://www.goodreads.com/book/show/472331.Watchmen) by Alan Moore

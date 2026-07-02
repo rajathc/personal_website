@@ -5,36 +5,35 @@ permalink: writings/to-summarise-or-not
 image: /images/writings/08-to-summarise-or-not/feature-image.png
 description: Working on AI summarization taught me when summaries help and when they quietly harm. A framework for knowing when to compress and when to go deep.
 date: 2025-12-09 10:00:00 +0530
-keywords: "Rajath Chandrahasa, AI summarization, deep reading, NeoSapien, conversational summarization, product management, AI tools, slow reading, compression algorithms, WER, meeting summaries, book summaries, cognitive load, information overload, ChatGPT, agentic browsers, product design, engineering decisions, memory aids, navigation tools, Paul Graham essays, East of Eden, Mona Lisa, lossy compression"
 ---
 
 <p>
-    There's been a lot of talk (and fear-mongering) about <a href="https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-global-workforce" target="_blank">AI taking away people's jobs</a>, and in some domains that fear has turned out to be partially valid. But there's a parallel fear that I've been thinking about more: that people are slowly losing their ability to think, reason, and stay with hard material.
+    There's been a lot of talk (and fear-mongering) about <a href="https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-global-workforce" target="_blank" rel="noopener">AI taking away people's jobs</a>, and in some domains that fear has turned out to be partially valid. But there's a parallel fear that I've been thinking about more: that people are slowly losing their ability to think, reason, and stay with hard material.
 </p>
 
 <p>
-    This isn't just an abstract concern. It shows up in students who finished college around and after the Covid-19 years, right in the middle of the <a href="https://arxiv.org/pdf/2506.08872v1" target="_blank">ChatGPT boom</a>, and in how they interact with tools that promise instant answers and instant clarity. Everywhere online you see comments like <a href="https://knowyourmeme.com/memes/grok-explain-this" target="_blank">"@grok explain this"</a> and a growing group of people excitedly describing how agentic browsers handle their browsing for them.
+    This isn't just an abstract concern. It shows up in students who finished college around and after the Covid-19 years, right in the middle of the <a href="https://arxiv.org/pdf/2506.08872v1" target="_blank" rel="noopener">ChatGPT boom</a>, and in how they interact with tools that promise instant answers and instant clarity. Everywhere online you see comments like <a href="https://knowyourmeme.com/memes/grok-explain-this" target="_blank" rel="noopener">"@grok explain this"</a> and a growing group of people excitedly describing how agentic browsers handle their browsing for them.
 </p>
 
 <div class="image-container">
     <picture>
         <source type="image/webp" srcset="/images/writings/08-to-summarise-or-not/feature-image-small.webp 800w, /images/writings/08-to-summarise-or-not/feature-image-medium.webp 1200w, /images/writings/08-to-summarise-or-not/feature-image.webp 1920w" sizes="(max-width: 800px) 100vw, 800px">
-        <img class="blog-image" src="/images/writings/08-to-summarise-or-not/feature-image.png" alt="Feature image for summarization blog post" loading="lazy" decoding="async"/>
+        <img class="blog-image" src="/images/writings/08-to-summarise-or-not/feature-image.png" alt="Feature image for summarization blog post" fetchpriority="high" decoding="async"/>
     </picture>
 </div>
 
 <p>
-    For the last 9 months, I've been working on conversation summarisation at NeoSapien. We built a <a href="https://shop.neosapien.xyz" target="_blank">device that transcribes meetings and conversations</a>, and working on this has made me hyper-aware of where summaries genuinely help, and where they quietly make people worse at thinking.
+    For the last 9 months, I've been working on conversation summarisation at NeoSapien. We built a <a href="https://shop.neosapien.xyz" target="_blank" rel="noopener">device that transcribes meetings and conversations</a>, and working on this has made me hyper-aware of where summaries genuinely help, and where they quietly make people worse at thinking.
 </p>
 
 <h2 id="the-pressure-for-width">The Pressure for Width</h2>
 
 <p>
-    In conversations with friends and younger colleagues, a particular pattern keeps showing up: <a href="https://www.sambrinson.com/consuming-information/" target="_blank">a pressure to consume as much information as humanly possible</a>. The goal seems to be maximum "width" across topics, even if that means sacrificing depth almost entirely.
+    In conversations with friends and younger colleagues, a particular pattern keeps showing up: <a href="https://www.sambrinson.com/consuming-information/" target="_blank" rel="noopener">a pressure to consume as much information as humanly possible</a>. The goal seems to be maximum "width" across topics, even if that means sacrificing depth almost entirely.
 </p>
 
 <p>
-    Out of this mindset come ideas like building agentic workflows that subscribe to a dozen popular newsletters, auto-summarise them, and email only the "best parts" to the user, without even including links back to the originals. Another conversation involved a request to pull the top five <a href="https://news.ycombinator.com/news" target="_blank">Hacker News</a> posts every day, summarise them, and send a weekly digest.
+    Out of this mindset come ideas like building agentic workflows that subscribe to a dozen popular newsletters, auto-summarise them, and email only the "best parts" to the user, without even including links back to the originals. Another conversation involved a request to pull the top five <a href="https://news.ycombinator.com/news" target="_blank" rel="noopener">Hacker News</a> posts every day, summarise them, and send a weekly digest.
 </p>
 
 <p>
@@ -52,11 +51,11 @@ keywords: "Rajath Chandrahasa, AI summarization, deep reading, NeoSapien, conver
 </p>
 
 <p>
-    I wouldn't do this myself, replace reading a book with reading its summary. But I did recently read a summary of <a href="https://www.goodreads.com/book/show/4406.East_of_Eden" target="_blank"><i>East of Eden</i></a> to recall what happened in the book. The summary was terrible compared to the actual book. It gave me plot points, but none of the weight of Steinbeck's language, the moral complexity of the characters, or the way the biblical parallels deepen as you read.
+    I wouldn't do this myself, replace reading a book with reading its summary. But I did recently read a summary of <a href="https://www.goodreads.com/book/show/4406.East_of_Eden" target="_blank" rel="noopener"><i>East of Eden</i></a> to recall what happened in the book. The summary was terrible compared to the actual book. It gave me plot points, but none of the weight of Steinbeck's language, the moral complexity of the characters, or the way the biblical parallels deepen as you read.
 </p>
 
 <p>
-    The same logic applies to movies and other art forms. A plot summary of <a href="https://www.imdb.com/title/tt0114814/" target="_blank"><i>The Usual Suspects</i></a> cannot give you the same experience as actually watching the film, with its tension, performances, and slow reveal.
+    The same logic applies to movies and other art forms. A plot summary of <a href="https://www.imdb.com/title/tt0114814/" target="_blank" rel="noopener"><i>The Usual Suspects</i></a> cannot give you the same experience as actually watching the film, with its tension, performances, and slow reveal.
 </p>
 
 <p>
@@ -68,7 +67,7 @@ keywords: "Rajath Chandrahasa, AI summarization, deep reading, NeoSapien, conver
         <source type="image/webp" srcset="/images/writings/08-to-summarise-or-not/monalisa-small.webp 800w, /images/writings/08-to-summarise-or-not/monalisa-medium.webp 1200w, /images/writings/08-to-summarise-or-not/monalisa.webp 1920w" sizes="(max-width: 800px) 100vw, 800px">
         <img class="blog-image" src="/images/writings/08-to-summarise-or-not/monalisa.png" alt="Three versions of Mona Lisa: original painting, low-poly version, and pixel art" loading="lazy" decoding="async"/>
     </picture>
-    <p class="caption">Mona Lisa in original and two other art forms of representation. Credits: <a href="https://www.behance.net/gallery/21283847/low-poly-Mona-Lisa" target="_blank">low-poly</a>, <a href="https://www.reddit.com/r/PixelArt/comments/11sot7e/i_had_a_go_at_reproducing_mona_lisa_by_leonardo/" target="_blank">pixel art</a></p>
+    <p class="caption">Mona Lisa in original and two other art forms of representation. Credits: <a href="https://www.behance.net/gallery/21283847/low-poly-Mona-Lisa" target="_blank" rel="noopener">low-poly</a>, <a href="https://www.reddit.com/r/PixelArt/comments/11sot7e/i_had_a_go_at_reproducing_mona_lisa_by_leonardo/" target="_blank" rel="noopener">pixel art</a></p>
 </div>
 
 <p>
@@ -82,7 +81,7 @@ keywords: "Rajath Chandrahasa, AI summarization, deep reading, NeoSapien, conver
 </p>
 
 <p>
-    One of the most obvious examples is long meetings. After 90 minutes of discussion, <a href="https://en.wikipedia.org/wiki/Forgetting_curve" target="_blank">almost everyone forgets</a> the exact order in which points were raised, and smaller but important details blur together. A good summary here is a gift: it makes it possible to revisit key decisions, capture action items, and remember who promised to do what without replaying the entire recording. The cognitive load is reduced, but the people who were in the room still have access to full context if they need it.
+    One of the most obvious examples is long meetings. After 90 minutes of discussion, <a href="https://en.wikipedia.org/wiki/Forgetting_curve" target="_blank" rel="noopener">almost everyone forgets</a> the exact order in which points were raised, and smaller but important details blur together. A good summary here is a gift: it makes it possible to revisit key decisions, capture action items, and remember who promised to do what without replaying the entire recording. The cognitive load is reduced, but the people who were in the room still have access to full context if they need it.
 </p>
 
 <div class="image-container">
@@ -90,7 +89,7 @@ keywords: "Rajath Chandrahasa, AI summarization, deep reading, NeoSapien, conver
         <source type="image/webp" srcset="/images/writings/08-to-summarise-or-not/Ebbinghaus_curve-small.webp 800w, /images/writings/08-to-summarise-or-not/Ebbinghaus_curve-medium.webp 1200w, /images/writings/08-to-summarise-or-not/Ebbinghaus_curve.webp 1920w" sizes="(max-width: 800px) 100vw, 800px">
         <img class="blog-image" src="/images/writings/08-to-summarise-or-not/Ebbinghaus_curve.png" alt="Ebbinghaus forgetting curve showing memory retention over time" loading="lazy" decoding="async"/>
     </picture>
-    <p class="caption">The Ebbinghaus forgetting curve showing how rapidly we lose information over time without reinforcement. Credits: <a href="https://en.wikipedia.org/wiki/Forgetting_curve" target="_blank">Wikipedia</a></p>
+    <p class="caption">The Ebbinghaus forgetting curve showing how rapidly we lose information over time without reinforcement. Credits: <a href="https://en.wikipedia.org/wiki/Forgetting_curve" target="_blank" rel="noopener">Wikipedia</a></p>
 </div>
 
 <p>
@@ -136,13 +135,13 @@ keywords: "Rajath Chandrahasa, AI summarization, deep reading, NeoSapien, conver
 </div>
 
 <p>
-    Here's a concrete example: If you're reading a <a href="https://www.paulgraham.com/articles.html" target="_blank">Paul Graham essay</a> for the first time, read it. The structure of his arguments and the way he builds to a point is part of the value. But if you're trying to remember which PG essay discussed a specific idea, use a summary to navigate.
+    Here's a concrete example: If you're reading a <a href="https://www.paulgraham.com/articles.html" target="_blank" rel="noopener">Paul Graham essay</a> for the first time, read it. The structure of his arguments and the way he builds to a point is part of the value. But if you're trying to remember which PG essay discussed a specific idea, use a summary to navigate.
 </p>
 
 <h2 id="slow-reading-in-a-fast-world">Slow Reading in a Fast World</h2>
 
 <p>
-    Nothing in this essay is completely new. For years, there's been a broader <a href="https://en.wikipedia.org/wiki/Slow_movement_(culture)" target="_blank">"slow" movement</a>: slow food, slow living, slow reading. The basic idea is simple: in a world that optimizes speed and volume, deliberately choosing slowness can be an act of care for your attention, your taste, and your ability to think.
+    Nothing in this essay is completely new. For years, there's been a broader <a href="https://en.wikipedia.org/wiki/Slow_movement_(culture)" target="_blank" rel="noopener">"slow" movement</a>: slow food, slow living, slow reading. The basic idea is simple: in a world that optimizes speed and volume, deliberately choosing slowness can be an act of care for your attention, your taste, and your ability to think.
 </p>
 
 <p>
@@ -152,7 +151,7 @@ keywords: "Rajath Chandrahasa, AI summarization, deep reading, NeoSapien, conver
 <h2 id="the-choice-is-yours">The Choice Is Yours</h2>
 
 <p>
-    The biggest insight from summarization has been this: <b>deciding what to preserve versus what to compress is product design, not just engineering.</b> There's no single "summary quality" metric like <a href="/writings/back-to-writing#language-update" target="_blank">WER (Word Error Rate) for transcription</a>. What makes a good summary depends entirely on what the user needs it for.
+    The biggest insight from summarization has been this: <b>deciding what to preserve versus what to compress is product design, not just engineering.</b> There's no single "summary quality" metric like <a href="/writings/back-to-writing#language-update" target="_blank" rel="noopener">WER (Word Error Rate) for transcription</a>. What makes a good summary depends entirely on what the user needs it for.
 </p>
 
 <p>

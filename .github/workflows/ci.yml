@@ -1,0 +1,27 @@
+name: CI
+
+# Build the site with the same builder GitHub Pages uses and validate it:
+# internal links, image references (including srcset variants), and alt text.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build site (same builder as GitHub Pages)
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Check internal links, images, and alt text
+        run: node scripts/check-site.js _site

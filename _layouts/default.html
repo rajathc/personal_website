@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% seo %}
     {% if page.og_description %}
+    <!-- Social-specific description; emitted before the seo tag so scrapers pick it first -->
     <meta property="og:description" content="{{ page.og_description }}" />
     <meta name="twitter:description" content="{{ page.og_description }}" />
     {% endif %}
+    {% seo %}
+    {% feed_meta %}
     <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
@@ -15,46 +17,51 @@
     <link rel="preload" href="/fonts/sligoil-main/fonts/web/Sligoil-Micro.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/oi/oi-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-700.woff2" as="font" type="font/woff2" crossorigin>
 
     <script>
         // Set theme before page renders to avoid flash
-        // Check sessionStorage for user's choice during current session, otherwise use system preference
+        // Check localStorage for user's saved choice, otherwise use system preference
         (function() {
-            const sessionTheme = sessionStorage.getItem('theme');
+            let storedTheme = null;
+            try { storedTheme = localStorage.getItem('theme'); } catch (e) {}
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const theme = sessionTheme || (prefersDark ? 'dark' : 'light');
+            const theme = storedTheme || (prefersDark ? 'dark' : 'light');
             document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS570M83ND"></script>
+    <!-- Analytics (GA4 + Microsoft Clarity), injected after the load event so
+         they never compete with fonts and the hero image for bandwidth -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        window.addEventListener('load', function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YS570M83ND';
+            document.head.appendChild(s);
+            gtag('js', new Date());
+            gtag('config', 'G-YS570M83ND');
 
-        gtag('config', 'G-YS570M83ND');
-    </script>
-
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "nb8atzyeik");
+            (function (c, l, a, r, i, t, y) {
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "nb8atzyeik");
+        });
     </script>
 </head>
 <body>
-    <main class="main-content">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main class="main-content" id="main-content" tabindex="-1">
         {{ content }}
     </main>
 
     {% include footer.html %}
 
-    <script src="{{ '/assets/js/theme-toggle.min.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/tabs.min.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/newsletter-animation.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/theme-toggle.min.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/tabs.min.js' | relative_url }}" defer></script>
+    <script src="{{ '/assets/js/newsletter-animation.min.js' | relative_url }}" defer></script>
 </body>
 </html>

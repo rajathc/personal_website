@@ -79,6 +79,27 @@ async function optimizeImage(inputPath, outputDir) {
     return;
   }
 
+  // Skip images that already have all generated WebP variants next to them.
+  // This keeps the workflow idempotent: re-runs don't re-encode (and further
+  // degrade) already-processed JPEGs, and don't churn ~460 binaries in git.
+  // To force reprocessing (e.g. after replacing an image under the same
+  // name), delete its .webp variants or run with FORCE_OPTIMIZE=1.
+  if (!process.env.FORCE_OPTIMIZE) {
+    const sourceDir = path.dirname(inputPath);
+    const variantsExist = ['', '-medium', '-small'].every(suffix => {
+      try {
+        require('fs').accessSync(path.join(sourceDir, `${basename}${suffix}.webp`));
+        return true;
+      } catch {
+        return false;
+      }
+    });
+    if (variantsExist) {
+      stats.skipped++;
+      return;
+    }
+  }
+
   try {
     const image = sharp(inputPath);
     const metadata = await image.metadata();
@@ -244,14 +265,12 @@ async function main() {
 
   console.log('\n' + '═'.repeat(60));
   console.log('\n📝 Next Steps:\n');
-  console.log('1. Review optimized images in images-optimized/ directory');
-  console.log('2. Backup original images:');
-  console.log('   mv images images-backup\n');
-  console.log('3. Replace with optimized images:');
-  console.log('   mv images-optimized images\n');
-  console.log('4. Update HTML to use responsive-image include');
-  console.log('5. Test locally with: bundle exec jekyll serve');
-  console.log('6. Commit: git add images/ && git commit -m "Optimize images"');
+  console.log('1. Review outputs in images-optimized/, then merge them next to the originals:');
+  console.log('   rsync -av images-optimized/writings/ images/writings/ && rm -rf images-optimized');
+  console.log('   (The optimize-images GitHub Action does this automatically on push.)');
+  console.log('2. Wrap new post images in <picture> with the WebP srcset + original fallback');
+  console.log('   (copy an existing block from any post in _posts/).');
+  console.log('3. Commit: git add images/ _posts/ && git commit -m "Optimize images"');
   console.log('\n' + '═'.repeat(60) + '\n');
 }
 
