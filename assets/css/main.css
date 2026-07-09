@@ -99,7 +99,7 @@ html {
 }
 
 body {
-    font-family: 'Bricolage Grotesque', -apple-system, 'Helvetica Neue', sans-serif;
+    font-family: 'Sligoil', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.75;
@@ -1285,6 +1285,11 @@ button:focus-visible {
    (intro, review) stay in Sligoil. */
 
 
+
+/* Database chrome is the neutral sans; the journal voice below stays mono */
+.jukebox {
+    font-family: 'Bricolage Grotesque', -apple-system, 'Helvetica Neue', sans-serif;
+}
 
 .jukebox-intro {
     font-family: 'Sligoil', monospace;
