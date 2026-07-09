@@ -158,8 +158,7 @@
                 <tr>
                     <td class="music-lt-setup">
                         <span class="music-listen-chain">
-                            <span class="music-listen-node">${icon(sourceIcon(l.source))}${esc(l.source)}</span>
-                            <span class="music-listen-arrow" aria-hidden="true">→</span>
+                            <span class="music-listen-node">${icon(sourceIcon(l.source))}${esc(l.source)} <span class="music-listen-arrow" aria-hidden="true">→</span></span>
                             <span class="music-listen-node">${icon('headphones')}${esc(l.receiver)}</span>
                         </span>
                         ${quality.length ? `<span class="music-lt-quality">${quality.join(' · ')}</span>` : ''}

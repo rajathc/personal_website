@@ -995,12 +995,18 @@ button:focus-visible {
     }
 
     .tabs-header {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .tabs-nav {
+        flex-shrink: 1;
+        min-width: 0;
     }
 
     .tab-button {
-        font-size: 1rem;
-        padding: 0.625rem 1rem;
+        font-size: 0.9375rem;
+        padding: 0.6rem 0.65rem;
     }
 
     .post-container {
@@ -1109,7 +1115,8 @@ button:focus-visible {
     }
 
     .tab-button {
-        font-size: 1rem;
+        font-size: 0.875rem;
+        padding: 0.55rem 0.5rem;
     }
 
     .newsletter-form input {
@@ -1663,6 +1670,8 @@ button:focus-visible {
 .music-modal-rating {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.9rem;
     margin-top: 0.4rem;
 }
 
@@ -1674,7 +1683,6 @@ button:focus-visible {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    margin-left: 0.9rem;
     font-size: 0.6875rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -1818,6 +1826,11 @@ button:focus-visible {
     .music-td-album,
     .music-th-flags,
     .music-td-flags {
+        display: none;
+    }
+
+    .music-th-language,
+    .music-td-language {
         display: none;
     }
 
