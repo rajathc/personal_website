@@ -1,8 +1,9 @@
-// Music DB: filtering, sorting, and song detail modal
+// Music DB (Jukebox): grid/list views, filtering, and release-style song modal
 (function() {
     const dataEl = document.getElementById('music-data');
     const listEl = document.getElementById('music-list');
-    if (!dataEl || !listEl) return; // Not on the music page
+    const gridEl = document.getElementById('music-grid');
+    if (!dataEl || !listEl || !gridEl) return; // Not on the jukebox
 
     // Phosphor icon paths (viewBox 0 0 256 256)
     const ICONS = {
@@ -17,7 +18,9 @@
         calendarBlank: "M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z",
         thumbsUp: "M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z",
         magnifyingGlass: "M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z",
-        user: "M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+        user: "M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z",
+        squaresFour: "M104,40H56A16,16,0,0,0,40,56v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,104,40Zm0,64H56V56h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,64H152V56h48v48Zm-96,32H56a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,104,136Zm0,64H56V152h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,200,136Zm0,64H152V152h48v48Z",
+        rows: "M208,136H48a16,16,0,0,0-16,16v40a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V152A16,16,0,0,0,208,136Zm0,56H48V152H208v40Zm0-144H48A16,16,0,0,0,32,64v40a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V64A16,16,0,0,0,208,48Zm0,56H48V64H208v40Z"
     };
 
     const songs = JSON.parse(dataEl.textContent);
@@ -27,11 +30,18 @@
     const langEl = document.getElementById('music-language');
     const sortEl = document.getElementById('music-sort');
     const recEl = document.getElementById('music-rec');
+    const tableWrap = document.querySelector('.music-table-wrap');
+    const viewGridBtn = document.getElementById('music-view-grid');
+    const viewListBtn = document.getElementById('music-view-list');
     const modal = document.getElementById('music-modal');
     const modalBody = document.getElementById('music-modal-body');
     const modalClose = modal.querySelector('.music-modal-close');
     const modalOverlay = modal.querySelector('.music-modal-overlay');
     let lastFocused = null;
+
+    // Grid by default, like Discogs; remembered across visits
+    let view = 'grid';
+    try { view = localStorage.getItem('jukebox-view') || 'grid'; } catch (e) {}
 
     function icon(name, cls) {
         return `<svg class="music-icon ${cls || ''}" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="${ICONS[name]}"/></svg>`;
@@ -56,7 +66,7 @@
         return div.innerHTML;
     }
 
-    // Star glyphs with a visually half-filled star: 4.5 -> ★★★★ + half
+    // Star glyphs with a visually half-filled star: 4.5 -> four stars + half
     function stars(rating) {
         const full = '★'.repeat(Math.floor(rating));
         const half = rating % 1 >= 0.25 ? '<span class="music-star-half">★</span>' : '';
@@ -76,7 +86,7 @@
         if (song.art) {
             return `<img class="music-art ${cls || ''}" src="${song.art}" alt="" loading="lazy" width="400" height="400">`;
         }
-        return disc(song, cls === 'music-art-lg' ? 'music-disc-lg' : 'music-disc-mini');
+        return disc(song, cls);
     }
 
     function dolbyMark(cls) {
@@ -91,7 +101,7 @@
         return out;
     }
 
-    function render() {
+    function filteredSongs() {
         const q = searchEl.value.trim().toLowerCase();
         const genre = genreEl.value, lang = langEl.value;
         const recOnly = recEl.checked;
@@ -109,13 +119,28 @@
         else if (sort === 'title') filtered.sort((a, b) => a.title.localeCompare(b.title));
         else if (sort === 'year') filtered.sort((a, b) => b.year - a.year);
         else filtered.sort((a, b) => a.serial - b.serial);
+        return filtered;
+    }
 
-        countEl.textContent = `${filtered.length} of ${songs.length} songs`;
+    function renderGrid(filtered) {
+        gridEl.innerHTML = filtered.map(s => `
+            <li class="music-gitem">
+                <button class="music-gcard" data-id="${s.id}" aria-haspopup="dialog">
+                    <span class="music-sleeve">${art(s, 'music-art-grid')}</span>
+                    <span class="music-kicker">${esc(s.genre)}</span>
+                    <span class="music-gtitle">${esc(s.title)}</span>
+                    <span class="music-gartist">${esc(s.artist)}</span>
+                    <span class="music-gmeta">${s.year} ${stars(maxRating(s))}</span>
+                </button>
+            </li>`).join('');
+    }
+
+    function renderList(filtered) {
         listEl.innerHTML = filtered.map(s => `
             <tr class="music-row" data-id="${s.id}">
                 <td class="music-td-song">
                     <button class="music-row-btn" data-id="${s.id}" aria-haspopup="dialog">
-                        ${art(s)}
+                        ${art(s, 'music-art-mini')}
                         <span class="music-song-text">
                             <span class="music-song-title">${esc(s.title)}</span>
                             <span class="music-song-artist">${esc(s.artist)}</span>
@@ -129,6 +154,38 @@
             </tr>`).join('');
     }
 
+    function render() {
+        const filtered = filteredSongs();
+        countEl.textContent = `${filtered.length} of ${songs.length} songs`;
+        if (view === 'grid') {
+            renderGrid(filtered);
+            listEl.innerHTML = '';
+        } else {
+            renderList(filtered);
+            gridEl.innerHTML = '';
+        }
+        gridEl.hidden = view !== 'grid';
+        tableWrap.hidden = view !== 'list';
+        viewGridBtn.setAttribute('aria-pressed', view === 'grid');
+        viewListBtn.setAttribute('aria-pressed', view === 'list');
+    }
+
+    function setView(v) {
+        view = v;
+        try { localStorage.setItem('jukebox-view', v); } catch (e) {}
+        render();
+    }
+    viewGridBtn.addEventListener('click', () => setView('grid'));
+    viewListBtn.addEventListener('click', () => setView('list'));
+
+    // "16/44" -> "16-bit / 44.1 kHz"
+    function formatBitRate(br) {
+        const m = (br || '').match(/^(\d+)\/(\d+)$/);
+        if (!m) return br || '';
+        const khz = m[2] === '44' ? '44.1' : m[2];
+        return `${m[1]}-bit / ${khz} kHz`;
+    }
+
     function formatDate(iso) {
         if (!iso) return '';
         const d = new Date(iso + 'T00:00:00');
@@ -139,15 +196,7 @@
         return /macbook|laptop|mac\b/i.test(source) ? 'laptop' : 'deviceMobile';
     }
 
-    // "16/44" -> "16-bit / 44.1 kHz"
-    function formatBitRate(br) {
-        const m = (br || '').match(/^(\d+)\/(\d+)$/);
-        if (!m) return br || '';
-        const khz = m[2] === '44' ? '44.1' : m[2];
-        return `${m[1]}-bit / ${khz} kHz`;
-    }
-
-    // Discogs-style listens table: Setup | Quality | Date | Rating
+    // Discogs-style listens table: Setup | Date | Rating
     function listenTable(listens) {
         const rows = listens.map(l => {
             const quality = [];
@@ -182,23 +231,26 @@
         ).join('')}</ul>`;
     }
 
+    // Release-page layout: title, artist, centered art, labeled specs, review, listens
     function openModal(song) {
         lastFocused = document.activeElement;
         modalBody.innerHTML = `
-            <div class="music-modal-header">
-                ${art(song, 'music-art-lg')}
-                <div class="music-modal-headmeta">
-                    <h2 class="music-modal-title" id="music-modal-title">${esc(song.title)}</h2>
-                    <p class="music-modal-artist">${esc(song.artist)}</p>
-                    <p class="music-modal-meta">${esc(song.album)} · ${song.year} · ${esc(song.genre)} · ${esc(song.language)}${song.composer ? `<br>Music by ${esc(song.composer)}` : ''}</p>
-                    <p class="music-modal-rating">${stars(maxRating(song))}${song.recommend ? `<span class="music-modal-rec">${icon('thumbsUp')} Recommended</span>` : ''}</p>
-                </div>
-            </div>
+            <h2 class="music-modal-title" id="music-modal-title">${esc(song.title)}</h2>
+            <p class="music-modal-artist">${esc(song.artist)}</p>
+            <div class="music-modal-artblock">${art(song, 'music-art-lg')}</div>
+            <p class="music-modal-rating">${stars(maxRating(song))}${song.recommend ? `<span class="music-modal-rec">${icon('thumbsUp')} Recommended</span>` : ''}</p>
+            <dl class="music-specs">
+                <div class="music-spec"><dt>Album:</dt><dd>${esc(song.album)}</dd></div>
+                <div class="music-spec"><dt>Released:</dt><dd>${song.year}</dd></div>
+                <div class="music-spec"><dt>Genre:</dt><dd>${esc(song.genre)}</dd></div>
+                <div class="music-spec"><dt>Language:</dt><dd>${esc(song.language)}</dd></div>
+                ${song.composer ? `<div class="music-spec"><dt>Music by:</dt><dd>${esc(song.composer)}</dd></div>` : ''}
+            </dl>
             <div class="music-review">
                 <p class="music-review-text">${esc(song.summary)}</p>
                 ${pointerList(song.pointers)}
             </div>
-            <h3 class="music-label">When I listened</h3>
+            <h3 class="music-h">When I listened</h3>
             ${listenTable(song.listens)}`;
         modal.hidden = false;
         document.body.style.overflow = 'hidden';
@@ -213,12 +265,14 @@
         if (lastFocused) lastFocused.focus();
     }
 
-    listEl.addEventListener('click', e => {
-        const row = e.target.closest('.music-row');
-        if (!row) return;
-        const song = songs.find(s => s.id === row.dataset.id);
+    function clickHandler(e) {
+        const el = e.target.closest('[data-id]');
+        if (!el) return;
+        const song = songs.find(s => s.id === el.dataset.id);
         if (song) openModal(song);
-    });
+    }
+    listEl.addEventListener('click', clickHandler);
+    gridEl.addEventListener('click', clickHandler);
     modalClose.addEventListener('click', closeModal);
     modalOverlay.addEventListener('click', closeModal);
     document.addEventListener('keydown', e => {
@@ -230,7 +284,7 @@
 
     render();
 
-    // Deep link: /music/#song-id opens that song
+    // Deep link: /jukebox/#song-id opens that song
     const linked = songs.find(s => `#${s.id}` === window.location.hash);
     if (linked) openModal(linked);
 })();
