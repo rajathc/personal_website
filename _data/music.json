@@ -1,0 +1,699 @@
+[
+ {
+  "serial": 1,
+  "id": "stairway-to-heaven",
+  "title": "Stairway to Heaven",
+  "artist": "Led Zeppelin",
+  "composer": "",
+  "album": "Led Zeppelin IV",
+  "year": 1971,
+  "genre": "Classic Rock",
+  "language": "English",
+  "summary": "Always my reference song for any new equipment",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Robert Plant's vocals"
+   },
+   {
+    "type": "plus",
+    "text": "Jimmy Page's guitar"
+   },
+   {
+    "type": "plus",
+    "text": "John Bonham's drums"
+   },
+   {
+    "type": "plus",
+    "text": "John Paul Jones's bass"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4.5,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/stairway-to-heaven.jpg"
+ },
+ {
+  "serial": 2,
+  "id": "i-love-rock-n-roll",
+  "title": "I Love Rock 'n' Roll",
+  "artist": "Joan Jett & the Blackhearts",
+  "composer": "",
+  "album": "I Love Rock 'n Roll",
+  "year": 1981,
+  "genre": "Rock",
+  "language": "English",
+  "summary": "I love rock 'n' roll, but not this song in this setup",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Nice beats and claps, sounds dynamic"
+   },
+   {
+    "type": "minus",
+    "text": "At times the vocals sound muddy under the electric guitar"
+   },
+   {
+    "type": "minus",
+    "text": "A little crowded in places"
+   }
+  ],
+  "recommend": false,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 2.5,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/i-love-rock-n-roll.jpg"
+ },
+ {
+  "serial": 3,
+  "id": "are-you-bored-yet",
+  "title": "Are You Bored Yet?",
+  "artist": "Wallows ft. Clairo",
+  "composer": "",
+  "album": "Nothing Happens",
+  "year": 2019,
+  "genre": "Indie Rock",
+  "language": "English",
+  "summary": "One of my favourite songs from the Covid era",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Clairo's voice"
+   },
+   {
+    "type": "plus",
+    "text": "The kick drum adds a unique texture throughout the song"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4.0,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/are-you-bored-yet.jpg"
+ },
+ {
+  "serial": 4,
+  "id": "motion-sickness",
+  "title": "Motion Sickness",
+  "artist": "Phoebe Bridgers",
+  "composer": "",
+  "album": "Stranger in the Alps",
+  "year": 2017,
+  "genre": "Indie Folk",
+  "language": "English",
+  "summary": "One of those songs that hits you in the feels",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Lovely bass and drums"
+   },
+   {
+    "type": "plus",
+    "text": "Impressive vocal layering"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/motion-sickness.jpg"
+ },
+ {
+  "serial": 5,
+  "id": "creature-fear",
+  "title": "Creature Fear",
+  "artist": "Bon Iver",
+  "composer": "",
+  "album": "For Emma, Forever Ago",
+  "year": 2007,
+  "genre": "Indie Folk",
+  "language": "English",
+  "summary": "I love the vocals, and I'm nostalgic for anything Bon Iver",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Transports me to a cabin in Wisconsin"
+   },
+   {
+    "type": "plus",
+    "text": "Justin Vernon's vocals and the cosy setting"
+   },
+   {
+    "type": "plus",
+    "text": "The bass roll-off into \"Team\""
+   },
+   {
+    "type": "minus",
+    "text": "Sounds incomplete without \"Team\""
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4.0,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/creature-fear.jpg"
+ },
+ {
+  "serial": 6,
+  "id": "matilda",
+  "title": "Matilda",
+  "artist": "alt-J",
+  "composer": "",
+  "album": "An Awesome Wave",
+  "year": 2012,
+  "genre": "Indie Rock",
+  "language": "English",
+  "summary": "This rating is from nostalgia!",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Great drums, very subtle beats"
+   },
+   {
+    "type": "plus",
+    "text": "Love the xylophone(?) in the song"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 3.5,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/matilda.jpg"
+ },
+ {
+  "serial": 7,
+  "id": "kamli",
+  "title": "Kamli",
+  "artist": "Sunidhi Chauhan",
+  "composer": "Pritam",
+  "album": "Dhoom:3",
+  "year": 2013,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "Fails the Bechdel test",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Great stereo effect"
+   },
+   {
+    "type": "minus",
+    "text": "Crowded in places, over-produced"
+   }
+  ],
+  "recommend": false,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 2.5,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/kamli.jpg"
+ },
+ {
+  "serial": 8,
+  "id": "bang-bang",
+  "title": "Bang Bang",
+  "artist": "Benny Dayal, Neeti Mohan",
+  "composer": "Vishal-Shekhar",
+  "album": "Bang Bang!",
+  "year": 2014,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "Makes me dance like Hrithik. Banger!",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Love the guitar riff at the start"
+   },
+   {
+    "type": "plus",
+    "text": "Fan of the 80s disco tune"
+   },
+   {
+    "type": "plus",
+    "text": "I'm feeling it tonight!"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 4.0,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/bang-bang.jpg"
+ },
+ {
+  "serial": 9,
+  "id": "yeko-yeno",
+  "title": "Yeko Yeno",
+  "artist": "Mahalakshmi Iyer",
+  "composer": "Joshua Sridhar",
+  "album": "Arasu",
+  "year": 2007,
+  "genre": "Kannada Film",
+  "language": "Kannada",
+  "summary": "Love the tempo. One of my favourite albums as well",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Good sound separation"
+   },
+   {
+    "type": "plus",
+    "text": "Love the acoustic guitar picking in the background"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4.0,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/yeko-yeno.jpg"
+ },
+ {
+  "serial": 10,
+  "id": "just-maath-maathalli",
+  "title": "Just Maath Maathalli",
+  "artist": "Raghu Dixit",
+  "composer": "Raghu Dixit",
+  "album": "Just Maath Maathalli",
+  "year": 2010,
+  "genre": "Kannada Film",
+  "language": "Kannada",
+  "summary": "Cult classic. The whole album deserves praise",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Raghu Dixit's vocals"
+   },
+   {
+    "type": "plus",
+    "text": "Production never sounds overdone, just perfect"
+   },
+   {
+    "type": "plus",
+    "text": "Love how short the song is"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4.0,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/just-maath-maathalli.jpg"
+ },
+ {
+  "serial": 11,
+  "id": "ondonde",
+  "title": "Ondonde",
+  "artist": "Rajesh Krishnan, Sriraksha",
+  "composer": "Sadhu Kokila",
+  "album": "Inthi Ninna Preethiya",
+  "year": 2008,
+  "genre": "Kannada Film",
+  "language": "Kannada",
+  "summary": "Surprisingly well produced, in addition to being a good song",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Love the claps and the other small details and flourishes"
+   },
+   {
+    "type": "plus",
+    "text": "Well produced"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4.0,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/ondonde.jpg"
+ },
+ {
+  "serial": 12,
+  "id": "telephone",
+  "title": "Telephone",
+  "artist": "Lady Gaga ft. Beyoncé",
+  "composer": "",
+  "album": "The Fame Monster",
+  "year": 2009,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "Nostalgia + banger then, banger now!",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Bass monster!"
+   },
+   {
+    "type": "plus",
+    "text": "Love the vocal layering of Gaga and Beyoncé"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4.0,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/telephone.jpg"
+ },
+ {
+  "serial": 13,
+  "id": "despacito",
+  "title": "Despacito",
+  "artist": "Luis Fonsi ft. Daddy Yankee",
+  "composer": "",
+  "album": "Vida",
+  "year": 2017,
+  "genre": "Latin Pop",
+  "language": "Spanish",
+  "summary": "Esto es tan triste. Alexa, pon \"Despacito\"",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "No JB to ruin an otherwise nice song"
+   },
+   {
+    "type": "plus",
+    "text": "Entry drug to español music"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 3.5,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/despacito.jpg"
+ },
+ {
+  "serial": 14,
+  "id": "radioactive",
+  "title": "Radioactive",
+  "artist": "Imagine Dragons",
+  "composer": "",
+  "album": "Night Visions",
+  "year": 2012,
+  "genre": "Alt Rock",
+  "language": "English",
+  "summary": "The bass used to sound disgusting on my Skullcandy back in 2013. I had to shower to get rid of the stink",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Love the drums"
+   },
+   {
+    "type": "minus",
+    "text": "Entry drug to co-worker music"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 3.5,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/radioactive.jpg"
+ },
+ {
+  "serial": 15,
+  "id": "baanali-badalago",
+  "title": "Baanali Badalago",
+  "artist": "Sonu Nigam",
+  "composer": "Bharath B. J.",
+  "album": "Simple Agi Ondh Love Story",
+  "year": 2013,
+  "genre": "Kannada Film",
+  "language": "Kannada",
+  "summary": "Very feel-good song, always uplifts my mood",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Sonu carries it even when there's no need to"
+   },
+   {
+    "type": "plus",
+    "text": "Nice arrangement"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 3.5,
+    "date": "2026-07-08"
+   }
+  ],
+  "art": "/images/music/baanali-badalago.jpg"
+ },
+ {
+  "serial": 16,
+  "id": "tumhi-dekho-na",
+  "title": "Tumhi Dekho Na",
+  "artist": "Sonu Nigam, Alka Yagnik",
+  "composer": "Shankar-Ehsaan-Loy",
+  "album": "Kabhi Alvida Naa Kehna",
+  "year": 2006,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "Only the soundtrack can save this trainwreck of a movie",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Sonu and Alka's combo is soothing"
+   },
+   {
+    "type": "plus",
+    "text": "Lyrics unlike the last decade of Bollywood"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 4.0,
+    "date": "2026-07-09"
+   }
+  ],
+  "art": "/images/music/tumhi-dekho-na.jpg"
+ },
+ {
+  "serial": 17,
+  "id": "tere-liye",
+  "title": "Tere Liye",
+  "artist": "Lata Mangeshkar, Roop Kumar Rathod",
+  "composer": "Madan Mohan",
+  "album": "Veer-Zaara",
+  "year": 2004,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "A movie unlike anything today, from a bygone era. The music feels like it's from another time too",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Beautiful arrangement and nice flourishes"
+   },
+   {
+    "type": "plus",
+    "text": "The song is haunting in a beautiful way, or maybe that's the effect of the movie"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4.5,
+    "date": "2026-07-09"
+   }
+  ],
+  "art": "/images/music/tere-liye.jpg"
+ },
+ {
+  "serial": 18,
+  "id": "main-yahaan-hoon",
+  "title": "Main Yahaan Hoon",
+  "artist": "Udit Narayan",
+  "composer": "Madan Mohan",
+  "album": "Veer-Zaara",
+  "year": 2004,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "One of my favourites, but not as much as Tere Liye",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "I love Udit Narayan, he sounds like SRK"
+   },
+   {
+    "type": "plus",
+    "text": "Starts off great, I love the first half"
+   },
+   {
+    "type": "minus",
+    "text": "The second half and the ending feel sad and lonely"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4.0,
+    "date": "2026-07-09"
+   }
+  ],
+  "art": "/images/music/main-yahaan-hoon.jpg"
+ },
+ {
+  "serial": 19,
+  "id": "have-a-cigar",
+  "title": "Have a Cigar",
+  "artist": "Pink Floyd ft. Roy Harper",
+  "composer": "",
+  "album": "Wish You Were Here",
+  "year": 1975,
+  "genre": "Prog Rock",
+  "language": "English",
+  "summary": "Highest of the hi-fi, and my favourite Pink Floyd album. Own it on vinyl too",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Some of the best bass ever"
+   },
+   {
+    "type": "plus",
+    "text": "Just beautiful guitars!"
+   }
+  ],
+  "recommend": true,
+  "listens": [
+   {
+    "bitRate": "24/96",
+    "source": "MacBook Air M5",
+    "receiver": "Sennheiser IE 200",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4.0,
+    "date": "2026-07-09"
+   }
+  ],
+  "art": "/images/music/have-a-cigar.jpg"
+ }
+]

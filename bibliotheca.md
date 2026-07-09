@@ -7,7 +7,7 @@ description: Books Rajath is reading and recommends, from fiction and sci-fi to 
 
 ## Currently Reading
 
-- [**The Grapes of Wrath**](https://www.goodreads.com/book/show/4395.The_Grapes_of_Wrath) by John Steinbeck
+- [**The Count of Monte Cristo**](https://www.goodreads.com/book/show/7126.The_Count_of_Monte_Cristo) by Alexandre Dumas
 
 ## Favourite Books
 
