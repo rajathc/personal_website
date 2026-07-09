@@ -2335,3 +2335,10 @@ button:focus-visible {
     font-size: 0.75rem;
     line-height: 1.25;
 }
+
+.book-tile-year {
+    font-family: 'Bricolage Grotesque', -apple-system, sans-serif;
+    font-size: 0.6875rem;
+    opacity: 0.55;
+    margin-left: 0.45rem;
+}

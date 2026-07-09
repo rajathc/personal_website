@@ -27,7 +27,6 @@
 
     const songs = JSON.parse(dataEl.textContent);
     const countEl = document.getElementById('music-count');
-    const searchEl = document.getElementById('music-search');
     const genreEl = document.getElementById('music-genre');
     const langEl = document.getElementById('music-language');
     const sortEl = document.getElementById('music-sort');
@@ -99,12 +98,10 @@
     }
 
     function filteredSongs() {
-        const q = searchEl.value.trim().toLowerCase();
         const genre = genreEl.value, lang = langEl.value;
         const recOnly = recEl.checked;
 
         let filtered = songs.filter(s => {
-            if (q && !`${s.title} ${s.artist} ${s.album}`.toLowerCase().includes(q)) return false;
             if (genre && s.genre !== genre) return false;
             if (lang && s.language !== lang) return false;
             if (recOnly && !s.recommend) return false;

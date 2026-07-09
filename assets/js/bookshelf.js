@@ -7,7 +7,6 @@
 
     const books = JSON.parse(dataEl.textContent).filter(b => b.status !== 'reading');
     const countEl = document.getElementById('book-count');
-    const searchEl = document.getElementById('book-search');
     const ratingEl = document.getElementById('book-rating');
     const sortEl = document.getElementById('book-sort');
     const viewWallBtn = document.getElementById('book-view-wall');
@@ -34,10 +33,8 @@
     }
 
     function filtered() {
-        const q = searchEl.value.trim().toLowerCase();
         const minRating = ratingEl.value;
         let out = books.filter(b => {
-            if (q && !`${b.title} ${b.author} ${b.series}`.toLowerCase().includes(q)) return false;
             if (minRating && b.rating !== parseInt(minRating, 10)) return false;
             return true;
         });
@@ -59,7 +56,7 @@
             <li class="book-tile">
                 <a href="${b.goodreads}" target="_blank" rel="noopener">
                     ${cover(b, i > 11)}
-                    <span class="book-tile-meta">${stars(b.rating)}</span>
+                    <span class="book-tile-meta">${stars(b.rating)}${b.dateRead ? `<span class="book-tile-year">${b.dateRead.slice(0, 4)}</span>` : ''}</span>
                     <span class="book-tile-title">${esc(b.title)}</span>
                     <span class="book-tile-author">${esc(b.author)}</span>
                 </a>
@@ -117,8 +114,7 @@
     viewWallBtn.addEventListener('click', () => setView('wall'));
     viewLogBtn.addEventListener('click', () => setView('log'));
 
-    [searchEl, ratingEl, sortEl].forEach(el =>
-        el.addEventListener(el === searchEl ? 'input' : 'change', render));
+    [ratingEl, sortEl].forEach(el => el.addEventListener('change', render));
 
     render();
 })();
