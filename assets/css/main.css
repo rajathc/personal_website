@@ -1309,8 +1309,6 @@ button:focus-visible {
 /* ---- List view: collection table ---- */
 .music-table-wrap {
     overflow-x: auto;
-    margin: 0 -1rem;
-    padding: 0 1rem;
 }
 
 .music-table {
@@ -1351,6 +1349,7 @@ button:focus-visible {
 }
 
 .music-row-btn {
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -2079,7 +2078,16 @@ button:focus-visible {
 }
 
 .book-favs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+    gap: 1.25rem 0.9rem;
+    overflow: visible;
+    padding-bottom: 0;
     margin-bottom: 1.5rem;
+}
+
+.book-favs .book-fav {
+    width: auto;
 }
 
 .book-fav {
