@@ -93,8 +93,11 @@
     box-sizing: border-box;
 }
 
-/* Base font size: 16px = 1rem */
+/* Base font size: 16px = 1rem on iPhone-width (430px) screens and up.
+   Below that (e.g. Fold cover screens) the root eases down to ~14.7px so the
+   whole rem scale shrinks together and mono lines keep enough characters. */
 html {
+    font-size: clamp(0.89rem, 0.4625rem + 2vw, 1rem);
     scroll-behavior: smooth;
 }
 
@@ -1698,6 +1701,26 @@ button:focus-visible {
     opacity: 0.65;
 }
 
+.music-lt-hifi {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* follow the right-aligned Rating column; mobile flips it */
+    gap: 0.3rem;
+    margin-top: 0.25rem;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-strong);
+    white-space: nowrap;
+}
+
+.music-lt-hifi .music-icon {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
 .music-lt-date {
     white-space: nowrap;
     font-size: 0.8125rem;
@@ -1757,6 +1780,10 @@ button:focus-visible {
 
     .music-lt-rating {
         text-align: left;
+    }
+
+    .music-lt-hifi {
+        justify-content: flex-start;
     }
 }
 

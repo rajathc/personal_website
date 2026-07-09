@@ -58,6 +58,8 @@ exclude:
   - fonts/sligoil-main/COPYRIGHT.md
   - fonts/sligoil-main/TRADEMARKS.md
   - Image reference
+  - Screenshots
+  - Discog Screenshots
   - README.md
   - scripts
   - images-backup

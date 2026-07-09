@@ -20,7 +20,7 @@
     }
 
     function formatDate(iso) {
-        if (!iso) return '';
+        if (!iso || iso.length === 4) return ''; // year-only dates group under the year but show no day
         const d = new Date(iso + 'T00:00:00');
         return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
     }
@@ -69,7 +69,7 @@
                     </span>
                     <span class="book-log-side">
                         ${stars(b.rating)}
-                        ${b.dateRead ? `<span class="book-log-date">${formatDate(b.dateRead)}</span>` : ''}
+                        ${formatDate(b.dateRead) ? `<span class="book-log-date">${formatDate(b.dateRead)}</span>` : ''}
                     </span>
                 </a>`).join('')}
             </section>`).join('');

@@ -73,12 +73,14 @@ layout: default
                                 {%- assign parts = l.bitRate | split: '/' -%}
                                 {{ parts[0] }}-bit / {% if parts[1] == '44' %}44.1{% else %}{{ parts[1] }}{% endif %} kHz
                             {%- endif -%}
-                            {%- if l.hiFi %} · <span title="Felt hi-fi: sounds great on a high-fidelity setup">Hi-Fi</span>{% endif -%}
                             {%- if l.dolbyAtmos %} · <svg class="music-dolby" role="img" aria-label="Dolby Atmos"><use href="#dolby-atmos-mark"/></svg>{% endif -%}
                         </span>
                     </td>
                     <td class="music-lt-date">{{ l.date | date: "%-d %b %Y" }}</td>
-                    <td class="music-lt-rating">{% include stars.html rating=l.rating %}</td>
+                    <td class="music-lt-rating">
+                        {% include stars.html rating=l.rating %}
+                        {% if l.hiFi %}<span class="music-lt-hifi" title="Felt hi-fi: sounds great on a high-fidelity setup">{% include micon.html name='waveform' %} Hi-Fi</span>{% endif %}
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
