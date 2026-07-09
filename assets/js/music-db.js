@@ -2,8 +2,7 @@
 (function() {
     const dataEl = document.getElementById('music-data');
     const listEl = document.getElementById('music-list');
-    const gridEl = document.getElementById('music-grid');
-    if (!dataEl || !listEl || !gridEl) return; // Not on the jukebox
+    if (!dataEl || !listEl) return; // Not on the jukebox
 
     const songUrl = id => `/jukebox/${id}/`;
 
@@ -31,13 +30,6 @@
     const langEl = document.getElementById('music-language');
     const sortEl = document.getElementById('music-sort');
     const recEl = document.getElementById('music-rec');
-    const tableWrap = document.querySelector('.music-table-wrap');
-    const viewGridBtn = document.getElementById('music-view-grid');
-    const viewListBtn = document.getElementById('music-view-list');
-
-    // Grid by default, like Discogs; remembered across visits
-    let view = 'grid';
-    try { view = localStorage.getItem('jukebox-view') || 'grid'; } catch (e) {}
 
     function icon(name, cls) {
         return `<svg class="music-icon ${cls || ''}" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="${ICONS[name]}"/></svg>`;
@@ -116,19 +108,6 @@
         return filtered;
     }
 
-    function renderGrid(filtered) {
-        gridEl.innerHTML = filtered.map(s => `
-            <li class="music-gitem">
-                <a class="music-gcard" href="${songUrl(s.id)}">
-                    <span class="music-sleeve">${art(s, 'music-art-grid')}</span>
-                    <span class="music-kicker">${esc(s.genre)}</span>
-                    <span class="music-gtitle">${esc(s.title)}</span>
-                    <span class="music-gartist">${esc(s.artist)}</span>
-                    <span class="music-gmeta">${s.year} ${stars(maxRating(s))}</span>
-                </a>
-            </li>`).join('');
-    }
-
     function renderList(filtered) {
         listEl.innerHTML = filtered.map(s => `
             <tr class="music-row" data-id="${s.id}">
@@ -151,26 +130,8 @@
     function render() {
         const filtered = filteredSongs();
         countEl.textContent = `${filtered.length} of ${songs.length} songs`;
-        if (view === 'grid') {
-            renderGrid(filtered);
-            listEl.innerHTML = '';
-        } else {
-            renderList(filtered);
-            gridEl.innerHTML = '';
-        }
-        gridEl.hidden = view !== 'grid';
-        tableWrap.hidden = view !== 'list';
-        viewGridBtn.setAttribute('aria-pressed', view === 'grid');
-        viewListBtn.setAttribute('aria-pressed', view === 'list');
+        renderList(filtered);
     }
-
-    function setView(v) {
-        view = v;
-        try { localStorage.setItem('jukebox-view', v); } catch (e) {}
-        render();
-    }
-    viewGridBtn.addEventListener('click', () => setView('grid'));
-    viewListBtn.addEventListener('click', () => setView('list'));
 
     // Whole table row is clickable (the title link handles keyboard access)
     listEl.addEventListener('click', e => {

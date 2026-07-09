@@ -1,20 +1,13 @@
 // Bookshelf: cover wall + reading log, filtering and sorting
 (function() {
     const dataEl = document.getElementById('book-data');
-    const wallEl = document.getElementById('book-wall');
     const logEl = document.getElementById('book-log');
-    if (!dataEl || !wallEl || !logEl) return; // Not on the bookshelf
+    if (!dataEl || !logEl) return; // Not on the bookshelf
 
     const books = JSON.parse(dataEl.textContent).filter(b => b.status !== 'reading');
     const countEl = document.getElementById('book-count');
     const ratingEl = document.getElementById('book-rating');
     const sortEl = document.getElementById('book-sort');
-    const viewWallBtn = document.getElementById('book-view-wall');
-    const viewLogBtn = document.getElementById('book-view-log');
-
-    let view = 'wall';
-    try { view = localStorage.getItem('bookshelf-view') || 'wall'; } catch (e) {}
-
     function esc(str) {
         const div = document.createElement('div');
         div.textContent = str || '';
@@ -49,18 +42,6 @@
     function cover(b, lazy) {
         const title = b.series ? `${b.title} (${b.series})` : b.title;
         return `<img class="book-cover" src="${b.cover}" alt="Cover of ${esc(title)}" loading="${lazy ? 'lazy' : 'eager'}" width="240" height="360">`;
-    }
-
-    function renderWall(list) {
-        wallEl.innerHTML = list.map((b, i) => `
-            <li class="book-tile">
-                <a href="${b.goodreads}" target="_blank" rel="noopener">
-                    ${cover(b, i > 11)}
-                    <span class="book-tile-meta">${stars(b.rating)}${b.dateRead ? `<span class="book-tile-year">${b.dateRead.slice(0, 4)}</span>` : ''}</span>
-                    <span class="book-tile-title">${esc(b.title)}</span>
-                    <span class="book-tile-author">${esc(b.author)}</span>
-                </a>
-            </li>`).join('');
     }
 
     function renderLog(list) {
@@ -98,21 +79,8 @@
         const list = filtered();
         const fives = list.filter(b => b.rating === 5).length;
         countEl.textContent = `${list.length} of ${books.length} books · ${fives} five-star${fives === 1 ? '' : 's'}`;
-        if (view === 'wall') { renderWall(list); logEl.innerHTML = ''; }
-        else { renderLog(list); wallEl.innerHTML = ''; }
-        wallEl.hidden = view !== 'wall';
-        logEl.hidden = view !== 'log';
-        viewWallBtn.setAttribute('aria-pressed', view === 'wall');
-        viewLogBtn.setAttribute('aria-pressed', view === 'log');
+        renderLog(list);
     }
-
-    function setView(v) {
-        view = v;
-        try { localStorage.setItem('bookshelf-view', v); } catch (e) {}
-        render();
-    }
-    viewWallBtn.addEventListener('click', () => setView('wall'));
-    viewLogBtn.addEventListener('click', () => setView('log'));
 
     [ratingEl, sortEl].forEach(el => el.addEventListener('change', render));
 
