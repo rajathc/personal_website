@@ -57,10 +57,11 @@
     function renderWall(list) {
         wallEl.innerHTML = list.map((b, i) => `
             <li class="book-tile">
-                <a href="${b.goodreads}" target="_blank" rel="noopener" title="${esc(b.title)} — ${esc(b.author)}">
+                <a href="${b.goodreads}" target="_blank" rel="noopener">
                     ${cover(b, i > 11)}
                     <span class="book-tile-meta">${stars(b.rating)}</span>
-                    <span class="visually-hidden">${esc(b.title)} by ${esc(b.author)}</span>
+                    <span class="book-tile-title">${esc(b.title)}</span>
+                    <span class="book-tile-author">${esc(b.author)}</span>
                 </a>
             </li>`).join('');
     }

@@ -30,7 +30,8 @@
   "dateRead": "2017-09-16",
   "goodreads": "https://www.goodreads.com/book/show/44767458-dune",
   "cover": "/images/books/44767458-dune.jpg",
-  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458._SY75_.jpg"
+  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458._SY75_.jpg",
+  "favorite": true
  },
  {
   "id": "22078240-saga-book-one",
@@ -316,7 +317,8 @@
   "dateRead": "2017-06-08",
   "goodreads": "https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude",
   "cover": "/images/books/320-one-hundred-years-of-solitude.jpg",
-  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320._SX50_.jpg"
+  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327881361l/320._SX50_.jpg",
+  "favorite": true
  },
  {
   "id": "39988-matilda",
@@ -426,7 +428,8 @@
   "dateRead": "2024-09-21",
   "goodreads": "https://www.goodreads.com/book/show/4406.East_of_Eden",
   "cover": "/images/books/4406-east-of-eden.jpg",
-  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1639969375l/4406._SY75_.jpg"
+  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1639969375l/4406._SY75_.jpg",
+  "favorite": true
  },
  {
   "id": "13214-i-know-why-the-caged-bird-sings",
@@ -437,7 +440,8 @@
   "dateRead": "2020-01-14",
   "goodreads": "https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings",
   "cover": "/images/books/13214-i-know-why-the-caged-bird-sings.jpg",
-  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327957927l/13214._SY75_.jpg"
+  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327957927l/13214._SY75_.jpg",
+  "favorite": true
  },
  {
   "id": "29579-foundation",
@@ -448,7 +452,8 @@
   "dateRead": "2019-01-20",
   "goodreads": "https://www.goodreads.com/book/show/29579.Foundation",
   "cover": "/images/books/29579-foundation.jpg",
-  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579._SX50_.jpg"
+  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579._SX50_.jpg",
+  "favorite": true
  },
  {
   "id": "39720468-annihilation-of-caste",
@@ -514,7 +519,8 @@
   "dateRead": "2017-10-07",
   "goodreads": "https://www.goodreads.com/book/show/49552.The_Stranger",
   "cover": "/images/books/49552-the-stranger.jpg",
-  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1738704267l/49552._SY75_.jpg"
+  "coverSource": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1738704267l/49552._SY75_.jpg",
+  "favorite": true
  },
  {
   "id": "4556058-the-last-olympian",
