@@ -5,6 +5,8 @@
     const gridEl = document.getElementById('music-grid');
     if (!dataEl || !listEl || !gridEl) return; // Not on the jukebox
 
+    const songUrl = id => `/jukebox/${id}/`;
+
     // Phosphor icon paths (viewBox 0 0 256 256)
     const ICONS = {
         headphones: "M201.89,54.66A103.43,103.43,0,0,0,128.79,24H128A104,104,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88,88,0,0,1,128,40h.67a87.71,87.71,0,0,1,87,80H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h16a24,24,0,0,0,24-24V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm152,48a8,8,0,0,1-8,8H192a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24Z",
@@ -33,11 +35,6 @@
     const tableWrap = document.querySelector('.music-table-wrap');
     const viewGridBtn = document.getElementById('music-view-grid');
     const viewListBtn = document.getElementById('music-view-list');
-    const modal = document.getElementById('music-modal');
-    const modalBody = document.getElementById('music-modal-body');
-    const modalClose = modal.querySelector('.music-modal-close');
-    const modalOverlay = modal.querySelector('.music-modal-overlay');
-    let lastFocused = null;
 
     // Grid by default, like Discogs; remembered across visits
     let view = 'grid';
@@ -125,13 +122,13 @@
     function renderGrid(filtered) {
         gridEl.innerHTML = filtered.map(s => `
             <li class="music-gitem">
-                <button class="music-gcard" data-id="${s.id}" aria-haspopup="dialog">
+                <a class="music-gcard" href="${songUrl(s.id)}">
                     <span class="music-sleeve">${art(s, 'music-art-grid')}</span>
                     <span class="music-kicker">${esc(s.genre)}</span>
                     <span class="music-gtitle">${esc(s.title)}</span>
                     <span class="music-gartist">${esc(s.artist)}</span>
                     <span class="music-gmeta">${s.year} ${stars(maxRating(s))}</span>
-                </button>
+                </a>
             </li>`).join('');
     }
 
@@ -139,13 +136,13 @@
         listEl.innerHTML = filtered.map(s => `
             <tr class="music-row" data-id="${s.id}">
                 <td class="music-td-song">
-                    <button class="music-row-btn" data-id="${s.id}" aria-haspopup="dialog">
+                    <a class="music-row-btn" href="${songUrl(s.id)}">
                         ${art(s, 'music-art-mini')}
                         <span class="music-song-text">
                             <span class="music-song-title">${esc(s.title)}</span>
                             <span class="music-song-artist">${esc(s.artist)}</span>
                         </span>
-                    </button>
+                    </a>
                 </td>
                 <td class="music-td-album">${esc(s.album)}</td>
                 <td class="music-td-language">${esc(s.language)}</td>
@@ -178,113 +175,16 @@
     viewGridBtn.addEventListener('click', () => setView('grid'));
     viewListBtn.addEventListener('click', () => setView('list'));
 
-    // "16/44" -> "16-bit / 44.1 kHz"
-    function formatBitRate(br) {
-        const m = (br || '').match(/^(\d+)\/(\d+)$/);
-        if (!m) return br || '';
-        const khz = m[2] === '44' ? '44.1' : m[2];
-        return `${m[1]}-bit / ${khz} kHz`;
-    }
-
-    function formatDate(iso) {
-        if (!iso) return '';
-        const d = new Date(iso + 'T00:00:00');
-        return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-    }
-
-    function sourceIcon(source) {
-        return /macbook|laptop|mac\b/i.test(source) ? 'laptop' : 'deviceMobile';
-    }
-
-    // Discogs-style listens table: Setup | Date | Rating
-    function listenTable(listens) {
-        const rows = listens.map(l => {
-            const quality = [];
-            if (l.bitRate) quality.push(esc(formatBitRate(l.bitRate)));
-            if (l.hiFi) quality.push('<span title="Felt hi-fi: sounds great on a high-fidelity setup">Hi-Fi</span>');
-            if (l.dolbyAtmos) quality.push(dolbyMark());
-            return `
-                <tr>
-                    <td class="music-lt-setup">
-                        <span class="music-listen-chain">
-                            <span class="music-listen-node">${icon(sourceIcon(l.source))}${esc(l.source)} <span class="music-listen-arrow" aria-hidden="true">→</span></span>
-                            <span class="music-listen-node">${icon('headphones')}${esc(l.receiver)}</span>
-                        </span>
-                        ${quality.length ? `<span class="music-lt-quality">${quality.join(' · ')}</span>` : ''}
-                    </td>
-                    <td class="music-lt-date">${l.date ? esc(formatDate(l.date)) : ''}</td>
-                    <td class="music-lt-rating">${stars(l.rating)}</td>
-                </tr>`;
-        }).join('');
-        return `
-            <table class="music-listen-table">
-                <thead>
-                    <tr><th>Setup</th><th>Date</th><th>Rating</th></tr>
-                </thead>
-                <tbody>${rows}</tbody>
-            </table>`;
-    }
-
-    function pointerList(pointers) {
-        return `<ul class="music-pointers">${pointers.map(p =>
-            `<li class="music-pointer music-pointer-${p.type}"><span class="music-pointer-sign" aria-hidden="true">${p.type === 'plus' ? '+' : '−'}</span>${esc(p.text)}</li>`
-        ).join('')}</ul>`;
-    }
-
-    // Release-page layout: title, artist, centered art, labeled specs, review, listens
-    function openModal(song) {
-        lastFocused = document.activeElement;
-        modalBody.innerHTML = `
-            <h2 class="music-modal-title" id="music-modal-title">${esc(song.title)}</h2>
-            <p class="music-modal-artist">${esc(song.artist)}</p>
-            <div class="music-modal-artblock">${art(song, 'music-art-lg')}</div>
-            <p class="music-modal-rating">${stars(maxRating(song))}${song.recommend ? `<span class="music-modal-rec">${icon('thumbsUp')} Recommended</span>` : ''}</p>
-            <dl class="music-specs">
-                <div class="music-spec"><dt>Album:</dt><dd>${esc(song.album)}</dd></div>
-                <div class="music-spec"><dt>Released:</dt><dd>${song.year}</dd></div>
-                <div class="music-spec"><dt>Genre:</dt><dd>${esc(song.genre)}</dd></div>
-                <div class="music-spec"><dt>Language:</dt><dd>${esc(song.language)}</dd></div>
-                ${song.composer ? `<div class="music-spec"><dt>Music by:</dt><dd>${esc(song.composer)}</dd></div>` : ''}
-            </dl>
-            <div class="music-review">
-                <p class="music-review-text">${esc(song.summary)}</p>
-                ${pointerList(song.pointers)}
-            </div>
-            <h3 class="music-h">When I listened</h3>
-            ${listenTable(song.listens)}`;
-        modal.hidden = false;
-        document.body.style.overflow = 'hidden';
-        history.replaceState(null, '', `#${song.id}`);
-        modalClose.focus();
-    }
-
-    function closeModal() {
-        modal.hidden = true;
-        document.body.style.overflow = '';
-        history.replaceState(null, '', window.location.pathname);
-        if (lastFocused) lastFocused.focus();
-    }
-
-    function clickHandler(e) {
-        const el = e.target.closest('[data-id]');
-        if (!el) return;
-        const song = songs.find(s => s.id === el.dataset.id);
-        if (song) openModal(song);
-    }
-    listEl.addEventListener('click', clickHandler);
-    gridEl.addEventListener('click', clickHandler);
-    modalClose.addEventListener('click', closeModal);
-    modalOverlay.addEventListener('click', closeModal);
-    document.addEventListener('keydown', e => {
-        if (e.key === 'Escape' && !modal.hidden) closeModal();
+    // Whole table row is clickable (the title link handles keyboard access)
+    listEl.addEventListener('click', e => {
+        if (e.target.closest('a')) return;
+        const row = e.target.closest('.music-row');
+        if (row) window.location.href = songUrl(row.dataset.id);
     });
-
-    [searchEl, genreEl, langEl, sortEl, recEl].forEach(el =>
-        el.addEventListener(el === searchEl ? 'input' : 'change', render));
 
     render();
 
-    // Deep link: /jukebox/#song-id opens that song
+    // Legacy deep links: /jukebox/#song-id now redirects to the song page
     const linked = songs.find(s => `#${s.id}` === window.location.hash);
-    if (linked) openModal(linked);
+    if (linked) window.location.replace(songUrl(linked.id));
 })();

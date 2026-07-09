@@ -1,0 +1,4 @@
+{%- assign r = include.rating -%}
+{%- assign full = r | floor -%}
+{%- assign half = r | minus: full -%}
+<span class="music-stars" role="img" aria-label="Rated {{ r }} out of 5">{%- for i in (1..full) -%}★{%- endfor -%}{%- if half >= 0.25 -%}<span class="music-star-half">★</span>{%- endif -%}</span>

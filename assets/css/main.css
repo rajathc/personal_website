@@ -16,6 +16,14 @@
   src: url('/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-700.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-800.woff2') format('woff2');
+}
+
 /* Oi */
 @font-face {
   font-family: 'Oi';
@@ -91,7 +99,7 @@ html {
 }
 
 body {
-    font-family: 'Sligoil', monospace;
+    font-family: 'Bricolage Grotesque', -apple-system, 'Helvetica Neue', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.75;
@@ -103,6 +111,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Bricolage Grotesque', sans-serif;
     line-height: 1.15;
     letter-spacing: -0.02em;
+}
+
+/* Display titles carry the ExtraBold weight */
+h1, h2 {
+    font-weight: 800;
 }
 
 a {
@@ -445,7 +458,7 @@ button:focus-visible {
 
 .post-item-title {
     font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 0.75rem;
     line-height: 1.15;
     letter-spacing: -0.03em;
@@ -570,7 +583,7 @@ button:focus-visible {
 
 .post-title {
     font-size: clamp(2.25rem, 5.5vw, 3.5rem);
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 1.5rem;
     line-height: 1.05;
     letter-spacing: -0.04em;
@@ -734,7 +747,7 @@ button:focus-visible {
 
 .toc-title {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 1.2;
     flex: 1;
     padding-right: 1rem;
@@ -914,7 +927,7 @@ button:focus-visible {
     padding: 1rem 140px 1rem 1.25rem;
     border: none;
     border-radius: 12px;
-    font-family: 'Sligoil', monospace;
+    font-family: inherit;
     font-size: 1rem;
     background: white;
     color: #1E2432;
@@ -1211,7 +1224,7 @@ button:focus-visible {
 
 .page-title {
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 2rem;
 }
 
@@ -1271,10 +1284,7 @@ button:focus-visible {
    Chrome (labels, cards, tables) in the sans; Rajath's own words
    (intro, review) stay in Sligoil. */
 
-.jukebox,
-.music-modal-panel {
-    font-family: 'Bricolage Grotesque', -apple-system, 'Helvetica Neue', sans-serif;
-}
+
 
 .jukebox-intro {
     font-family: 'Sligoil', monospace;
@@ -1733,67 +1743,40 @@ button:focus-visible {
     letter-spacing: 0.02em;
 }
 
-/* ---- Song modal: Discogs release page ---- */
-.music-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 1100;
+/* ---- Song release page (Discogs-style) ---- */
+.music-crumb {
+    margin: 0.5rem 0 1.5rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
 }
 
-.music-modal-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(2px);
+.music-crumb a {
+    text-decoration: none;
+    color: var(--accent-strong);
 }
 
-.music-modal-panel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: min(640px, calc(100vw - 2rem));
-    max-height: min(88vh, 960px);
-    overflow-y: auto;
-    background: var(--card-bg);
-    color: var(--text-color);
-    border-radius: 10px;
-    padding: 1.75rem 1.75rem 2rem;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+.music-crumb a:hover {
+    text-decoration: underline;
 }
 
-.music-modal-close {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    background: none;
-    border: none;
-    color: var(--text-color);
-    cursor: pointer;
-    padding: 0.5rem;
-    opacity: 0.7;
-    z-index: 1;
+.music-release {
+    padding-bottom: 2rem;
 }
 
-.music-modal-close:hover {
-    opacity: 1;
+.music-release-title {
+    font-size: 2rem;
+    line-height: 1.15;
+    margin-bottom: 0.15rem;
 }
 
-.music-modal-title {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin: 0 2.25rem 0.15rem 0;
-}
-
-.music-modal-artist {
+.music-release-artist {
     font-size: 1.0625rem;
     font-weight: 500;
     color: var(--accent-strong);
     margin-bottom: 1.25rem;
 }
 
-.music-modal-artblock {
+.music-release-artblock {
     text-align: center;
     margin-bottom: 1.25rem;
 }
@@ -1809,7 +1792,7 @@ button:focus-visible {
     display: inline-flex;
 }
 
-.music-modal-rating {
+.music-release-rating {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -1817,11 +1800,11 @@ button:focus-visible {
     margin-bottom: 1.25rem;
 }
 
-.music-modal-rating .music-stars {
+.music-release-rating .music-stars {
     font-size: 1.1rem;
 }
 
-.music-modal-rec {
+.music-release-rec {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
@@ -1832,7 +1815,7 @@ button:focus-visible {
     color: var(--accent-strong);
 }
 
-.music-modal-rec .music-icon {
+.music-release-rec .music-icon {
     width: 14px;
     height: 14px;
 }
@@ -1912,7 +1895,7 @@ button:focus-visible {
 /* Section heading, like Discogs "Tracklist" */
 .music-h {
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 0.5rem;
     padding-top: 1.25rem;
     border-top: 1px solid var(--border-color);
@@ -2015,12 +1998,9 @@ button:focus-visible {
         padding: 0.55rem 0.4rem 0.55rem 0;
     }
 
-    .music-modal-panel {
-        padding: 1.25rem 1.25rem 1.5rem;
-    }
 
-    .music-modal-title {
-        font-size: 1.3rem;
+    .music-release-title {
+        font-size: 1.6rem;
     }
 
     /* Listens table stacks */
