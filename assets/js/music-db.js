@@ -140,6 +140,8 @@
         if (row) window.location.href = songUrl(row.dataset.id);
     });
 
+    [genreEl, langEl, sortEl, recEl].forEach(el => el.addEventListener('change', render));
+
     render();
 
     // Legacy deep links: /jukebox/#song-id now redirects to the song page

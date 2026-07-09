@@ -19,10 +19,13 @@
         return `<span class="music-stars" role="img" aria-label="Rated ${rating} out of 5">${'★'.repeat(rating)}</span>`;
     }
 
-    function formatDate(iso) {
-        if (!iso || iso.length === 4) return ''; // year-only dates group under the year but show no day
+    function formatDate(iso, withYear) {
+        if (!iso) return '';
+        if (iso.length === 4) return withYear ? iso : ''; // year-only dates group under the year but show no day
         const d = new Date(iso + 'T00:00:00');
-        return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+        return d.toLocaleDateString('en-GB', withYear
+            ? { day: 'numeric', month: 'short', year: 'numeric' }
+            : { day: 'numeric', month: 'short' });
     }
 
     function filtered() {
@@ -44,8 +47,29 @@
         return `<img class="book-cover" src="${b.cover}" alt="Cover of ${esc(title)}" loading="${lazy ? 'lazy' : 'eager'}" width="240" height="360">`;
     }
 
-    function renderLog(list) {
-        // Group by year read; undated books at the end
+    function row(b, withYear) {
+        const date = formatDate(b.dateRead, withYear);
+        return `
+                <a class="book-log-row" href="${b.goodreads}" target="_blank" rel="noopener">
+                    ${cover(b, true)}
+                    <span class="book-log-text">
+                        <span class="book-log-title">${esc(b.title)}${b.series ? ` <span class="book-log-series">(${esc(b.series)})</span>` : ''}</span>
+                        <span class="book-log-author">${esc(b.author)}</span>
+                    </span>
+                    <span class="book-log-side">
+                        ${stars(b.rating)}
+                        ${date ? `<span class="book-log-date">${date}</span>` : ''}
+                    </span>
+                </a>`;
+    }
+
+    function renderLog(list, sort) {
+        // The default (recently read) sort groups by year; the other sorts
+        // are a flat list, with the year folded into the date chip instead
+        if (sort && sort !== 'read') {
+            logEl.innerHTML = `<section class="book-year">${list.map(b => row(b, true)).join('')}</section>`;
+            return;
+        }
         const groups = new Map();
         for (const b of list) {
             const key = b.dateRead ? b.dateRead.slice(0, 4) : 'Before I kept dates';
@@ -60,18 +84,7 @@
         logEl.innerHTML = keys.map(year => `
             <section class="book-year">
                 <h2 class="book-year-title">${year}</h2>
-                ${groups.get(year).map(b => `
-                <a class="book-log-row" href="${b.goodreads}" target="_blank" rel="noopener">
-                    ${cover(b, true)}
-                    <span class="book-log-text">
-                        <span class="book-log-title">${esc(b.title)}${b.series ? ` <span class="book-log-series">(${esc(b.series)})</span>` : ''}</span>
-                        <span class="book-log-author">${esc(b.author)}</span>
-                    </span>
-                    <span class="book-log-side">
-                        ${stars(b.rating)}
-                        ${formatDate(b.dateRead) ? `<span class="book-log-date">${formatDate(b.dateRead)}</span>` : ''}
-                    </span>
-                </a>`).join('')}
+                ${groups.get(year).map(b => row(b, false)).join('')}
             </section>`).join('');
     }
 
@@ -79,7 +92,7 @@
         const list = filtered();
         const fives = list.filter(b => b.rating === 5).length;
         countEl.textContent = `${list.length} of ${books.length} books · ${fives} five-star${fives === 1 ? '' : 's'}`;
-        renderLog(list);
+        renderLog(list, sortEl.value);
     }
 
     [ratingEl, sortEl].forEach(el => el.addEventListener('change', render));
