@@ -17,11 +17,12 @@
     <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.min.css' | relative_url }}">
 
-    <!-- Preload critical fonts -->
+    <!-- Preload the LCP-critical fonts only: body text (Sligoil), wordmark
+         (Oi), and display titles (Bricolage 400/800). Bricolage 700 is bold
+         interface chrome and can arrive with regular priority. -->
     <link rel="preload" href="/fonts/sligoil-main/fonts/web/Sligoil-Micro.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/oi/oi-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/bricolage-grotesque/bricolage-grotesque-v9-latin-800.woff2" as="font" type="font/woff2" crossorigin>
 
     <script>
