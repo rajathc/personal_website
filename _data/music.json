@@ -110,7 +110,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": false,
     "hiFi": true,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-08"
    }
   ],
@@ -188,7 +188,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": false,
     "hiFi": true,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-08"
    }
   ],
@@ -297,7 +297,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": false,
     "hiFi": false,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-08"
    }
   ],
@@ -332,7 +332,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": false,
     "hiFi": true,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-08"
    }
   ],
@@ -371,7 +371,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": false,
     "hiFi": true,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-08"
    }
   ],
@@ -406,7 +406,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": false,
     "hiFi": true,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-08"
    }
   ],
@@ -441,7 +441,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": false,
     "hiFi": true,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-08"
    }
   ],
@@ -581,7 +581,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": false,
     "hiFi": false,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-09"
    }
   ],
@@ -655,7 +655,7 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": true,
     "hiFi": true,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-09"
    }
   ],
@@ -690,10 +690,119 @@
     "receiver": "Sennheiser IE 200",
     "dolbyAtmos": true,
     "hiFi": true,
-    "rating": 4.0,
+    "rating": 4,
     "date": "2026-07-09"
    }
   ],
   "art": "/images/music/have-a-cigar.jpg"
+ },
+ {
+  "id": "yesterday",
+  "serial": 20,
+  "title": "Yesterday",
+  "artist": "The Beatles",
+  "composer": "",
+  "album": "Help!",
+  "year": 1965,
+  "genre": "Classic Rock",
+  "language": "English",
+  "summary": "My favourite Beatle, and did you know that I share my birthday with Sir Paul McCartney? Not the best Paul song, but easily top 5",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Absolutely minimal guitars, but there is beauty in restraint"
+   },
+   {
+    "type": "plus",
+    "text": "Beautiful vocals and lyrics"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/yesterday.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Koss KSC75",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-10"
+   }
+  ]
+ },
+ {
+  "id": "a-day-in-the-life",
+  "serial": 21,
+  "title": "A Day in the Life",
+  "artist": "The Beatles",
+  "composer": "",
+  "album": "Sgt. Pepper's Lonely Hearts Club Band",
+  "year": 1967,
+  "genre": "Classic Rock",
+  "language": "English",
+  "summary": "Sgt. Pepper's Lonely Hearts Club Band is the magnum opus of The Beatles. This song is a great way to end the album. Will always remember to get up and change/flip the vinyl after this song ends",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Very orchestral composition"
+   },
+   {
+    "type": "plus",
+    "text": "A little mixed about this remaster as I have played the vinyl so many times, but this is higher fidelity than what I am used to"
+   },
+   {
+    "type": "plus",
+    "text": "Beautiful use of instruments and effects"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/a-day-in-the-life.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Koss KSC75",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-10"
+   }
+  ]
+ },
+ {
+  "id": "shes-leaving-home",
+  "serial": 22,
+  "title": "She's Leaving Home",
+  "artist": "The Beatles",
+  "composer": "",
+  "album": "Sgt. Pepper's Lonely Hearts Club Band",
+  "year": 1967,
+  "genre": "Classic Rock",
+  "language": "English",
+  "summary": "Underrated song from the SPLHCB, love it because of Paul bias",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Haunting music and composition"
+   },
+   {
+    "type": "plus",
+    "text": "Love the a cappella section of the song"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/shes-leaving-home.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Koss KSC75",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-10"
+   }
+  ]
  }
 ]
