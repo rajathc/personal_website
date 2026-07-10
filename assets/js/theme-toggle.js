@@ -17,6 +17,8 @@
         if (save) {
             try { localStorage.setItem('theme', theme); } catch (e) {}
         }
+        const tc = document.querySelector('meta[name="theme-color"]');
+        if (tc) tc.setAttribute('content', theme === 'dark' ? '#1a1a1a' : '#F5F5F5');
         updateButtons(theme);
     }
 

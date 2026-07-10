@@ -10,8 +10,10 @@
     {% endif %}
     {% seo %}
     {% feed_meta %}
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#F5F5F5">
     <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.min.css' | relative_url }}">
 
     <!-- Preload critical fonts -->
     <link rel="preload" href="/fonts/sligoil-main/fonts/web/Sligoil-Micro.woff2" as="font" type="font/woff2" crossorigin>
@@ -29,6 +31,9 @@
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             const theme = storedTheme || (prefersDark ? 'dark' : 'light');
             document.documentElement.setAttribute('data-theme', theme);
+            // Keep the browser chrome (address bar, overscroll) matched to the theme
+            const tc = document.querySelector('meta[name="theme-color"]');
+            if (tc) tc.setAttribute('content', theme === 'dark' ? '#1a1a1a' : '#F5F5F5');
         })();
     </script>
 

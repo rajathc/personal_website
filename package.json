@@ -5,11 +5,12 @@
   "private": true,
   "scripts": {
     "optimize": "node scripts/optimize-images.js",
-    "minify": "terser assets/js/theme-toggle.js -c -m -o assets/js/theme-toggle.min.js && terser assets/js/tabs.js -c -m -o assets/js/tabs.min.js && terser assets/js/toc-drawer.js -c -m -o assets/js/toc-drawer.min.js && terser assets/js/scroll-progress.js -c -m -o assets/js/scroll-progress.min.js && terser assets/js/newsletter-animation.js -c -m -o assets/js/newsletter-animation.min.js && terser assets/js/music-db.js -c -m -o assets/js/music-db.min.js && terser assets/js/bookshelf.js -c -m -o assets/js/bookshelf.min.js",
+    "minify": "terser assets/js/theme-toggle.js -c -m -o assets/js/theme-toggle.min.js && terser assets/js/tabs.js -c -m -o assets/js/tabs.min.js && terser assets/js/toc-drawer.js -c -m -o assets/js/toc-drawer.min.js && terser assets/js/scroll-progress.js -c -m -o assets/js/scroll-progress.min.js && terser assets/js/newsletter-animation.js -c -m -o assets/js/newsletter-animation.min.js && terser assets/js/music-db.js -c -m -o assets/js/music-db.min.js && terser assets/js/bookshelf.js -c -m -o assets/js/bookshelf.min.js && cleancss -o assets/css/main.min.css assets/css/main.css",
     "jukebox:pages": "node scripts/generate-jukebox-pages.js",
     "covers:thumbs": "node scripts/generate-cover-thumbs.js"
   },
   "devDependencies": {
+    "clean-css-cli": "^5.6.3",
     "sharp": "^0.33.5",
     "terser": "^5.48.0"
   },

@@ -42,9 +42,11 @@
         return out;
     }
 
+    // Rows render at 34px, so they get the small WebP thumb, and alt is empty
+    // because the row link already contains the title as text.
     function cover(b, lazy) {
-        const title = b.series ? `${b.title} (${b.series})` : b.title;
-        return `<img class="book-cover" src="${b.cover}" alt="Cover of ${esc(title)}" loading="${lazy ? 'lazy' : 'eager'}" width="240" height="360">`;
+        const thumb = b.cover.replace('/images/books/', '/images/books/thumbs/').replace(/\.jpg$/, '.webp');
+        return `<img class="book-cover" src="${thumb}" alt="" loading="${lazy ? 'lazy' : 'eager'}" width="120" height="180">`;
     }
 
     function row(b, withYear) {
@@ -60,6 +62,7 @@
                         ${stars(b.rating)}
                         ${date ? `<span class="book-log-date">${date}</span>` : ''}
                     </span>
+                    <span class="visually-hidden">(Goodreads, opens in new tab)</span>
                 </a>`;
     }
 
@@ -97,5 +100,12 @@
 
     [ratingEl, sortEl].forEach(el => el.addEventListener('change', render));
 
-    render();
+    // On the homepage this list lives in a hidden tab panel; building 178 rows
+    // there at load costs real main-thread time, so defer to first activation.
+    const panel = logEl.closest('.tab-content');
+    if (panel && !panel.classList.contains('active')) {
+        panel.addEventListener('tab-shown', render, { once: true });
+    } else {
+        render();
+    }
 })();

@@ -21,6 +21,8 @@
         const targetTab = document.getElementById(`${tabName}-tab`);
         if (targetTab) {
             targetTab.classList.add('active');
+            // Panels render their lists lazily on first activation
+            targetTab.dispatchEvent(new CustomEvent('tab-shown'));
         }
 
         // Keep the URL shareable (e.g. /#bookshelf) without adding history entries
@@ -33,7 +35,11 @@
     }
 
     tabButtons.forEach(button => {
-        button.addEventListener('click', () => activateTab(button));
+        // Tabs are real links (crawlable section URLs); JS turns them into tabs
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            activateTab(button);
+        });
 
         // Left/Right arrow keys move between tabs (standard tablist behavior)
         button.addEventListener('keydown', (e) => {

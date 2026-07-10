@@ -150,11 +150,13 @@ a:focus-visible {
     position: fixed;
     top: 0;
     left: 0;
-    width: 0%;
+    width: 100%;
     height: 4px;
     background: var(--accent-color);
     z-index: 9999;
-    transition: width 0.1s ease-out;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.1s ease-out;
 }
 
 /* Buttons and interactive elements */
@@ -1212,36 +1214,6 @@ button:focus-visible {
     gap: 0.6rem;
 }
 
-.music-search-wrap {
-    position: relative;
-}
-
-.music-search-wrap .music-icon {
-    position: absolute;
-    left: 0.9rem;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-.music-search {
-    width: 100%;
-    height: 46px;
-    padding: 0 1rem 0 2.6rem;
-    font-family: inherit;
-    font-size: 1rem;
-    color: var(--text-color);
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-}
-
-.music-search:focus-visible {
-    outline: 3px solid var(--accent-strong);
-    outline-offset: 2px;
-}
-
 .music-filter-row {
     display: flex;
     gap: 0.5rem;
@@ -1787,40 +1759,6 @@ button:focus-visible {
     }
 }
 
-/* ============ Home front door ============ */
-.home-section {
-    margin-top: 3.5rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
-}
-
-.home-section-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.home-section-title {
-    font-size: 1.75rem;
-    margin-bottom: 1.25rem;
-}
-
-.home-section-link {
-    font-family: 'Bricolage Grotesque', -apple-system, sans-serif;
-    font-weight: 500;
-    font-size: 0.9375rem;
-    text-decoration: none;
-    color: var(--accent-strong);
-    white-space: nowrap;
-}
-
-.home-section-link:hover {
-    text-decoration: underline;
-    color: var(--accent-strong);
-}
-
 .home-cover-strip {
     display: flex;
     gap: 0.75rem;
@@ -1846,13 +1784,7 @@ button:focus-visible {
     transform: translateY(-3px);
 }
 
-.home-sleeve-strip img {
-    height: 130px;
-    width: 130px;
-    object-fit: cover;
-}
-
-/* ============ Bookshelf (cover wall + reading log) ============ */
+/* ============ Bookshelf (favourites strip + reading log) ============ */
 .book-reading {
     display: flex;
     align-items: center;
@@ -1978,11 +1910,6 @@ button:focus-visible {
 @media (max-width: 768px) {
     .home-strip-item img {
         height: 120px;
-    }
-
-    .home-sleeve-strip img {
-        height: 104px;
-        width: 104px;
     }
 
     .book-log-date {

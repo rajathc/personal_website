@@ -1,6 +1,6 @@
 <div class="jukebox">
     <p class="jukebox-intro">This is my music journal: a running database of songs I've listened to, with unfiltered thoughts attached. It's not analytical reviewing or quantitative ranking. It's just me sharing what I love. I plan to keep it fun and charming.</p>
-        <div class="music-toolbar" role="search">
+        <div class="music-toolbar" role="group" aria-label="Filter and sort">
             <div class="music-filter-row">
                 <select id="music-genre" aria-label="Filter by genre"><option value="">All genres</option></select>
                 <select id="music-language" aria-label="Filter by language"><option value="">All languages</option></select>
@@ -34,5 +34,18 @@
 </div>
 
 
-<script id="music-data" type="application/json">{{ site.data.music | jsonify }}</script>
+{% comment %}
+  Only the fields assets/js/music-db.js actually reads. Reviews (summary,
+  pointers, composer) and listen setups render server-side on the song pages,
+  so shipping them here would be dead payload on every homepage view.
+{% endcomment %}
+<script id="music-data" type="application/json">[
+{%- for s in site.data.music -%}
+{"id":{{ s.id | jsonify }},"serial":{{ s.serial | jsonify }},"title":{{ s.title | jsonify }},"artist":{{ s.artist | jsonify }},"album":{{ s.album | jsonify }},"year":{{ s.year | jsonify }},"genre":{{ s.genre | jsonify }},"language":{{ s.language | jsonify }},"recommend":{{ s.recommend | jsonify }},"art":{{ s.art | jsonify }},"listens":[
+{%- for l in s.listens -%}
+{"rating":{{ l.rating | jsonify }},"hiFi":{{ l.hiFi | jsonify }},"dolbyAtmos":{{ l.dolbyAtmos | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+]}{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+]</script>
 <script src="{{ '/assets/js/music-db.min.js' | relative_url }}" defer></script>

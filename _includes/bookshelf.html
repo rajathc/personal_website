@@ -2,11 +2,12 @@
     {% assign reading = site.data.books | where: "status", "reading" | first %}
         {% if reading %}
         <a class="book-reading" href="{{ reading.goodreads }}" target="_blank" rel="noopener">
-            <img class="book-reading-cover" src="{{ reading.cover | relative_url }}" alt="Cover of {{ reading.title }}" width="240" height="369">
+            <img class="book-reading-cover" src="{{ reading.cover | relative_url }}" alt="" loading="lazy" width="240" height="369">
             <span class="book-reading-text">
                 <span class="music-kicker">Currently reading</span>
                 <span class="book-reading-title">{{ reading.title }}</span>
                 <span class="book-reading-author">{{ reading.author }}</span>
+                <span class="visually-hidden">(Goodreads, opens in new tab)</span>
             </span>
         </a>
         {% endif %}
@@ -17,22 +18,23 @@
     <div class="home-cover-strip book-favs">
         {% for b in favs %}
         <a class="home-strip-item book-fav" href="{{ b.goodreads }}" target="_blank" rel="noopener">
-            <img src="{{ b.cover | relative_url }}" alt="Cover of {{ b.title }}" width="240" height="360" loading="lazy">
+            <img src="{{ b.cover | relative_url }}" alt="" width="240" height="360" loading="lazy">
             <span class="book-fav-title">{{ b.title }}</span>
+            <span class="visually-hidden">(Goodreads, opens in new tab)</span>
         </a>
         {% endfor %}
     </div>
     {% endif %}
 
-    <div class="music-toolbar" role="search">
+    <div class="music-toolbar" role="group" aria-label="Filter and sort">
             <div class="music-filter-row">
                 <select id="book-rating" aria-label="Filter by rating">
                     <option value="">All ratings</option>
-                    <option value="5">★★★★★</option>
-                    <option value="4">★★★★</option>
-                    <option value="3">★★★</option>
-                    <option value="2">★★</option>
-                    <option value="1">★</option>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
                 </select>
                 <select id="book-sort" aria-label="Sort">
                     <option value="read">Recently read</option>
