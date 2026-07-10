@@ -15,7 +15,10 @@
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#F5F5F5">
     <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.min.css' | relative_url }}">
+    {% comment %} Inlined: 5.8KB gzipped, and GitHub Pages caps caching at
+    10 minutes anyway — inlining removes a render-blocking round trip.
+    Source of truth is assets/css/main.css; npm run minify regenerates. {% endcomment %}
+    <style>{% include main.min.css %}</style>
 
     <!-- Preload the LCP-critical fonts only: body text (Sligoil), wordmark
          (Oi), and display titles (Bricolage 400/800). Bricolage 700 is bold

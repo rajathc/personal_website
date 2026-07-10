@@ -60,6 +60,7 @@ exclude:
   - fonts/sligoil-main/COPYRIGHT.md
   - fonts/sligoil-main/TRADEMARKS.md
   - Image reference
+  - assets/css/main.css
   - Screenshots
   - Discog Screenshots
   - README.md

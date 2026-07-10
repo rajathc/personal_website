@@ -28,8 +28,9 @@ jobs:
 
       - name: Verify committed minified assets are fresh
         run: |
+          test -f _includes/main.min.css || { echo "::error::_includes/main.min.css missing — run 'npm run minify' and commit it"; exit 1; }
           npm run minify
-          git diff --exit-code -- assets || {
+          git diff --exit-code -- assets _includes/main.min.css || {
             echo "::error::Minified assets are stale — run 'npm run minify' and commit the result"
             exit 1
           }
