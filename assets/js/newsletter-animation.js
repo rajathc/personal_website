@@ -31,6 +31,8 @@
 
     // Submit inline instead of the old popup window: post to Buttondown's
     // embed endpoint and confirm right where the reader is standing.
+    // The no-cors response is opaque, so this is optimistic — the email
+    // input's built-in validation catches malformed addresses beforehand.
     const doneMsg = document.querySelector('.newsletter-done');
     newsletterForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -38,14 +40,18 @@
         button.disabled = true;
         fetch(newsletterForm.action, {
             method: 'POST',
-            mode: 'no-cors', // opaque response; Buttondown still records the signup
+            mode: 'no-cors',
             body: new FormData(newsletterForm),
         }).then(() => {
             newsletterForm.hidden = true;
             if (doneMsg) doneMsg.hidden = false;
         }).catch(() => {
-            // Network failed: fall back to Buttondown's own page
-            window.open('https://buttondown.com/rajath', '_blank', 'noopener');
+            // Network failed: say so inline (a popup here would be blocked —
+            // we're past the user-activation window)
+            if (doneMsg) {
+                doneMsg.textContent = 'That didn’t send. Check your connection and try again, or subscribe at buttondown.com/rajath.';
+                doneMsg.hidden = false;
+            }
             button.disabled = false;
         });
     });

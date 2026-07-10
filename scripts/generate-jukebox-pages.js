@@ -19,8 +19,10 @@ for (const s of songs) {
         `title: ${yq(`${s.title} – ${s.artist}`)}`,
         `description: ${yq(s.summary)}`,
         `image: ${s.art || '/images/og-default.png'}`,
-        // Square album art crops badly as a summary_large_image banner
-        'twitter_card: summary',
+        // Square album art crops badly as a summary_large_image banner;
+        // jekyll-seo-tag reads page.twitter.card natively
+        'twitter:',
+        '  card: summary',
         `permalink: /jukebox/${s.id}/`,
         '---',
         ''

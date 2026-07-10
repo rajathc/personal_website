@@ -3,8 +3,11 @@ layout: null
 permalink: /jukebox/feed.xml
 ---
 {%- assign songs = site.data.music | sort: "serial" | reverse -%}
-{%- assign latest = songs.first -%}
-{%- assign latestdate = latest.listens | map: "date" | sort | last -%}
+{%- comment -%} Feed-level updated = the newest listen across ALL songs,
+so re-listens to older songs advance it too {%- endcomment -%}
+{%- assign alldates = "" -%}
+{%- for s in site.data.music -%}{%- for l in s.listens -%}{%- assign alldates = alldates | append: l.date | append: "," -%}{%- endfor -%}{%- endfor -%}
+{%- assign latestdate = alldates | split: "," | sort | last -%}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Rajath's Jukebox</title>

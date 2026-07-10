@@ -15,7 +15,7 @@
             <img class="music-art music-art-mini" src="{{ thumb | relative_url }}" alt="" loading="lazy" width="132" height="132">
             {%- else -%}
             {%- assign words = s.title | split: ' ' -%}
-            <span class="music-disc music-art-mini" aria-hidden="true"><span class="music-disc-label">{{ words[0] | slice: 0, 1 }}{% if words[1] %}{{ words[1] | slice: 0, 1 }}{% endif %}</span></span>
+            <span class="music-disc music-art-mini" aria-hidden="true"><span class="music-disc-label">{{ words[0] | slice: 0, 1 | upcase }}{% if words[1] %}{{ words[1] | slice: 0, 1 | upcase }}{% endif %}</span></span>
             {%- endif -%}
             <span class="music-song-text">
                 <span class="music-song-title">{{ s.title }}</span>

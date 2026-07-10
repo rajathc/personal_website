@@ -35,14 +35,22 @@
     }
 
     tabButtons.forEach(button => {
-        // Tabs are real links (crawlable section URLs); JS turns them into tabs
+        // Tabs are real links (crawlable section URLs); JS turns them into tabs.
+        // Modified clicks keep their native open-in-new-tab behavior.
         button.addEventListener('click', (e) => {
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
             e.preventDefault();
             activateTab(button);
         });
 
-        // Left/Right arrow keys move between tabs (standard tablist behavior)
+        // Left/Right arrows move between tabs; Space activates (links only
+        // respond to Enter natively, but role=tab promises Space too)
         button.addEventListener('keydown', (e) => {
+            if (e.key === ' ') {
+                e.preventDefault();
+                activateTab(button);
+                return;
+            }
             if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
             e.preventDefault();
             const i = tabButtons.indexOf(button);

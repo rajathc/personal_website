@@ -90,6 +90,18 @@
     --control-border: #6E6E6E;
 }
 
+/* Dimmed metadata carries its own color now (was opacity), so it needs its
+   own transition to cross-fade with everything else on theme toggle */
+.music-count,
+.music-table th,
+.music-listen-table th,
+.music-lt-quality,
+.book-log-series,
+.book-log-date,
+.book-year-count {
+    transition: color 0.3s ease;
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -2043,6 +2055,12 @@ button:focus-visible {
     color: #1a1a1a;
     font-weight: bold;
     border-radius: 4px 4px 0 0;
+}
+
+/* The tabs are anchors now; outrank the dark-theme link color on the
+   green active pill (near-white on accent fails contrast) */
+:root[data-theme="dark"] .tab-button.active {
+    color: #1a1a1a;
 }
 
 .tab-content {

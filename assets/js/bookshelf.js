@@ -19,13 +19,15 @@
         return `<span class="music-stars" role="img" aria-label="Rated ${rating} out of 5">${'★'.repeat(rating)}</span>`;
     }
 
+    // Fixed month names (not toLocaleDateString) so the text matches the
+    // server-rendered rows byte-for-byte (Liquid's %b prints "Sep", CLDR
+    // en-GB prints "Sept")
+    const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     function formatDate(iso, withYear) {
         if (!iso) return '';
         if (iso.length === 4) return withYear ? iso : ''; // year-only dates group under the year but show no day
-        const d = new Date(iso + 'T00:00:00');
-        return d.toLocaleDateString('en-GB', withYear
-            ? { day: 'numeric', month: 'short', year: 'numeric' }
-            : { day: 'numeric', month: 'short' });
+        const [y, m, d] = iso.split('-').map(Number);
+        return `${d} ${MONTHS[m - 1]}${withYear ? ` ${y}` : ''}`;
     }
 
     function filtered() {
@@ -115,7 +117,8 @@
         history.replaceState(null, '', s ? `#${s}` : window.location.pathname);
     }
 
-    if (standalone && window.location.hash.length > 1) {
+    const hasHashFilters = standalone && window.location.hash.length > 1;
+    if (hasHashFilters) {
         const p = new URLSearchParams(window.location.hash.slice(1));
         if (p.get('rating')) ratingEl.value = p.get('rating');
         if (p.get('sort')) sortEl.value = p.get('sort');
@@ -132,10 +135,13 @@
 
     [ratingEl, sortEl].forEach(el => el.addEventListener('change', render));
 
-    // On the homepage this list lives in a hidden tab panel; building 178 rows
-    // there at load costs real main-thread time, so defer to first activation.
     if (panel && !panel.classList.contains('active')) {
+        // Homepage: the list lives in a hidden tab panel; building 178 rows
+        // at load costs real main-thread time, so defer to first activation.
         panel.addEventListener('tab-shown', render, { once: true });
+    } else if (standalone && !hasHashFilters) {
+        // /bookshelf/ ships server-rendered rows in the default order; leave
+        // them in place and only re-render when a filter changes.
     } else {
         render();
     }

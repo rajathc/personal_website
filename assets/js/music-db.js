@@ -173,17 +173,25 @@
 
     [genreEl, langEl, sortEl, recEl].forEach(el => el.addEventListener('change', render));
 
+    // Legacy deep links: /jukebox/#song-id redirects to the song page.
+    // This MUST run before any hash reading/syncing rewrites the URL.
+    const linked = songs.find(s => `#${s.id}` === window.location.hash);
+    if (linked) {
+        window.location.replace(songUrl(linked.id));
+        return;
+    }
+
+    const hasHashFilters = standalone && window.location.hash.length > 1;
     readHash();
 
-    // On the homepage this table lives in a hidden tab panel; defer the
-    // first render until the tab is actually opened.
     if (panel && !panel.classList.contains('active')) {
+        // Homepage: the table lives in a hidden tab panel; defer the first
+        // render until the tab is actually opened.
         panel.addEventListener('tab-shown', render, { once: true });
+    } else if (standalone && !hasHashFilters) {
+        // /jukebox/ ships server-rendered rows in default order; leave them
+        // in place and only re-render when a filter changes.
     } else {
         render();
     }
-
-    // Legacy deep links: /jukebox/#song-id now redirects to the song page
-    const linked = songs.find(s => `#${s.id}` === window.location.hash);
-    if (linked) window.location.replace(songUrl(linked.id));
 })();

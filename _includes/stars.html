@@ -1,4 +1,7 @@
 {%- assign r = include.rating -%}
 {%- assign full = r | floor -%}
 {%- assign half = r | minus: full -%}
-<span class="music-stars" role="img" aria-label="Rated {{ r }} out of 5">{%- for i in (1..full) -%}★{%- endfor -%}{%- if half >= 0.25 -%}<span class="music-star-half">★</span>{%- endif -%}</span>
+{%- comment -%} Whole floats print as integers ("Rated 4", not "Rated 4.0")
+to match the client-side JS renderers {%- endcomment -%}
+{%- if half == 0 -%}{%- assign rlabel = full -%}{%- else -%}{%- assign rlabel = r -%}{%- endif -%}
+<span class="music-stars" role="img" aria-label="Rated {{ rlabel }} out of 5">{%- for i in (1..full) -%}★{%- endfor -%}{%- if half >= 0.25 -%}<span class="music-star-half">★</span>{%- endif -%}</span>
