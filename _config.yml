@@ -8,7 +8,9 @@
 # Site settings
 title:       Rajath Chandrahasa
 tagline:     Product, travel, and books from Bengaluru
-author:      Rajath Chandrahasa
+author:
+  name: Rajath Chandrahasa
+  twitter: rajath_c
 email:       rajath@neosapien.xyz
 description: 'Rajath Chandrahasa, a product manager in Bengaluru writing about technology, travel, books, and bringing creativity into tech.'
 baseurl:     '' # The subpath of your site, e.g. /blog

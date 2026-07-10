@@ -8,6 +8,10 @@
     <meta property="og:description" content="{{ page.og_description }}" />
     <meta name="twitter:description" content="{{ page.og_description }}" />
     {% endif %}
+    {% if page.twitter_card %}
+    <!-- Per-page card type (e.g. square album art wants "summary", not large) -->
+    <meta name="twitter:card" content="{{ page.twitter_card }}" />
+    {% endif %}
     {% seo %}
     {% feed_meta %}
     <meta name="color-scheme" content="light dark">

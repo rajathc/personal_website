@@ -14,7 +14,11 @@
             </div>
         </div>
 
+        {% if include.static %}
+        <p class="music-count" id="music-count" role="status">{{ site.data.music.size }} of {{ site.data.music.size }} songs</p>
+        {% else %}
         <p class="music-count" id="music-count" role="status"></p>
+        {% endif %}
         {% include dolby-symbol.html %}
         <div class="music-table-wrap">
             <table class="music-table">
@@ -27,10 +31,18 @@
                         <th class="music-th-flags"><span class="visually-hidden">Highlights</span></th>
                     </tr>
                 </thead>
-                <tbody id="music-list"></tbody>
+                <tbody id="music-list">
+                {%- if include.static -%}
+                    {%- comment -%} Server-rendered mirror of music-db.js renderList()
+                    (serial order) so song pages have crawlable inbound links and the
+                    table reads without JS; the script re-renders for filters. {%- endcomment -%}
+                    {%- assign songs = site.data.music | sort: "serial" -%}
+                    {%- for s in songs %}{% include music-row.html s=s %}{% endfor %}
+                {%- endif -%}
+                </tbody>
             </table>
         </div>
-        <noscript><p>The music database needs JavaScript to filter and browse. Sorry!</p></noscript>
+        <noscript><p>{% if include.static %}Filtering and sorting need JavaScript; the full table is above.{% else %}The jukebox needs JavaScript here — or browse it at <a href="{{ '/jukebox/' | relative_url }}">/jukebox/</a>.{% endif %}</p></noscript>
 </div>
 
 

@@ -19,6 +19,8 @@ for (const s of songs) {
         `title: ${yq(`${s.title} – ${s.artist}`)}`,
         `description: ${yq(s.summary)}`,
         `image: ${s.art || '/images/og-default.png'}`,
+        // Square album art crops badly as a summary_large_image banner
+        'twitter_card: summary',
         `permalink: /jukebox/${s.id}/`,
         '---',
         ''

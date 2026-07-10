@@ -45,9 +45,38 @@
             </div>
         </div>
 
+        {% assign readbooks = site.data.books | where_exp: "b", "b.status != 'reading'" %}
+        {% if include.static %}
+        {% assign fivestars = readbooks | where: "rating", 5 %}
+        <p class="music-count" id="book-count" role="status">{{ readbooks.size }} of {{ readbooks.size }} books · {{ fivestars.size }} five-stars</p>
+        {% else %}
         <p class="music-count" id="book-count" role="status"></p>
-        <div class="book-log" id="book-log"></div>
-        <noscript><p>The bookshelf needs JavaScript to browse. Sorry!</p></noscript>
+        {% endif %}
+        <div class="book-log" id="book-log">
+        {%- if include.static -%}
+            {%- comment -%} Server-rendered mirror of bookshelf.js renderLog(list, 'read')
+            so the log is crawlable and readable without JS; the script re-renders
+            the same markup and takes over for filters. {%- endcomment -%}
+            {%- assign dated = readbooks | where_exp: "b", "b.dateRead" -%}
+            {%- assign undated = readbooks | where_exp: "b", "b.dateRead == nil" -%}
+            {%- assign sorted = dated | sort: "dateRead" | reverse -%}
+            {%- assign groups = sorted | group_by_exp: "b", "b.dateRead | slice: 0, 4" -%}
+            {%- for g in groups %}
+            <section class="book-year">
+                <h2 class="book-year-title">{{ g.name }}</h2>
+                {%- for b in g.items %}{% include book-log-row.html b=b %}{% endfor %}
+            </section>
+            {%- endfor %}
+            {%- if undated.size > 0 %}
+            <section class="book-year">
+                <h2 class="book-year-title">Before I kept dates</h2>
+                {%- assign undatedsorted = undated | sort: "title" -%}
+                {%- for b in undatedsorted %}{% include book-log-row.html b=b %}{% endfor %}
+            </section>
+            {%- endif %}
+        {%- endif -%}
+        </div>
+        <noscript><p>{% if include.static %}Filtering and sorting need JavaScript; the full log is above.{% else %}The bookshelf needs JavaScript here — or browse it at <a href="{{ '/bookshelf/' | relative_url }}">/bookshelf/</a>.{% endif %}</p></noscript>
 </div>
 
 <script id="book-data" type="application/json">{{ site.data.books | jsonify }}</script>

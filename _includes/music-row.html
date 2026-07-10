@@ -1,0 +1,34 @@
+{%- comment -%}
+  One jukebox table row. Must mirror renderList() in assets/js/music-db.js —
+  the script re-renders this exact markup client-side when filters change.
+{%- endcomment -%}
+{%- assign s = include.s -%}
+{%- assign maxr = 0 -%}
+{%- for l in s.listens -%}{%- if l.rating > maxr -%}{%- assign maxr = l.rating -%}{%- endif -%}{%- endfor -%}
+{%- assign hifis = s.listens | where: "hiFi", true -%}
+{%- assign dolbys = s.listens | where: "dolbyAtmos", true -%}
+<tr class="music-row" data-id="{{ s.id }}">
+    <td class="music-td-song">
+        <a class="music-row-btn" href="{{ '/jukebox/' | append: s.id | append: '/' | relative_url }}">
+            {%- if s.art -%}
+            {%- assign thumb = s.art | replace: '/images/music/', '/images/music/thumbs/' | replace: '.jpg', '.webp' -%}
+            <img class="music-art music-art-mini" src="{{ thumb | relative_url }}" alt="" loading="lazy" width="132" height="132">
+            {%- else -%}
+            {%- assign words = s.title | split: ' ' -%}
+            <span class="music-disc music-art-mini" aria-hidden="true"><span class="music-disc-label">{{ words[0] | slice: 0, 1 }}{% if words[1] %}{{ words[1] | slice: 0, 1 }}{% endif %}</span></span>
+            {%- endif -%}
+            <span class="music-song-text">
+                <span class="music-song-title">{{ s.title }}</span>
+                <span class="music-song-artist">{{ s.artist }}</span>
+            </span>
+        </a>
+    </td>
+    <td class="music-td-album">{{ s.album }}</td>
+    <td class="music-td-language">{{ s.language }}</td>
+    <td class="music-td-rating">{% include stars.html rating=maxr %}</td>
+    <td class="music-td-flags"><span class="music-row-flags">
+        {%- if s.recommend -%}<span class="music-flag" title="Recommended">{% include micon.html name='thumbsup' %}<span class="visually-hidden">Recommended</span></span>{%- endif -%}
+        {%- if hifis.size > 0 -%}<span class="music-flag" title="Felt hi-fi: sounds great on a high-fidelity setup">{% include micon.html name='waveform' %}<span class="visually-hidden">Hi-Fi</span></span>{%- endif -%}
+        {%- if dolbys.size > 0 -%}<span class="music-flag" title="Dolby Atmos"><svg class="music-dolby music-dolby-sm" role="img" aria-label="Dolby Atmos"><use href="#dolby-atmos-mark"/></svg></span>{%- endif -%}
+    </span></td>
+</tr>

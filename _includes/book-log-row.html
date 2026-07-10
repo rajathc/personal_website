@@ -1,0 +1,22 @@
+{%- comment -%}
+  One reading-log row. Must mirror row() in assets/js/bookshelf.js — the
+  script re-renders this exact markup client-side when filters change.
+{%- endcomment -%}
+{%- assign b = include.b -%}
+{%- assign thumb = b.cover | replace: '/images/books/', '/images/books/thumbs/' | replace: '.jpg', '.webp' -%}
+<a class="book-log-row" href="{{ b.goodreads }}" target="_blank" rel="noopener">
+    <img class="book-cover" src="{{ thumb | relative_url }}" alt="" loading="lazy" width="120" height="180">
+    <span class="book-log-text">
+        <span class="book-log-title">{{ b.title }}{% if b.series != '' and b.series %} <span class="book-log-series">({{ b.series }})</span>{% endif %}</span>
+        <span class="book-log-author">{{ b.author }}</span>
+    </span>
+    <span class="book-log-side">
+        {%- if b.rating > 0 -%}
+        <span class="music-stars" role="img" aria-label="Rated {{ b.rating }} out of 5">{{ '★★★★★' | slice: 0, b.rating }}</span>
+        {%- else -%}
+        <span class="book-unrated">unrated</span>
+        {%- endif -%}
+        {%- if b.dateRead and b.dateRead.size > 4 %}<span class="book-log-date">{{ b.dateRead | date: "%-d %b" }}</span>{% endif -%}
+    </span>
+    <span class="visually-hidden">(Goodreads, opens in new tab)</span>
+</a>

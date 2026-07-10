@@ -10,10 +10,12 @@ layout: default
 
     <div class="tabs-container">
         <div class="tabs-header">
+            {% comment %} Real links so crawlers can reach the section pages;
+            tabs.js intercepts clicks and swaps panels in place. {% endcomment %}
             <div class="tabs-nav" role="tablist" aria-label="Content sections">
-                <button class="tab-button active" id="tab-writings" data-tab="writings" data-text="Writings" role="tab" aria-selected="true" aria-controls="writings-tab">Writings</button>
-                <button class="tab-button" id="tab-bookshelf" data-tab="bookshelf" data-text="Bookshelf" role="tab" aria-selected="false" aria-controls="bookshelf-tab" tabindex="-1">Bookshelf</button>
-                <button class="tab-button" id="tab-jukebox" data-tab="jukebox" data-text="Jukebox" role="tab" aria-selected="false" aria-controls="jukebox-tab" tabindex="-1">Jukebox</button>
+                <a class="tab-button active" id="tab-writings" href="{{ '/writings/' | relative_url }}" data-tab="writings" data-text="Writings" role="tab" aria-selected="true" aria-controls="writings-tab">Writings</a>
+                <a class="tab-button" id="tab-bookshelf" href="{{ '/bookshelf/' | relative_url }}" data-tab="bookshelf" data-text="Bookshelf" role="tab" aria-selected="false" aria-controls="bookshelf-tab" tabindex="-1">Bookshelf</a>
+                <a class="tab-button" id="tab-jukebox" href="{{ '/jukebox/' | relative_url }}" data-tab="jukebox" data-text="Jukebox" role="tab" aria-selected="false" aria-controls="jukebox-tab" tabindex="-1">Jukebox</a>
             </div>
             {% include theme-toggle.html %}
         </div>
