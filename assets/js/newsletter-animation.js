@@ -28,4 +28,25 @@
     });
 
     observer.observe(footer);
+
+    // Submit inline instead of the old popup window: post to Buttondown's
+    // embed endpoint and confirm right where the reader is standing.
+    const doneMsg = document.querySelector('.newsletter-done');
+    newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const button = newsletterForm.querySelector('button');
+        button.disabled = true;
+        fetch(newsletterForm.action, {
+            method: 'POST',
+            mode: 'no-cors', // opaque response; Buttondown still records the signup
+            body: new FormData(newsletterForm),
+        }).then(() => {
+            newsletterForm.hidden = true;
+            if (doneMsg) doneMsg.hidden = false;
+        }).catch(() => {
+            // Network failed: fall back to Buttondown's own page
+            window.open('https://buttondown.com/rajath', '_blank', 'noopener');
+            button.disabled = false;
+        });
+    });
 })();

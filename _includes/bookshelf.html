@@ -63,13 +63,13 @@
             {%- assign groups = sorted | group_by_exp: "b", "b.dateRead | slice: 0, 4" -%}
             {%- for g in groups %}
             <section class="book-year">
-                <h2 class="book-year-title">{{ g.name }}</h2>
+                <h2 class="book-year-title">{{ g.name }} <span class="book-year-count">· {{ g.items.size }} book{% if g.items.size != 1 %}s{% endif %}</span></h2>
                 {%- for b in g.items %}{% include book-log-row.html b=b %}{% endfor %}
             </section>
             {%- endfor %}
             {%- if undated.size > 0 %}
             <section class="book-year">
-                <h2 class="book-year-title">Before I kept dates</h2>
+                <h2 class="book-year-title">Before I kept dates <span class="book-year-count">· {{ undated.size }} books</span></h2>
                 {%- assign undatedsorted = undated | sort: "title" -%}
                 {%- for b in undatedsorted %}{% include book-log-row.html b=b %}{% endfor %}
             </section>

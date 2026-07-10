@@ -117,10 +117,51 @@
             </tr>`).join('');
     }
 
+    function renderEmpty() {
+        listEl.innerHTML = `
+            <tr class="music-empty-row"><td colspan="5">
+                <p class="empty-state">No songs match. <button type="button" class="empty-reset">Show everything</button></p>
+            </td></tr>`;
+        listEl.querySelector('.empty-reset').addEventListener('click', () => {
+            genreEl.value = '';
+            langEl.value = '';
+            recEl.checked = false;
+            sortEl.value = 'serial';
+            render();
+        });
+    }
+
+    // On the standalone /jukebox/ page, filters live in the URL hash so a
+    // filtered view can be shared; the homepage tab keeps its #jukebox hash.
+    const panel = listEl.closest('.tab-content');
+    const standalone = !panel;
+
+    function syncHash() {
+        if (!standalone) return;
+        const p = new URLSearchParams();
+        if (genreEl.value) p.set('genre', genreEl.value);
+        if (langEl.value) p.set('lang', langEl.value);
+        if (recEl.checked) p.set('rec', '1');
+        if (sortEl.value !== 'serial') p.set('sort', sortEl.value);
+        const s = p.toString();
+        history.replaceState(null, '', s ? `#${s}` : window.location.pathname);
+    }
+
+    function readHash() {
+        if (!standalone || window.location.hash.length < 2) return;
+        const p = new URLSearchParams(window.location.hash.slice(1));
+        if (p.get('genre')) genreEl.value = p.get('genre');
+        if (p.get('lang')) langEl.value = p.get('lang');
+        if (p.get('rec')) recEl.checked = true;
+        if (p.get('sort')) sortEl.value = p.get('sort');
+    }
+
     function render() {
         const filtered = filteredSongs();
         countEl.textContent = `${filtered.length} of ${songs.length} songs`;
-        renderList(filtered);
+        if (filtered.length) renderList(filtered);
+        else renderEmpty();
+        syncHash();
     }
 
     // Whole table row is clickable (the title link handles keyboard access)
@@ -132,9 +173,10 @@
 
     [genreEl, langEl, sortEl, recEl].forEach(el => el.addEventListener('change', render));
 
+    readHash();
+
     // On the homepage this table lives in a hidden tab panel; defer the
     // first render until the tab is actually opened.
-    const panel = listEl.closest('.tab-content');
     if (panel && !panel.classList.contains('active')) {
         panel.addEventListener('tab-shown', render, { once: true });
     } else {

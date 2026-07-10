@@ -80,5 +80,25 @@ layout: default
                 {% endfor %}
             </tbody>
         </table>
+
+        {% assign jsongs = site.data.music | sort: "serial" %}
+        {% assign idx = -1 %}
+        {% for s in jsongs %}{% if s.id == song.id %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+        {% assign previdx = idx | minus: 1 %}
+        {% assign nextidx = idx | plus: 1 %}
+        <nav class="post-nav" aria-label="More songs">
+            {% if idx > 0 %}{% assign p = jsongs[previdx] %}
+            <a class="post-nav-link post-nav-prev" href="{{ '/jukebox/' | append: p.id | append: '/' | relative_url }}">
+                <span class="post-nav-label">← Previous</span>
+                <span class="post-nav-title">{{ p.title }}</span>
+            </a>
+            {% else %}<span></span>{% endif %}
+            {% if nextidx < jsongs.size and idx >= 0 %}{% assign n = jsongs[nextidx] %}
+            <a class="post-nav-link post-nav-next" href="{{ '/jukebox/' | append: n.id | append: '/' | relative_url }}">
+                <span class="post-nav-label">Next →</span>
+                <span class="post-nav-title">{{ n.title }}</span>
+            </a>
+            {% else %}<span></span>{% endif %}
+        </nav>
     </article>
 </div>

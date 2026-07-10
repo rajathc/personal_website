@@ -759,6 +759,13 @@ button:focus-visible {
     margin: 0 auto 2rem;
 }
 
+.newsletter-done {
+    color: var(--footer-text);
+    font-size: 0.9375rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
 /* Animated gradient border wrapper */
 .newsletter-form::before {
     content: '';
@@ -1441,6 +1448,28 @@ button:focus-visible {
     flex-shrink: 0;
 }
 
+/* The 404 page's spinning record */
+.disc-404 {
+    width: 140px;
+    height: 140px;
+    margin: 0 0 2rem;
+    animation: disc-spin 6s linear infinite;
+}
+
+.disc-404 .music-disc-label {
+    font-size: 1.5rem;
+}
+
+@keyframes disc-spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .disc-404 {
+        animation: none;
+    }
+}
+
 .music-disc-label {
     display: flex;
     align-items: center;
@@ -1848,6 +1877,36 @@ button:focus-visible {
 .book-year-title {
     font-size: 1.375rem;
     margin: 1.5rem 0 0.5rem;
+}
+
+.book-year-count {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--dim-text);
+    letter-spacing: 0;
+}
+
+/* Zero-result filter states */
+.empty-state {
+    font-size: 0.9375rem;
+    padding: 1.5rem 0;
+}
+
+.empty-reset {
+    font-family: 'Bricolage Grotesque', -apple-system, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--accent-strong);
+    background: none;
+    border: 1px solid var(--control-border);
+    border-radius: 6px;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.empty-reset:hover {
+    border-color: var(--accent-strong);
 }
 
 .book-log-row {

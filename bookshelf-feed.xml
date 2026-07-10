@@ -1,0 +1,26 @@
+---
+layout: null
+permalink: /bookshelf/feed.xml
+---
+{%- assign dated = site.data.books | where_exp: "b", "b.dateRead" | where_exp: "b", "b.status != 'reading'" -%}
+{%- assign dated = dated | where_exp: "b", "b.dateRead.size > 4" -%}
+{%- assign recent = dated | sort: "dateRead" | reverse -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Rajath's Bookshelf</title>
+  <subtitle>Books as I finish them, with ratings</subtitle>
+  <id>{{ '/bookshelf/' | absolute_url }}</id>
+  <link href="{{ '/bookshelf/feed.xml' | absolute_url }}" rel="self"/>
+  <link href="{{ '/bookshelf/' | absolute_url }}"/>
+  <updated>{{ recent.first.dateRead | date_to_xmlschema }}</updated>
+  <author><name>{{ site.author.name }}</name></author>
+  {%- for b in recent limit: 25 %}
+  <entry>
+    <title>{{ b.title | xml_escape }}{% if b.series != '' and b.series %} ({{ b.series | xml_escape }}){% endif %} — {{ b.author | xml_escape }}</title>
+    <id>{{ b.goodreads | xml_escape }}</id>
+    <link href="{{ b.goodreads | xml_escape }}"/>
+    <updated>{{ b.dateRead | date_to_xmlschema }}</updated>
+    <summary>{% if b.rating > 0 %}Rated {{ b.rating }} out of 5.{% else %}Read, not yet rated.{% endif %}</summary>
+  </entry>
+  {%- endfor %}
+</feed>

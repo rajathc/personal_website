@@ -86,23 +86,54 @@
         });
         logEl.innerHTML = keys.map(year => `
             <section class="book-year">
-                <h2 class="book-year-title">${year}</h2>
+                <h2 class="book-year-title">${year} <span class="book-year-count">· ${groups.get(year).length} book${groups.get(year).length === 1 ? '' : 's'}</span></h2>
                 ${groups.get(year).map(b => row(b, false)).join('')}
             </section>`).join('');
+    }
+
+    function renderEmpty() {
+        logEl.innerHTML = `
+            <p class="empty-state">Nothing on the shelf matches. <button type="button" class="empty-reset">Show everything</button></p>`;
+        logEl.querySelector('.empty-reset').addEventListener('click', () => {
+            ratingEl.value = '';
+            sortEl.value = 'read';
+            render();
+        });
+    }
+
+    // On the standalone /bookshelf/ page, filters live in the URL hash so a
+    // filtered view can be shared; the homepage tab keeps its #bookshelf hash.
+    const panel = logEl.closest('.tab-content');
+    const standalone = !panel;
+
+    function syncHash() {
+        if (!standalone) return;
+        const p = new URLSearchParams();
+        if (ratingEl.value) p.set('rating', ratingEl.value);
+        if (sortEl.value !== 'read') p.set('sort', sortEl.value);
+        const s = p.toString();
+        history.replaceState(null, '', s ? `#${s}` : window.location.pathname);
+    }
+
+    if (standalone && window.location.hash.length > 1) {
+        const p = new URLSearchParams(window.location.hash.slice(1));
+        if (p.get('rating')) ratingEl.value = p.get('rating');
+        if (p.get('sort')) sortEl.value = p.get('sort');
     }
 
     function render() {
         const list = filtered();
         const fives = list.filter(b => b.rating === 5).length;
         countEl.textContent = `${list.length} of ${books.length} books · ${fives} five-star${fives === 1 ? '' : 's'}`;
-        renderLog(list, sortEl.value);
+        if (list.length) renderLog(list, sortEl.value);
+        else renderEmpty();
+        syncHash();
     }
 
     [ratingEl, sortEl].forEach(el => el.addEventListener('change', render));
 
     // On the homepage this list lives in a hidden tab panel; building 178 rows
     // there at load costs real main-thread time, so defer to first activation.
-    const panel = logEl.closest('.tab-content');
     if (panel && !panel.classList.contains('active')) {
         panel.addEventListener('tab-shown', render, { once: true });
     } else {

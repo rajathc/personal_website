@@ -1,0 +1,29 @@
+---
+layout: null
+permalink: /jukebox/feed.xml
+---
+{%- assign songs = site.data.music | sort: "serial" | reverse -%}
+{%- assign latest = songs.first -%}
+{%- assign latestdate = latest.listens | map: "date" | sort | last -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Rajath's Jukebox</title>
+  <subtitle>Songs from my music journal, with unfiltered thoughts attached</subtitle>
+  <id>{{ '/jukebox/' | absolute_url }}</id>
+  <link href="{{ '/jukebox/feed.xml' | absolute_url }}" rel="self"/>
+  <link href="{{ '/jukebox/' | absolute_url }}"/>
+  <updated>{{ latestdate | date_to_xmlschema }}</updated>
+  <author><name>{{ site.author.name }}</name></author>
+  {%- for s in songs %}
+  {%- assign sdate = s.listens | map: "date" | sort | last %}
+  {%- assign maxr = 0 %}
+  {%- for l in s.listens %}{% if l.rating > maxr %}{% assign maxr = l.rating %}{% endif %}{% endfor %}
+  <entry>
+    <title>{{ s.title | xml_escape }} — {{ s.artist | xml_escape }}</title>
+    <id>{{ '/jukebox/' | append: s.id | append: '/' | absolute_url }}</id>
+    <link href="{{ '/jukebox/' | append: s.id | append: '/' | absolute_url }}"/>
+    <updated>{{ sdate | date_to_xmlschema }}</updated>
+    <summary>{{ s.summary | xml_escape }} (rated {{ maxr }} out of 5)</summary>
+  </entry>
+  {%- endfor %}
+</feed>
