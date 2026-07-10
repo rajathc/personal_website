@@ -16,7 +16,7 @@ layout: default
 
     <nav class="music-crumb"><a href="{{ '/jukebox/' | relative_url }}">← Jukebox</a></nav>
 
-    <article class="music-release">
+    <article class="music-release" id="content-start" tabindex="-1">
         <h1 class="music-release-title">{{ song.title }}</h1>
         <p class="music-release-artist">{{ song.artist }}</p>
 
@@ -49,14 +49,16 @@ layout: default
         </div>
 
         <h2 class="music-h">When I listened</h2>
-        <table class="music-listen-table">
-            <thead>
-                <tr><th>Setup</th><th>Date</th><th>Rating</th></tr>
+        {% comment %} Explicit roles: the stacked mobile layout sets display:block,
+        which would otherwise strip the implicit table semantics {% endcomment %}
+        <table class="music-listen-table" role="table">
+            <thead role="rowgroup">
+                <tr role="row"><th role="columnheader">Setup</th><th role="columnheader">Date</th><th role="columnheader">Rating</th></tr>
             </thead>
-            <tbody>
+            <tbody role="rowgroup">
                 {% for l in song.listens %}
-                <tr>
-                    <td class="music-lt-setup">
+                <tr role="row">
+                    <td class="music-lt-setup" role="cell">
                         <span class="music-listen-chain">
                             <span class="music-listen-node">{% if l.source contains 'MacBook' %}{% include micon.html name='laptop' %}{% else %}{% include micon.html name='device' %}{% endif %}{{ l.source }} <span class="music-listen-arrow" aria-hidden="true">→</span></span>
                             <span class="music-listen-node">{% include micon.html name='headphones' %}{{ l.receiver }}</span>
@@ -69,8 +71,8 @@ layout: default
                             {%- if l.dolbyAtmos %} · <svg class="music-dolby" role="img" aria-label="Dolby Atmos"><use href="#dolby-atmos-mark"/></svg>{% endif -%}
                         </span>
                     </td>
-                    <td class="music-lt-date">{{ l.date | date: "%-d %b %Y" }}</td>
-                    <td class="music-lt-rating">
+                    <td class="music-lt-date" role="cell">{{ l.date | date: "%-d %b %Y" }}</td>
+                    <td class="music-lt-rating" role="cell">
                         {% include stars.html rating=l.rating %}
                         {% if l.hiFi %}<span class="music-lt-hifi" title="Felt hi-fi: sounds great on a high-fidelity setup">{% include micon.html name='waveform' %} Hi-Fi</span>{% endif %}
                     </td>

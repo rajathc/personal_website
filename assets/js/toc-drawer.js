@@ -50,6 +50,8 @@
             a.addEventListener('click', function(e) {
                 e.preventDefault();
                 heading.scrollIntoView({ behavior: prefersReducedMotion.matches ? 'auto' : 'smooth' });
+                // Keep the section linkable: copyable URL, back button returns
+                history.pushState(null, '', `#${heading.id}`);
                 closeDrawer();
             });
 
@@ -116,8 +118,24 @@
     tocClose.addEventListener('click', closeDrawer);
     tocOverlay.addEventListener('click', closeDrawer);
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && tocDrawer.classList.contains('open')) {
+        if (!tocDrawer.classList.contains('open')) return;
+        if (e.key === 'Escape') {
             closeDrawer();
+            return;
+        }
+        // The drawer declares aria-modal, so keep Tab focus inside it
+        if (e.key === 'Tab') {
+            const focusables = tocDrawer.querySelectorAll('button, a[href]');
+            if (!focusables.length) return;
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
         }
     });
 

@@ -70,6 +70,8 @@
     --border-color: #E0E0E0;
     --drawer-bg: #F5F5F5;
     --drawer-text: #2C2C2C;
+    --dim-text: #595959; /* 5.3:1 on the light bg — small metadata stays AA */
+    --control-border: #9E9E9E; /* ~3:1 so selects read as controls */
 }
 
 :root[data-theme="dark"] {
@@ -84,6 +86,8 @@
     --drawer-bg: #1a1a1a;
     --drawer-text: #E8E8E8;
     --link-color: #F0F0F0;
+    --dim-text: #9E9E9E; /* 6.4:1 on the dark bg */
+    --control-border: #6E6E6E;
 }
 
 /* Reset and base styles */
@@ -1223,13 +1227,13 @@ button:focus-visible {
 .music-filter-row select {
     flex: 1 1 0;
     min-width: 0;
-    height: 40px;
+    height: 44px;
     font-family: inherit;
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--text-color);
     background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--control-border);
     border-radius: 6px;
     padding: 0 1.9rem 0 0.75rem;
     cursor: pointer;
@@ -1247,9 +1251,14 @@ button:focus-visible {
     border-color: var(--text-color);
 }
 
+.music-filter-row select:focus-visible {
+    outline: 3px solid var(--accent-strong);
+    outline-offset: 2px;
+}
+
 .music-rec-toggle {
     flex: 0 0 auto;
-    height: 40px;
+    height: 44px;
     font-size: 0.875rem;
     font-weight: 500;
     display: inline-flex;
@@ -1277,7 +1286,7 @@ button:focus-visible {
 .music-count {
     font-size: 0.8125rem;
     font-weight: 500;
-    opacity: 0.6;
+    color: var(--dim-text);
     margin: 0.35rem 0 1.25rem;
 }
 
@@ -1297,7 +1306,7 @@ button:focus-visible {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    opacity: 0.55;
+    color: var(--dim-text);
     text-align: left;
     padding: 0.5rem 0.75rem 0.5rem 0;
     border-bottom: 1px solid var(--border-color);
@@ -1616,7 +1625,7 @@ button:focus-visible {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    opacity: 0.55;
+    color: var(--dim-text);
     text-align: left;
     padding: 0.45rem 0.9rem 0.45rem 0;
     border-bottom: 1px solid var(--border-color);
@@ -1670,7 +1679,7 @@ button:focus-visible {
     display: block;
     margin-top: 0.3rem;
     font-size: 0.75rem;
-    opacity: 0.65;
+    color: var(--dim-text);
 }
 
 .music-lt-hifi {
@@ -1879,7 +1888,7 @@ button:focus-visible {
 
 .book-log-series {
     font-weight: normal;
-    opacity: 0.6;
+    color: var(--dim-text);
     font-size: 0.8125rem;
 }
 
@@ -1902,7 +1911,7 @@ button:focus-visible {
 
 .book-log-date {
     font-size: 0.75rem;
-    opacity: 0.6;
+    color: var(--dim-text);
     min-width: 3.2rem;
     text-align: right;
 }

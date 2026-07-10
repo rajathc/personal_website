@@ -63,7 +63,9 @@
     </script>
 </head>
 <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% comment %} Targets #content-start (set per layout AFTER the page chrome),
+    so the link actually skips the toggle/logo instead of landing on them {% endcomment %}
+    <a class="skip-link" href="#content-start">Skip to content</a>
     <main class="main-content" id="main-content" tabindex="-1">
         {{ content }}
     </main>
