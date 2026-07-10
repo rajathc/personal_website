@@ -5,6 +5,9 @@
  * - internal links that resolve to nothing (404s at deploy time)
  * - images/srcset entries pointing at files that don't exist
  * - <img> tags missing alt attributes
+ * - covers/art referenced from the JSON data (rendered client-side,
+ *   invisible to the HTML scan) and their thumbs
+ * - jukebox page stubs matching _data/music.json ids both ways
  *
  * Usage: node scripts/check-site.js _site
  */
@@ -73,10 +76,43 @@ for (const file of htmlFiles) {
   }
 }
 
-console.log(`Checked ${htmlFiles.length} pages.`);
+// Data-driven assets: the book/music lists render client-side from JSON,
+// so the HTML scan above never sees their image paths.
+const repoRoot = path.join(__dirname, '..');
+const thumbPath = p => p.replace(/^(\/images\/(?:books|music)\/)/, '$1thumbs/').replace(/\.jpe?g$/i, '.webp');
+const books = JSON.parse(fs.readFileSync(path.join(repoRoot, '_data/books.json'), 'utf8'));
+for (const b of books) {
+  if (!resolves(b.cover)) errors.push(`books.json: missing cover ${b.cover} (${b.id})`);
+  else if (!resolves(thumbPath(b.cover))) errors.push(`books.json: missing thumb ${thumbPath(b.cover)} (${b.id})`);
+}
+const songs = JSON.parse(fs.readFileSync(path.join(repoRoot, '_data/music.json'), 'utf8'));
+for (const s of songs) {
+  if (!s.art) continue;
+  if (!resolves(s.art)) errors.push(`music.json: missing art ${s.art} (${s.id})`);
+  else if (!resolves(thumbPath(s.art))) errors.push(`music.json: missing thumb ${thumbPath(s.art)} (${s.id})`);
+}
+
+// Jukebox page stubs must match music.json ids both ways: a forgotten
+// `npm run jukebox:pages` would otherwise ship 404 song links silently.
+const songIds = new Set(songs.map(s => s.id));
+for (const s of songs) {
+  if (!fs.existsSync(path.join(siteDir, 'jukebox', s.id, 'index.html'))) {
+    errors.push(`jukebox: no page for song "${s.id}" — run npm run jukebox:pages`);
+  }
+}
+const jukeboxDir = path.join(siteDir, 'jukebox');
+if (fs.existsSync(jukeboxDir)) {
+  for (const entry of fs.readdirSync(jukeboxDir, { withFileTypes: true })) {
+    if (entry.isDirectory() && !songIds.has(entry.name)) {
+      errors.push(`jukebox: stale page /jukebox/${entry.name}/ has no song in music.json`);
+    }
+  }
+}
+
+console.log(`Checked ${htmlFiles.length} pages, ${books.length} book covers, ${songs.length} songs.`);
 if (errors.length) {
   console.error(`\n${errors.length} problem(s) found:`);
   for (const e of [...new Set(errors)]) console.error(`  ${e}`);
   process.exit(1);
 }
-console.log('No broken internal links, missing images, or missing alt attributes.');
+console.log('No broken internal links, missing images/thumbs, missing alt attributes, or jukebox drift.');

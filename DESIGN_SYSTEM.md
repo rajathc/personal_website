@@ -20,10 +20,15 @@ This document outlines the design system for rajath.blog, including typography, 
 
 ### Font Families
 
-**Display Font: PP Neue Machina**
-- Used for: Headings, titles, navigation, logo
-- Weights: Regular (400), Ultrabold (700)
-- File format: OpenType (.otf)
+**Interface Font: Bricolage Grotesque**
+- Used for: Headings, titles (ExtraBold 800), interface chrome (tables, controls, labels)
+- Weights: Regular (400), Bold (700), ExtraBold (800)
+- File format: WOFF2, latin subset
+
+**Logo Font: Oi**
+- Used for: The "Rajath" wordmark and "rajath.blog" footer logo only
+- Weight: Regular (400)
+- File format: WOFF2
 
 **Body Font: Sligoil**
 - Used for: Body text, captions, metadata
@@ -164,7 +169,7 @@ All content is constrained to a maximum width of 800px for optimal readability.
   - Background: transparent
   - Border: 3px transparent bottom
   - Padding: 0.75rem vertical, 1.5rem horizontal
-  - Font: PP Neue Machina, 1rem
+  - Font: Bricolage Grotesque, 1rem
 
 - **Active State**:
   - Background: var(--accent-color)

@@ -1,0 +1,11 @@
+{
+  "_comment": "Manual curation applied on top of Goodreads imports. 'exclude' ids are on the Goodreads shelf but deliberately not on the site; import-goodreads.js drops them on every re-import. Manual site-only entries (books absent from the shelf export) are preserved automatically.",
+  "exclude": [
+    "29044-the-secret-history",
+    "103273-under-the-jaguar-sun",
+    "11297-norwegian-wood",
+    "5043-the-pillars-of-the-earth",
+    "18142397-urban-watercolor-sketching",
+    "25744928-deep-work"
+  ]
+}

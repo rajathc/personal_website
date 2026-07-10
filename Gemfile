@@ -8,8 +8,6 @@ gem "csv"
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
-  gem "jekyll-paginate"
-  gem "jekyll-tagging"
 end
 
 gem 'jekyll-sitemap'
