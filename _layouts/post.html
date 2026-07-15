@@ -3,6 +3,7 @@ layout: default
 ---
 <div class="post-container">
     <div class="post-header">
+        <a href="{{ '/' | relative_url }}" class="site-name">Rajath</a>
         <div class="post-header-left">
             <button class="menu-toggle" aria-label="Open table of contents" aria-expanded="false" aria-controls="toc-drawer">
                 <svg class="menu-icon menu-closed-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
@@ -14,7 +15,6 @@ layout: default
             </button>
             {% include theme-toggle.html %}
         </div>
-        <a href="{{ '/' | relative_url }}" class="site-name">Rajath</a>
     </div>
 
     <article class="post" id="content-start" tabindex="-1">

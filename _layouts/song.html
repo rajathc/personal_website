@@ -6,10 +6,10 @@ layout: default
 {% for l in song.listens %}{% if l.rating > maxr %}{% assign maxr = l.rating %}{% endif %}{% endfor %}
 <div class="page-container jukebox">
     <div class="post-header">
+        <a href="{{ '/' | relative_url }}" class="site-name">Rajath</a>
         <div class="post-header-left">
             {% include theme-toggle.html %}
         </div>
-        <a href="{{ '/' | relative_url }}" class="site-name">Rajath</a>
     </div>
 
     {% include dolby-symbol.html %}
