@@ -804,5 +804,635 @@
     "date": "2026-07-10"
    }
   ]
+ },
+ {
+  "id": "blood-bank",
+  "serial": 23,
+  "title": "Blood Bank",
+  "artist": "Bon Iver",
+  "composer": "",
+  "album": "Blood Bank EP",
+  "year": 2009,
+  "genre": "Indie Folk",
+  "language": "English",
+  "summary": "Very chill start to a beautiful and calming album",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "The double-tracking layered with Justin Vernon's vocal (two takes recorded and layered over each other)"
+   },
+   {
+    "type": "plus",
+    "text": "The instrumental at the end of the track sounds so much better on this gear"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/blood-bank.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 3.5,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "beach-baby",
+  "serial": 24,
+  "title": "Beach Baby",
+  "artist": "Bon Iver",
+  "composer": "",
+  "album": "Blood Bank EP",
+  "year": 2009,
+  "genre": "Indie Folk",
+  "language": "English",
+  "summary": "This song reminds me of the spring morning when I woke up very early to smell the fragrant flowers",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "The usual Justin Vernon vocal greatness"
+   },
+   {
+    "type": "plus",
+    "text": "The minute of instrumental at the end. I always thought it was piano, then guessed electric guitar with distortion. Turns out it is a pedal steel guitar"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/beach-baby.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 4,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "babys",
+  "serial": 25,
+  "title": "Babys",
+  "artist": "Bon Iver",
+  "composer": "",
+  "album": "Blood Bank EP",
+  "year": 2009,
+  "genre": "Indie Folk",
+  "language": "English",
+  "summary": "Least fav of the album, ruins an otherwise amazing album",
+  "pointers": [
+   {
+    "type": "minus",
+    "text": "Not a fan of the opening/ending music; if the headphones are sharp it sounds annoying. Thankfully this pair is fine"
+   },
+   {
+    "type": "plus",
+    "text": "Love the piano to guitar transition, maybe it's my ears delighted to rest after the sharp piano"
+   }
+  ],
+  "recommend": false,
+  "art": "/images/music/babys.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 2.5,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "woods",
+  "serial": 26,
+  "title": "Woods",
+  "artist": "Bon Iver",
+  "composer": "",
+  "album": "Blood Bank EP",
+  "year": 2009,
+  "genre": "Indie Folk",
+  "language": "English",
+  "summary": "Strong, sorry very strong end to the album. The only kind of autotune/voice modulation I can get behind, along with Imogen Heap",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Love how minimal the song starts and how much more complex and layered it gets"
+   },
+   {
+    "type": "plus",
+    "text": "I can hear the different vocal tracks clearly with the MV-1"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/woods.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "bored",
+  "serial": 27,
+  "title": "Bored",
+  "artist": "Billie Eilish",
+  "composer": "",
+  "album": "13 Reasons Why (Soundtrack)",
+  "year": 2017,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "13 Reasons Why has one of the best albums for a TV show, and this is one of the best from it",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Good Dolby Atmos effect"
+   },
+   {
+    "type": "plus",
+    "text": "As with all Billie Eilish songs, well produced"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/bored.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "yeh-haseen-vadiyan",
+  "serial": 28,
+  "title": "Yeh Haseen Vadiyan",
+  "artist": "S.P. Balasubrahmanyam, K.S. Chithra",
+  "composer": "A.R. Rahman",
+  "album": "Roja",
+  "year": 1992,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "Can you believe this is A.R. Rahman's debut with this album? That speaks for itself",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Beautifully composed and beautifully arranged"
+   },
+   {
+    "type": "plus",
+    "text": "While the music is of superlatives, SPB and Chithra still steal the show"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/yeh-haseen-vadiyan.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "are-re-are",
+  "serial": 29,
+  "title": "Are Re Are",
+  "artist": "Lata Mangeshkar, Udit Narayan",
+  "composer": "Uttam Singh",
+  "album": "Dil To Pagal Hai",
+  "year": 1997,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "I encored this despite it being almost 6 minutes long. The best song from the album",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "One of the best Dolby remasters of old Hindi music; the combo of the Sony MV-1 plus the bass from the drum is next level"
+   },
+   {
+    "type": "plus",
+    "text": "Love the flute sections and Lata's voice"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/are-re-are.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "shubhaarambh",
+  "serial": 30,
+  "title": "Shubhaarambh",
+  "artist": "Shruti Pathak, Divya Kumar",
+  "composer": "Amit Trivedi",
+  "album": "Kai Po Che!",
+  "year": 2013,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "Amit Trivedi is the most underrated Bollywood composer despite having so many great albums. Love the entire album, reminds me of 2013",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "There is so much detail in the start of the song which I never observed before listening on lossless"
+   },
+   {
+    "type": "plus",
+    "text": "One of the very few mainstream Bollywood songs with mostly folk instruments, all together and not in isolation"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/shubhaarambh.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "september",
+  "serial": 31,
+  "title": "September",
+  "artist": "Earth, Wind & Fire",
+  "composer": "",
+  "album": "The Best of Earth, Wind & Fire, Vol. 1",
+  "year": 1978,
+  "genre": "Funk",
+  "language": "English",
+  "summary": "One of the few funk songs that I listen to, also a headphones reference due to the Dolby Atmos, obviously",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Can't think of a better song to test Dolby Atmos"
+   },
+   {
+    "type": "plus",
+    "text": "The bass guitar and the trumpets sound beautiful"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/september.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "sultans-of-swing",
+  "serial": 32,
+  "title": "Sultans of Swing",
+  "artist": "Dire Straits",
+  "composer": "",
+  "album": "Dire Straits",
+  "year": 1978,
+  "genre": "Classic Rock",
+  "language": "English",
+  "summary": "I remember playing this on repeat in 2014 on my iPod Nano 7 and ATH-M50x and being wowed. Not much has changed since then",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Check out Guitar George, he knows all the chords"
+   },
+   {
+    "type": "plus",
+    "text": "One of the best bass lines and guitar solos"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/sultans-of-swing.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "despecha",
+  "serial": 33,
+  "title": "Despechá",
+  "artist": "Rosalía",
+  "composer": "",
+  "album": "MOTOMAMI +",
+  "year": 2022,
+  "genre": "Latin Pop",
+  "language": "Spanish",
+  "summary": "My intro to Rosalía, and I love the Motomami era of her music",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Amazing skull-shaking bass"
+   },
+   {
+    "type": "plus",
+    "text": "Rosalía's vocals always stand out no matter how much music is present"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/despecha.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "some-nights",
+  "serial": 34,
+  "title": "Some Nights",
+  "artist": "fun.",
+  "composer": "",
+  "album": "Some Nights",
+  "year": 2012,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "How do I explain to someone how much of an impact this song had in the 2010s, and how much this band's hiatus affected me",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Sad that the band went on hiatus, but happy that we got Jack Antonoff making amazing albums"
+   },
+   {
+    "type": "plus",
+    "text": "Love not just Nate Ruess's vocal but also the background vocals"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/some-nights.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "party-rock-anthem",
+  "serial": 35,
+  "title": "Party Rock Anthem",
+  "artist": "LMFAO",
+  "composer": "",
+  "album": "Sorry for Party Rocking",
+  "year": 2011,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "Not my fav or anything, but I love listening to it sometimes and being nostalgic",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "I understand why Beats by Dre were the rage back in those days. The bass is insane and there is some fun to it"
+   },
+   {
+    "type": "plus",
+    "text": "Is this song the precursor to the EDM era?"
+   }
+  ],
+  "recommend": false,
+  "art": "/images/music/party-rock-anthem.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": false,
+    "rating": 3,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "rather-be",
+  "serial": 36,
+  "title": "Rather Be",
+  "artist": "Clean Bandit",
+  "composer": "",
+  "album": "New Eyes",
+  "year": 2014,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "I used to be ultra obsessed with this. I can still understand why, as I would be the same if I discovered this song now",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "The beat and hook still sound catchy even though it's been 12+ years now"
+   },
+   {
+    "type": "plus",
+    "text": "House music + violin is a win"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/rather-be.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "iPod Classic 5.5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 4,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "rolling-in-the-deep",
+  "serial": 37,
+  "title": "Rolling in the Deep",
+  "artist": "Adele",
+  "composer": "",
+  "album": "21",
+  "year": 2011,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "This is how I discovered Adele, and I still can't believe how great this sounds",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Adele"
+   },
+   {
+    "type": "plus",
+    "text": "No need for music when Adele is singing"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/rolling-in-the-deep.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 4,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "rubaaiyaan",
+  "serial": 38,
+  "title": "Rubaaiyaan",
+  "artist": "Shahid Mallya, Sireesha Bhagavatula",
+  "composer": "Amit Trivedi",
+  "album": "Qala",
+  "year": 2022,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "My favourite from the album. Love this song, the lyrics and vocals. Extremely underrated song",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Harmonium, clarinet, tabla, and a string section set the retro vibe"
+   },
+   {
+    "type": "plus",
+    "text": "Love the adlibs where Shahid and Sireesha sing together"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/rubaaiyaan.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4.5,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "barso-re",
+  "serial": 39,
+  "title": "Barso Re",
+  "artist": "Shreya Ghoshal",
+  "composer": "A.R. Rahman",
+  "album": "Guru",
+  "year": 2007,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "I loved this song, but the details of so many instruments actually surprised me. A must-try if you have hi-res headphones or earphones",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "ARR albums in hi-fi always surprise me with new details. There is so much detail and arrangement that I missed on most normal earphones"
+   },
+   {
+    "type": "plus",
+    "text": "Shreya at her best, and she kills it!"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/barso-re.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-14"
+   }
+  ]
+ },
+ {
+  "id": "tere-bina",
+  "serial": 40,
+  "title": "Tere Bina",
+  "artist": "A.R. Rahman, Chinmayi",
+  "composer": "A.R. Rahman",
+  "album": "Guru",
+  "year": 2007,
+  "genre": "Bollywood",
+  "language": "Hindi",
+  "summary": "Considering how impressed I was with Barso Re's details, this is a letdown actually. Still great at places, and great vocals from almost everyone",
+  "pointers": [
+   {
+    "type": "minus",
+    "text": "Ngl, ARR's part is skippable and we could have only Chinmayi's section and the music"
+   },
+   {
+    "type": "plus",
+    "text": "Nice incorporation of Sufi music"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/tere-bina.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Pro 14 M1",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": false,
+    "rating": 3.5,
+    "date": "2026-07-14"
+   }
+  ]
  }
 ]
