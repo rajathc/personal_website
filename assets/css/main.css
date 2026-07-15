@@ -1254,7 +1254,7 @@ button:focus-visible {
 
 .music-dolby {
     height: 12px;
-    width: 47px;
+    width: 85px;
     fill: currentColor;
     flex-shrink: 0;
     vertical-align: -2px;
@@ -1262,7 +1262,7 @@ button:focus-visible {
 
 .music-dolby-sm {
     height: 11px;
-    width: 43px;
+    width: 78px;
 }
 
 /* ---- Toolbar ---- */

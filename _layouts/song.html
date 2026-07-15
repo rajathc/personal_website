@@ -32,7 +32,8 @@ layout: default
         </p>
 
         <dl class="music-specs">
-            <div class="music-spec"><dt>Album:</dt><dd>{{ song.album }}</dd></div>
+            {% assign areview = site.data.albums | where: "album", song.album | first %}
+            <div class="music-spec"><dt>Album:</dt><dd>{% if areview %}<a href="{{ '/jukebox/albums/' | append: areview.id | append: '/' | relative_url }}">{{ song.album }}</a>{% else %}{{ song.album }}{% endif %}</dd></div>
             <div class="music-spec"><dt>Released:</dt><dd>{{ song.year }}</dd></div>
             <div class="music-spec"><dt>Genre:</dt><dd>{{ song.genre }}</dd></div>
             <div class="music-spec"><dt>Language:</dt><dd>{{ song.language }}</dd></div>

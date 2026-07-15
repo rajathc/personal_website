@@ -100,10 +100,28 @@ for (const s of songs) {
     errors.push(`jukebox: no page for song "${s.id}" — run npm run jukebox:pages`);
   }
 }
+const albumsPath = path.join(repoRoot, '_data/albums.json');
+const albums = fs.existsSync(albumsPath) ? JSON.parse(fs.readFileSync(albumsPath, 'utf8')) : [];
+const albumIds = new Set(albums.map(a => a.id));
+for (const a of albums) {
+  if (!fs.existsSync(path.join(siteDir, 'jukebox', 'albums', a.id, 'index.html'))) {
+    errors.push(`jukebox: no page for album "${a.id}" — run npm run jukebox:pages`);
+  }
+  if (a.art && !resolves(a.art)) errors.push(`albums.json: missing art ${a.art} (${a.id})`);
+}
 const jukeboxDir = path.join(siteDir, 'jukebox');
 if (fs.existsSync(jukeboxDir)) {
   for (const entry of fs.readdirSync(jukeboxDir, { withFileTypes: true })) {
-    if (entry.isDirectory() && !songIds.has(entry.name)) {
+    if (!entry.isDirectory()) continue;
+    if (entry.name === 'albums') {
+      for (const sub of fs.readdirSync(path.join(jukeboxDir, 'albums'), { withFileTypes: true })) {
+        if (sub.isDirectory() && !albumIds.has(sub.name)) {
+          errors.push(`jukebox: stale album page /jukebox/albums/${sub.name}/ not in albums.json`);
+        }
+      }
+      continue;
+    }
+    if (!songIds.has(entry.name)) {
       errors.push(`jukebox: stale page /jukebox/${entry.name}/ has no song in music.json`);
     }
   }

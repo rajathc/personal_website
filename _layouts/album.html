@@ -1,0 +1,73 @@
+---
+layout: default
+---
+{% assign album = site.data.albums | where: "id", page.album_id | first %}
+<div class="page-container jukebox">
+    <div class="post-header">
+        <a href="{{ '/' | relative_url }}" class="site-name">Rajath</a>
+        <div class="post-header-left">
+            {% include theme-toggle.html %}
+        </div>
+    </div>
+
+    {% include dolby-symbol.html %}
+
+    <nav class="music-crumb"><a href="{{ '/jukebox/' | relative_url }}">← Jukebox</a></nav>
+
+    <article class="music-release" id="content-start" tabindex="-1">
+        <h1 class="music-release-title">{{ album.album }}</h1>
+        <p class="music-release-artist">{{ album.artist }}</p>
+
+        <div class="music-release-artblock">
+            {% if album.art %}
+            <img class="music-art-lg" src="{{ album.art | relative_url }}" alt="Album art for {{ album.album }}" width="400" height="400" fetchpriority="high">
+            {% endif %}
+        </div>
+
+        <p class="music-release-rating">
+            {% include stars.html rating=album.rating %}
+            {% if album.recommend %}<span class="music-release-rec">{% include micon.html name='thumbsup' %} Recommended</span>{% endif %}
+        </p>
+
+        <dl class="music-specs">
+            <div class="music-spec"><dt>Released:</dt><dd>{{ album.year }}</dd></div>
+            <div class="music-spec"><dt>Genre:</dt><dd>{{ album.genre }}</dd></div>
+            <div class="music-spec"><dt>Listened:</dt><dd>{{ album.date | date: "%-d %b %Y" }}</dd></div>
+        </dl>
+
+        <div class="music-review">
+            <p class="music-review-text">{{ album.summary }}</p>
+        </div>
+
+        {% assign tracks = site.data.music | where: "album", album.album | sort: "serial" %}
+        {% if tracks.size > 0 %}
+        <h2 class="music-h">Songs I logged from this album</h2>
+        <div class="music-table-wrap">
+            <table class="music-table">
+                <thead>
+                    <tr>
+                        <th class="music-th-song">Song</th>
+                        <th class="music-th-rating">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for s in tracks %}
+                    {% assign maxr = 0 %}
+                    {% for l in s.listens %}{% if l.rating > maxr %}{% assign maxr = l.rating %}{% endif %}{% endfor %}
+                    <tr class="music-row">
+                        <td class="music-td-song">
+                            <a class="music-row-btn" href="{{ '/jukebox/' | append: s.id | append: '/' | relative_url }}">
+                                <span class="music-song-text">
+                                    <span class="music-song-title">{{ s.title }}</span>
+                                </span>
+                            </a>
+                        </td>
+                        <td class="music-td-rating">{% include stars.html rating=maxr %}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </article>
+</div>

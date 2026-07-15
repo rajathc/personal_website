@@ -55,3 +55,37 @@ for (const s of songs) {
     created++;
 }
 console.log(`generated ${created} song pages in jukebox/`);
+
+// Album review pages (jukebox/albums/<id>.html -> /jukebox/albums/<id>/)
+const albumsFile = path.join(__dirname, '../_data/albums.json');
+if (fs.existsSync(albumsFile)) {
+    const albums = JSON.parse(fs.readFileSync(albumsFile, 'utf8'));
+    const albumDir = path.join(outDir, 'albums');
+    fs.mkdirSync(albumDir, { recursive: true });
+    let acount = 0;
+    for (const a of albums) {
+        let d = a.summary.trim();
+        if (!/[.!?…]$/.test(d)) d += '.';
+        if (d.length > 160) {
+            const cut = d.slice(0, 157);
+            const end = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '));
+            d = end > 80 ? d.slice(0, end + 1) : cut + '…';
+        }
+        const fm = [
+            '---',
+            'layout: album',
+            `album_id: ${a.id}`,
+            `title: ${yq(`${a.album} – ${a.artist}`)}`,
+            `description: ${yq(d)}`,
+            `image: ${a.art || '/images/og-default.png'}`,
+            'twitter:',
+            '  card: summary',
+            `permalink: /jukebox/albums/${a.id}/`,
+            '---',
+            ''
+        ].join('\n');
+        fs.writeFileSync(path.join(albumDir, `${a.id}.html`), fm);
+        acount++;
+    }
+    console.log(`generated ${acount} album pages in jukebox/albums/`);
+}
