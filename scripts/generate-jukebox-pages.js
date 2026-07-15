@@ -15,7 +15,8 @@ const yq = s => `"${String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
 // clamped at a sentence boundary instead of padded.
 function metaDescription(s) {
     const maxr = Math.max(...s.listens.map(l => l.rating));
-    let d = s.summary.trim();
+    // Summaries may carry inline HTML (links); meta tags need plain text
+    let d = s.summary.replace(/<[^>]+>/g, '').trim();
     if (!/[.!?…]$/.test(d)) d += '.';
     if (d.length > 160) {
         const cut = d.slice(0, 157);
@@ -64,7 +65,7 @@ if (fs.existsSync(albumsFile)) {
     fs.mkdirSync(albumDir, { recursive: true });
     let acount = 0;
     for (const a of albums) {
-        let d = a.summary.trim();
+        let d = a.summary.replace(/<[^>]+>/g, '').trim();
         if (!/[.!?…]$/.test(d)) d += '.';
         if (d.length > 160) {
             const cut = d.slice(0, 157);

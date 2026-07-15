@@ -26,7 +26,7 @@ so re-listens to older songs advance it too {%- endcomment -%}
     <id>{{ '/jukebox/' | append: s.id | append: '/' | absolute_url }}</id>
     <link href="{{ '/jukebox/' | append: s.id | append: '/' | absolute_url }}"/>
     <updated>{{ sdate | date_to_xmlschema }}</updated>
-    <summary>{{ s.summary | xml_escape }} (rated {{ maxr }} out of 5)</summary>
+    <summary>{{ s.summary | strip_html | xml_escape }} (rated {{ maxr }} out of 5)</summary>
   </entry>
   {%- endfor %}
 </feed>

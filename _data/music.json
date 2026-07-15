@@ -1434,5 +1434,219 @@
     "date": "2026-07-14"
    }
   ]
+ },
+ {
+  "serial": 41,
+  "id": "homemade-dynamite",
+  "title": "Homemade Dynamite",
+  "artist": "Lorde",
+  "composer": "",
+  "album": "Melodrama",
+  "year": 2017,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "This is one song that benefits from audiophile headphones because the bass from the drum sounds muddy in other generic headphones. There is so much fidelity that I can hear now.",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Good instrument separation and lots of tiny details in the song"
+   },
+   {
+    "type": "plus",
+    "text": "Bass is so clear! Mostly due to the MV1"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/homemade-dynamite.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-15"
+   }
+  ]
+ },
+ {
+  "serial": 42,
+  "id": "buzzcut-season",
+  "title": "Buzzcut Season",
+  "artist": "Lorde",
+  "composer": "",
+  "album": "Pure Heroine",
+  "year": 2013,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "I can see why people felt Lorde was an industry plant when Pure Heroine came out. This is great if Lorde was not a debutant, but her being a debutant must have raised a lot of eyebrows. That being said, Lorde's style was revolutionary and it goes on to define the music of the upcoming decade.",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Another Lorde song and another great instrument separation"
+   },
+   {
+    "type": "plus",
+    "text": "High fidelity production"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/buzzcut-season.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-15"
+   }
+  ]
+ },
+ {
+  "serial": 43,
+  "id": "sunflower",
+  "title": "Sunflower",
+  "artist": "Post Malone & Swae Lee",
+  "composer": "",
+  "album": "Spider-Man: Into the Spider-Verse (Soundtrack)",
+  "year": 2018,
+  "genre": "Hip-Hop",
+  "language": "English",
+  "summary": "Love this song, used to be my phone ringtone for a while. But with this setup, I love the way the drum sounds.",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Sounds amazing, probably was mixed on one of these Sony headphones, so close to reference"
+   },
+   {
+    "type": "plus",
+    "text": "Great drums"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/sunflower.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-15"
+   }
+  ]
+ },
+ {
+  "serial": 44,
+  "id": "physical",
+  "title": "Physical",
+  "artist": "Dua Lipa",
+  "composer": "",
+  "album": "Future Nostalgia",
+  "year": 2020,
+  "genre": "Pop",
+  "language": "English",
+  "summary": "I'm a fan of Dua Lipa, her music not so much. But I can agree that her music producers are always doing the heavy lifting.",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "I love the 80s synthwave!"
+   },
+   {
+    "type": "plus",
+    "text": "Doesn't sound crowded"
+   }
+  ],
+  "recommend": false,
+  "art": "/images/music/physical.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": false,
+    "rating": 3,
+    "date": "2026-07-15"
+   }
+  ]
+ },
+ {
+  "serial": 45,
+  "id": "somebody-else",
+  "title": "Somebody Else",
+  "artist": "The 1975",
+  "composer": "",
+  "album": "I like it when you sleep, for you are so beautiful yet so unaware of it",
+  "year": 2016,
+  "genre": "Alt Rock",
+  "language": "English",
+  "summary": "A decent song, not a regular in my playlist. But I have to admit that it sounds pretty good!",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Good spatial effect, it stands out on open-back headphones, wide sound stage"
+   },
+   {
+    "type": "plus",
+    "text": "Love the distortion effect on the drums!"
+   }
+  ],
+  "recommend": false,
+  "art": "/images/music/somebody-else.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 3.5,
+    "date": "2026-07-15"
+   }
+  ]
+ },
+ {
+  "serial": 46,
+  "id": "la-perla",
+  "title": "La Perla",
+  "artist": "Rosalía ft. Yahritza y Su Esencia",
+  "composer": "",
+  "album": "LUX",
+  "year": 2025,
+  "genre": "Art Pop",
+  "language": "Spanish",
+  "summary": "Lux was <a href=\"/writings/2025-recap\">my favourite album of 2025</a>. But the production on this feels like I am in an opera concert.",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Love how orchestral music steps in and works with Rosalía's vocals"
+   },
+   {
+    "type": "plus",
+    "text": "Wide sound stage, and clever production with background voices and music to make some sort of concert effect"
+   },
+   {
+    "type": "plus",
+    "text": "Love Yahritza's soprano"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/la-perla.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": false,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-15"
+   }
+  ]
  }
 ]
