@@ -1264,8 +1264,9 @@ button:focus-visible {
 }
 
 .music-dolby-sm {
+    /* icon-only double-D (viewBox 17.088 x 12.022) */
     height: 13px;
-    width: 92px;
+    width: 18.5px;
     vertical-align: middle;
 }
 

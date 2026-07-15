@@ -67,8 +67,9 @@
         return disc(song, cls);
     }
 
+    // List rows show the double-D icon alone; song pages keep the full lockup
     function dolbyMark(cls) {
-        return `<svg class="music-dolby ${cls || ''}" role="img" aria-label="Dolby Atmos"><use href="#dolby-atmos-mark"/></svg>`;
+        return `<svg class="music-dolby ${cls || ''}" role="img" aria-label="Dolby Atmos"><use href="#dolby-icon-mark"/></svg>`;
     }
 
     function rowFlags(s) {
