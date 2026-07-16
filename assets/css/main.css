@@ -252,6 +252,24 @@ button:focus-visible {
     font-family: 'Oi', serif;
     font-size: clamp(2.75rem, 7.5vw, 5rem);
     font-weight: normal;
+    /* The Bengaluru evening sky gradient: warm gold horizon through dusk
+       blue. Same gradient in light and dark mode. */
+    background: linear-gradient(90deg,
+        #ffb366,
+        #ff9b7a,
+        #dd8ba7,
+        #9b9bbe,
+        #7a9bd4,
+        #6283b9,
+        #4a6b9e,
+        #6283b9,
+        #7a9bd4,
+        #9b9bbe,
+        #dd8ba7,
+        #ff9b7a,
+        #ffb366);
+    background-size: 200% 100%;
+    animation: gradient-flow 12s ease-in-out infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -272,33 +290,12 @@ button:focus-visible {
     }
 }
 
-/* Light mode gradient - vibrant purple/pink to green/teal */
-:root[data-theme="light"] .site-title {
-    background: linear-gradient(90deg,
-        #3a0ca3,
-        #6912a4,
-        #991994,
-        #f72585,
-        #b84b8a,
-        #5d8d92,
-        #0fcc98,
-        #00cc99,
-        #0fcc98,
-        #5d8d92,
-        #b84b8a,
-        #f72585,
-        #991994,
-        #6912a4,
-        #3a0ca3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 200% 100%;
-    animation: gradient-flow 12s ease-in-out infinite;
-}
-
-/* Dark mode gradient - warm orange to blue */
-:root[data-theme="dark"] .site-title {
+.site-name {
+    font-family: 'Oi', serif;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: normal;
+    /* The Bengaluru evening sky gradient: warm gold horizon through dusk
+       blue. Same gradient in light and dark mode. */
     background: linear-gradient(90deg,
         #ffb366,
         #ff9b7a,
@@ -313,71 +310,14 @@ button:focus-visible {
         #dd8ba7,
         #ff9b7a,
         #ffb366);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     background-size: 200% 100%;
     animation: gradient-flow 12s ease-in-out infinite;
-}
-
-.site-name {
-    font-family: 'Oi', serif;
-    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-    font-weight: normal;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: none;
     line-height: 1.1;
     letter-spacing: -0.03em;
-}
-
-/* Light mode gradient - vibrant purple/pink to green/teal */
-:root[data-theme="light"] .site-name {
-    background: linear-gradient(90deg,
-        #3a0ca3,
-        #6912a4,
-        #991994,
-        #f72585,
-        #b84b8a,
-        #5d8d92,
-        #0fcc98,
-        #00cc99,
-        #0fcc98,
-        #5d8d92,
-        #b84b8a,
-        #f72585,
-        #991994,
-        #6912a4,
-        #3a0ca3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 200% 100%;
-    animation: gradient-flow 12s ease-in-out infinite;
-}
-
-/* Dark mode gradient - warm orange to blue */
-:root[data-theme="dark"] .site-name {
-    background: linear-gradient(90deg,
-        #ffb366,
-        #ff9b7a,
-        #dd8ba7,
-        #9b9bbe,
-        #7a9bd4,
-        #6283b9,
-        #4a6b9e,
-        #6283b9,
-        #7a9bd4,
-        #9b9bbe,
-        #dd8ba7,
-        #ff9b7a,
-        #ffb366);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 200% 100%;
-    animation: gradient-flow 12s ease-in-out infinite;
 }
 
 /* Main content */
@@ -824,21 +764,19 @@ button:focus-visible {
     bottom: -4px;
     border-radius: 16px;
     background: linear-gradient(90deg,
-        #3a0ca3,
-        #6912a4,
-        #991994,
-        #f72585,
-        #b84b8a,
-        #5d8d92,
-        #0fcc98,
-        #00cc99,
-        #0fcc98,
-        #5d8d92,
-        #b84b8a,
-        #f72585,
-        #991994,
-        #6912a4,
-        #3a0ca3);
+        #ffb366,
+        #ff9b7a,
+        #dd8ba7,
+        #9b9bbe,
+        #7a9bd4,
+        #6283b9,
+        #4a6b9e,
+        #6283b9,
+        #7a9bd4,
+        #9b9bbe,
+        #dd8ba7,
+        #ff9b7a,
+        #ffb366);
     background-size: 375% 100%;
     z-index: 0;
     opacity: 0;
@@ -866,25 +804,6 @@ button:focus-visible {
         opacity: 0;
         background-position: 375% center;
     }
-}
-
-/* Dark mode gradient variation */
-:root[data-theme="dark"] .newsletter-form::before {
-    background: linear-gradient(90deg,
-        #ffb366,
-        #ff9b7a,
-        #dd8ba7,
-        #9b9bbe,
-        #7a9bd4,
-        #6283b9,
-        #4a6b9e,
-        #6283b9,
-        #7a9bd4,
-        #9b9bbe,
-        #dd8ba7,
-        #ff9b7a,
-        #ffb366);
-    background-size: 375% 100%;
 }
 
 .newsletter-form input {
