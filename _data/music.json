@@ -1648,5 +1648,110 @@
     "date": "2026-07-15"
    }
   ]
+ },
+ {
+  "serial": 47,
+  "id": "whats-going-on",
+  "title": "What's Going On",
+  "artist": "Marvin Gaye",
+  "composer": "",
+  "album": "What's Going On",
+  "year": 1971,
+  "genre": "Soul",
+  "language": "English",
+  "summary": "There is so much that I can write about this song, <a href=\"https://en.wikipedia.org/wiki/What%27s_Going_On_(song)\" target=\"_blank\" rel=\"noopener\">its background</a> and what not. But that is for another day, overall this song sounds great! Love the vocals and the genre.",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Impressive sub bass rumble to the hi-hats in the composition"
+   },
+   {
+    "type": "plus",
+    "text": "Great sound stage, especially with the background speaking section to set the ambience"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/whats-going-on.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-16"
+   }
+  ]
+ },
+ {
+  "serial": 48,
+  "id": "pray-for-me",
+  "title": "Pray For Me",
+  "artist": "The Weeknd & Kendrick Lamar",
+  "composer": "",
+  "album": "Black Panther: The Album",
+  "year": 2018,
+  "genre": "Hip-Hop",
+  "language": "English",
+  "summary": "Pray for more such collabs, or an album like the Black Panther album",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Kendrick + The Weeknd combo is goated, especially their vocals complement each other so well"
+   },
+   {
+    "type": "plus",
+    "text": "The distortion sound and the details like the echo and repeats"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/pray-for-me.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4,
+    "date": "2026-07-16"
+   }
+  ]
+ },
+ {
+  "serial": 49,
+  "id": "hasta-la-raiz",
+  "title": "Hasta la Raíz",
+  "artist": "Natalia Lafourcade",
+  "composer": "",
+  "album": "Hasta la Raíz",
+  "year": 2015,
+  "genre": "Latin Pop",
+  "language": "Spanish",
+  "summary": "My Airbnb host in Bacalar, Mexico introduced this song to me, and I was obsessed with it for at least 3 months. It was my #1 chart for those 3 months. I wish I could relive the first time I heard this song, I hope you can listen to it and do it too.",
+  "pointers": [
+   {
+    "type": "plus",
+    "text": "Melody and rhythm are great, that said the lyrics are so meaningful and beautiful"
+   },
+   {
+    "type": "plus",
+    "text": "Latin American music is not all about dance and party, this is the other kind"
+   }
+  ],
+  "recommend": true,
+  "art": "/images/music/hasta-la-raiz.jpg",
+  "listens": [
+   {
+    "bitRate": "16/44",
+    "source": "MacBook Air M5",
+    "receiver": "Sony MDR-MV1",
+    "dolbyAtmos": true,
+    "hiFi": true,
+    "rating": 4.5,
+    "date": "2026-07-16"
+   }
+  ]
  }
 ]
