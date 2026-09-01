@@ -5,10 +5,9 @@
   "series": "",
   "author": "Stefan Zweig",
   "rating": 0,
-  "dateRead": null,
+  "dateRead": "2026-07-17",
   "goodreads": "https://www.goodreads.com/book/show/59151.Chess_Story",
-  "cover": "/images/books/59151-chess.jpg",
-  "status": "reading"
+  "cover": "/images/books/59151-chess.jpg"
  },
  {
   "id": "7126-the-count-of-monte-cristo",
@@ -1795,5 +1794,16 @@
   "dateRead": "2018-01-02",
   "goodreads": "https://www.goodreads.com/book/show/15197.Maus_II",
   "cover": "/images/books/15197-maus-ii.jpg"
+ },
+ {
+  "id": "1381-the-odyssey",
+  "title": "The Odyssey",
+  "series": "",
+  "author": "Homer",
+  "rating": 0,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/1381.The_Odyssey",
+  "cover": "/images/books/1381-the-odyssey.jpg",
+  "status": "reading"
  }
 ]
