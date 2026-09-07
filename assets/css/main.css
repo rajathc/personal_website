@@ -385,12 +385,18 @@ button:focus-visible {
     text-decoration: none;
 }
 
-.post-link:hover .post-item-title {
+.post-link:is(:hover, :focus-visible) .post-item-title {
     color: var(--accent-strong);
 }
 
-.post-link:hover .post-item-excerpt {
-    opacity: 0.5;
+.post-link:is(:hover, :focus-visible) .post-item-title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.post-link:is(:hover, :focus-visible) .post-item-excerpt {
+    color: var(--text-color);
 }
 
 .post-item-title {
@@ -1075,7 +1081,7 @@ button:focus-visible {
     transition: color 0.3s ease;
 }
 
-.post-nav-link:hover .post-nav-title {
+.post-nav-link:is(:hover, :focus-visible) .post-nav-title {
     color: var(--accent-strong);
 }
 
@@ -2029,7 +2035,7 @@ button:focus-visible {
 
 .tab-content.active {
     display: block;
-    animation: fadeIn 0.4s ease-out;
+    animation: fadeIn 0.18s ease-out;
 }
 
 @media (max-width: 768px) {
@@ -2099,3 +2105,117 @@ button:focus-visible {
     line-height: 1.25;
 }
 
+
+/* Quiet, consistent feedback without moving reading content. */
+.theme-toggle,
+.menu-toggle,
+.toc-close {
+    border-radius: 6px;
+    transition: background-color 160ms ease, box-shadow 160ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .theme-toggle:hover,
+    .menu-toggle:hover,
+    .toc-close:hover,
+    .tab-button:not(.active):hover {
+        background-color: color-mix(in srgb, var(--accent-color) 14%, transparent);
+    }
+}
+
+.theme-toggle:active,
+.menu-toggle:active,
+.toc-close:active,
+.tab-button:not(.active):active {
+    background-color: color-mix(in srgb, var(--accent-color) 24%, transparent);
+}
+
+.tab-button {
+    min-height: 44px;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+.tab-button:focus-visible {
+    z-index: 1;
+    outline-offset: 3px;
+}
+
+.post-link:focus-visible,
+.post-nav-link:focus-visible {
+    outline-offset: 6px;
+}
+
+.toc-nav a:focus-visible {
+    opacity: 1;
+    color: var(--accent-strong);
+    text-decoration: underline;
+}
+
+.post-content h2,
+.post-content h3 {
+    scroll-margin-top: 1.5rem;
+}
+
+.newsletter-form button {
+    transition: background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.newsletter-form button:hover {
+    transform: translateY(-50%);
+    box-shadow: none;
+}
+
+.newsletter-form button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+/* Photography adds rhythm to the writing archive. */
+.post-link-photo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    column-gap: 2rem;
+    align-items: start;
+}
+.post-preview {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+}
+.post-item-copy { min-width: 0; }
+.post-link-photo .post-item-copy { grid-column: 1; grid-row: 1; }
+
+/* One spacing system for article illustrations and their captions. */
+.post-content .image-container,
+.post-content .image-container-portrait { margin-block: 3rem; }
+.post-content .caption {
+    margin: 0.875rem 0 0 !important;
+    text-align: left;
+    font-style: normal;
+    opacity: 0.8;
+    line-height: 1.65;
+}
+.caption-details {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+}
+@media (min-width: 1200px) {
+    .post-content .image-wide {
+        width: 1040px;
+        margin-left: calc((100% - 1040px) / 2);
+    }
+    .post-content .image-wide img { width: 100%; }
+}
+@media (max-width: 600px) {
+    .post-link-photo { grid-template-columns: 1fr; gap: 1rem; }
+    .post-preview { grid-column: 1; grid-row: 1; width: min(100%, 220px); }
+    .post-link-photo .post-item-copy { grid-column: 1; grid-row: 2; }
+}
+@media (max-width: 768px) {
+    .post-content .image-container,
+    .post-content .image-container-portrait { margin-block: 2rem; }
+}

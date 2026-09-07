@@ -11,7 +11,9 @@
     {% seo %}
     {% feed_meta %}
     <link rel="alternate" type="application/atom+xml" title="Rajath's Bookshelf" href="{{ '/bookshelf/feed.xml' | relative_url }}">
+    {% if site.jukebox_enabled %}
     <link rel="alternate" type="application/atom+xml" title="Rajath's Jukebox" href="{{ '/jukebox/feed.xml' | relative_url }}">
+    {% endif %}
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#F5F5F5">
     <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">

@@ -1,7 +1,11 @@
 <div class="post-list">
     {% for post in site.posts %}
     <article class="post-item">
-        <a href="{{ post.url | relative_url }}" class="post-link">
+        <a href="{{ post.url | relative_url }}" class="post-link{% if post.preview_image %} post-link-photo{% endif %}">
+            {% if post.preview_image %}
+            <img class="post-preview" src="{{ post.preview_image | relative_url }}" alt="{{ post.preview_alt | default: post.title | escape }}" width="800" height="533" loading="lazy" decoding="async">
+            {% endif %}
+            <div class="post-item-copy">
             <h2 class="post-item-title">{{ post.title }}</h2>
             <div class="post-item-meta">
                 <time class="post-item-date">{{ post.date | date: "%d %b %Y" }}</time>
@@ -13,6 +17,7 @@
                 <span class="post-item-read-time"> • {{ reading_time }} min read</span>
             </div>
             <p class="post-item-excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 32 }}</p>
+            </div>
         </a>
     </article>
     {% endfor %}

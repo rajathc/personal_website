@@ -49,10 +49,12 @@
             a.textContent = heading.textContent;
             a.addEventListener('click', function(e) {
                 e.preventDefault();
+                closeDrawer(false);
+                heading.setAttribute('tabindex', '-1');
+                heading.focus({ preventScroll: true });
                 heading.scrollIntoView({ behavior: prefersReducedMotion.matches ? 'auto' : 'smooth' });
                 // Keep the section linkable: copyable URL, back button returns
                 history.pushState(null, '', `#${heading.id}`);
-                closeDrawer();
             });
 
             li.appendChild(a);
@@ -97,7 +99,7 @@
         if (tocClose) tocClose.focus();
     }
 
-    function closeDrawer() {
+    function closeDrawer(restoreFocus = true) {
         tocDrawer.classList.remove('open');
         document.body.style.overflow = '';
         menuToggle.setAttribute('aria-expanded', 'false');
@@ -110,7 +112,7 @@
         }
         // Return focus to the toggle without scrolling back to it —
         // closing via a TOC link has just scrolled the page to the target heading
-        menuToggle.focus({ preventScroll: true });
+        if (restoreFocus) menuToggle.focus({ preventScroll: true });
     }
 
     // Event listeners

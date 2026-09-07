@@ -6,6 +6,7 @@
 
     function activateTab(button, updateHash = true) {
         const tabName = button.getAttribute('data-tab');
+        if (updateHash && button.getAttribute('aria-selected') === 'true') return;
 
         tabButtons.forEach(btn => {
             const active = btn === button;
@@ -51,10 +52,10 @@
                 activateTab(button);
                 return;
             }
-            if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+            if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(e.key)) return;
             e.preventDefault();
             const i = tabButtons.indexOf(button);
-            const next = e.key === 'ArrowRight'
+            const next = e.key === 'Home' ? 0 : e.key === 'End' ? tabButtons.length - 1 : e.key === 'ArrowRight'
                 ? (i + 1) % tabButtons.length
                 : (i - 1 + tabButtons.length) % tabButtons.length;
             tabButtons[next].focus();

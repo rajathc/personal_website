@@ -87,3 +87,6 @@ defaults:
       path: '_pages'
     values:
       permalink: /:basename:output_ext
+
+# Keep the music archive available while hiding it from navigation.
+jukebox_enabled: false

@@ -15,7 +15,9 @@ layout: default
             <div class="tabs-nav" role="tablist" aria-label="Content sections">
                 <a class="tab-button active" id="tab-writings" href="{{ '/writings/' | relative_url }}" data-tab="writings" data-text="Writings" role="tab" aria-selected="true" aria-controls="writings-tab">Writings</a>
                 <a class="tab-button" id="tab-bookshelf" href="{{ '/bookshelf/' | relative_url }}" data-tab="bookshelf" data-text="Bookshelf" role="tab" aria-selected="false" aria-controls="bookshelf-tab" tabindex="-1">Bookshelf</a>
+                {% if site.jukebox_enabled %}
                 <a class="tab-button" id="tab-jukebox" href="{{ '/jukebox/' | relative_url }}" data-tab="jukebox" data-text="Jukebox" role="tab" aria-selected="false" aria-controls="jukebox-tab" tabindex="-1">Jukebox</a>
+                {% endif %}
             </div>
             {% include theme-toggle.html %}
         </div>
@@ -28,8 +30,10 @@ layout: default
             {% include bookshelf.html %}
         </div>
 
+        {% if site.jukebox_enabled %}
         <div class="tab-content" id="jukebox-tab" role="tabpanel" aria-labelledby="tab-jukebox">
             {% include jukebox.html %}
         </div>
+        {% endif %}
     </div>
 </div>
