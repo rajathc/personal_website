@@ -2170,20 +2170,23 @@ button:focus-visible {
     opacity: 0.7;
 }
 
-/* Photography adds rhythm to the writing archive. */
+/* Photography adds rhythm to the writing archive: small thumbs beside
+   the text on every width, same list DNA as the bookshelf rows. */
 .post-link-photo {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 220px;
-    column-gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) 128px;
+    column-gap: 1.25rem;
     align-items: start;
 }
 .post-preview {
     grid-column: 2;
     grid-row: 1;
-    width: 100%;
+    width: 128px;
+    aspect-ratio: 3 / 2;
     height: auto;
-    border-radius: 4px;
-    margin-top: 0.25rem;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 0.35rem;
 }
 .post-item-copy { min-width: 0; }
 .post-link-photo .post-item-copy { grid-column: 1; grid-row: 1; }
@@ -2211,9 +2214,9 @@ button:focus-visible {
     .post-content .image-wide img { width: 100%; }
 }
 @media (max-width: 600px) {
-    .post-link-photo { grid-template-columns: 1fr; gap: 1rem; }
-    .post-preview { grid-column: 1; grid-row: 1; width: min(100%, 220px); }
-    .post-link-photo .post-item-copy { grid-column: 1; grid-row: 2; }
+    .post-link-photo { display: block; }
+    .post-preview { float: right; width: 96px; margin: 0.3rem 0 0.5rem 1rem; }
+    .post-item-copy::after { content: ""; display: block; clear: both; }
 }
 @media (max-width: 768px) {
     .post-content .image-container,
