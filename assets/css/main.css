@@ -2175,12 +2175,13 @@ button:focus-visible {
 .post-link-photo {
     display: grid;
     grid-template-columns: 110px minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
     column-gap: 1.25rem;
     align-items: start;
 }
 .post-preview {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / 3;
     width: 110px;
     aspect-ratio: 3 / 2;
     height: auto;
@@ -2189,13 +2190,19 @@ button:focus-visible {
     margin-top: 0.3rem;
 }
 .post-item-copy { min-width: 0; }
-.post-link-photo .post-item-copy { grid-column: 2; grid-row: 1; }
+.post-link-photo .post-item-copy { display: contents; }
+.post-link-photo .post-item-title { grid-column: 2; grid-row: 1; }
+.post-link-photo .post-item-meta { grid-column: 2; grid-row: 2; }
 .post-link-photo .post-item-excerpt {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin-top: 0.875rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .post-item:first-child .post-link-photo { display: block; }
+.post-item:first-child .post-link-photo .post-item-copy { display: block; }
 .post-item:first-child .post-preview {
     width: 100%;
     aspect-ratio: 16 / 9;
