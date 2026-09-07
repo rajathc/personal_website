@@ -2197,9 +2197,6 @@ button:focus-visible {
     grid-column: 1 / -1;
     grid-row: 3;
     margin-top: 0.875rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .post-item:first-child .post-link-photo { display: block; }
 .post-item:first-child .post-link-photo .post-item-copy { display: block; }
@@ -2212,7 +2209,6 @@ button:focus-visible {
 .post-item:first-child .post-item-title {
     font-size: clamp(1.75rem, 4.5vw, 2.5rem);
 }
-.post-item:first-child .post-link-photo .post-item-excerpt { white-space: normal; }
 
 /* One spacing system for article illustrations and their captions. */
 .post-content .image-container,
