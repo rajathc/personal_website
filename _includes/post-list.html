@@ -3,7 +3,9 @@
     <article class="post-item">
         <a href="{{ post.url | relative_url }}" class="post-link{% if post.preview_image %} post-link-photo{% endif %}">
             {% if post.preview_image %}
-            <img class="post-preview" src="{{ post.preview_image | relative_url }}" alt="{{ post.preview_alt | default: post.title | escape }}" width="800" height="533" loading="lazy" decoding="async">
+            {% assign pmed = post.preview_image | replace: '-small.webp', '-medium.webp' %}
+            {% assign pfull = post.preview_image | replace: '-small.webp', '.webp' %}
+            <img class="post-preview" src="{{ post.preview_image | relative_url }}" srcset="{{ post.preview_image | relative_url }} 800w, {{ pmed | relative_url }} 1200w, {{ pfull | relative_url }} 1920w" sizes="{% if forloop.first %}(max-width: 832px) 100vw, 768px{% else %}(max-width: 600px) 96px, 110px{% endif %}" alt="{{ post.preview_alt | default: post.title | escape }}" width="800" height="533" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
             {% endif %}
             <div class="post-item-copy">
             <h2 class="post-item-title">{{ post.title }}</h2>
