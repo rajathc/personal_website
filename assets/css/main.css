@@ -2202,7 +2202,7 @@ button:focus-visible {
 .post-item:first-child .post-link-photo .post-item-copy { display: block; }
 .post-item:first-child .post-preview {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 2;
     border-radius: 8px;
     margin: 0 0 1.25rem;
 }
