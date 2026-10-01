@@ -41,9 +41,6 @@ plugins:
   - jekyll-feed
 
 # Ship excerpts (not full post HTML) in the Atom feed
-feed:
-  excerpt_only: true
-
 include:
   - _pages
 
