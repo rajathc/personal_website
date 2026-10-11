@@ -1,0 +1,35 @@
+---
+layout: null
+permalink: /feed.xml
+---
+{%- comment -%} Hand-rolled posts feed (jekyll-feed yields when this file
+exists). Carries full article content with absolute URLs, plus a greeting
+that only RSS subscribers ever see. {%- endcomment -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://jekyllrb.com/">Jekyll</generator>
+  <link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/atom+xml" />
+  <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html" />
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ '/feed.xml' | absolute_url }}</id>
+  <title type="html">{{ site.title | xml_escape }}</title>
+  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  <author><name>{{ site.author.name }}</name></author>
+  {%- for post in site.posts limit: 10 %}
+  <entry>
+    <title type="html">{{ post.title | xml_escape }}</title>
+    <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>{{ post.url | absolute_url }}</id>
+    {%- capture entry_html -%}
+<p><em>You are reading this over RSS. Thank you for subscribing, and for keeping RSS alive.</em></p>
+<hr />
+{{ post.content }}
+    {%- endcapture -%}
+    <content type="html">{{ entry_html | replace: 'src="/', 'src="https://rajath.blog/' | replace: 'href="/', 'href="https://rajath.blog/' | xml_escape }}</content>
+    <summary type="html">{{ post.description | xml_escape }}</summary>
+    <author><name>{{ site.author.name }}</name></author>
+  </entry>
+  {%- endfor %}
+</feed>
