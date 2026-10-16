@@ -7,7 +7,6 @@
  * - <img> tags missing alt attributes
  * - covers/art referenced from the JSON data (rendered client-side,
  *   invisible to the HTML scan) and their thumbs
- * - jukebox page stubs matching _data/music.json ids both ways
  *
  * Usage: node scripts/check-site.js _site
  */
@@ -79,58 +78,18 @@ for (const file of htmlFiles) {
 // Data-driven assets: the book/music lists render client-side from JSON,
 // so the HTML scan above never sees their image paths.
 const repoRoot = path.join(__dirname, '..');
-const thumbPath = p => p.replace(/^(\/images\/(?:books|music)\/)/, '$1thumbs/').replace(/\.jpe?g$/i, '.webp');
+const thumbPath = p => p.replace(/^(\/images\/(?:books)\/)/, '$1thumbs/').replace(/\.jpe?g$/i, '.webp');
 const books = JSON.parse(fs.readFileSync(path.join(repoRoot, '_data/books.json'), 'utf8'));
 for (const b of books) {
   if (!resolves(b.cover)) errors.push(`books.json: missing cover ${b.cover} (${b.id})`);
   else if (!resolves(thumbPath(b.cover))) errors.push(`books.json: missing thumb ${thumbPath(b.cover)} (${b.id})`);
 }
-const songs = JSON.parse(fs.readFileSync(path.join(repoRoot, '_data/music.json'), 'utf8'));
-for (const s of songs) {
-  if (!s.art) continue;
-  if (!resolves(s.art)) errors.push(`music.json: missing art ${s.art} (${s.id})`);
-  else if (!resolves(thumbPath(s.art))) errors.push(`music.json: missing thumb ${thumbPath(s.art)} (${s.id})`);
-}
 
-// Jukebox page stubs must match music.json ids both ways: a forgotten
-// `npm run jukebox:pages` would otherwise ship 404 song links silently.
-const songIds = new Set(songs.map(s => s.id));
-for (const s of songs) {
-  if (!fs.existsSync(path.join(siteDir, 'jukebox', s.id, 'index.html'))) {
-    errors.push(`jukebox: no page for song "${s.id}" — run npm run jukebox:pages`);
-  }
-}
-const albumsPath = path.join(repoRoot, '_data/albums.json');
-const albums = fs.existsSync(albumsPath) ? JSON.parse(fs.readFileSync(albumsPath, 'utf8')) : [];
-const albumIds = new Set(albums.map(a => a.id));
-for (const a of albums) {
-  if (!fs.existsSync(path.join(siteDir, 'jukebox', 'albums', a.id, 'index.html'))) {
-    errors.push(`jukebox: no page for album "${a.id}" — run npm run jukebox:pages`);
-  }
-  if (a.art && !resolves(a.art)) errors.push(`albums.json: missing art ${a.art} (${a.id})`);
-}
-const jukeboxDir = path.join(siteDir, 'jukebox');
-if (fs.existsSync(jukeboxDir)) {
-  for (const entry of fs.readdirSync(jukeboxDir, { withFileTypes: true })) {
-    if (!entry.isDirectory()) continue;
-    if (entry.name === 'albums') {
-      for (const sub of fs.readdirSync(path.join(jukeboxDir, 'albums'), { withFileTypes: true })) {
-        if (sub.isDirectory() && !albumIds.has(sub.name)) {
-          errors.push(`jukebox: stale album page /jukebox/albums/${sub.name}/ not in albums.json`);
-        }
-      }
-      continue;
-    }
-    if (!songIds.has(entry.name)) {
-      errors.push(`jukebox: stale page /jukebox/${entry.name}/ has no song in music.json`);
-    }
-  }
-}
 
-console.log(`Checked ${htmlFiles.length} pages, ${books.length} book covers, ${songs.length} songs.`);
+console.log(`Checked ${htmlFiles.length} pages, ${books.length} book covers.`);
 if (errors.length) {
   console.error(`\n${errors.length} problem(s) found:`);
   for (const e of [...new Set(errors)]) console.error(`  ${e}`);
   process.exit(1);
 }
-console.log('No broken internal links, missing images/thumbs, missing alt attributes, or jukebox drift.');
+console.log('No broken internal links, missing images/thumbs, or missing alt attributes.');

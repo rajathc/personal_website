@@ -16,7 +16,7 @@
 
     function stars(rating) {
         if (!rating) return '<span class="book-unrated">unrated</span>';
-        return `<span class="music-stars" role="img" aria-label="Rated ${rating} out of 5">${'★'.repeat(rating)}</span>`;
+        return `<span class="stars" role="img" aria-label="Rated ${rating} out of 5">${'★'.repeat(rating)}</span>`;
     }
 
     // Fixed month names (not toLocaleDateString) so the text matches the

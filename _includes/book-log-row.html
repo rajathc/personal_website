@@ -12,7 +12,7 @@
     </span>
     <span class="book-log-side">
         {%- if b.rating > 0 -%}
-        <span class="music-stars" role="img" aria-label="Rated {{ b.rating }} out of 5">{{ '★★★★★' | slice: 0, b.rating }}</span>
+        <span class="stars" role="img" aria-label="Rated {{ b.rating }} out of 5">{{ '★★★★★' | slice: 0, b.rating }}</span>
         {%- else -%}
         <span class="book-unrated">unrated</span>
         {%- endif -%}
