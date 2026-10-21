@@ -12,5 +12,6 @@ end
 
 gem 'jekyll-sitemap'
 gem 'jekyll-feed'
+gem 'jekyll-redirect-from'
 
 gem "addressable", "~> 2.8.7"

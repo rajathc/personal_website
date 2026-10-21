@@ -43,11 +43,13 @@
     </script>
 
     <!-- Analytics (GA4 + Microsoft Clarity), injected after the load event so
-         they never compete with fonts and the hero image for bandwidth -->
+         they never compete with fonts and the hero image for bandwidth, and
+         only on the live domain so local dev servers don't count as readers -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         window.addEventListener('load', function () {
+            if (location.hostname !== 'rajath.blog') return;
             var s = document.createElement('script');
             s.async = true;
             s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YS570M83ND';
