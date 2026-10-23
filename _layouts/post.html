@@ -21,7 +21,7 @@ layout: default
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
-            {% assign words = content | number_of_words %}
+            {% assign words = content | strip_html | number_of_words %}
             {% assign reading_time = words | divided_by: 200 %}
             {% if reading_time == 0 %}
                 {% assign reading_time = 1 %}

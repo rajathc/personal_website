@@ -30,6 +30,12 @@
         return `${d} ${MONTHS[m - 1]}${withYear ? ` ${y}` : ''}`;
     }
 
+    // Fixed 'en' collation so every visitor gets the same order. The default
+    // ('read') sort must stay identical to byReadDate in
+    // scripts/import-goodreads.js: _data/books.json is stored in that order and
+    // the server-rendered /bookshelf/ rows (and the feed) iterate it as-is.
+    const cmp = (x, y) => (x || '').localeCompare(y || '', 'en');
+
     function filtered() {
         const minRating = ratingEl.value;
         let out = books.filter(b => {
@@ -37,10 +43,10 @@
             return true;
         });
         const sort = sortEl.value;
-        if (sort === 'rating') out.sort((a, b) => b.rating - a.rating || a.title.localeCompare(b.title));
-        else if (sort === 'title') out.sort((a, b) => a.title.localeCompare(b.title));
-        else if (sort === 'author') out.sort((a, b) => a.author.localeCompare(b.author) || a.title.localeCompare(b.title));
-        else out.sort((a, b) => (b.dateRead || '0').localeCompare(a.dateRead || '0') || a.title.localeCompare(b.title));
+        if (sort === 'rating') out.sort((a, b) => b.rating - a.rating || cmp(a.title, b.title));
+        else if (sort === 'title') out.sort((a, b) => cmp(a.title, b.title));
+        else if (sort === 'author') out.sort((a, b) => cmp(a.author, b.author) || cmp(a.title, b.title));
+        else out.sort((a, b) => cmp(b.dateRead || '0', a.dateRead || '0') || cmp(a.title, b.title));
         return out;
     }
 
@@ -100,6 +106,9 @@
             ratingEl.value = '';
             sortEl.value = 'read';
             render();
+            // render() just replaced this button, which would drop focus to
+            // <body>; keep keyboard and screen-reader users at the filters
+            ratingEl.focus();
         });
     }
 

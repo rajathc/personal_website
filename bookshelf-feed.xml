@@ -4,7 +4,9 @@ permalink: /bookshelf/feed.xml
 ---
 {%- assign dated = site.data.books | where_exp: "b", "b.dateRead" | where_exp: "b", "b.status != 'reading'" -%}
 {%- assign dated = dated | where_exp: "b", "b.dateRead.size > 4" -%}
-{%- assign recent = dated | sort: "dateRead" | reverse -%}
+{%- comment -%} No Liquid sort (unstable on same-day ties): _data/books.json is
+kept newest-first by scripts/import-goodreads.js, so file order is the feed order. {%- endcomment -%}
+{%- assign recent = dated -%}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Rajath's Bookshelf</title>
@@ -16,7 +18,7 @@ permalink: /bookshelf/feed.xml
   <author><name>{{ site.author.name }}</name></author>
   {%- for b in recent limit: 25 %}
   <entry>
-    <title>{{ b.title | xml_escape }}{% if b.series != '' and b.series %} ({{ b.series | xml_escape }}){% endif %} — {{ b.author | xml_escape }}</title>
+    <title>{{ b.title | xml_escape }}{% if b.series != '' and b.series %} ({{ b.series | xml_escape }}){% endif %} by {{ b.author | xml_escape }}</title>
     <id>{{ b.goodreads | xml_escape }}</id>
     <link href="{{ b.goodreads | xml_escape }}"/>
     <updated>{{ b.dateRead | date_to_xmlschema }}</updated>

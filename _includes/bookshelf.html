@@ -1,12 +1,16 @@
 <div class="bookshelf-app">
+    {%- comment -%} On the standalone /bookshelf/ page (static=true) these covers are
+    the first thing above the fold, so they load eagerly and the first favourite is
+    the LCP candidate. Inside the hidden homepage tab they stay lazy. {%- endcomment -%}
+    {%- if include.static -%}{%- assign shelf_loading = "eager" -%}{%- else -%}{%- assign shelf_loading = "lazy" -%}{%- endif %}
     {% assign reading = site.data.books | where: "status", "reading" | first %}
         {% if reading %}
         <a class="book-reading" href="{{ reading.goodreads }}" target="_blank" rel="noopener">
-            <img class="book-reading-cover" src="{{ reading.cover | relative_url }}" alt="" loading="lazy" width="240" height="369">
+            <img class="book-reading-cover" src="{{ reading.cover | relative_url }}" alt="" loading="{{ shelf_loading }}" width="240" height="369">
             <span class="book-reading-text">
-                <span class="music-kicker">Currently reading</span>
-                <span class="book-reading-title">{{ reading.title }}</span>
-                <span class="book-reading-author">{{ reading.author }}</span>
+                <span class="book-kicker">Currently reading</span>
+                <span class="book-reading-title">{{ reading.title | escape }}</span>
+                <span class="book-reading-author">{{ reading.author | escape }}</span>
                 <span class="visually-hidden">(Goodreads, opens in new tab)</span>
             </span>
         </a>
@@ -18,16 +22,16 @@
     <div class="home-cover-strip book-favs">
         {% for b in favs %}
         <a class="home-strip-item book-fav" href="{{ b.goodreads }}" target="_blank" rel="noopener">
-            <img src="{{ b.cover | relative_url }}" alt="" width="240" height="360" loading="lazy">
-            <span class="book-fav-title">{{ b.title }}</span>
+            <img src="{{ b.cover | relative_url }}" alt="" width="240" height="360" loading="{{ shelf_loading }}"{% if include.static and forloop.first %} fetchpriority="high"{% endif %}>
+            <span class="book-fav-title">{{ b.title | escape }}</span>
             <span class="visually-hidden">(Goodreads, opens in new tab)</span>
         </a>
         {% endfor %}
     </div>
     {% endif %}
 
-    <div class="music-toolbar" role="group" aria-label="Filter and sort">
-            <div class="music-filter-row">
+    <div class="book-toolbar" role="group" aria-label="Filter and sort">
+            <div class="book-filter-row">
                 <select id="book-rating" aria-label="Filter by rating">
                     <option value="">All ratings</option>
                     <option value="5">5 stars</option>
@@ -48,19 +52,21 @@
         {% assign readbooks = site.data.books | where_exp: "b", "b.status != 'reading'" %}
         {% if include.static %}
         {% assign fivestars = readbooks | where: "rating", 5 %}
-        <p class="music-count" id="book-count" role="status">{{ readbooks.size }} of {{ readbooks.size }} books · {{ fivestars.size }} five-stars</p>
+        <p class="book-count" id="book-count" role="status">{{ readbooks.size }} of {{ readbooks.size }} books · {{ fivestars.size }} five-stars</p>
         {% else %}
-        <p class="music-count" id="book-count" role="status"></p>
+        <p class="book-count" id="book-count" role="status"></p>
         {% endif %}
         <div class="book-log" id="book-log">
         {%- if include.static -%}
             {%- comment -%} Server-rendered mirror of bookshelf.js renderLog(list, 'read')
             so the log is crawlable and readable without JS; the script re-renders
-            the same markup and takes over for filters. {%- endcomment -%}
+            the same markup and takes over for filters. No Liquid sort here: Jekyll's
+            sort is unstable on ties, so books.json is kept in the canonical order
+            (dateRead desc, then title; scripts/import-goodreads.js --sort) and this
+            iterates it as-is, which matches the JS default sort exactly. {%- endcomment -%}
             {%- assign dated = readbooks | where_exp: "b", "b.dateRead" -%}
             {%- assign undated = readbooks | where_exp: "b", "b.dateRead == nil" -%}
-            {%- assign sorted = dated | sort: "dateRead" | reverse -%}
-            {%- assign groups = sorted | group_by_exp: "b", "b.dateRead | slice: 0, 4" -%}
+            {%- assign groups = dated | group_by_exp: "b", "b.dateRead | slice: 0, 4" -%}
             {%- for g in groups %}
             <section class="book-year">
                 <h2 class="book-year-title">{{ g.name }} <span class="book-year-count">· {{ g.items.size }} book{% if g.items.size != 1 %}s{% endif %}</span></h2>
@@ -70,13 +76,12 @@
             {%- if undated.size > 0 %}
             <section class="book-year">
                 <h2 class="book-year-title">Before I kept dates <span class="book-year-count">· {{ undated.size }} books</span></h2>
-                {%- assign undatedsorted = undated | sort: "title" -%}
-                {%- for b in undatedsorted %}{% include book-log-row.html b=b %}{% endfor %}
+                {%- for b in undated %}{% include book-log-row.html b=b %}{% endfor %}
             </section>
             {%- endif %}
         {%- endif -%}
         </div>
-        <noscript><p>{% if include.static %}Filtering and sorting need JavaScript; the full log is above.{% else %}The bookshelf needs JavaScript here — or browse it at <a href="{{ '/bookshelf/' | relative_url }}">/bookshelf/</a>.{% endif %}</p></noscript>
+        <noscript><p>{% if include.static %}Filtering and sorting need JavaScript; the full log is above.{% else %}The bookshelf needs JavaScript here. You can browse it at <a href="{{ '/bookshelf/' | relative_url }}">/bookshelf/</a> instead.{% endif %}</p></noscript>
 </div>
 
 <script id="book-data" type="application/json">{{ site.data.books | jsonify }}</script>

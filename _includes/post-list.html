@@ -3,15 +3,26 @@
     <article class="post-item">
         <a href="{{ post.url | relative_url }}" class="post-link{% if post.preview_image %} post-link-photo{% endif %}">
             {% if post.preview_image %}
+            {% comment %} alt="" because the thumbnail sits inside the same link as
+            the h2 title; a text alt would read the title twice. The hero (first
+            card) keeps the full-size candidates; the compact rows render at
+            96-110px, so they get a 360w thumb first. {% endcomment %}
+            {% assign compact = false %}
+            {% unless forloop.first %}{% if post.preview_image contains '-small.webp' %}{% assign compact = true %}{% endif %}{% endunless %}
+            {% if compact %}
+            {% assign pthumb = post.preview_image | replace: '-small.webp', '-thumb.webp' %}
+            <img class="post-preview" src="{{ post.preview_image | relative_url }}" srcset="{{ pthumb | relative_url }} 360w, {{ post.preview_image | relative_url }} 800w" sizes="(max-width: 600px) 96px, 110px" alt="" width="800" height="533" loading="lazy" decoding="async">
+            {% else %}
             {% assign pmed = post.preview_image | replace: '-small.webp', '-medium.webp' %}
             {% assign pfull = post.preview_image | replace: '-small.webp', '.webp' %}
-            <img class="post-preview" src="{{ post.preview_image | relative_url }}" srcset="{{ post.preview_image | relative_url }} 800w, {{ pmed | relative_url }} 1200w, {{ pfull | relative_url }} 1920w" sizes="{% if forloop.first %}(max-width: 832px) 100vw, 768px{% else %}(max-width: 600px) 96px, 110px{% endif %}" alt="{{ post.preview_alt | default: post.title | escape }}" width="800" height="533" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+            <img class="post-preview" src="{{ post.preview_image | relative_url }}" srcset="{{ post.preview_image | relative_url }} 800w, {{ pmed | relative_url }} 1200w, {{ pfull | relative_url }} 1920w" sizes="{% if forloop.first %}(max-width: 832px) 100vw, (min-width: 1400px) 868px, 768px{% else %}(max-width: 600px) 96px, 110px{% endif %}" alt="" width="800" height="533" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+            {% endif %}
             {% endif %}
             <div class="post-item-copy">
             <h2 class="post-item-title">{{ post.title }}</h2>
             <div class="post-item-meta">
                 <time class="post-item-date">{{ post.date | date: "%d %b %Y" }}</time>
-                {% assign words = post.content | number_of_words %}
+                {% assign words = post.content | strip_html | number_of_words %}
                 {% assign reading_time = words | divided_by: 200 %}
                 {% if reading_time == 0 %}
                     {% assign reading_time = 1 %}

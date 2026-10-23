@@ -4,7 +4,10 @@ permalink: /feed.xml
 ---
 {%- comment -%} Hand-rolled posts feed (jekyll-feed yields when this file
 exists). Carries full article content with absolute URLs, plus a greeting
-that only RSS subscribers ever see. {%- endcomment -%}
+that only RSS subscribers ever see. Every root-relative src, srcset candidate,
+poster and href is rewritten to https://rajath.blog/..., and in-page #fragment
+links point at the post's own URL (readers render entries off-site, where a
+bare #id or /path resolves against the wrong page). {%- endcomment -%}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <generator uri="https://jekyllrb.com/">Jekyll</generator>
@@ -27,7 +30,8 @@ that only RSS subscribers ever see. {%- endcomment -%}
 <hr />
 {{ post.content }}
     {%- endcapture -%}
-    <content type="html">{{ entry_html | replace: 'src="/', 'src="https://rajath.blog/' | replace: 'href="/', 'href="https://rajath.blog/' | xml_escape }}</content>
+    {%- capture fragment_href -%}href="{{ post.url | absolute_url }}#{%- endcapture -%}
+    <content type="html">{{ entry_html | replace: 'src="/', 'src="https://rajath.blog/' | replace: 'srcset="/', 'srcset="https://rajath.blog/' | replace: ', /images/', ', https://rajath.blog/images/' | replace: 'poster="/', 'poster="https://rajath.blog/' | replace: 'href="/', 'href="https://rajath.blog/' | replace: 'href="#', fragment_href | xml_escape }}</content>
     <summary type="html">{{ post.description | xml_escape }}</summary>
     <author><name>{{ site.author.name }}</name></author>
   </entry>

@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page.noindex %}
+    <!-- Reachable by link but kept out of search results (front matter noindex: true) -->
+    <meta name="robots" content="noindex">
+    {% endif %}
     {% if page.og_description %}
     <!-- Social-specific description; emitted before the seo tag so scrapers pick it first -->
     <meta property="og:description" content="{{ page.og_description }}" />
@@ -14,6 +18,7 @@
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#F5F5F5">
     <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
     {% comment %} Inlined: 5.8KB gzipped, and GitHub Pages caps caching at
     10 minutes anyway — inlining removes a render-blocking round trip.
     Source of truth is assets/css/main.css; npm run minify regenerates. {% endcomment %}
@@ -43,26 +48,34 @@
     </script>
 
     <!-- Analytics (GA4 + Microsoft Clarity), injected after the load event so
-         they never compete with fonts and the hero image for bandwidth, and
-         only on the live domain so local dev servers don't count as readers -->
+         they never compete with fonts and the hero image for bandwidth, but
+         capped at 4 seconds so short visits to heavy pages still count. Runs
+         once, and only on the live domain so local dev servers don't count
+         as readers -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        window.addEventListener('load', function () {
-            if (location.hostname !== 'rajath.blog') return;
-            var s = document.createElement('script');
-            s.async = true;
-            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YS570M83ND';
-            document.head.appendChild(s);
-            gtag('js', new Date());
-            gtag('config', 'G-YS570M83ND');
+        (function () {
+            var started = false;
+            function startAnalytics() {
+                if (started || location.hostname !== 'rajath.blog') return;
+                started = true;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YS570M83ND';
+                document.head.appendChild(s);
+                gtag('js', new Date());
+                gtag('config', 'G-YS570M83ND');
 
-            (function (c, l, a, r, i, t, y) {
-                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "nb8atzyeik");
-        });
+                (function (c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                    t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                    y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                })(window, document, "clarity", "script", "nb8atzyeik");
+            }
+            window.addEventListener('load', startAnalytics);
+            setTimeout(startAnalytics, 4000);
+        })();
     </script>
 </head>
 <body>

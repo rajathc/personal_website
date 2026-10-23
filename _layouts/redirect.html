@@ -1,0 +1,31 @@
+{%- comment -%}
+Redirect stub layout for jekyll-redirect-from. Both the 0.16 on GitHub Pages
+and the 0.17 in the Gemfile use a site layout named "redirect" in place of
+their built-in one. Same canonical, noindex, meta refresh and link as the stock
+template, but the script carries the visitor's ?query and #hash to the target,
+so UTM tags on old links (X bio, newsletters, bit.ly) survive the hop.
+
+0.17 provides page.redirect.to_js (a script-safe JSON string); 0.16 only has
+page.redirect.to, so fall back to jsonify and percent-encode < and > the way
+0.17 does, so a target can never close the script element.
+
+The script comes after the meta refresh on purpose: Safari lets a later
+script navigation replace a pending meta refresh, but lets a meta refresh
+replace an earlier script navigation (which would drop the query).
+{%- endcomment -%}
+{%- if page.redirect.to_js -%}
+  {%- assign redirect_js = page.redirect.to_js -%}
+{%- else -%}
+  {%- assign redirect_js = page.redirect.to | replace: '<', '%3C' | replace: '>', '%3E' | jsonify -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <title>Redirecting&hellip;</title>
+  <link rel="canonical" href="{{ page.redirect.to | escape }}">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect.to | escape }}">
+  <meta name="robots" content="noindex">
+  <script>location.replace({{ redirect_js }} + location.search + location.hash)</script>
+  <h1>Redirecting&hellip;</h1>
+  <a href="{{ page.redirect.to | escape }}">Click here if you are not redirected.</a>
+</html>

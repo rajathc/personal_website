@@ -4,11 +4,15 @@
             <p class="footer-logo">rajath.blog</p>
         </a>
 
-        <form action="https://buttondown.com/api/emails/embed-subscribe/rajath" method="post" class="newsletter-form" id="newsletter-subscribe">
-            <input type="email" name="email" id="bd-email" placeholder="you@example.com" aria-label="Email address" required>
+        {% comment %} A plain POST into a new tab: Buttondown's docs say not to
+        fetch() the embed endpoint, because readers sometimes have to finish a
+        CAPTCHA or fix a typo on Buttondown's own page. {% endcomment %}
+        <label for="bd-email" class="visually-hidden">Get new posts by email</label>
+        <form action="https://buttondown.com/api/emails/embed-subscribe/rajath" method="post" target="_blank" rel="noopener" class="newsletter-form" id="newsletter-subscribe">
+            <input type="email" name="email" id="bd-email" placeholder="you@email.com" autocomplete="email" required>
             <button type="submit">Subscribe</button>
         </form>
-        <p class="newsletter-done" role="status" hidden>Check your inbox to confirm. Talk soon.</p>
+        <p class="newsletter-done" role="status"></p>
 
         <div class="footer-bottom">
             <div class="social-links">

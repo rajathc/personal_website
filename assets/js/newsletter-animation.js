@@ -29,30 +29,18 @@
 
     observer.observe(footer);
 
-    // Submit inline instead of the old popup window: post to Buttondown's
-    // embed endpoint and confirm right where the reader is standing.
-    // The no-cors response is opaque, so this is optimistic — the email
-    // input's built-in validation catches malformed addresses beforehand.
+    // The form itself posts to Buttondown in a new tab (target=_blank in
+    // footer.html). Buttondown's docs say not to fetch() that endpoint:
+    // readers sometimes have to pass a CAPTCHA or fix a typo on its page,
+    // and an opaque no-cors response hid both. So this only points the
+    // reader at that tab. The browser has already validated the address
+    // before 'submit' fires. Nothing is hidden or disabled, so focus stays
+    // on the field or button the reader used, and the form is still there
+    // if they closed the tab and want to try again. The status element is
+    // in the page and empty from load, so the new text is announced.
     const doneMsg = document.querySelector('.newsletter-done');
-    newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const button = newsletterForm.querySelector('button');
-        button.disabled = true;
-        fetch(newsletterForm.action, {
-            method: 'POST',
-            mode: 'no-cors',
-            body: new FormData(newsletterForm),
-        }).then(() => {
-            newsletterForm.hidden = true;
-            if (doneMsg) doneMsg.hidden = false;
-        }).catch(() => {
-            // Network failed: say so inline (a popup here would be blocked —
-            // we're past the user-activation window)
-            if (doneMsg) {
-                doneMsg.textContent = 'That didn’t send. Check your connection and try again, or subscribe at buttondown.com/rajath.';
-                doneMsg.hidden = false;
-            }
-            button.disabled = false;
-        });
+    if (!doneMsg) return;
+    newsletterForm.addEventListener('submit', () => {
+        doneMsg.textContent = 'Finish signing up in the new tab, then check your inbox to confirm. Talk soon.';
     });
 })();

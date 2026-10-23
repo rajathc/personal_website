@@ -20,35 +20,24 @@
   "cover": "/images/books/7126-the-count-of-monte-cristo.jpg"
  },
  {
-  "id": "19030845-batman",
-  "title": "Batman: The Dark Knight Returns #1",
+  "id": "825473-the-devil-s-alternative",
+  "title": "The Devil's Alternative",
   "series": "",
-  "author": "Frank Miller",
-  "rating": 5,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/19030845-batman",
-  "cover": "/images/books/19030845-batman.jpg"
+  "author": "Frederick Forsyth",
+  "rating": 4,
+  "dateRead": "2026-02-22",
+  "goodreads": "https://www.goodreads.com/book/show/825473.The_Devil_s_Alternative",
+  "cover": "/images/books/825473-the-devil-s-alternative.jpg"
  },
  {
-  "id": "44767458-dune",
-  "title": "Dune",
-  "series": "Dune, #1",
-  "author": "Frank Herbert",
-  "rating": 5,
-  "dateRead": "2017-09-16",
-  "goodreads": "https://www.goodreads.com/book/show/44767458-dune",
-  "cover": "/images/books/44767458-dune.jpg",
-  "favorite": true
- },
- {
-  "id": "22078240-saga-book-one",
-  "title": "Saga, Book One",
+  "id": "1772910-white-nights",
+  "title": "White Nights",
   "series": "",
-  "author": "Brian K. Vaughan",
-  "rating": 5,
-  "dateRead": "2020-01-08",
-  "goodreads": "https://www.goodreads.com/book/show/22078240-saga-book-one",
-  "cover": "/images/books/22078240-saga-book-one.jpg"
+  "author": "Fyodor Dostoevsky",
+  "rating": 4,
+  "dateRead": "2026-01-25",
+  "goodreads": "https://www.goodreads.com/book/show/1772910.White_Nights",
+  "cover": "/images/books/1772910-white-nights.jpg"
  },
  {
   "id": "205544315-heart-lamp",
@@ -61,255 +50,14 @@
   "cover": "/images/books/205544315-heart-lamp.jpg"
  },
  {
-  "id": "13821-lord-of-light",
-  "title": "Lord of Light",
-  "series": "",
-  "author": "Roger Zelazny",
+  "id": "4556058-the-last-olympian",
+  "title": "The Last Olympian",
+  "series": "Percy Jackson and the Olympians, #5",
+  "author": "Rick Riordan",
   "rating": 5,
-  "dateRead": "2023-07-10",
-  "goodreads": "https://www.goodreads.com/book/show/13821.Lord_of_Light",
-  "cover": "/images/books/13821-lord-of-light.jpg"
- },
- {
-  "id": "16299-and-then-there-were-none",
-  "title": "And Then There Were None",
-  "series": "",
-  "author": "Agatha Christie",
-  "rating": 5,
-  "dateRead": "2023-01-17",
-  "goodreads": "https://www.goodreads.com/book/show/16299.And_Then_There_Were_None",
-  "cover": "/images/books/16299-and-then-there-were-none.jpg"
- },
- {
-  "id": "12000020-aristotle-and-dante-discover-the-secrets-of-the-universe",
-  "title": "Aristotle and Dante Discover the Secrets of the Universe",
-  "series": "Aristotle and Dante, #1",
-  "author": "Benjamin Alire Sáenz",
-  "rating": 5,
-  "dateRead": "2019-10-11",
-  "goodreads": "https://www.goodreads.com/book/show/12000020-aristotle-and-dante-discover-the-secrets-of-the-universe",
-  "cover": "/images/books/12000020-aristotle-and-dante-discover-the-secrets-of-the-universe.jpg"
- },
- {
-  "id": "93371-akira-vol-1",
-  "title": "Akira, Vol. 1",
-  "series": "",
-  "author": "Katsuhiro Otomo",
-  "rating": 5,
-  "dateRead": "2018-04-02",
-  "goodreads": "https://www.goodreads.com/book/show/93371.Akira_Vol_1",
-  "cover": "/images/books/93371-akira-vol-1.jpg"
- },
- {
-  "id": "13220954-ashoka",
-  "title": "Ashoka: The Search for India's Lost Emperor",
-  "series": "",
-  "author": "Charles Allen",
-  "rating": 5,
-  "dateRead": "2019-10-07",
-  "goodreads": "https://www.goodreads.com/book/show/13220954-ashoka",
-  "cover": "/images/books/13220954-ashoka.jpg"
- },
- {
-  "id": "9517-persepolis-2",
-  "title": "Persepolis 2: The Story of a Return",
-  "series": "Persepolis, #2",
-  "author": "Marjane Satrapi",
-  "rating": 5,
-  "dateRead": "2019-12-08",
-  "goodreads": "https://www.goodreads.com/book/show/9517.Persepolis_2",
-  "cover": "/images/books/9517-persepolis-2.jpg"
- },
- {
-  "id": "18386-the-death-of-ivan-ilych",
-  "title": "The Death of Ivan Ilych",
-  "series": "",
-  "author": "Leo Tolstoy",
-  "rating": 5,
-  "dateRead": "2023-03-27",
-  "goodreads": "https://www.goodreads.com/book/show/18386.The_Death_of_Ivan_Ilych",
-  "cover": "/images/books/18386-the-death-of-ivan-ilych.jpg"
- },
- {
-  "id": "30267604-ghachar-ghochar",
-  "title": "Ghachar Ghochar",
-  "series": "",
-  "author": "Vivek Shanbhag",
-  "rating": 5,
-  "dateRead": "2018-07-28",
-  "goodreads": "https://www.goodreads.com/book/show/30267604-ghachar-ghochar",
-  "cover": "/images/books/30267604-ghachar-ghochar.jpg"
- },
- {
-  "id": "42837514-gender-queer",
-  "title": "Gender Queer: A Memoir",
-  "series": "",
-  "author": "Maia Kobabe",
-  "rating": 5,
-  "dateRead": "2020-02-07",
-  "goodreads": "https://www.goodreads.com/book/show/42837514-gender-queer",
-  "cover": "/images/books/42837514-gender-queer.jpg"
- },
- {
-  "id": "17856572-watchmen-1",
-  "title": "Watchmen #1: At Midnight, All The Agents…",
-  "series": "",
-  "author": "Alan Moore",
-  "rating": 5,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/17856572-watchmen-1",
-  "cover": "/images/books/17856572-watchmen-1.jpg"
- },
- {
-  "id": "33555224-thunderhead",
-  "title": "Thunderhead",
-  "series": "Arc of a Scythe, #2",
-  "author": "Neal Shusterman",
-  "rating": 5,
-  "dateRead": "2020-01-27",
-  "goodreads": "https://www.goodreads.com/book/show/33555224-thunderhead",
-  "cover": "/images/books/33555224-thunderhead.jpg"
- },
- {
-  "id": "11486-the-color-purple",
-  "title": "The Color Purple",
-  "series": "The Color Purple, #1",
-  "author": "Alice Walker",
-  "rating": 5,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/11486.The_Color_Purple",
-  "cover": "/images/books/11486-the-color-purple.jpg"
- },
- {
-  "id": "28178146-the-art-of-war",
-  "title": "The Art of War",
-  "series": "",
-  "author": "Sun Tzu",
-  "rating": 5,
-  "dateRead": "2016-10-24",
-  "goodreads": "https://www.goodreads.com/book/show/28178146-the-art-of-war",
-  "cover": "/images/books/28178146-the-art-of-war.jpg"
- },
- {
-  "id": "9516-persepolis",
-  "title": "Persepolis: The Story of a Childhood",
-  "series": "Persepolis, #1",
-  "author": "Marjane Satrapi",
-  "rating": 5,
-  "dateRead": "2019-12-08",
-  "goodreads": "https://www.goodreads.com/book/show/9516.Persepolis",
-  "cover": "/images/books/9516-persepolis.jpg"
- },
- {
-  "id": "8477057-daytripper",
-  "title": "Daytripper",
-  "series": "",
-  "author": "Fábio Moon",
-  "rating": 5,
-  "dateRead": "2020-02-14",
-  "goodreads": "https://www.goodreads.com/book/show/8477057-daytripper",
-  "cover": "/images/books/8477057-daytripper.jpg"
- },
- {
-  "id": "81948-the-e-myth-revisited",
-  "title": "The E-myth Revisited",
-  "series": "",
-  "author": "Michael E. Gerber",
-  "rating": 5,
-  "dateRead": "2020-08-19",
-  "goodreads": "https://www.goodreads.com/book/show/81948.The_E_myth_Revisited",
-  "cover": "/images/books/81948-the-e-myth-revisited.jpg"
- },
- {
-  "id": "18630598-injustice",
-  "title": "Injustice: Gods Among Us, Vol. 2",
-  "series": "",
-  "author": "Tom Taylor",
-  "rating": 5,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/18630598-injustice",
-  "cover": "/images/books/18630598-injustice.jpg"
- },
- {
-  "id": "25099-the-sandman-vol-2",
-  "title": "The Sandman, Vol. 2: The Doll's House",
-  "series": "",
-  "author": "Neil Gaiman",
-  "rating": 5,
-  "dateRead": "2018-01-05",
-  "goodreads": "https://www.goodreads.com/book/show/25099.The_Sandman_Vol_2",
-  "cover": "/images/books/25099-the-sandman-vol-2.jpg"
- },
- {
-  "id": "844422-battle-angel-alita-vol-1",
-  "title": "Battle Angel Alita, Vol. 1",
-  "series": "",
-  "author": "Yukito Kishiro",
-  "rating": 5,
-  "dateRead": "2019-08-11",
-  "goodreads": "https://www.goodreads.com/book/show/844422.Battle_Angel_Alita_Vol_1",
-  "cover": "/images/books/844422-battle-angel-alita-vol-1.jpg"
- },
- {
-  "id": "15839976-red-rising",
-  "title": "Red Rising",
-  "series": "Red Rising Saga, #1",
-  "author": "Pierce Brown",
-  "rating": 5,
-  "dateRead": "2020-12-21",
-  "goodreads": "https://www.goodreads.com/book/show/15839976-red-rising",
-  "cover": "/images/books/15839976-red-rising.jpg"
- },
- {
-  "id": "28954189-scythe",
-  "title": "Scythe",
-  "series": "Arc of a Scythe, #1",
-  "author": "Neal Shusterman",
-  "rating": 5,
-  "dateRead": "2019-09-23",
-  "goodreads": "https://www.goodreads.com/book/show/28954189-scythe",
-  "cover": "/images/books/28954189-scythe.jpg"
- },
- {
-  "id": "6096829-the-collected-essex-county",
-  "title": "The Collected Essex County",
-  "series": "",
-  "author": "Jeff Lemire",
-  "rating": 5,
-  "dateRead": "2018-01-01",
-  "goodreads": "https://www.goodreads.com/book/show/6096829-the-collected-essex-county",
-  "cover": "/images/books/6096829-the-collected-essex-county.jpg"
- },
- {
-  "id": "6149-beloved",
-  "title": "Beloved",
-  "series": "",
-  "author": "Toni Morrison",
-  "rating": 5,
-  "dateRead": "2019-09-24",
-  "goodreads": "https://www.goodreads.com/book/show/6149.Beloved",
-  "cover": "/images/books/6149-beloved.jpg"
- },
- {
-  "id": "320-one-hundred-years-of-solitude",
-  "title": "One Hundred Years of Solitude",
-  "series": "",
-  "author": "Gabriel García Márquez",
-  "rating": 5,
-  "dateRead": "2017-06-08",
-  "goodreads": "https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude",
-  "cover": "/images/books/320-one-hundred-years-of-solitude.jpg",
-  "favorite": true
- },
- {
-  "id": "39988-matilda",
-  "title": "Matilda",
-  "series": "",
-  "author": "Roald Dahl",
-  "rating": 5,
-  "dateRead": "2019-12-21",
-  "goodreads": "https://www.goodreads.com/book/show/39988.Matilda",
-  "cover": "/images/books/39988-matilda.jpg"
+  "dateRead": "2025-01-09",
+  "goodreads": "https://www.goodreads.com/book/show/4556058-the-last-olympian",
+  "cover": "/images/books/4556058-the-last-olympian.jpg"
  },
  {
   "id": "8130423-the-battle-of-the-labyrinth",
@@ -322,74 +70,44 @@
   "cover": "/images/books/8130423-the-battle-of-the-labyrinth.jpg"
  },
  {
-  "id": "21787-the-princess-bride",
-  "title": "The Princess Bride",
-  "series": "",
-  "author": "William Goldman",
-  "rating": 5,
-  "dateRead": "2020-04-06",
-  "goodreads": "https://www.goodreads.com/book/show/21787.The_Princess_Bride",
-  "cover": "/images/books/21787-the-princess-bride.jpg"
+  "id": "561456-the-titan-s-curse",
+  "title": "The Titan’s Curse",
+  "series": "Percy Jackson and the Olympians, #3",
+  "author": "Rick Riordan",
+  "rating": 4,
+  "dateRead": "2024-11-17",
+  "goodreads": "https://www.goodreads.com/book/show/561456.The_Titan_s_Curse",
+  "cover": "/images/books/561456-the-titan-s-curse.jpg"
  },
  {
-  "id": "40090596-art-matters",
-  "title": "Art Matters: Because Your Imagination Can Change the World",
-  "series": "",
-  "author": "Neil Gaiman",
-  "rating": 5,
-  "dateRead": "2019-12-26",
-  "goodreads": "https://www.goodreads.com/book/show/40090596-art-matters",
-  "cover": "/images/books/40090596-art-matters.jpg"
+  "id": "40727118-the-sea-of-monsters",
+  "title": "The Sea of Monsters",
+  "series": "Percy Jackson and the Olympians, #2",
+  "author": "Rick Riordan",
+  "rating": 4,
+  "dateRead": "2024-10-07",
+  "goodreads": "https://www.goodreads.com/book/show/40727118-the-sea-of-monsters",
+  "cover": "/images/books/40727118-the-sea-of-monsters.jpg"
  },
  {
-  "id": "17671993-injustice",
-  "title": "Injustice: Gods Among Us, Vol. 1",
+  "id": "61885029-starter-villain",
+  "title": "Starter Villain",
   "series": "",
-  "author": "Tom Taylor",
-  "rating": 5,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/17671993-injustice",
-  "cover": "/images/books/17671993-injustice.jpg"
+  "author": "John Scalzi",
+  "rating": 3,
+  "dateRead": "2024-09-25",
+  "goodreads": "https://www.goodreads.com/book/show/61885029-starter-villain",
+  "cover": "/images/books/61885029-starter-villain.jpg"
  },
  {
-  "id": "1330324-sea-of-poppies",
-  "title": "Sea of Poppies",
-  "series": "Ibis Trilogy, #1",
-  "author": "Amitav Ghosh",
-  "rating": 5,
-  "dateRead": "2019-05-21",
-  "goodreads": "https://www.goodreads.com/book/show/1330324.Sea_of_Poppies",
-  "cover": "/images/books/1330324-sea-of-poppies.jpg"
- },
- {
-  "id": "19351043-nimona",
-  "title": "Nimona",
+  "id": "99561-looking-for-alaska",
+  "title": "Looking for Alaska",
   "series": "",
-  "author": "N.D. Stevenson",
-  "rating": 5,
-  "dateRead": "2021-01-17",
-  "goodreads": "https://www.goodreads.com/book/show/19351043-nimona",
-  "cover": "/images/books/19351043-nimona.jpg"
- },
- {
-  "id": "4982-the-sirens-of-titan",
-  "title": "The Sirens of Titan",
-  "series": "",
-  "author": "Kurt Vonnegut Jr.",
-  "rating": 5,
-  "dateRead": "2020-01-08",
-  "goodreads": "https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan",
-  "cover": "/images/books/4982-the-sirens-of-titan.jpg"
- },
- {
-  "id": "25153-uzumaki",
-  "title": "Uzumaki: Spiral into Horror, Vol. 2.",
-  "series": "",
-  "author": "Junji Ito",
-  "rating": 5,
-  "dateRead": "2020-01-15",
-  "goodreads": "https://www.goodreads.com/book/show/25153.Uzumaki",
-  "cover": "/images/books/25153-uzumaki.jpg"
+  "author": "John Green",
+  "rating": 4,
+  "dateRead": "2024-09-23",
+  "goodreads": "https://www.goodreads.com/book/show/99561.Looking_for_Alaska",
+  "cover": "/images/books/99561-looking-for-alaska.jpg"
  },
  {
   "id": "4406-east-of-eden",
@@ -403,6 +121,506 @@
   "favorite": true
  },
  {
+  "id": "28187-the-lightning-thief",
+  "title": "The Lightning Thief",
+  "series": "Percy Jackson and the Olympians, #1",
+  "author": "Rick Riordan",
+  "rating": 4,
+  "dateRead": "2024-09-18",
+  "goodreads": "https://www.goodreads.com/book/show/28187.The_Lightning_Thief",
+  "cover": "/images/books/28187-the-lightning-thief.jpg"
+ },
+ {
+  "id": "375802-ender-s-game",
+  "title": "Ender’s Game",
+  "series": "Ender's Saga, #1",
+  "author": "Orson Scott Card",
+  "rating": 4,
+  "dateRead": "2024-09-16",
+  "goodreads": "https://www.goodreads.com/book/show/375802.Ender_s_Game",
+  "cover": "/images/books/375802-ender-s-game.jpg"
+ },
+ {
+  "id": "104745-the-art-of-unix-programming",
+  "title": "The Art of UNIX Programming",
+  "series": "",
+  "author": "Eric S. Raymond",
+  "rating": 4,
+  "dateRead": "2024-09-16",
+  "goodreads": "https://www.goodreads.com/book/show/104745.The_Art_of_UNIX_Programming",
+  "cover": "/images/books/104745-the-art-of-unix-programming.jpg"
+ },
+ {
+  "id": "42527596-the-twisted-ones",
+  "title": "The Twisted Ones",
+  "series": "",
+  "author": "T. Kingfisher",
+  "rating": 4,
+  "dateRead": "2024-06-21",
+  "goodreads": "https://www.goodreads.com/book/show/42527596-the-twisted-ones",
+  "cover": "/images/books/42527596-the-twisted-ones.jpg"
+ },
+ {
+  "id": "198534114-sakina-s-kiss",
+  "title": "Sakina’s Kiss",
+  "series": "",
+  "author": "Vivek Shanbhag",
+  "rating": 4,
+  "dateRead": "2023-10-09",
+  "goodreads": "https://www.goodreads.com/book/show/198534114-sakina-s-kiss",
+  "cover": "/images/books/198534114-sakina-s-kiss.jpg"
+ },
+ {
+  "id": "44492285-dune-messiah",
+  "title": "Dune Messiah",
+  "series": "Dune, #2",
+  "author": "Frank Herbert",
+  "rating": 4,
+  "dateRead": "2023-08-04",
+  "goodreads": "https://www.goodreads.com/book/show/44492285-dune-messiah",
+  "cover": "/images/books/44492285-dune-messiah.jpg"
+ },
+ {
+  "id": "13821-lord-of-light",
+  "title": "Lord of Light",
+  "series": "",
+  "author": "Roger Zelazny",
+  "rating": 5,
+  "dateRead": "2023-07-10",
+  "goodreads": "https://www.goodreads.com/book/show/13821.Lord_of_Light",
+  "cover": "/images/books/13821-lord-of-light.jpg"
+ },
+ {
+  "id": "18386-the-death-of-ivan-ilych",
+  "title": "The Death of Ivan Ilych",
+  "series": "",
+  "author": "Leo Tolstoy",
+  "rating": 5,
+  "dateRead": "2023-03-27",
+  "goodreads": "https://www.goodreads.com/book/show/18386.The_Death_of_Ivan_Ilych",
+  "cover": "/images/books/18386-the-death-of-ivan-ilych.jpg"
+ },
+ {
+  "id": "41092454-the-great-train-journey",
+  "title": "The Great Train Journey",
+  "series": "",
+  "author": "Ruskin Bond",
+  "rating": 4,
+  "dateRead": "2023-01-27",
+  "goodreads": "https://www.goodreads.com/book/show/41092454-the-great-train-journey",
+  "cover": "/images/books/41092454-the-great-train-journey.jpg"
+ },
+ {
+  "id": "16322-the-a-b-c-murders",
+  "title": "The A.B.C. Murders",
+  "series": "Hercule Poirot, #13",
+  "author": "Agatha Christie",
+  "rating": 3,
+  "dateRead": "2023-01-25",
+  "goodreads": "https://www.goodreads.com/book/show/16322.The_A_B_C_Murders",
+  "cover": "/images/books/16322-the-a-b-c-murders.jpg"
+ },
+ {
+  "id": "16299-and-then-there-were-none",
+  "title": "And Then There Were None",
+  "series": "",
+  "author": "Agatha Christie",
+  "rating": 5,
+  "dateRead": "2023-01-17",
+  "goodreads": "https://www.goodreads.com/book/show/16299.And_Then_There_Were_None",
+  "cover": "/images/books/16299-and-then-there-were-none.jpg"
+ },
+ {
+  "id": "17343-till-we-have-faces",
+  "title": "Till We Have Faces",
+  "series": "",
+  "author": "C.S. Lewis",
+  "rating": 4,
+  "dateRead": "2023-01-14",
+  "goodreads": "https://www.goodreads.com/book/show/17343.Till_We_Have_Faces",
+  "cover": "/images/books/17343-till-we-have-faces.jpg"
+ },
+ {
+  "id": "79909-in-patagonia",
+  "title": "In Patagonia",
+  "series": "",
+  "author": "Bruce Chatwin",
+  "rating": 4,
+  "dateRead": "2022-12-31",
+  "goodreads": "https://www.goodreads.com/book/show/79909.In_Patagonia",
+  "cover": "/images/books/79909-in-patagonia.jpg"
+ },
+ {
+  "id": "34051011-pachinko",
+  "title": "Pachinko",
+  "series": "",
+  "author": "Min Jin Lee",
+  "rating": 5,
+  "dateRead": "2022-11-29",
+  "goodreads": "https://www.goodreads.com/book/show/34051011-pachinko",
+  "cover": "/images/books/34051011-pachinko.jpg"
+ },
+ {
+  "id": "34966353-the-storm-runner",
+  "title": "The Storm Runner",
+  "series": "The Storm Runner, #1",
+  "author": "J.C. Cervantes",
+  "rating": 4,
+  "dateRead": "2022-07-22",
+  "goodreads": "https://www.goodreads.com/book/show/34966353-the-storm-runner",
+  "cover": "/images/books/34966353-the-storm-runner.jpg"
+ },
+ {
+  "id": "397483-the-devil-in-the-white-city",
+  "title": "The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America",
+  "series": "",
+  "author": "Erik Larson",
+  "rating": 4,
+  "dateRead": "2022-02-06",
+  "goodreads": "https://www.goodreads.com/book/show/397483.The_Devil_in_the_White_City",
+  "cover": "/images/books/397483-the-devil-in-the-white-city.jpg"
+ },
+ {
+  "id": "36260018-4-kids-walk-into-a-bank",
+  "title": "4 Kids Walk Into a Bank",
+  "series": "",
+  "author": "Matthew Rosenberg",
+  "rating": 4,
+  "dateRead": "2022-01-06",
+  "goodreads": "https://www.goodreads.com/book/show/36260018-4-kids-walk-into-a-bank",
+  "cover": "/images/books/36260018-4-kids-walk-into-a-bank.jpg"
+ },
+ {
+  "id": "7624-lord-of-the-flies",
+  "title": "Lord of the Flies",
+  "series": "",
+  "author": "William Golding",
+  "rating": 4,
+  "dateRead": "2021-12-23",
+  "goodreads": "https://www.goodreads.com/book/show/7624.Lord_of_the_Flies",
+  "cover": "/images/books/7624-lord-of-the-flies.jpg"
+ },
+ {
+  "id": "38990-fun-home",
+  "title": "Fun Home: A Family Tragicomic",
+  "series": "",
+  "author": "Alison Bechdel",
+  "rating": 5,
+  "dateRead": "2021-12-05",
+  "goodreads": "https://www.goodreads.com/book/show/38990.Fun_Home",
+  "cover": "/images/books/38990-fun-home.jpg"
+ },
+ {
+  "id": "38209845-dalit-panthers",
+  "title": "Dalit Panthers: An Authoritative History",
+  "series": "",
+  "author": "J.V. Pawar",
+  "rating": 4,
+  "dateRead": "2021-08-04",
+  "goodreads": "https://www.goodreads.com/book/show/38209845-dalit-panthers",
+  "cover": "/images/books/38209845-dalit-panthers.jpg"
+ },
+ {
+  "id": "3-harry-potter-and-the-sorcerer-s-stone",
+  "title": "Harry Potter and the Sorcerer's Stone",
+  "series": "Harry Potter, #1",
+  "author": "J.K. Rowling",
+  "rating": 5,
+  "dateRead": "2021-05-11",
+  "goodreads": "https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone",
+  "cover": "/images/books/3-harry-potter-and-the-sorcerer-s-stone.jpg"
+ },
+ {
+  "id": "131359-death-on-the-nile",
+  "title": "Death on the Nile",
+  "series": "Hercule Poirot, #18",
+  "author": "Agatha Christie",
+  "rating": 3,
+  "dateRead": "2021-02-11",
+  "goodreads": "https://www.goodreads.com/book/show/131359.Death_on_the_Nile",
+  "cover": "/images/books/131359-death-on-the-nile.jpg"
+ },
+ {
+  "id": "19351043-nimona",
+  "title": "Nimona",
+  "series": "",
+  "author": "N.D. Stevenson",
+  "rating": 5,
+  "dateRead": "2021-01-17",
+  "goodreads": "https://www.goodreads.com/book/show/19351043-nimona",
+  "cover": "/images/books/19351043-nimona.jpg"
+ },
+ {
+  "id": "22553690-art-before-breakfast",
+  "title": "Art Before Breakfast: A Zillion Ways to be More Creative No Matter How Busy You Are",
+  "series": "",
+  "author": "Danny Gregory",
+  "rating": 4,
+  "dateRead": "2020-12-28",
+  "goodreads": "https://www.goodreads.com/book/show/22553690-art-before-breakfast",
+  "cover": "/images/books/22553690-art-before-breakfast.jpg"
+ },
+ {
+  "id": "1335615-a-flowering-tree-and-other-oral-tales-from-india",
+  "title": "A Flowering Tree and Other Oral Tales from India",
+  "series": "",
+  "author": "A.K. Ramanujan",
+  "rating": 4,
+  "dateRead": "2020-12-22",
+  "goodreads": "https://www.goodreads.com/book/show/1335615.A_Flowering_Tree_and_Other_Oral_Tales_from_India",
+  "cover": "/images/books/1335615-a-flowering-tree-and-other-oral-tales-from-india.jpg"
+ },
+ {
+  "id": "40121378-atomic-habits",
+  "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+  "series": "",
+  "author": "James Clear",
+  "rating": 4,
+  "dateRead": "2020-12-22",
+  "goodreads": "https://www.goodreads.com/book/show/40121378-atomic-habits",
+  "cover": "/images/books/40121378-atomic-habits.jpg"
+ },
+ {
+  "id": "15839976-red-rising",
+  "title": "Red Rising",
+  "series": "Red Rising Saga, #1",
+  "author": "Pierce Brown",
+  "rating": 5,
+  "dateRead": "2020-12-21",
+  "goodreads": "https://www.goodreads.com/book/show/15839976-red-rising",
+  "cover": "/images/books/15839976-red-rising.jpg"
+ },
+ {
+  "id": "1325218-scary-stories-to-tell-in-the-dark",
+  "title": "Scary Stories to Tell in the Dark",
+  "series": "Scary Stories, #1",
+  "author": "Alvin Schwartz",
+  "rating": 4,
+  "dateRead": "2020-11-10",
+  "goodreads": "https://www.goodreads.com/book/show/1325218.Scary_Stories_to_Tell_in_the_Dark",
+  "cover": "/images/books/1325218-scary-stories-to-tell-in-the-dark.jpg"
+ },
+ {
+  "id": "81948-the-e-myth-revisited",
+  "title": "The E-myth Revisited",
+  "series": "",
+  "author": "Michael E. Gerber",
+  "rating": 5,
+  "dateRead": "2020-08-19",
+  "goodreads": "https://www.goodreads.com/book/show/81948.The_E_myth_Revisited",
+  "cover": "/images/books/81948-the-e-myth-revisited.jpg"
+ },
+ {
+  "id": "26822891-who-was-shivaji",
+  "title": "Who was Shivaji?",
+  "series": "",
+  "author": "Govind Pansare",
+  "rating": 4,
+  "dateRead": "2020-05-04",
+  "goodreads": "https://www.goodreads.com/book/show/26822891-who-was-shivaji",
+  "cover": "/images/books/26822891-who-was-shivaji.jpg"
+ },
+ {
+  "id": "1215544-the-adventures-of-tintin-volume-1",
+  "title": "The Adventures of Tintin, Volume 1: Tintin in the Land of the Soviets / Tintin in the Congo (Tintin #1-2)",
+  "series": "",
+  "author": "Hergé",
+  "rating": 1,
+  "dateRead": "2020-04-12",
+  "goodreads": "https://www.goodreads.com/book/show/1215544.The_Adventures_of_Tintin_Volume_1",
+  "cover": "/images/books/1215544-the-adventures-of-tintin-volume-1.jpg"
+ },
+ {
+  "id": "21787-the-princess-bride",
+  "title": "The Princess Bride",
+  "series": "",
+  "author": "William Goldman",
+  "rating": 5,
+  "dateRead": "2020-04-06",
+  "goodreads": "https://www.goodreads.com/book/show/21787.The_Princess_Bride",
+  "cover": "/images/books/21787-the-princess-bride.jpg"
+ },
+ {
+  "id": "13099738-steal-like-an-artist",
+  "title": "Steal Like an Artist: 10 Things Nobody Told You About Being Creative",
+  "series": "",
+  "author": "Austin Kleon",
+  "rating": 4,
+  "dateRead": "2020-03-30",
+  "goodreads": "https://www.goodreads.com/book/show/13099738-steal-like-an-artist",
+  "cover": "/images/books/13099738-steal-like-an-artist.jpg"
+ },
+ {
+  "id": "18736049-the-railway-children",
+  "title": "The Railway Children",
+  "series": "",
+  "author": "E. Nesbit",
+  "rating": 4,
+  "dateRead": "2020-03-29",
+  "goodreads": "https://www.goodreads.com/book/show/18736049-the-railway-children",
+  "cover": "/images/books/18736049-the-railway-children.jpg"
+ },
+ {
+  "id": "29238792-abigail-and-the-snowman",
+  "title": "Abigail and the Snowman",
+  "series": "",
+  "author": "Roger Langridge",
+  "rating": 4,
+  "dateRead": "2020-02-27",
+  "goodreads": "https://www.goodreads.com/book/show/29238792-abigail-and-the-snowman",
+  "cover": "/images/books/29238792-abigail-and-the-snowman.jpg"
+ },
+ {
+  "id": "233093-the-cat-in-the-hat",
+  "title": "The Cat in the Hat",
+  "series": "Cat in the Hat, #1",
+  "author": "Dr. Seuss",
+  "rating": 4,
+  "dateRead": "2020-02-27",
+  "goodreads": "https://www.goodreads.com/book/show/233093.The_Cat_in_the_Hat",
+  "cover": "/images/books/233093-the-cat-in-the-hat.jpg"
+ },
+ {
+  "id": "8477057-daytripper",
+  "title": "Daytripper",
+  "series": "",
+  "author": "Fábio Moon",
+  "rating": 5,
+  "dateRead": "2020-02-14",
+  "goodreads": "https://www.goodreads.com/book/show/8477057-daytripper",
+  "cover": "/images/books/8477057-daytripper.jpg"
+ },
+ {
+  "id": "25243735-wytches-volume-1",
+  "title": "Wytches, Volume 1",
+  "series": "",
+  "author": "Scott Snyder",
+  "rating": 4,
+  "dateRead": "2020-02-12",
+  "goodreads": "https://www.goodreads.com/book/show/25243735-wytches-volume-1",
+  "cover": "/images/books/25243735-wytches-volume-1.jpg"
+ },
+ {
+  "id": "36336078-call-me-by-your-name",
+  "title": "Call Me By Your Name",
+  "series": "Call Me By Your Name, #1",
+  "author": "André Aciman",
+  "rating": 4,
+  "dateRead": "2020-02-10",
+  "goodreads": "https://www.goodreads.com/book/show/36336078-call-me-by-your-name",
+  "cover": "/images/books/36336078-call-me-by-your-name.jpg"
+ },
+ {
+  "id": "42837514-gender-queer",
+  "title": "Gender Queer: A Memoir",
+  "series": "",
+  "author": "Maia Kobabe",
+  "rating": 5,
+  "dateRead": "2020-02-07",
+  "goodreads": "https://www.goodreads.com/book/show/42837514-gender-queer",
+  "cover": "/images/books/42837514-gender-queer.jpg"
+ },
+ {
+  "id": "8065938-101-things-i-learned-in-film-school",
+  "title": "101 Things I Learned in Film School",
+  "series": "",
+  "author": "Neil Landau",
+  "rating": 3,
+  "dateRead": "2020-01-31",
+  "goodreads": "https://www.goodreads.com/book/show/8065938-101-things-i-learned-in-film-school",
+  "cover": "/images/books/8065938-101-things-i-learned-in-film-school.jpg"
+ },
+ {
+  "id": "43822024-the-toll",
+  "title": "The Toll",
+  "series": "Arc of a Scythe, #3",
+  "author": "Neal Shusterman",
+  "rating": 4,
+  "dateRead": "2020-01-30",
+  "goodreads": "https://www.goodreads.com/book/show/43822024-the-toll",
+  "cover": "/images/books/43822024-the-toll.jpg"
+ },
+ {
+  "id": "32926680-saga-book-two",
+  "title": "Saga, Book Two",
+  "series": "",
+  "author": "Brian K. Vaughan",
+  "rating": 4,
+  "dateRead": "2020-01-27",
+  "goodreads": "https://www.goodreads.com/book/show/32926680-saga-book-two",
+  "cover": "/images/books/32926680-saga-book-two.jpg"
+ },
+ {
+  "id": "92303-the-importance-of-being-earnest",
+  "title": "The Importance of Being Earnest",
+  "series": "",
+  "author": "Oscar Wilde",
+  "rating": 4,
+  "dateRead": "2020-01-27",
+  "goodreads": "https://www.goodreads.com/book/show/92303.The_Importance_of_Being_Earnest",
+  "cover": "/images/books/92303-the-importance-of-being-earnest.jpg"
+ },
+ {
+  "id": "33555224-thunderhead",
+  "title": "Thunderhead",
+  "series": "Arc of a Scythe, #2",
+  "author": "Neal Shusterman",
+  "rating": 5,
+  "dateRead": "2020-01-27",
+  "goodreads": "https://www.goodreads.com/book/show/33555224-thunderhead",
+  "cover": "/images/books/33555224-thunderhead.jpg"
+ },
+ {
+  "id": "9809-invisible-cities",
+  "title": "Invisible Cities",
+  "series": "",
+  "author": "Italo Calvino",
+  "rating": 4,
+  "dateRead": "2020-01-22",
+  "goodreads": "https://www.goodreads.com/book/show/9809.Invisible_Cities",
+  "cover": "/images/books/9809-invisible-cities.jpg"
+ },
+ {
+  "id": "49455-notes-from-underground",
+  "title": "Notes from Underground",
+  "series": "",
+  "author": "Fyodor Dostoevsky",
+  "rating": 5,
+  "dateRead": "2020-01-21",
+  "goodreads": "https://www.goodreads.com/book/show/49455.Notes_from_Underground",
+  "cover": "/images/books/49455-notes-from-underground.jpg"
+ },
+ {
+  "id": "102920-understanding-comics",
+  "title": "Understanding Comics: The Invisible Art",
+  "series": "",
+  "author": "Scott McCloud",
+  "rating": 5,
+  "dateRead": "2020-01-20",
+  "goodreads": "https://www.goodreads.com/book/show/102920.Understanding_Comics",
+  "cover": "/images/books/102920-understanding-comics.jpg"
+ },
+ {
+  "id": "25153-uzumaki",
+  "title": "Uzumaki: Spiral into Horror, Vol. 2",
+  "series": "",
+  "author": "Junji Ito",
+  "rating": 5,
+  "dateRead": "2020-01-15",
+  "goodreads": "https://www.goodreads.com/book/show/25153.Uzumaki",
+  "cover": "/images/books/25153-uzumaki.jpg"
+ },
+ {
+  "id": "25154-uzumaki",
+  "title": "Uzumaki: Spiral into Horror, Vol. 3",
+  "series": "",
+  "author": "Junji Ito",
+  "rating": 5,
+  "dateRead": "2020-01-15",
+  "goodreads": "https://www.goodreads.com/book/show/25154.Uzumaki",
+  "cover": "/images/books/25154-uzumaki.jpg"
+ },
+ {
   "id": "13214-i-know-why-the-caged-bird-sings",
   "title": "I Know Why the Caged Bird Sings",
   "series": "Maya Angelou's Autobiography, #1",
@@ -412,6 +630,276 @@
   "goodreads": "https://www.goodreads.com/book/show/13214.I_Know_Why_the_Caged_Bird_Sings",
   "cover": "/images/books/13214-i-know-why-the-caged-bird-sings.jpg",
   "favorite": true
+ },
+ {
+  "id": "22078240-saga-book-one",
+  "title": "Saga, Book One",
+  "series": "",
+  "author": "Brian K. Vaughan",
+  "rating": 5,
+  "dateRead": "2020-01-08",
+  "goodreads": "https://www.goodreads.com/book/show/22078240-saga-book-one",
+  "cover": "/images/books/22078240-saga-book-one.jpg"
+ },
+ {
+  "id": "4982-the-sirens-of-titan",
+  "title": "The Sirens of Titan",
+  "series": "",
+  "author": "Kurt Vonnegut Jr.",
+  "rating": 5,
+  "dateRead": "2020-01-08",
+  "goodreads": "https://www.goodreads.com/book/show/4982.The_Sirens_of_Titan",
+  "cover": "/images/books/4982-the-sirens-of-titan.jpg"
+ },
+ {
+  "id": "25152-uzumaki",
+  "title": "Uzumaki: Spiral into Horror, Vol. 1",
+  "series": "",
+  "author": "Junji Ito",
+  "rating": 4,
+  "dateRead": "2020-01-08",
+  "goodreads": "https://www.goodreads.com/book/show/25152.Uzumaki",
+  "cover": "/images/books/25152-uzumaki.jpg"
+ },
+ {
+  "id": "23529-from-hell",
+  "title": "From Hell",
+  "series": "",
+  "author": "Alan Moore",
+  "rating": 4,
+  "dateRead": "2019-12-31",
+  "goodreads": "https://www.goodreads.com/book/show/23529.From_Hell",
+  "cover": "/images/books/23529-from-hell.jpg"
+ },
+ {
+  "id": "89724-we-have-always-lived-in-the-castle",
+  "title": "We Have Always Lived in the Castle",
+  "series": "",
+  "author": "Shirley Jackson",
+  "rating": 4,
+  "dateRead": "2019-12-31",
+  "goodreads": "https://www.goodreads.com/book/show/89724.We_Have_Always_Lived_in_the_Castle",
+  "cover": "/images/books/89724-we-have-always-lived-in-the-castle.jpg"
+ },
+ {
+  "id": "40090596-art-matters",
+  "title": "Art Matters: Because Your Imagination Can Change the World",
+  "series": "",
+  "author": "Neil Gaiman",
+  "rating": 5,
+  "dateRead": "2019-12-26",
+  "goodreads": "https://www.goodreads.com/book/show/40090596-art-matters",
+  "cover": "/images/books/40090596-art-matters.jpg"
+ },
+ {
+  "id": "39988-matilda",
+  "title": "Matilda",
+  "series": "",
+  "author": "Roald Dahl",
+  "rating": 5,
+  "dateRead": "2019-12-21",
+  "goodreads": "https://www.goodreads.com/book/show/39988.Matilda",
+  "cover": "/images/books/39988-matilda.jpg"
+ },
+ {
+  "id": "41949311-someone-who-will-love-you-in-all-your-damaged-glory",
+  "title": "Someone Who Will Love You in All Your Damaged Glory",
+  "series": "",
+  "author": "Raphael Bob-Waksberg",
+  "rating": 4,
+  "dateRead": "2019-12-20",
+  "goodreads": "https://www.goodreads.com/book/show/41949311-someone-who-will-love-you-in-all-your-damaged-glory",
+  "cover": "/images/books/41949311-someone-who-will-love-you-in-all-your-damaged-glory.jpg"
+ },
+ {
+  "id": "45837770-league-of-legends",
+  "title": "League of Legends: Ashe - Warmother",
+  "series": "",
+  "author": "Odin Austin Shafer",
+  "rating": 4,
+  "dateRead": "2019-12-15",
+  "goodreads": "https://www.goodreads.com/book/show/45837770-league-of-legends",
+  "cover": "/images/books/45837770-league-of-legends.jpg"
+ },
+ {
+  "id": "48725759-league-of-legends",
+  "title": "League of Legends: Lux",
+  "series": "",
+  "author": "John O'Bryan",
+  "rating": 4,
+  "dateRead": "2019-12-14",
+  "goodreads": "https://www.goodreads.com/book/show/48725759-league-of-legends",
+  "cover": "/images/books/48725759-league-of-legends.jpg"
+ },
+ {
+  "id": "9517-persepolis-2",
+  "title": "Persepolis 2: The Story of a Return",
+  "series": "Persepolis, #2",
+  "author": "Marjane Satrapi",
+  "rating": 5,
+  "dateRead": "2019-12-08",
+  "goodreads": "https://www.goodreads.com/book/show/9517.Persepolis_2",
+  "cover": "/images/books/9517-persepolis-2.jpg"
+ },
+ {
+  "id": "9516-persepolis",
+  "title": "Persepolis: The Story of a Childhood",
+  "series": "Persepolis, #1",
+  "author": "Marjane Satrapi",
+  "rating": 5,
+  "dateRead": "2019-12-08",
+  "goodreads": "https://www.goodreads.com/book/show/9516.Persepolis",
+  "cover": "/images/books/9516-persepolis.jpg"
+ },
+ {
+  "id": "77270-the-jungle-book",
+  "title": "The Jungle Book",
+  "series": "Jungle Book, #1",
+  "author": "Rudyard Kipling",
+  "rating": 3,
+  "dateRead": "2019-12-01",
+  "goodreads": "https://www.goodreads.com/book/show/77270.The_Jungle_Book",
+  "cover": "/images/books/77270-the-jungle-book.jpg"
+ },
+ {
+  "id": "9361589-the-night-circus",
+  "title": "The Night Circus",
+  "series": "",
+  "author": "Erin Morgenstern",
+  "rating": 4,
+  "dateRead": "2019-10-31",
+  "goodreads": "https://www.goodreads.com/book/show/9361589-the-night-circus",
+  "cover": "/images/books/9361589-the-night-circus.jpg"
+ },
+ {
+  "id": "1075662-funny-boy",
+  "title": "Funny Boy",
+  "series": "",
+  "author": "Shyam Selvadurai",
+  "rating": 4,
+  "dateRead": "2019-10-29",
+  "goodreads": "https://www.goodreads.com/book/show/1075662.Funny_Boy",
+  "cover": "/images/books/1075662-funny-boy.jpg"
+ },
+ {
+  "id": "73968-love-story",
+  "title": "Love Story",
+  "series": "Love Story, #1",
+  "author": "Erich Segal",
+  "rating": 4,
+  "dateRead": "2019-10-13",
+  "goodreads": "https://www.goodreads.com/book/show/73968.Love_Story",
+  "cover": "/images/books/73968-love-story.jpg"
+ },
+ {
+  "id": "12000020-aristotle-and-dante-discover-the-secrets-of-the-universe",
+  "title": "Aristotle and Dante Discover the Secrets of the Universe",
+  "series": "Aristotle and Dante, #1",
+  "author": "Benjamin Alire Sáenz",
+  "rating": 5,
+  "dateRead": "2019-10-11",
+  "goodreads": "https://www.goodreads.com/book/show/12000020-aristotle-and-dante-discover-the-secrets-of-the-universe",
+  "cover": "/images/books/12000020-aristotle-and-dante-discover-the-secrets-of-the-universe.jpg"
+ },
+ {
+  "id": "13220954-ashoka",
+  "title": "Ashoka: The Search for India's Lost Emperor",
+  "series": "",
+  "author": "Charles Allen",
+  "rating": 5,
+  "dateRead": "2019-10-07",
+  "goodreads": "https://www.goodreads.com/book/show/13220954-ashoka",
+  "cover": "/images/books/13220954-ashoka.jpg"
+ },
+ {
+  "id": "16793-stardust",
+  "title": "Stardust",
+  "series": "",
+  "author": "Neil Gaiman",
+  "rating": 4,
+  "dateRead": "2019-09-25",
+  "goodreads": "https://www.goodreads.com/book/show/16793.Stardust",
+  "cover": "/images/books/16793-stardust.jpg"
+ },
+ {
+  "id": "6149-beloved",
+  "title": "Beloved",
+  "series": "",
+  "author": "Toni Morrison",
+  "rating": 5,
+  "dateRead": "2019-09-24",
+  "goodreads": "https://www.goodreads.com/book/show/6149.Beloved",
+  "cover": "/images/books/6149-beloved.jpg"
+ },
+ {
+  "id": "28954189-scythe",
+  "title": "Scythe",
+  "series": "Arc of a Scythe, #1",
+  "author": "Neal Shusterman",
+  "rating": 5,
+  "dateRead": "2019-09-23",
+  "goodreads": "https://www.goodreads.com/book/show/28954189-scythe",
+  "cover": "/images/books/28954189-scythe.jpg"
+ },
+ {
+  "id": "6294-howl-s-moving-castle",
+  "title": "Howl's Moving Castle",
+  "series": "Howl's Moving Castle, #1",
+  "author": "Diana Wynne Jones",
+  "rating": 5,
+  "dateRead": "2019-09-02",
+  "goodreads": "https://www.goodreads.com/book/show/6294.Howl_s_Moving_Castle",
+  "cover": "/images/books/6294-howl-s-moving-castle.jpg"
+ },
+ {
+  "id": "844422-battle-angel-alita-vol-1",
+  "title": "Battle Angel Alita, Vol. 1",
+  "series": "",
+  "author": "Yukito Kishiro",
+  "rating": 5,
+  "dateRead": "2019-08-11",
+  "goodreads": "https://www.goodreads.com/book/show/844422.Battle_Angel_Alita_Vol_1",
+  "cover": "/images/books/844422-battle-angel-alita-vol-1.jpg"
+ },
+ {
+  "id": "1330324-sea-of-poppies",
+  "title": "Sea of Poppies",
+  "series": "Ibis Trilogy, #1",
+  "author": "Amitav Ghosh",
+  "rating": 5,
+  "dateRead": "2019-05-21",
+  "goodreads": "https://www.goodreads.com/book/show/1330324.Sea_of_Poppies",
+  "cover": "/images/books/1330324-sea-of-poppies.jpg"
+ },
+ {
+  "id": "28922-an-artist-of-the-floating-world",
+  "title": "An Artist of the Floating World",
+  "series": "",
+  "author": "Kazuo Ishiguro",
+  "rating": 4,
+  "dateRead": "2019-03-23",
+  "goodreads": "https://www.goodreads.com/book/show/28922.An_Artist_of_the_Floating_World",
+  "cover": "/images/books/28922-an-artist-of-the-floating-world.jpg"
+ },
+ {
+  "id": "7721933-the-elephant-s-journey",
+  "title": "The Elephant's Journey",
+  "series": "",
+  "author": "José Saramago",
+  "rating": 4,
+  "dateRead": "2019-03-15",
+  "goodreads": "https://www.goodreads.com/book/show/7721933-the-elephant-s-journey",
+  "cover": "/images/books/7721933-the-elephant-s-journey.jpg"
+ },
+ {
+  "id": "39720468-annihilation-of-caste",
+  "title": "Annihilation of Caste",
+  "series": "",
+  "author": "B.R. Ambedkar",
+  "rating": 5,
+  "dateRead": "2019-02-18",
+  "goodreads": "https://www.goodreads.com/book/show/39720468-annihilation-of-caste",
+  "cover": "/images/books/39720468-annihilation-of-caste.jpg"
  },
  {
   "id": "29579-foundation",
@@ -425,657 +913,6 @@
   "favorite": true
  },
  {
-  "id": "39720468-annihilation-of-caste",
-  "title": "Annihilation of Caste",
-  "series": "",
-  "author": "B.R. Ambedkar",
-  "rating": 5,
-  "dateRead": "2019-02-18",
-  "goodreads": "https://www.goodreads.com/book/show/39720468-annihilation-of-caste",
-  "cover": "/images/books/39720468-annihilation-of-caste.jpg"
- },
- {
-  "id": "93376-akira-vol-5",
-  "title": "Akira, Vol. 5",
-  "series": "",
-  "author": "Katsuhiro Otomo",
-  "rating": 5,
-  "dateRead": "2018-05-30",
-  "goodreads": "https://www.goodreads.com/book/show/93376.Akira_Vol_5",
-  "cover": "/images/books/93376-akira-vol-5.jpg"
- },
- {
-  "id": "102920-understanding-comics",
-  "title": "Understanding Comics: The Invisible Art",
-  "series": "",
-  "author": "Scott McCloud",
-  "rating": 5,
-  "dateRead": "2020-01-20",
-  "goodreads": "https://www.goodreads.com/book/show/102920.Understanding_Comics",
-  "cover": "/images/books/102920-understanding-comics.jpg"
- },
- {
-  "id": "38990-fun-home",
-  "title": "Fun Home: A Family Tragicomic",
-  "series": "",
-  "author": "Alison Bechdel",
-  "rating": 5,
-  "dateRead": "2021-12-05",
-  "goodreads": "https://www.goodreads.com/book/show/38990.Fun_Home",
-  "cover": "/images/books/38990-fun-home.jpg"
- },
- {
-  "id": "157993-the-little-prince",
-  "title": "The Little Prince",
-  "series": "",
-  "author": "Antoine de Saint-Exupéry",
-  "rating": 5,
-  "dateRead": "2018-03-17",
-  "goodreads": "https://www.goodreads.com/book/show/157993.The_Little_Prince",
-  "cover": "/images/books/157993-the-little-prince.jpg"
- },
- {
-  "id": "49552-the-stranger",
-  "title": "The Stranger",
-  "series": "",
-  "author": "Albert Camus",
-  "rating": 5,
-  "dateRead": "2017-10-07",
-  "goodreads": "https://www.goodreads.com/book/show/49552.The_Stranger",
-  "cover": "/images/books/49552-the-stranger.jpg",
-  "favorite": true
- },
- {
-  "id": "4556058-the-last-olympian",
-  "title": "The Last Olympian",
-  "series": "Percy Jackson and the Olympians, #5",
-  "author": "Rick Riordan",
-  "rating": 5,
-  "dateRead": "2025-01-09",
-  "goodreads": "https://www.goodreads.com/book/show/4556058-the-last-olympian",
-  "cover": "/images/books/4556058-the-last-olympian.jpg"
- },
- {
-  "id": "3-harry-potter-and-the-sorcerer-s-stone",
-  "title": "Harry Potter and the Sorcerer's Stone",
-  "series": "Harry Potter, #1",
-  "author": "J.K. Rowling",
-  "rating": 5,
-  "dateRead": "2021-05-11",
-  "goodreads": "https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone",
-  "cover": "/images/books/3-harry-potter-and-the-sorcerer-s-stone.jpg"
- },
- {
-  "id": "93375-akira-vol-6",
-  "title": "Akira, Vol. 6",
-  "series": "",
-  "author": "Katsuhiro Otomo",
-  "rating": 5,
-  "dateRead": "2018-05-30",
-  "goodreads": "https://www.goodreads.com/book/show/93375.Akira_Vol_6",
-  "cover": "/images/books/93375-akira-vol-6.jpg"
- },
- {
-  "id": "93370-akira-vol-2",
-  "title": "Akira, Vol. 2",
-  "series": "",
-  "author": "Katsuhiro Otomo",
-  "rating": 5,
-  "dateRead": "2018-05-30",
-  "goodreads": "https://www.goodreads.com/book/show/93370.Akira_Vol_2",
-  "cover": "/images/books/93370-akira-vol-2.jpg"
- },
- {
-  "id": "31231-the-matarese-circle",
-  "title": "The Matarese Circle",
-  "series": "Matarese, #1",
-  "author": "Robert Ludlum",
-  "rating": 5,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31231.The_Matarese_Circle",
-  "cover": "/images/books/31231-the-matarese-circle.jpg"
- },
- {
-  "id": "25154-uzumaki",
-  "title": "Uzumaki: Spiral Into Horror, Vol. 3",
-  "series": "",
-  "author": "Junji Ito",
-  "rating": 5,
-  "dateRead": "2020-01-15",
-  "goodreads": "https://www.goodreads.com/book/show/25154.Uzumaki",
-  "cover": "/images/books/25154-uzumaki.jpg"
- },
- {
-  "id": "472331-watchmen",
-  "title": "Watchmen",
-  "series": "",
-  "author": "Alan Moore",
-  "rating": 5,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/472331.Watchmen",
-  "cover": "/images/books/472331-watchmen.jpg"
- },
- {
-  "id": "6294-howl-s-moving-castle",
-  "title": "Howl's Moving Castle",
-  "series": "Howl's Moving Castle, #1",
-  "author": "Diana Wynne Jones",
-  "rating": 5,
-  "dateRead": "2019-09-02",
-  "goodreads": "https://www.goodreads.com/book/show/6294.Howl_s_Moving_Castle",
-  "cover": "/images/books/6294-howl-s-moving-castle.jpg"
- },
- {
-  "id": "49455-notes-from-underground",
-  "title": "Notes from Underground",
-  "series": "",
-  "author": "Fyodor Dostoevsky",
-  "rating": 5,
-  "dateRead": "2020-01-21",
-  "goodreads": "https://www.goodreads.com/book/show/49455.Notes_from_Underground",
-  "cover": "/images/books/49455-notes-from-underground.jpg"
- },
- {
-  "id": "34051011-pachinko",
-  "title": "Pachinko",
-  "series": "",
-  "author": "Min Jin Lee",
-  "rating": 5,
-  "dateRead": "2022-11-29",
-  "goodreads": "https://www.goodreads.com/book/show/34051011-pachinko",
-  "cover": "/images/books/34051011-pachinko.jpg"
- },
- {
-  "id": "23529-from-hell",
-  "title": "From Hell",
-  "series": "",
-  "author": "Alan Moore",
-  "rating": 4,
-  "dateRead": "2019-12-31",
-  "goodreads": "https://www.goodreads.com/book/show/23529.From_Hell",
-  "cover": "/images/books/23529-from-hell.jpg"
- },
- {
-  "id": "825473-the-devil-s-alternative",
-  "title": "The Devil's Alternative",
-  "series": "",
-  "author": "Frederick Forsyth",
-  "rating": 4,
-  "dateRead": "2026-02-22",
-  "goodreads": "https://www.goodreads.com/book/show/825473.The_Devil_s_Alternative",
-  "cover": "/images/books/825473-the-devil-s-alternative.jpg"
- },
- {
-  "id": "41949311-someone-who-will-love-you-in-all-your-damaged-glory",
-  "title": "Someone Who Will Love You in All Your Damaged Glory",
-  "series": "",
-  "author": "Raphael Bob-Waksberg",
-  "rating": 4,
-  "dateRead": "2019-12-20",
-  "goodreads": "https://www.goodreads.com/book/show/41949311-someone-who-will-love-you-in-all-your-damaged-glory",
-  "cover": "/images/books/41949311-someone-who-will-love-you-in-all-your-damaged-glory.jpg"
- },
- {
-  "id": "28187-the-lightning-thief",
-  "title": "The Lightning Thief",
-  "series": "Percy Jackson and the Olympians, #1",
-  "author": "Rick Riordan",
-  "rating": 4,
-  "dateRead": "2024-09-18",
-  "goodreads": "https://www.goodreads.com/book/show/28187.The_Lightning_Thief",
-  "cover": "/images/books/28187-the-lightning-thief.jpg"
- },
- {
-  "id": "16793-stardust",
-  "title": "Stardust",
-  "series": "",
-  "author": "Neil Gaiman",
-  "rating": 4,
-  "dateRead": "2019-09-25",
-  "goodreads": "https://www.goodreads.com/book/show/16793.Stardust",
-  "cover": "/images/books/16793-stardust.jpg"
- },
- {
-  "id": "41092454-the-great-train-journey",
-  "title": "The Great Train Journey",
-  "series": "",
-  "author": "Ruskin Bond",
-  "rating": 4,
-  "dateRead": "2023-01-27",
-  "goodreads": "https://www.goodreads.com/book/show/41092454-the-great-train-journey",
-  "cover": "/images/books/41092454-the-great-train-journey.jpg"
- },
- {
-  "id": "1335615-a-flowering-tree-and-other-oral-tales-from-india",
-  "title": "A Flowering Tree and Other Oral Tales from India",
-  "series": "",
-  "author": "A.K. Ramanujan",
-  "rating": 4,
-  "dateRead": "2020-12-22",
-  "goodreads": "https://www.goodreads.com/book/show/1335615.A_Flowering_Tree_and_Other_Oral_Tales_from_India",
-  "cover": "/images/books/1335615-a-flowering-tree-and-other-oral-tales-from-india.jpg"
- },
- {
-  "id": "89724-we-have-always-lived-in-the-castle",
-  "title": "We Have Always Lived in the Castle",
-  "series": "",
-  "author": "Shirley Jackson",
-  "rating": 4,
-  "dateRead": "2019-12-31",
-  "goodreads": "https://www.goodreads.com/book/show/89724.We_Have_Always_Lived_in_the_Castle",
-  "cover": "/images/books/89724-we-have-always-lived-in-the-castle.jpg"
- },
- {
-  "id": "9809-invisible-cities",
-  "title": "Invisible Cities",
-  "series": "",
-  "author": "Italo Calvino",
-  "rating": 4,
-  "dateRead": "2020-01-22",
-  "goodreads": "https://www.goodreads.com/book/show/9809.Invisible_Cities",
-  "cover": "/images/books/9809-invisible-cities.jpg"
- },
- {
-  "id": "42527596-the-twisted-ones",
-  "title": "The Twisted Ones",
-  "series": "",
-  "author": "T. Kingfisher",
-  "rating": 4,
-  "dateRead": "2024-06-21",
-  "goodreads": "https://www.goodreads.com/book/show/42527596-the-twisted-ones",
-  "cover": "/images/books/42527596-the-twisted-ones.jpg"
- },
- {
-  "id": "16794-the-facts-in-the-case-of-the-departure-of-miss-finch",
-  "title": "The Facts In The Case Of The Departure Of Miss Finch",
-  "series": "",
-  "author": "Neil Gaiman",
-  "rating": 4,
-  "dateRead": "2018-01-02",
-  "goodreads": "https://www.goodreads.com/book/show/16794.The_Facts_In_The_Case_Of_The_Departure_Of_Miss_Finch",
-  "cover": "/images/books/16794-the-facts-in-the-case-of-the-departure-of-miss-finch.jpg"
- },
- {
-  "id": "22557272-the-girl-on-the-train",
-  "title": "The Girl on the Train",
-  "series": "",
-  "author": "Paula Hawkins",
-  "rating": 4,
-  "dateRead": "2016-06-05",
-  "goodreads": "https://www.goodreads.com/book/show/22557272-the-girl-on-the-train",
-  "cover": "/images/books/22557272-the-girl-on-the-train.jpg"
- },
- {
-  "id": "5359-the-client",
-  "title": "The Client",
-  "series": "",
-  "author": "John Grisham",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/5359.The_Client",
-  "cover": "/images/books/5359-the-client.jpg"
- },
- {
-  "id": "1075662-funny-boy",
-  "title": "Funny Boy",
-  "series": "",
-  "author": "Shyam Selvadurai",
-  "rating": 4,
-  "dateRead": "2019-10-29",
-  "goodreads": "https://www.goodreads.com/book/show/1075662.Funny_Boy",
-  "cover": "/images/books/1075662-funny-boy.jpg"
- },
- {
-  "id": "397483-the-devil-in-the-white-city",
-  "title": "The Devil in the White City: Murder, Magic, and Madness at the Fair That Changed America",
-  "series": "",
-  "author": "Erik Larson",
-  "rating": 4,
-  "dateRead": "2022-02-06",
-  "goodreads": "https://www.goodreads.com/book/show/397483.The_Devil_in_the_White_City",
-  "cover": "/images/books/397483-the-devil-in-the-white-city.jpg"
- },
- {
-  "id": "107032-batman",
-  "title": "Batman: A Death in the Family",
-  "series": "",
-  "author": "Jim Starlin",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/107032.Batman",
-  "cover": "/images/books/107032-batman.jpg"
- },
- {
-  "id": "75024-the-templar-legacy",
-  "title": "The Templar Legacy",
-  "series": "Cotton Malone, #1",
-  "author": "Steve Berry",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/75024.The_Templar_Legacy",
-  "cover": "/images/books/75024-the-templar-legacy.jpg"
- },
- {
-  "id": "9361589-the-night-circus",
-  "title": "The Night Circus",
-  "series": "",
-  "author": "Erin Morgenstern",
-  "rating": 4,
-  "dateRead": "2019-10-31",
-  "goodreads": "https://www.goodreads.com/book/show/9361589-the-night-circus",
-  "cover": "/images/books/9361589-the-night-circus.jpg"
- },
- {
-  "id": "375802-ender-s-game",
-  "title": "Ender’s Game",
-  "series": "Ender's Saga, #1",
-  "author": "Orson Scott Card",
-  "rating": 4,
-  "dateRead": "2024-09-16",
-  "goodreads": "https://www.goodreads.com/book/show/375802.Ender_s_Game",
-  "cover": "/images/books/375802-ender-s-game.jpg"
- },
- {
-  "id": "36260018-4-kids-walk-into-a-bank",
-  "title": "4 Kids Walk Into a Bank",
-  "series": "",
-  "author": "Matthew Rosenberg",
-  "rating": 4,
-  "dateRead": "2022-01-06",
-  "goodreads": "https://www.goodreads.com/book/show/36260018-4-kids-walk-into-a-bank",
-  "cover": "/images/books/36260018-4-kids-walk-into-a-bank.jpg"
- },
- {
-  "id": "9969571-ready-player-one",
-  "title": "Ready Player One",
-  "series": "Ready Player One, #1",
-  "author": "Ernest Cline",
-  "rating": 4,
-  "dateRead": "2018-01-15",
-  "goodreads": "https://www.goodreads.com/book/show/9969571-ready-player-one",
-  "cover": "/images/books/9969571-ready-player-one.jpg"
- },
- {
-  "id": "198534114-sakina-s-kiss",
-  "title": "Sakina’s Kiss",
-  "series": "",
-  "author": "Vivek Shanbhag",
-  "rating": 4,
-  "dateRead": "2023-10-09",
-  "goodreads": "https://www.goodreads.com/book/show/198534114-sakina-s-kiss",
-  "cover": "/images/books/198534114-sakina-s-kiss.jpg"
- },
- {
-  "id": "18736049-the-railway-children",
-  "title": "The Railway Children",
-  "series": "",
-  "author": "E. Nesbit",
-  "rating": 4,
-  "dateRead": "2020-03-29",
-  "goodreads": "https://www.goodreads.com/book/show/18736049-the-railway-children",
-  "cover": "/images/books/18736049-the-railway-children.jpg"
- },
- {
-  "id": "62953-ghost-world",
-  "title": "Ghost World",
-  "series": "",
-  "author": "Daniel Clowes",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/62953.Ghost_World",
-  "cover": "/images/books/62953-ghost-world.jpg"
- },
- {
-  "id": "40121378-atomic-habits",
-  "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
-  "series": "",
-  "author": "James Clear",
-  "rating": 4,
-  "dateRead": "2020-12-22",
-  "goodreads": "https://www.goodreads.com/book/show/40121378-atomic-habits",
-  "cover": "/images/books/40121378-atomic-habits.jpg"
- },
- {
-  "id": "36336078-call-me-by-your-name",
-  "title": "Call Me By Your Name",
-  "series": "Call Me By Your Name, #1",
-  "author": "André Aciman",
-  "rating": 4,
-  "dateRead": "2020-02-10",
-  "goodreads": "https://www.goodreads.com/book/show/36336078-call-me-by-your-name",
-  "cover": "/images/books/36336078-call-me-by-your-name.jpg"
- },
- {
-  "id": "25152-uzumaki",
-  "title": "Uzumaki: Spiral into Horror, Vol. 1",
-  "series": "",
-  "author": "Junji Ito",
-  "rating": 4,
-  "dateRead": "2020-01-08",
-  "goodreads": "https://www.goodreads.com/book/show/25152.Uzumaki",
-  "cover": "/images/books/25152-uzumaki.jpg"
- },
- {
-  "id": "44492285-dune-messiah",
-  "title": "Dune Messiah (Dune #2)",
-  "series": "",
-  "author": "Frank Herbert",
-  "rating": 4,
-  "dateRead": "2023-08-04",
-  "goodreads": "https://www.goodreads.com/book/show/44492285-dune-messiah",
-  "cover": "/images/books/44492285-dune-messiah.jpg"
- },
- {
-  "id": "28922-an-artist-of-the-floating-world",
-  "title": "An Artist of the Floating World",
-  "series": "",
-  "author": "Kazuo Ishiguro",
-  "rating": 4,
-  "dateRead": "2019-03-23",
-  "goodreads": "https://www.goodreads.com/book/show/28922.An_Artist_of_the_Floating_World",
-  "cover": "/images/books/28922-an-artist-of-the-floating-world.jpg"
- },
- {
-  "id": "7624-lord-of-the-flies",
-  "title": "Lord of the Flies",
-  "series": "",
-  "author": "William Golding",
-  "rating": 4,
-  "dateRead": "2021-12-23",
-  "goodreads": "https://www.goodreads.com/book/show/7624.Lord_of_the_Flies",
-  "cover": "/images/books/7624-lord-of-the-flies.jpg"
- },
- {
-  "id": "41695-dark-watch",
-  "title": "Dark Watch",
-  "series": "Oregon Files, #3",
-  "author": "Clive Cussler",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/41695.Dark_Watch",
-  "cover": "/images/books/41695-dark-watch.jpg"
- },
- {
-  "id": "45837770-league-of-legends",
-  "title": "League of Legends: Ashe - Warmother",
-  "series": "",
-  "author": "Odin Austin Shafer",
-  "rating": 4,
-  "dateRead": "2019-12-15",
-  "goodreads": "https://www.goodreads.com/book/show/45837770-league-of-legends",
-  "cover": "/images/books/45837770-league-of-legends.jpg"
- },
- {
-  "id": "1325218-scary-stories-to-tell-in-the-dark",
-  "title": "Scary Stories to Tell in the Dark",
-  "series": "Scary Stories, #1",
-  "author": "Alvin Schwartz",
-  "rating": 4,
-  "dateRead": "2020-11-10",
-  "goodreads": "https://www.goodreads.com/book/show/1325218.Scary_Stories_to_Tell_in_the_Dark",
-  "cover": "/images/books/1325218-scary-stories-to-tell-in-the-dark.jpg"
- },
- {
-  "id": "16304-murder-on-the-orient-express",
-  "title": "Murder on the Orient Express",
-  "series": "Hercule Poirot, #10",
-  "author": "Agatha Christie",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/16304.Murder_on_the_Orient_Express",
-  "cover": "/images/books/16304-murder-on-the-orient-express.jpg"
- },
- {
-  "id": "25243735-wytches-volume-1",
-  "title": "Wytches, Volume 1",
-  "series": "",
-  "author": "Scott Snyder",
-  "rating": 4,
-  "dateRead": "2020-02-12",
-  "goodreads": "https://www.goodreads.com/book/show/25243735-wytches-volume-1",
-  "cover": "/images/books/25243735-wytches-volume-1.jpg"
- },
- {
-  "id": "22553690-art-before-breakfast",
-  "title": "Art Before Breakfast: A Zillion Ways to be More Creative No Matter How Busy You Are",
-  "series": "",
-  "author": "Danny Gregory",
-  "rating": 4,
-  "dateRead": "2020-12-28",
-  "goodreads": "https://www.goodreads.com/book/show/22553690-art-before-breakfast",
-  "cover": "/images/books/22553690-art-before-breakfast.jpg"
- },
- {
-  "id": "15196-maus-i",
-  "title": "Maus I: A Survivor's Tale: My Father Bleeds History",
-  "series": "Maus, #1",
-  "author": "Art Spiegelman",
-  "rating": 4,
-  "dateRead": "2018-01-02",
-  "goodreads": "https://www.goodreads.com/book/show/15196.Maus_I",
-  "cover": "/images/books/15196-maus-i.jpg"
- },
- {
-  "id": "7721933-the-elephant-s-journey",
-  "title": "The Elephant's Journey",
-  "series": "",
-  "author": "José Saramago",
-  "rating": 4,
-  "dateRead": "2019-03-15",
-  "goodreads": "https://www.goodreads.com/book/show/7721933-the-elephant-s-journey",
-  "cover": "/images/books/7721933-the-elephant-s-journey.jpg"
- },
- {
-  "id": "79909-in-patagonia",
-  "title": "In Patagonia",
-  "series": "",
-  "author": "Bruce Chatwin",
-  "rating": 4,
-  "dateRead": "2022-12-31",
-  "goodreads": "https://www.goodreads.com/book/show/79909.In_Patagonia",
-  "cover": "/images/books/79909-in-patagonia.jpg"
- },
- {
-  "id": "198332-inca-gold",
-  "title": "Inca Gold",
-  "series": "Dirk Pitt, #12",
-  "author": "Clive Cussler",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/198332.Inca_Gold",
-  "cover": "/images/books/198332-inca-gold.jpg"
- },
- {
-  "id": "34966353-the-storm-runner",
-  "title": "The Storm Runner",
-  "series": "The Storm Runner, #1",
-  "author": "J.C. Cervantes",
-  "rating": 4,
-  "dateRead": "2022-07-22",
-  "goodreads": "https://www.goodreads.com/book/show/34966353-the-storm-runner",
-  "cover": "/images/books/34966353-the-storm-runner.jpg"
- },
- {
-  "id": "43822024-the-toll",
-  "title": "The Toll",
-  "series": "Arc of a Scythe, #3",
-  "author": "Neal Shusterman",
-  "rating": 4,
-  "dateRead": "2020-01-30",
-  "goodreads": "https://www.goodreads.com/book/show/43822024-the-toll",
-  "cover": "/images/books/43822024-the-toll.jpg"
- },
- {
-  "id": "31227-the-moscow-vector",
-  "title": "The Moscow Vector",
-  "series": "Covert-One, #6",
-  "author": "Robert Ludlum",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31227.The_Moscow_Vector",
-  "cover": "/images/books/31227-the-moscow-vector.jpg"
- },
- {
-  "id": "32926680-saga-book-two",
-  "title": "Saga, Book Two",
-  "series": "",
-  "author": "Brian K. Vaughan",
-  "rating": 4,
-  "dateRead": "2020-01-27",
-  "goodreads": "https://www.goodreads.com/book/show/32926680-saga-book-two",
-  "cover": "/images/books/32926680-saga-book-two.jpg"
- },
- {
-  "id": "29238792-abigail-and-the-snowman",
-  "title": "Abigail and the Snowman",
-  "series": "",
-  "author": "Roger Langridge",
-  "rating": 4,
-  "dateRead": "2020-02-27",
-  "goodreads": "https://www.goodreads.com/book/show/29238792-abigail-and-the-snowman",
-  "cover": "/images/books/29238792-abigail-and-the-snowman.jpg"
- },
- {
-  "id": "73968-love-story",
-  "title": "Love Story",
-  "series": "Love Story, #1",
-  "author": "Erich Segal",
-  "rating": 4,
-  "dateRead": "2019-10-13",
-  "goodreads": "https://www.goodreads.com/book/show/73968.Love_Story",
-  "cover": "/images/books/73968-love-story.jpg"
- },
- {
-  "id": "99561-looking-for-alaska",
-  "title": "Looking for Alaska",
-  "series": "",
-  "author": "John Green",
-  "rating": 4,
-  "dateRead": "2024-09-23",
-  "goodreads": "https://www.goodreads.com/book/show/99561.Looking_for_Alaska",
-  "cover": "/images/books/99561-looking-for-alaska.jpg"
- },
- {
-  "id": "960-angels-demons",
-  "title": "Angels & Demons",
-  "series": "Robert Langdon, #1",
-  "author": "Dan Brown",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/960.Angels_Demons",
-  "cover": "/images/books/960-angels-demons.jpg"
- },
- {
-  "id": "13099738-steal-like-an-artist",
-  "title": "Steal Like an Artist: 10 Things Nobody Told You About Being Creative",
-  "series": "",
-  "author": "Austin Kleon",
-  "rating": 4,
-  "dateRead": "2020-03-30",
-  "goodreads": "https://www.goodreads.com/book/show/13099738-steal-like-an-artist",
-  "cover": "/images/books/13099738-steal-like-an-artist.jpg"
- },
- {
   "id": "890-of-mice-and-men",
   "title": "Of Mice and Men",
   "series": "",
@@ -1086,534 +923,34 @@
   "cover": "/images/books/890-of-mice-and-men.jpg"
  },
  {
-  "id": "23754-the-sandman-vol-1",
-  "title": "The Sandman, Vol. 1: Preludes & Nocturnes",
+  "id": "30267604-ghachar-ghochar",
+  "title": "Ghachar Ghochar",
+  "series": "",
+  "author": "Vivek Shanbhag",
+  "rating": 5,
+  "dateRead": "2018-07-28",
+  "goodreads": "https://www.goodreads.com/book/show/30267604-ghachar-ghochar",
+  "cover": "/images/books/30267604-ghachar-ghochar.jpg"
+ },
+ {
+  "id": "25100-the-sandman-vol-3",
+  "title": "The Sandman, Vol. 3: Dream Country",
   "series": "",
   "author": "Neil Gaiman",
-  "rating": 4,
-  "dateRead": "2017-11-02",
-  "goodreads": "https://www.goodreads.com/book/show/23754.The_Sandman_Vol_1",
-  "cover": "/images/books/23754-the-sandman-vol-1.jpg"
+  "rating": 5,
+  "dateRead": "2018-05-31",
+  "goodreads": "https://www.goodreads.com/book/show/25100.The_Sandman_Vol_3",
+  "cover": "/images/books/25100-the-sandman-vol-3.jpg"
  },
  {
-  "id": "233093-the-cat-in-the-hat",
-  "title": "The Cat in the Hat",
-  "series": "Cat in the Hat, #1",
-  "author": "Dr. Seuss",
-  "rating": 4,
-  "dateRead": "2020-02-27",
-  "goodreads": "https://www.goodreads.com/book/show/233093.The_Cat_in_the_Hat",
-  "cover": "/images/books/233093-the-cat-in-the-hat.jpg"
- },
- {
-  "id": "40727118-the-sea-of-monsters",
-  "title": "The Sea of Monsters",
-  "series": "Percy Jackson and the Olympians, #2",
-  "author": "Rick Riordan",
-  "rating": 4,
-  "dateRead": "2024-10-07",
-  "goodreads": "https://www.goodreads.com/book/show/40727118-the-sea-of-monsters",
-  "cover": "/images/books/40727118-the-sea-of-monsters.jpg"
- },
- {
-  "id": "7869-the-bourne-identity",
-  "title": "The Bourne Identity",
-  "series": "Jason Bourne, #1",
-  "author": "Robert Ludlum",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/7869.The_Bourne_Identity",
-  "cover": "/images/books/7869-the-bourne-identity.jpg"
- },
- {
-  "id": "775864-i-killed-adolf-hitler",
-  "title": "I Killed Adolf Hitler",
+  "id": "93370-akira-vol-2",
+  "title": "Akira, Vol. 2",
   "series": "",
-  "author": "Jason",
-  "rating": 4,
-  "dateRead": "2018-01-01",
-  "goodreads": "https://www.goodreads.com/book/show/775864.I_Killed_Adolf_Hitler",
-  "cover": "/images/books/775864-i-killed-adolf-hitler.jpg"
- },
- {
-  "id": "92303-the-importance-of-being-earnest",
-  "title": "The Importance of Being Earnest",
-  "series": "",
-  "author": "Oscar Wilde",
-  "rating": 4,
-  "dateRead": "2020-01-27",
-  "goodreads": "https://www.goodreads.com/book/show/92303.The_Importance_of_Being_Earnest",
-  "cover": "/images/books/92303-the-importance-of-being-earnest.jpg"
- },
- {
-  "id": "976-deception-point",
-  "title": "Deception Point",
-  "series": "",
-  "author": "Dan Brown",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/976.Deception_Point",
-  "cover": "/images/books/976-deception-point.jpg"
- },
- {
-  "id": "22034-the-godfather",
-  "title": "The Godfather",
-  "series": "The Godfather, #1",
-  "author": "Mario Puzo",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/22034.The_Godfather",
-  "cover": "/images/books/22034-the-godfather.jpg"
- },
- {
-  "id": "107664-raven-s-gate",
-  "title": "Raven's Gate",
-  "series": "Power of Five, #1",
-  "author": "Anthony Horowitz",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/107664.Raven_s_Gate",
-  "cover": "/images/books/107664-raven-s-gate.jpg"
- },
- {
-  "id": "104745-the-art-of-unix-programming",
-  "title": "The Art of UNIX Programming",
-  "series": "",
-  "author": "Eric S. Raymond",
-  "rating": 4,
-  "dateRead": "2024-09-16",
-  "goodreads": "https://www.goodreads.com/book/show/104745.The_Art_of_UNIX_Programming",
-  "cover": "/images/books/104745-the-art-of-unix-programming.jpg"
- },
- {
-  "id": "1772910-white-nights",
-  "title": "White Nights",
-  "series": "",
-  "author": "Fyodor Dostoevsky",
-  "rating": 4,
-  "dateRead": "2026-01-25",
-  "goodreads": "https://www.goodreads.com/book/show/1772910.White_Nights",
-  "cover": "/images/books/1772910-white-nights.jpg"
- },
- {
-  "id": "26822891-who-was-shivaji",
-  "title": "Who was Shivaji?",
-  "series": "",
-  "author": "Govind Pansare",
-  "rating": 4,
-  "dateRead": "2020-05-04",
-  "goodreads": "https://www.goodreads.com/book/show/26822891-who-was-shivaji",
-  "cover": "/images/books/26822891-who-was-shivaji.jpg"
- },
- {
-  "id": "14839-last-man-standing",
-  "title": "Last Man Standing",
-  "series": "",
-  "author": "David Baldacci",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/14839.Last_Man_Standing",
-  "cover": "/images/books/14839-last-man-standing.jpg"
- },
- {
-  "id": "17343-till-we-have-faces",
-  "title": "Till We Have Faces",
-  "series": "",
-  "author": "C.S. Lewis",
-  "rating": 4,
-  "dateRead": "2023-01-14",
-  "goodreads": "https://www.goodreads.com/book/show/17343.Till_We_Have_Faces",
-  "cover": "/images/books/17343-till-we-have-faces.jpg"
- },
- {
-  "id": "561456-the-titan-s-curse",
-  "title": "The Titan’s Curse",
-  "series": "Percy Jackson and the Olympians, #3",
-  "author": "Rick Riordan",
-  "rating": 4,
-  "dateRead": "2024-11-17",
-  "goodreads": "https://www.goodreads.com/book/show/561456.The_Titan_s_Curse",
-  "cover": "/images/books/561456-the-titan-s-curse.jpg"
- },
- {
-  "id": "36364837-doomsday-clock-1",
-  "title": "Doomsday Clock #1: That Annihilated Place",
-  "series": "",
-  "author": "Geoff Johns",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/36364837-doomsday-clock-1",
-  "cover": "/images/books/36364837-doomsday-clock-1.jpg"
- },
- {
-  "id": "36454713-doomsday-clock-2",
-  "title": "Doomsday Clock #2: Places We Have Never Known",
-  "series": "",
-  "author": "Geoff Johns",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/36454713-doomsday-clock-2",
-  "cover": "/images/books/36454713-doomsday-clock-2.jpg"
- },
- {
-  "id": "48725759-league-of-legends",
-  "title": "League of Legends: Lux",
-  "series": "",
-  "author": "John O'Bryan",
-  "rating": 4,
-  "dateRead": "2019-12-14",
-  "goodreads": "https://www.goodreads.com/book/show/48725759-league-of-legends",
-  "cover": "/images/books/48725759-league-of-legends.jpg"
- },
- {
-  "id": "15769-the-bourne-supremacy",
-  "title": "The Bourne Supremacy",
-  "series": "Jason Bourne, #2",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/15769.The_Bourne_Supremacy",
-  "cover": "/images/books/15769-the-bourne-supremacy.jpg"
- },
- {
-  "id": "97595-fire-ice",
-  "title": "Fire Ice",
-  "series": "NUMA Files, #3",
-  "author": "Clive Cussler",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/97595.Fire_Ice",
-  "cover": "/images/books/97595-fire-ice.jpg"
- },
- {
-  "id": "763594-the-gemini-contenders",
-  "title": "The Gemini Contenders",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/763594.The_Gemini_Contenders",
-  "cover": "/images/books/763594-the-gemini-contenders.jpg"
- },
- {
-  "id": "31266-the-scarlatti-inheritance",
-  "title": "The Scarlatti Inheritance",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31266.The_Scarlatti_Inheritance",
-  "cover": "/images/books/31266-the-scarlatti-inheritance.jpg"
- },
- {
-  "id": "31271-the-matlock-paper",
-  "title": "The Matlock Paper",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31271.The_Matlock_Paper",
-  "cover": "/images/books/31271-the-matlock-paper.jpg"
- },
- {
-  "id": "32307358-origin",
-  "title": "Origin",
-  "series": "Robert Langdon, #5",
-  "author": "Dan Brown",
-  "rating": 3,
-  "dateRead": "2017-12-31",
-  "goodreads": "https://www.goodreads.com/book/show/32307358-origin",
-  "cover": "/images/books/32307358-origin.jpg"
- },
- {
-  "id": "16322-the-a-b-c-murders",
-  "title": "The A.B.C. Murders",
-  "series": "Hercule Poirot, #13",
-  "author": "Agatha Christie",
-  "rating": 3,
-  "dateRead": "2023-01-25",
-  "goodreads": "https://www.goodreads.com/book/show/16322.The_A_B_C_Murders",
-  "cover": "/images/books/16322-the-a-b-c-murders.jpg"
- },
- {
-  "id": "154765-batman-superman-wonder-woman",
-  "title": "Batman/Superman/Wonder Woman: Trinity",
-  "series": "",
-  "author": "Matt Wagner",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/154765.Batman_Superman_Wonder_Woman",
-  "cover": "/images/books/154765-batman-superman-wonder-woman.jpg"
- },
- {
-  "id": "131359-death-on-the-nile",
-  "title": "Death on the Nile",
-  "series": "Hercule Poirot, #18",
-  "author": "Agatha Christie",
-  "rating": 3,
-  "dateRead": "2021-02-11",
-  "goodreads": "https://www.goodreads.com/book/show/131359.Death_on_the_Nile",
-  "cover": "/images/books/131359-death-on-the-nile.jpg"
- },
- {
-  "id": "77270-the-jungle-book",
-  "title": "The Jungle Book",
-  "series": "Jungle Book, #1",
-  "author": "Rudyard Kipling",
-  "rating": 3,
-  "dateRead": "2019-12-01",
-  "goodreads": "https://www.goodreads.com/book/show/77270.The_Jungle_Book",
-  "cover": "/images/books/77270-the-jungle-book.jpg"
- },
- {
-  "id": "8065938-101-things-i-learned-in-film-school",
-  "title": "101 Things I Learned in Film School",
-  "series": "",
-  "author": "Neil Landau",
-  "rating": 3,
-  "dateRead": "2020-01-31",
-  "goodreads": "https://www.goodreads.com/book/show/8065938-101-things-i-learned-in-film-school",
-  "cover": "/images/books/8065938-101-things-i-learned-in-film-school.jpg"
- },
- {
-  "id": "573202-the-matarese-countdown",
-  "title": "The Matarese Countdown",
-  "series": "Matarese, #2",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/573202.The_Matarese_Countdown",
-  "cover": "/images/books/573202-the-matarese-countdown.jpg"
- },
- {
-  "id": "31260-the-sigma-protocol",
-  "title": "The Sigma Protocol",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31260.The_Sigma_Protocol",
-  "cover": "/images/books/31260-the-sigma-protocol.jpg"
- },
- {
-  "id": "31230-the-cassandra-compact",
-  "title": "The Cassandra Compact",
-  "series": "Covert-One, #2",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31230.The_Cassandra_Compact",
-  "cover": "/images/books/31230-the-cassandra-compact.jpg"
- },
- {
-  "id": "12099899-the-janson-command",
-  "title": "The Janson Command",
-  "series": "Paul Janson, #2",
-  "author": "Paul Garrison",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/12099899-the-janson-command",
-  "cover": "/images/books/12099899-the-janson-command.jpg"
- },
- {
-  "id": "144792-temple",
-  "title": "Temple",
-  "series": "",
-  "author": "Matthew Reilly",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/144792.Temple",
-  "cover": "/images/books/144792-temple.jpg"
- },
- {
-  "id": "24671-the-tristan-betrayal",
-  "title": "The Tristan Betrayal",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/24671.The_Tristan_Betrayal",
-  "cover": "/images/books/24671-the-tristan-betrayal.jpg"
- },
- {
-  "id": "61885029-starter-villain",
-  "title": "Starter Villain",
-  "series": "",
-  "author": "John Scalzi",
-  "rating": 3,
-  "dateRead": "2024-09-25",
-  "goodreads": "https://www.goodreads.com/book/show/61885029-starter-villain",
-  "cover": "/images/books/61885029-starter-villain.jpg"
- },
- {
-  "id": "581125-the-minority-report",
-  "title": "The Minority Report",
-  "series": "",
-  "author": "Philip K. Dick",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/581125.The_Minority_Report",
-  "cover": "/images/books/581125-the-minority-report.jpg"
- },
- {
-  "id": "865673-the-apocalypse-watch",
-  "title": "The Apocalypse Watch",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/865673.The_Apocalypse_Watch",
-  "cover": "/images/books/865673-the-apocalypse-watch.jpg"
- },
- {
-  "id": "31259-the-bourne-ultimatum",
-  "title": "The Bourne Ultimatum",
-  "series": "Jason Bourne, #3",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31259.The_Bourne_Ultimatum",
-  "cover": "/images/books/31259-the-bourne-ultimatum.jpg"
- },
- {
-  "id": "327257-the-deceiver",
-  "title": "The Deceiver",
-  "series": "",
-  "author": "Frederick Forsyth",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/327257.The_Deceiver",
-  "cover": "/images/books/327257-the-deceiver.jpg"
- },
- {
-  "id": "31228-the-prometheus-deception",
-  "title": "The Prometheus Deception",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31228.The_Prometheus_Deception",
-  "cover": "/images/books/31228-the-prometheus-deception.jpg"
- },
- {
-  "id": "7144426-the-bourne-objective",
-  "title": "The Bourne Objective",
-  "series": "Jason Bourne, #8",
-  "author": "Eric Van Lustbader",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/7144426-the-bourne-objective",
-  "cover": "/images/books/7144426-the-bourne-objective.jpg"
- },
- {
-  "id": "2429135-the-girl-with-the-dragon-tattoo",
-  "title": "The Girl With the Dragon Tattoo",
-  "series": "Millennium, #1",
-  "author": "Stieg Larsson",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/2429135.The_Girl_With_the_Dragon_Tattoo",
-  "cover": "/images/books/2429135-the-girl-with-the-dragon-tattoo.jpg"
- },
- {
-  "id": "12191246-second-son",
-  "title": "Second Son",
-  "series": "Jack Reacher, #15.5",
-  "author": "Lee Child",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/12191246-second-son",
-  "cover": "/images/books/12191246-second-son.jpg"
- },
- {
-  "id": "31262-the-road-to-gandolfo",
-  "title": "The Road to Gandolfo",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/31262.The_Road_to_Gandolfo",
-  "cover": "/images/books/31262-the-road-to-gandolfo.jpg"
- },
- {
-  "id": "573201-the-icarus-agenda",
-  "title": "The Icarus Agenda",
-  "series": "",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/573201.The_Icarus_Agenda",
-  "cover": "/images/books/573201-the-icarus-agenda.jpg"
- },
- {
-  "id": "647609-the-lazarus-vendetta",
-  "title": "The Lazarus Vendetta",
-  "series": "Covert-One, #5",
-  "author": "Robert Ludlum",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/647609.The_Lazarus_Vendetta",
-  "cover": "/images/books/647609-the-lazarus-vendetta.jpg"
- },
- {
-  "id": "1215544-the-adventures-of-tintin-volume-1",
-  "title": "The Adventures of Tintin, Volume 1: Tintin in the Land of the Soviets / Tintin in the Congo (Tintin #1-2)",
-  "series": "",
-  "author": "Hergé",
-  "rating": 1,
-  "dateRead": "2020-04-12",
-  "goodreads": "https://www.goodreads.com/book/show/1215544.The_Adventures_of_Tintin_Volume_1",
-  "cover": "/images/books/1215544-the-adventures-of-tintin-volume-1.jpg"
- },
- {
-  "id": "575715-anything-for-you-ma-am",
-  "title": "Anything for You, Ma'am: An IITian's Love Story",
-  "series": "",
-  "author": "Raheja Tushar",
-  "rating": 1,
-  "dateRead": "2011-09-01",
-  "goodreads": "https://www.goodreads.com/book/show/575715.Anything_for_You_Ma_am",
-  "cover": "/images/books/575715-anything-for-you-ma-am.jpg"
- },
- {
-  "id": "10818853-fifty-shades-of-grey",
-  "title": "Fifty Shades of Grey",
-  "series": "Fifty Shades, #1",
-  "author": "E.L. James",
-  "rating": 1,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/10818853-fifty-shades-of-grey",
-  "cover": "/images/books/10818853-fifty-shades-of-grey.jpg"
- },
- {
-  "id": "227463-a-clockwork-orange",
-  "title": "A Clockwork Orange",
-  "series": "",
-  "author": "Anthony Burgess",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/227463.A_Clockwork_Orange",
-  "cover": "/images/books/227463-a-clockwork-orange.jpg"
- },
- {
-  "id": "5759-fight-club",
-  "title": "Fight Club",
-  "series": "",
-  "author": "Chuck Palahniuk",
-  "rating": 3,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/5759.Fight_Club",
-  "cover": "/images/books/5759-fight-club.jpg"
- },
- {
-  "id": "77349-the-wrath-of-khan",
-  "title": "The Wrath Of Khan",
-  "series": "Star Trek: The Original Series, #7; Movie Novelization, #2",
-  "author": "Vonda N. McIntyre",
-  "rating": 4,
-  "dateRead": "2017-11-03",
-  "goodreads": "https://www.goodreads.com/book/show/77349.The_Wrath_Of_Khan",
-  "cover": "/images/books/77349-the-wrath-of-khan.jpg"
+  "author": "Katsuhiro Otomo",
+  "rating": 5,
+  "dateRead": "2018-05-30",
+  "goodreads": "https://www.goodreads.com/book/show/93370.Akira_Vol_2",
+  "cover": "/images/books/93370-akira-vol-2.jpg"
  },
  {
   "id": "93372-akira-vol-3",
@@ -1636,6 +973,229 @@
   "cover": "/images/books/93374-akira-vol-4.jpg"
  },
  {
+  "id": "93376-akira-vol-5",
+  "title": "Akira, Vol. 5",
+  "series": "",
+  "author": "Katsuhiro Otomo",
+  "rating": 5,
+  "dateRead": "2018-05-30",
+  "goodreads": "https://www.goodreads.com/book/show/93376.Akira_Vol_5",
+  "cover": "/images/books/93376-akira-vol-5.jpg"
+ },
+ {
+  "id": "93375-akira-vol-6",
+  "title": "Akira, Vol. 6",
+  "series": "",
+  "author": "Katsuhiro Otomo",
+  "rating": 5,
+  "dateRead": "2018-05-30",
+  "goodreads": "https://www.goodreads.com/book/show/93375.Akira_Vol_6",
+  "cover": "/images/books/93375-akira-vol-6.jpg"
+ },
+ {
+  "id": "93371-akira-vol-1",
+  "title": "Akira, Vol. 1",
+  "series": "",
+  "author": "Katsuhiro Otomo",
+  "rating": 5,
+  "dateRead": "2018-04-02",
+  "goodreads": "https://www.goodreads.com/book/show/93371.Akira_Vol_1",
+  "cover": "/images/books/93371-akira-vol-1.jpg"
+ },
+ {
+  "id": "157993-the-little-prince",
+  "title": "The Little Prince",
+  "series": "",
+  "author": "Antoine de Saint-Exupéry",
+  "rating": 5,
+  "dateRead": "2018-03-17",
+  "goodreads": "https://www.goodreads.com/book/show/157993.The_Little_Prince",
+  "cover": "/images/books/157993-the-little-prince.jpg"
+ },
+ {
+  "id": "9969571-ready-player-one",
+  "title": "Ready Player One",
+  "series": "Ready Player One, #1",
+  "author": "Ernest Cline",
+  "rating": 4,
+  "dateRead": "2018-01-15",
+  "goodreads": "https://www.goodreads.com/book/show/9969571-ready-player-one",
+  "cover": "/images/books/9969571-ready-player-one.jpg"
+ },
+ {
+  "id": "25099-the-sandman-vol-2",
+  "title": "The Sandman, Vol. 2: The Doll's House",
+  "series": "",
+  "author": "Neil Gaiman",
+  "rating": 5,
+  "dateRead": "2018-01-05",
+  "goodreads": "https://www.goodreads.com/book/show/25099.The_Sandman_Vol_2",
+  "cover": "/images/books/25099-the-sandman-vol-2.jpg"
+ },
+ {
+  "id": "15196-maus-i",
+  "title": "Maus I: A Survivor's Tale: My Father Bleeds History",
+  "series": "Maus, #1",
+  "author": "Art Spiegelman",
+  "rating": 4,
+  "dateRead": "2018-01-02",
+  "goodreads": "https://www.goodreads.com/book/show/15196.Maus_I",
+  "cover": "/images/books/15196-maus-i.jpg"
+ },
+ {
+  "id": "15197-maus-ii",
+  "title": "Maus II: A Survivor's Tale: And Here My Troubles Began",
+  "series": "Maus, #2",
+  "author": "Art Spiegelman",
+  "rating": 5,
+  "dateRead": "2018-01-02",
+  "goodreads": "https://www.goodreads.com/book/show/15197.Maus_II",
+  "cover": "/images/books/15197-maus-ii.jpg"
+ },
+ {
+  "id": "16794-the-facts-in-the-case-of-the-departure-of-miss-finch",
+  "title": "The Facts In The Case Of The Departure Of Miss Finch",
+  "series": "",
+  "author": "Neil Gaiman",
+  "rating": 4,
+  "dateRead": "2018-01-02",
+  "goodreads": "https://www.goodreads.com/book/show/16794.The_Facts_In_The_Case_Of_The_Departure_Of_Miss_Finch",
+  "cover": "/images/books/16794-the-facts-in-the-case-of-the-departure-of-miss-finch.jpg"
+ },
+ {
+  "id": "775864-i-killed-adolf-hitler",
+  "title": "I Killed Adolf Hitler",
+  "series": "",
+  "author": "Jason",
+  "rating": 4,
+  "dateRead": "2018-01-01",
+  "goodreads": "https://www.goodreads.com/book/show/775864.I_Killed_Adolf_Hitler",
+  "cover": "/images/books/775864-i-killed-adolf-hitler.jpg"
+ },
+ {
+  "id": "6096829-the-collected-essex-county",
+  "title": "The Collected Essex County",
+  "series": "",
+  "author": "Jeff Lemire",
+  "rating": 5,
+  "dateRead": "2018-01-01",
+  "goodreads": "https://www.goodreads.com/book/show/6096829-the-collected-essex-county",
+  "cover": "/images/books/6096829-the-collected-essex-county.jpg"
+ },
+ {
+  "id": "32307358-origin",
+  "title": "Origin",
+  "series": "Robert Langdon, #5",
+  "author": "Dan Brown",
+  "rating": 3,
+  "dateRead": "2017-12-31",
+  "goodreads": "https://www.goodreads.com/book/show/32307358-origin",
+  "cover": "/images/books/32307358-origin.jpg"
+ },
+ {
+  "id": "77349-the-wrath-of-khan",
+  "title": "The Wrath Of Khan",
+  "series": "Star Trek: The Original Series, #7; Movie Novelization, #2",
+  "author": "Vonda N. McIntyre",
+  "rating": 4,
+  "dateRead": "2017-11-03",
+  "goodreads": "https://www.goodreads.com/book/show/77349.The_Wrath_Of_Khan",
+  "cover": "/images/books/77349-the-wrath-of-khan.jpg"
+ },
+ {
+  "id": "23754-the-sandman-vol-1",
+  "title": "The Sandman, Vol. 1: Preludes & Nocturnes",
+  "series": "",
+  "author": "Neil Gaiman",
+  "rating": 4,
+  "dateRead": "2017-11-02",
+  "goodreads": "https://www.goodreads.com/book/show/23754.The_Sandman_Vol_1",
+  "cover": "/images/books/23754-the-sandman-vol-1.jpg"
+ },
+ {
+  "id": "49552-the-stranger",
+  "title": "The Stranger",
+  "series": "",
+  "author": "Albert Camus",
+  "rating": 5,
+  "dateRead": "2017-10-07",
+  "goodreads": "https://www.goodreads.com/book/show/49552.The_Stranger",
+  "cover": "/images/books/49552-the-stranger.jpg",
+  "favorite": true
+ },
+ {
+  "id": "29077666-the-trial",
+  "title": "The Trial",
+  "series": "",
+  "author": "Franz Kafka",
+  "rating": 4,
+  "dateRead": "2017-10-07",
+  "goodreads": "https://www.goodreads.com/book/show/29077666-the-trial",
+  "cover": "/images/books/29077666-the-trial.jpg"
+ },
+ {
+  "id": "44767458-dune",
+  "title": "Dune",
+  "series": "Dune, #1",
+  "author": "Frank Herbert",
+  "rating": 5,
+  "dateRead": "2017-09-16",
+  "goodreads": "https://www.goodreads.com/book/show/44767458-dune",
+  "cover": "/images/books/44767458-dune.jpg",
+  "favorite": true
+ },
+ {
+  "id": "320-one-hundred-years-of-solitude",
+  "title": "One Hundred Years of Solitude",
+  "series": "",
+  "author": "Gabriel García Márquez",
+  "rating": 5,
+  "dateRead": "2017-06-08",
+  "goodreads": "https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude",
+  "cover": "/images/books/320-one-hundred-years-of-solitude.jpg",
+  "favorite": true
+ },
+ {
+  "id": "28178146-the-art-of-war",
+  "title": "The Art of War",
+  "series": "",
+  "author": "Sun Tzu",
+  "rating": 5,
+  "dateRead": "2016-10-24",
+  "goodreads": "https://www.goodreads.com/book/show/28178146-the-art-of-war",
+  "cover": "/images/books/28178146-the-art-of-war.jpg"
+ },
+ {
+  "id": "22557272-the-girl-on-the-train",
+  "title": "The Girl on the Train",
+  "series": "",
+  "author": "Paula Hawkins",
+  "rating": 4,
+  "dateRead": "2016-06-05",
+  "goodreads": "https://www.goodreads.com/book/show/22557272-the-girl-on-the-train",
+  "cover": "/images/books/22557272-the-girl-on-the-train.jpg"
+ },
+ {
+  "id": "575715-anything-for-you-ma-am",
+  "title": "Anything for You, Ma'am: An IITian's Love Story",
+  "series": "",
+  "author": "Raheja Tushar",
+  "rating": 1,
+  "dateRead": "2011-09-01",
+  "goodreads": "https://www.goodreads.com/book/show/575715.Anything_for_You_Ma_am",
+  "cover": "/images/books/575715-anything-for-you-ma-am.jpg"
+ },
+ {
+  "id": "656-war-and-peace",
+  "title": "War and Peace",
+  "series": "",
+  "author": "Leo Tolstoy",
+  "rating": 5,
+  "dateRead": "2008",
+  "goodreads": "https://www.goodreads.com/book/show/656.War_and_Peace",
+  "cover": "/images/books/656-war-and-peace.jpg"
+ },
+ {
   "id": "5470-1984",
   "title": "1984",
   "series": "",
@@ -1656,14 +1216,24 @@
   "cover": "/images/books/70535-2001.jpg"
  },
  {
-  "id": "102313-n-or-m",
-  "title": "N or M?",
-  "series": "Tommy & Tuppence Mysteries, #3",
-  "author": "Agatha Christie",
-  "rating": 5,
+  "id": "227463-a-clockwork-orange",
+  "title": "A Clockwork Orange",
+  "series": "",
+  "author": "Anthony Burgess",
+  "rating": 4,
   "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/102313.N_or_M_",
-  "cover": "/images/books/102313-n-or-m.jpg"
+  "goodreads": "https://www.goodreads.com/book/show/227463.A_Clockwork_Orange",
+  "cover": "/images/books/227463-a-clockwork-orange.jpg"
+ },
+ {
+  "id": "960-angels-demons",
+  "title": "Angels & Demons",
+  "series": "Robert Langdon, #1",
+  "author": "Dan Brown",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/960.Angels_Demons",
+  "cover": "/images/books/960-angels-demons.jpg"
  },
  {
   "id": "54479-around-the-world-in-eighty-days",
@@ -1676,6 +1246,36 @@
   "cover": "/images/books/54479-around-the-world-in-eighty-days.jpg"
  },
  {
+  "id": "107032-batman",
+  "title": "Batman: A Death in the Family",
+  "series": "",
+  "author": "Jim Starlin",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/107032.Batman",
+  "cover": "/images/books/107032-batman.jpg"
+ },
+ {
+  "id": "19030845-batman",
+  "title": "Batman: The Dark Knight Returns #1",
+  "series": "",
+  "author": "Frank Miller",
+  "rating": 5,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/19030845-batman",
+  "cover": "/images/books/19030845-batman.jpg"
+ },
+ {
+  "id": "154765-batman-superman-wonder-woman",
+  "title": "Batman/Superman/Wonder Woman: Trinity",
+  "series": "",
+  "author": "Matt Wagner",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/154765.Batman_Superman_Wonder_Woman",
+  "cover": "/images/books/154765-batman-superman-wonder-woman.jpg"
+ },
+ {
   "id": "135479-cat-s-cradle",
   "title": "Cat’s Cradle",
   "series": "",
@@ -1684,6 +1284,176 @@
   "dateRead": null,
   "goodreads": "https://www.goodreads.com/book/show/135479.Cat_s_Cradle",
   "cover": "/images/books/135479-cat-s-cradle.jpg"
+ },
+ {
+  "id": "41695-dark-watch",
+  "title": "Dark Watch",
+  "series": "Oregon Files, #3",
+  "author": "Clive Cussler",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/41695.Dark_Watch",
+  "cover": "/images/books/41695-dark-watch.jpg"
+ },
+ {
+  "id": "976-deception-point",
+  "title": "Deception Point",
+  "series": "",
+  "author": "Dan Brown",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/976.Deception_Point",
+  "cover": "/images/books/976-deception-point.jpg"
+ },
+ {
+  "id": "36364837-doomsday-clock-1",
+  "title": "Doomsday Clock #1: That Annihilated Place",
+  "series": "",
+  "author": "Geoff Johns",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/36364837-doomsday-clock-1",
+  "cover": "/images/books/36364837-doomsday-clock-1.jpg"
+ },
+ {
+  "id": "36454713-doomsday-clock-2",
+  "title": "Doomsday Clock #2: Places We Have Never Known",
+  "series": "",
+  "author": "Geoff Johns",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/36454713-doomsday-clock-2",
+  "cover": "/images/books/36454713-doomsday-clock-2.jpg"
+ },
+ {
+  "id": "10818853-fifty-shades-of-grey",
+  "title": "Fifty Shades of Grey",
+  "series": "Fifty Shades, #1",
+  "author": "E.L. James",
+  "rating": 1,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/10818853-fifty-shades-of-grey",
+  "cover": "/images/books/10818853-fifty-shades-of-grey.jpg"
+ },
+ {
+  "id": "5759-fight-club",
+  "title": "Fight Club",
+  "series": "",
+  "author": "Chuck Palahniuk",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/5759.Fight_Club",
+  "cover": "/images/books/5759-fight-club.jpg"
+ },
+ {
+  "id": "97595-fire-ice",
+  "title": "Fire Ice",
+  "series": "NUMA Files, #3",
+  "author": "Clive Cussler",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/97595.Fire_Ice",
+  "cover": "/images/books/97595-fire-ice.jpg"
+ },
+ {
+  "id": "62953-ghost-world",
+  "title": "Ghost World",
+  "series": "",
+  "author": "Daniel Clowes",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/62953.Ghost_World",
+  "cover": "/images/books/62953-ghost-world.jpg"
+ },
+ {
+  "id": "34507927-how-to-take-smart-notes",
+  "title": "How to Take Smart Notes",
+  "series": "",
+  "author": "Sönke Ahrens",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes",
+  "cover": "/images/books/34507927-how-to-take-smart-notes.jpg"
+ },
+ {
+  "id": "198332-inca-gold",
+  "title": "Inca Gold",
+  "series": "Dirk Pitt, #12",
+  "author": "Clive Cussler",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/198332.Inca_Gold",
+  "cover": "/images/books/198332-inca-gold.jpg"
+ },
+ {
+  "id": "17671993-injustice",
+  "title": "Injustice: Gods Among Us, Vol. 1",
+  "series": "",
+  "author": "Tom Taylor",
+  "rating": 5,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/17671993-injustice",
+  "cover": "/images/books/17671993-injustice.jpg"
+ },
+ {
+  "id": "18630598-injustice",
+  "title": "Injustice: Gods Among Us, Vol. 2",
+  "series": "",
+  "author": "Tom Taylor",
+  "rating": 5,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/18630598-injustice",
+  "cover": "/images/books/18630598-injustice.jpg"
+ },
+ {
+  "id": "14839-last-man-standing",
+  "title": "Last Man Standing",
+  "series": "",
+  "author": "David Baldacci",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/14839.Last_Man_Standing",
+  "cover": "/images/books/14839-last-man-standing.jpg"
+ },
+ {
+  "id": "16304-murder-on-the-orient-express",
+  "title": "Murder on the Orient Express",
+  "series": "Hercule Poirot, #10",
+  "author": "Agatha Christie",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/16304.Murder_on_the_Orient_Express",
+  "cover": "/images/books/16304-murder-on-the-orient-express.jpg"
+ },
+ {
+  "id": "102313-n-or-m",
+  "title": "N or M?",
+  "series": "Tommy & Tuppence Mysteries, #3",
+  "author": "Agatha Christie",
+  "rating": 5,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/102313.N_or_M_",
+  "cover": "/images/books/102313-n-or-m.jpg"
+ },
+ {
+  "id": "107664-raven-s-gate",
+  "title": "Raven's Gate",
+  "series": "Power of Five, #1",
+  "author": "Anthony Horowitz",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/107664.Raven_s_Gate",
+  "cover": "/images/books/107664-raven-s-gate.jpg"
+ },
+ {
+  "id": "12191246-second-son",
+  "title": "Second Son",
+  "series": "Jack Reacher, #15.5",
+  "author": "Lee Child",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/12191246-second-son",
+  "cover": "/images/books/12191246-second-son.jpg"
  },
  {
   "id": "4981-slaughterhouse-five",
@@ -1696,24 +1466,214 @@
   "cover": "/images/books/4981-slaughterhouse-five.jpg"
  },
  {
-  "id": "25100-the-sandman-vol-3",
-  "title": "The Sandman, Vol. 3: Dream Country",
+  "id": "144792-temple",
+  "title": "Temple",
   "series": "",
-  "author": "Neil Gaiman",
-  "rating": 5,
-  "dateRead": "2018-05-31",
-  "goodreads": "https://www.goodreads.com/book/show/25100.The_Sandman_Vol_3",
-  "cover": "/images/books/25100-the-sandman-vol-3.jpg"
+  "author": "Matthew Reilly",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/144792.Temple",
+  "cover": "/images/books/144792-temple.jpg"
  },
  {
-  "id": "29077666-the-trial",
-  "title": "The Trial",
+  "id": "865673-the-apocalypse-watch",
+  "title": "The Apocalypse Watch",
   "series": "",
-  "author": "Franz Kafka",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/865673.The_Apocalypse_Watch",
+  "cover": "/images/books/865673-the-apocalypse-watch.jpg"
+ },
+ {
+  "id": "7869-the-bourne-identity",
+  "title": "The Bourne Identity",
+  "series": "Jason Bourne, #1",
+  "author": "Robert Ludlum",
   "rating": 4,
-  "dateRead": "2017-10-07",
-  "goodreads": "https://www.goodreads.com/book/show/29077666-the-trial",
-  "cover": "/images/books/29077666-the-trial.jpg"
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/7869.The_Bourne_Identity",
+  "cover": "/images/books/7869-the-bourne-identity.jpg"
+ },
+ {
+  "id": "7144426-the-bourne-objective",
+  "title": "The Bourne Objective",
+  "series": "Jason Bourne, #8",
+  "author": "Eric Van Lustbader",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/7144426-the-bourne-objective",
+  "cover": "/images/books/7144426-the-bourne-objective.jpg"
+ },
+ {
+  "id": "15769-the-bourne-supremacy",
+  "title": "The Bourne Supremacy",
+  "series": "Jason Bourne, #2",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/15769.The_Bourne_Supremacy",
+  "cover": "/images/books/15769-the-bourne-supremacy.jpg"
+ },
+ {
+  "id": "31259-the-bourne-ultimatum",
+  "title": "The Bourne Ultimatum",
+  "series": "Jason Bourne, #3",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31259.The_Bourne_Ultimatum",
+  "cover": "/images/books/31259-the-bourne-ultimatum.jpg"
+ },
+ {
+  "id": "31230-the-cassandra-compact",
+  "title": "The Cassandra Compact",
+  "series": "Covert-One, #2",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31230.The_Cassandra_Compact",
+  "cover": "/images/books/31230-the-cassandra-compact.jpg"
+ },
+ {
+  "id": "5359-the-client",
+  "title": "The Client",
+  "series": "",
+  "author": "John Grisham",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/5359.The_Client",
+  "cover": "/images/books/5359-the-client.jpg"
+ },
+ {
+  "id": "11486-the-color-purple",
+  "title": "The Color Purple",
+  "series": "The Color Purple, #1",
+  "author": "Alice Walker",
+  "rating": 5,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/11486.The_Color_Purple",
+  "cover": "/images/books/11486-the-color-purple.jpg"
+ },
+ {
+  "id": "327257-the-deceiver",
+  "title": "The Deceiver",
+  "series": "",
+  "author": "Frederick Forsyth",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/327257.The_Deceiver",
+  "cover": "/images/books/327257-the-deceiver.jpg"
+ },
+ {
+  "id": "763594-the-gemini-contenders",
+  "title": "The Gemini Contenders",
+  "series": "",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/763594.The_Gemini_Contenders",
+  "cover": "/images/books/763594-the-gemini-contenders.jpg"
+ },
+ {
+  "id": "2429135-the-girl-with-the-dragon-tattoo",
+  "title": "The Girl With the Dragon Tattoo",
+  "series": "Millennium, #1",
+  "author": "Stieg Larsson",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/2429135.The_Girl_With_the_Dragon_Tattoo",
+  "cover": "/images/books/2429135-the-girl-with-the-dragon-tattoo.jpg"
+ },
+ {
+  "id": "22034-the-godfather",
+  "title": "The Godfather",
+  "series": "The Godfather, #1",
+  "author": "Mario Puzo",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/22034.The_Godfather",
+  "cover": "/images/books/22034-the-godfather.jpg"
+ },
+ {
+  "id": "573201-the-icarus-agenda",
+  "title": "The Icarus Agenda",
+  "series": "",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/573201.The_Icarus_Agenda",
+  "cover": "/images/books/573201-the-icarus-agenda.jpg"
+ },
+ {
+  "id": "12099899-the-janson-command",
+  "title": "The Janson Command",
+  "series": "Paul Janson, #2",
+  "author": "Paul Garrison",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/12099899-the-janson-command",
+  "cover": "/images/books/12099899-the-janson-command.jpg"
+ },
+ {
+  "id": "647609-the-lazarus-vendetta",
+  "title": "The Lazarus Vendetta",
+  "series": "Covert-One, #5",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/647609.The_Lazarus_Vendetta",
+  "cover": "/images/books/647609-the-lazarus-vendetta.jpg"
+ },
+ {
+  "id": "31231-the-matarese-circle",
+  "title": "The Matarese Circle",
+  "series": "Matarese, #1",
+  "author": "Robert Ludlum",
+  "rating": 5,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31231.The_Matarese_Circle",
+  "cover": "/images/books/31231-the-matarese-circle.jpg"
+ },
+ {
+  "id": "573202-the-matarese-countdown",
+  "title": "The Matarese Countdown",
+  "series": "Matarese, #2",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/573202.The_Matarese_Countdown",
+  "cover": "/images/books/573202-the-matarese-countdown.jpg"
+ },
+ {
+  "id": "31271-the-matlock-paper",
+  "title": "The Matlock Paper",
+  "series": "",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31271.The_Matlock_Paper",
+  "cover": "/images/books/31271-the-matlock-paper.jpg"
+ },
+ {
+  "id": "581125-the-minority-report",
+  "title": "The Minority Report",
+  "series": "",
+  "author": "Philip K. Dick",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/581125.The_Minority_Report",
+  "cover": "/images/books/581125-the-minority-report.jpg"
+ },
+ {
+  "id": "31227-the-moscow-vector",
+  "title": "The Moscow Vector",
+  "series": "Covert-One, #6",
+  "author": "Robert Ludlum",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31227.The_Moscow_Vector",
+  "cover": "/images/books/31227-the-moscow-vector.jpg"
  },
  {
   "id": "329957-the-mystery-of-edwin-drood",
@@ -1724,6 +1684,97 @@
   "dateRead": null,
   "goodreads": "https://www.goodreads.com/book/show/329957.The_Mystery_of_Edwin_Drood",
   "cover": "/images/books/329957-the-mystery-of-edwin-drood.jpg"
+ },
+ {
+  "id": "1381-the-odyssey",
+  "title": "The Odyssey",
+  "series": "",
+  "author": "Homer",
+  "rating": 0,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/1381.The_Odyssey",
+  "cover": "/images/books/1381-the-odyssey.jpg",
+  "status": "reading"
+ },
+ {
+  "id": "31228-the-prometheus-deception",
+  "title": "The Prometheus Deception",
+  "series": "",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31228.The_Prometheus_Deception",
+  "cover": "/images/books/31228-the-prometheus-deception.jpg"
+ },
+ {
+  "id": "31262-the-road-to-gandolfo",
+  "title": "The Road to Gandolfo",
+  "series": "",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31262.The_Road_to_Gandolfo",
+  "cover": "/images/books/31262-the-road-to-gandolfo.jpg"
+ },
+ {
+  "id": "31266-the-scarlatti-inheritance",
+  "title": "The Scarlatti Inheritance",
+  "series": "",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31266.The_Scarlatti_Inheritance",
+  "cover": "/images/books/31266-the-scarlatti-inheritance.jpg"
+ },
+ {
+  "id": "31260-the-sigma-protocol",
+  "title": "The Sigma Protocol",
+  "series": "",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/31260.The_Sigma_Protocol",
+  "cover": "/images/books/31260-the-sigma-protocol.jpg"
+ },
+ {
+  "id": "75024-the-templar-legacy",
+  "title": "The Templar Legacy",
+  "series": "Cotton Malone, #1",
+  "author": "Steve Berry",
+  "rating": 4,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/75024.The_Templar_Legacy",
+  "cover": "/images/books/75024-the-templar-legacy.jpg"
+ },
+ {
+  "id": "24671-the-tristan-betrayal",
+  "title": "The Tristan Betrayal",
+  "series": "",
+  "author": "Robert Ludlum",
+  "rating": 3,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/24671.The_Tristan_Betrayal",
+  "cover": "/images/books/24671-the-tristan-betrayal.jpg"
+ },
+ {
+  "id": "472331-watchmen",
+  "title": "Watchmen",
+  "series": "",
+  "author": "Alan Moore",
+  "rating": 5,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/472331.Watchmen",
+  "cover": "/images/books/472331-watchmen.jpg"
+ },
+ {
+  "id": "17856572-watchmen-1",
+  "title": "Watchmen #1: At Midnight, All The Agents…",
+  "series": "",
+  "author": "Alan Moore",
+  "rating": 5,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/17856572-watchmen-1",
+  "cover": "/images/books/17856572-watchmen-1.jpg"
  },
  {
   "id": "5298977-karvalo",
@@ -1737,7 +1788,7 @@
  },
  {
   "id": "20554775",
-  "title": "ನಮ್ಮ ಊರಿನ ರಸಿಕರು",
+  "title": "ನಮ್ಮ ಊರಿನ ರಸಿಕರು | Namma Oorina Rasikaru",
   "series": "",
   "author": "Goruru Ramaswamy Iyengar",
   "rating": 4,
@@ -1754,56 +1805,5 @@
   "dateRead": null,
   "goodreads": "https://www.goodreads.com/book/show/13625014-bettada-jeeva",
   "cover": "/images/books/13625014-bettada-jeeva.jpg"
- },
- {
-  "id": "38209845-dalit-panthers",
-  "title": "Dalit Panthers: An Authoritative History",
-  "series": "",
-  "author": "J.V. Pawar",
-  "rating": 4,
-  "dateRead": "2021-08-04",
-  "goodreads": "https://www.goodreads.com/book/show/38209845-dalit-panthers",
-  "cover": "/images/books/38209845-dalit-panthers.jpg"
- },
- {
-  "id": "34507927-how-to-take-smart-notes",
-  "title": "How to Take Smart Notes",
-  "series": "",
-  "author": "Sönke Ahrens",
-  "rating": 4,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes",
-  "cover": "/images/books/34507927-how-to-take-smart-notes.jpg"
- },
- {
-  "id": "656-war-and-peace",
-  "title": "War and Peace",
-  "series": "",
-  "author": "Leo Tolstoy",
-  "rating": 5,
-  "dateRead": "2008",
-  "goodreads": "https://www.goodreads.com/book/show/656.War_and_Peace",
-  "cover": "/images/books/656-war-and-peace.jpg"
- },
- {
-  "id": "15197-maus-ii",
-  "title": "Maus II: A Survivor's Tale: And Here My Troubles Began",
-  "series": "Maus, #2",
-  "author": "Art Spiegelman",
-  "rating": 5,
-  "dateRead": "2018-01-02",
-  "goodreads": "https://www.goodreads.com/book/show/15197.Maus_II",
-  "cover": "/images/books/15197-maus-ii.jpg"
- },
- {
-  "id": "1381-the-odyssey",
-  "title": "The Odyssey",
-  "series": "",
-  "author": "Homer",
-  "rating": 0,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/1381.The_Odyssey",
-  "cover": "/images/books/1381-the-odyssey.jpg",
-  "status": "reading"
  }
 ]

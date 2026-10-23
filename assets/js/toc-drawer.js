@@ -125,22 +125,49 @@
             closeDrawer();
             return;
         }
-        // The drawer declares aria-modal, so keep Tab focus inside it
+        // The drawer declares aria-modal, so keep Tab focus inside it.
+        // Move focus ourselves on every Tab, not just at the two ends:
+        // Safari's default Tab skips links and buttons and would jump
+        // straight from the close button to the footer email field.
         if (e.key === 'Tab') {
-            const focusables = tocDrawer.querySelectorAll('button, a[href]');
+            const focusables = Array.from(tocDrawer.querySelectorAll('button, a[href]'));
             if (!focusables.length) return;
-            const first = focusables[0];
-            const last = focusables[focusables.length - 1];
-            if (e.shiftKey && document.activeElement === first) {
-                e.preventDefault();
-                last.focus();
-            } else if (!e.shiftKey && document.activeElement === last) {
-                e.preventDefault();
-                first.focus();
-            }
+            e.preventDefault();
+            const i = focusables.indexOf(document.activeElement);
+            const step = e.shiftKey ? -1 : 1;
+            const next = i === -1
+                ? (e.shiftKey ? focusables.length - 1 : 0)
+                : (i + step + focusables.length) % focusables.length;
+            focusables[next].focus();
         }
     });
 
     // Generate TOC on page load
     generateTOC();
+})();
+
+// Looping autoplay videos in post content: give each one native controls
+// so it can be paused (WCAG 2.2.2), and with reduced motion on, hold them
+// still until the reader presses play
+(function() {
+    const videos = document.querySelectorAll('.post-content video[autoplay]');
+    if (!videos.length) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function holdStill() {
+        if (!prefersReducedMotion.matches) return;
+        videos.forEach((video) => {
+            // Dropping the attribute stops a video that hasn't started yet;
+            // pause() catches one that already has
+            video.removeAttribute('autoplay');
+            video.pause();
+        });
+    }
+
+    videos.forEach((video) => {
+        video.controls = true;
+    });
+    holdStill();
+    prefersReducedMotion.addEventListener('change', holdStill);
 })();

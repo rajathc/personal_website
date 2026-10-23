@@ -11,6 +11,7 @@ tagline:     Product, travel, and books from Bengaluru
 author:
   name: Rajath Chandrahasa
   twitter: rajath_c
+  url: https://rajath.blog/
 email:       rajath@neosapien.xyz
 description: 'Rajath Chandrahasa, a product manager in Bengaluru writing about technology, travel, books, and bringing creativity into tech.'
 baseurl:     '' # The subpath of your site, e.g. /blog
@@ -32,8 +33,11 @@ permalink: pretty
 future:    true
 timezone:  Asia/Kolkata
 
-sass:
-  style: compressed
+# GitHub Pages' legacy builder injects jekyll-theme-primer when no theme is
+# set, which ships an unused assets/css/style.css. Every layout and include
+# lives in this repo, so no theme is needed. github-pages honours an explicit
+# null, and plain Jekyll treats it as no theme.
+theme: null
 
 plugins:
   - jekyll-seo-tag
@@ -41,7 +45,11 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
 
-# Ship excerpts (not full post HTML) in the Atom feed
+# Redirect stubs use _layouts/redirect.html (carries ?query and #hash through).
+# No redirects.json: nothing reads it, and it would publish the URL map.
+redirect_from:
+  json: false
+
 include:
   - _pages
 
@@ -70,6 +78,12 @@ exclude:
   - IMAGE-OPTIMIZATION.md
   - GIF-CONVERSION.md
   - DESIGN_SYSTEM.md
+  # Retired Jukebox album art: kept in the repo for a possible revival, not served
+  - images/music
+  # Used only by the archived (unbuilt) product-hunt post
+  - images/writings/04-product-hunt
+  # Local, gitignored export; never publish it
+  - 'All issues - Rajath.pdf'
 
 # Front-matter defaults
 defaults:
