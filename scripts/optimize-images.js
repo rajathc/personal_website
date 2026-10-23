@@ -6,7 +6,8 @@
  * This script optimizes images for web by:
  * - Compressing original formats (JPEG, PNG) as the <img> fallback, capped at 1920px
  * - Generating WebP versions at 3 responsive sizes (800px, 1200px, 1920px)
- *   plus a 360px "-thumb" variant for the compact rows of the writings list
+ *   plus a 360px "-thumb" variant for post covers (a post's preview_image),
+ *   used by the compact rows of the writings list
  * - Never shipping a WebP that is as big as (or bigger than) its fallback or
  *   the next-larger variant: such variants are re-encoded (near-lossless,
  *   lossless or lower quality) and the best fitting attempt is kept
@@ -32,12 +33,30 @@
 
 const sharp = require('sharp');
 const fs = require('fs').promises;
-const { accessSync } = require('fs');
+const { accessSync, readdirSync, readFileSync } = require('fs');
 const path = require('path');
 
 // Configuration
 const IMAGES_DIR = path.join(__dirname, '../images/writings');
 const OUTPUT_DIR = path.join(__dirname, '../images-optimized/writings');
+const POSTS_DIR = path.join(__dirname, '../_posts');
+
+// Only post covers (a post's preview_image) are shown at thumbnail size in the
+// writings list, so only they get a -thumb variant. Keys look like
+// "12-instagram-bus/feature-image".
+function loadCoverBases() {
+  const bases = new Set();
+  let files = [];
+  try { files = readdirSync(POSTS_DIR); } catch { return bases; }
+  for (const file of files) {
+    if (!/\.(?:html|md|markdown)$/.test(file)) continue;
+    const text = readFileSync(path.join(POSTS_DIR, file), 'utf8');
+    const m = text.match(/^preview_image:\s*["']?\/images\/writings\/(.+?)-small\.webp["']?\s*$/m);
+    if (m) bases.add(m[1]);
+  }
+  return bases;
+}
+const COVER_BASES = loadCoverBases();
 
 const QUALITY = {
   jpeg: 80,    // Good balance for photos
@@ -269,6 +288,7 @@ async function optimizeImage(inputPath, outputDir) {
   const ext = origExt.toLowerCase();
   const basename = path.basename(inputPath, origExt);
   const relativePath = path.relative(IMAGES_DIR, path.dirname(inputPath));
+  const isCover = COVER_BASES.has([...relativePath.split(path.sep), basename].join('/'));
   const label = path.join(relativePath, `${basename}${origExt}`);
 
   // Skip GIFs - they need separate handling with ffmpeg
@@ -318,7 +338,7 @@ async function optimizeImage(inputPath, outputDir) {
       // Images optimized before the -thumb variant existed only need that
       // one file: the writings list asks for it once the post leaves the
       // hero slot, and check-site fails the build if it is missing.
-      if (!fileExists(path.join(sourceDir, `${basename}-thumb.webp`))) {
+      if (isCover && !fileExists(path.join(sourceDir, `${basename}-thumb.webp`))) {
         await addMissingThumb(inputPath, basename, ext, relativePath, outputDir, label);
         return;
       }
@@ -390,7 +410,7 @@ async function optimizeImage(inputPath, outputDir) {
       { suffix: '', maxWidth: largeWidth },
       { suffix: '-medium', maxWidth: MAX_WIDTH.medium },
       { suffix: '-small', maxWidth: MAX_WIDTH.small },
-      { suffix: '-thumb', maxWidth: MAX_WIDTH.thumb }
+      ...(isCover ? [{ suffix: '-thumb', maxWidth: MAX_WIDTH.thumb }] : [])
     ];
     const defaultOpts = (isPng ? WEBP_ATTEMPTS.png : WEBP_ATTEMPTS.photo)[0];
 

@@ -45,7 +45,7 @@ For `photo.jpg` (or `.png`):
 | `photo.webp` | at most 1920px | `<picture>` srcset, 1920w |
 | `photo-medium.webp` | at most 1200px | srcset, 1200w |
 | `photo-small.webp` | at most 800px | srcset, 800w; also the post's `preview_image` |
-| `photo-thumb.webp` | 360px | compact rows of the writings list (only matters for the `preview_image`) |
+| `photo-thumb.webp` | 360px | compact rows of the writings list; only made for post covers (a `preview_image`) |
 
 Details worth knowing:
 
@@ -61,8 +61,8 @@ Details worth knowing:
 - **Skipped:** GIFs (convert them to video, see [GIF-CONVERSION.md](./GIF-CONVERSION.md)),
   share images `og-image.*` and video posters (`NAME-poster.*` next to a `NAME.mp4`
   or `NAME.webm`; final assets), and any image whose `.webp`, `-medium.webp` and
-  `-small.webp` already exist. If such an image has no `-thumb.webp` yet, only the
-  thumb is generated.
+  `-small.webp` already exist. If such an image is a post cover with no
+  `-thumb.webp` yet, only the thumb is generated.
 - The script exits non-zero if any file errors.
 
 ### Re-processing
@@ -107,7 +107,8 @@ preview_image: /images/writings/13-new-post/feature-image-small.webp  # writings
 
 - `preview_image` points at the cover's `-small.webp`. The writings list shows the
   latest post as a full-width hero and the rest as compact rows, which load
-  `NAME-thumb.webp` (360w). `npm run optimize` creates the thumb for new images.
+  `NAME-thumb.webp` (360w). `npm run optimize` creates the thumb for any image a
+  post's `preview_image` points at, so set `preview_image` before running it.
 - `og-image.jpg` is made by hand: a JPEG at exactly **1200x630**. For a cover with a
   title baked in, scale the whole cover to 630px tall and pad the sides with its
   background colour so no text is cut off. A photo can be centre-cropped. The script
