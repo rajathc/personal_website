@@ -1,5 +1,5 @@
 {
-  "_comment": "Manual curation applied on top of Goodreads imports. 'exclude' ids are on the Goodreads shelf but deliberately not on the site; import-goodreads.js drops them on every re-import. Manual site-only entries (books absent from the shelf export) are preserved automatically.",
+  "_comment": "Manual curation applied on top of Goodreads imports. 'exclude' ids are on the Goodreads shelf but deliberately not on the site; import-goodreads.js drops them on every re-import. 'fields' pins hand-fixed values per id (titles, series) that would otherwise be overwritten by the scraped Goodreads values; they are re-applied on every import and by --sort. Manual site-only entries (books absent from the shelf export) are preserved automatically.",
   "exclude": [
     "29044-the-secret-history",
     "103273-under-the-jaguar-sun",
@@ -7,5 +7,11 @@
     "5043-the-pillars-of-the-earth",
     "18142397-urban-watercolor-sketching",
     "25744928-deep-work"
-  ]
+  ],
+  "fields": {
+    "44492285-dune-messiah": { "title": "Dune Messiah", "series": "Dune, #2" },
+    "25153-uzumaki": { "title": "Uzumaki: Spiral into Horror, Vol. 2" },
+    "25154-uzumaki": { "title": "Uzumaki: Spiral into Horror, Vol. 3" },
+    "20554775": { "title": "ನಮ್ಮ ಊರಿನ ರಸಿಕರು | Namma Oorina Rasikaru" }
+  }
 }

@@ -1,0 +1,28 @@
+# Weekly, grouped version updates for the build tooling. Everything here is a
+# devDependency or a CI action, so an update PR can't change the deployed
+# HTML; CI (build + check-site + minified-asset freshness) gates each one.
+# Security updates are separate: turn on "Dependabot alerts" and "Dependabot
+# security updates" under Settings > Code security.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    # Let a fresh release age a week before proposing it (security updates
+    # are not delayed).
+    cooldown:
+      default-days: 7
+    groups:
+      npm-tooling:
+        patterns: ['*']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      github-actions:
+        patterns: ['*']

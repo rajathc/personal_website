@@ -2,19 +2,31 @@
 // Converts saved Goodreads shelf pages (HTML) into _data/books.json,
 // MERGING with the existing data so manual curation survives re-imports:
 //   - ids in scripts/goodreads-overrides.json "exclude" are dropped
+//   - "fields" in the same file pins hand-fixed values (title, series, ...)
+//     per id; they are re-applied on every run so scraped values can't undo them
 //   - existing entries missing from the export (manual additions,
 //     the "status": "reading" book) are kept
 //   - existing nonzero ratings win over a zero scraped rating
 //   - extra fields on existing entries (favorite, status, ...) are preserved
+// books.json is always written in one canonical order: dateRead newest first
+// (undated last), then title A to Z. The Liquid templates (bookshelf include,
+// bookshelf feed) iterate the file as-is, because Jekyll's sort is unstable on
+// ties, and bookshelf.js's default sort uses the same comparator, so every
+// view of the shelf lists same-day books identically.
 // Cover source URLs go to _data/book-sources.json (build-time only, never
 // shipped to the browser).
 // Usage: node scripts/import-goodreads.js <shelf-page.html> [more.html...]
+//        node scripts/import-goodreads.js --sort   # after hand-editing books.json
+//        node scripts/import-goodreads.js --check  # exit 1 if books.json needs --sort
 const fs = require('fs');
 const path = require('path');
 
-const files = process.argv.slice(2);
-if (!files.length) {
+const args = process.argv.slice(2);
+const mode = ['--sort', '--check'].includes(args[0]) ? args[0] : null;
+const files = mode ? [] : args;
+if (!mode && !files.length) {
     console.error('Usage: node scripts/import-goodreads.js <saved-shelf-page.html> [...]');
+    console.error('       node scripts/import-goodreads.js --sort | --check');
     process.exit(1);
 }
 
@@ -37,9 +49,46 @@ const booksFile = path.join(dataDir, 'books.json');
 const sourcesFile = path.join(dataDir, 'book-sources.json');
 const overrides = JSON.parse(fs.readFileSync(path.join(__dirname, 'goodreads-overrides.json'), 'utf8'));
 const exclude = new Set(overrides.exclude || []);
+const fieldFixes = overrides.fields || {};
 const existing = fs.existsSync(booksFile) ? JSON.parse(fs.readFileSync(booksFile, 'utf8')) : [];
 const existingById = new Map(existing.map(b => [b.id, b]));
 const sources = fs.existsSync(sourcesFile) ? JSON.parse(fs.readFileSync(sourcesFile, 'utf8')) : {};
+
+// Canonical order. Keep in sync with the default ('read') sort in
+// assets/js/bookshelf.js; the fixed 'en' locale keeps it identical in Node
+// and in every visitor's browser.
+const byReadDate = (a, b) =>
+    (b.dateRead || '0').localeCompare(a.dateRead || '0', 'en') || a.title.localeCompare(b.title, 'en');
+
+// Applies the "fields" overrides in place and returns the sorted list.
+function canonical(list) {
+    const ids = new Set(list.map(b => b.id));
+    for (const id of Object.keys(fieldFixes)) {
+        if (!ids.has(id)) console.warn(`  "fields" override for unknown id ${id} (stale entry in goodreads-overrides.json?)`);
+    }
+    for (const b of list) Object.assign(b, fieldFixes[b.id] || {});
+    return [...list].sort(byReadDate);
+}
+
+const writeBooks = list => fs.writeFileSync(booksFile, JSON.stringify(list, null, 1) + '\n');
+
+if (mode) {
+    const before = JSON.stringify(existing);
+    const sorted = canonical(existing);
+    const clean = JSON.stringify(sorted) === before;
+    if (mode === '--check') {
+        if (!clean) {
+            console.error('_data/books.json is not in canonical order (or is missing a "fields" override).');
+            console.error('Run: node scripts/import-goodreads.js --sort');
+            process.exit(1);
+        }
+        console.log(`_data/books.json: ${existing.length} books in canonical order.`);
+    } else {
+        writeBooks(sorted);
+        console.log(clean ? `_data/books.json already in canonical order (${sorted.length} books).` : `re-sorted _data/books.json (${sorted.length} books).`);
+    }
+    process.exit(0);
+}
 
 const scraped = [];
 for (const f of files) {
@@ -103,7 +152,7 @@ for (const b of kept) {
     merged.push(b);
 }
 
-fs.writeFileSync(booksFile, JSON.stringify(merged, null, 1) + '\n');
+writeBooks(canonical(merged));
 fs.writeFileSync(sourcesFile, JSON.stringify(sources, null, 1) + '\n');
 console.log(`wrote ${merged.length} books (${updated} from shelf, ${added} new, ${kept.length} kept manual, ${excluded} excluded) to _data/books.json`);
 if (kept.length) kept.forEach(b => console.log('  kept manual:', b.title));
