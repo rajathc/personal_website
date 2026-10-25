@@ -33,6 +33,20 @@
   src: url('/fonts/oi/oi-v21-latin-regular.woff2') format('woff2');
 }
 
+/* Hubballi, for Kannada only. unicode-range keeps the file off pages with no
+   Kannada, and the text stacks list it so Kannada characters fall through to it. */
+@font-face {
+  font-family: 'Hubballi';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/hubballi/hubballi-kannada-regular.woff2') format('woff2');
+  unicode-range: U+0C80-0CFF, U+0964-0965, U+200C-200D, U+25CC;
+  /* Kannada letter bodies sit at Latin x-height at 100%, which reads small
+     next to Sligoil and Bricolage; 120% lands between x-height and caps. */
+  size-adjust: 120%;
+}
+
 /* Sligoil Custom Fonts */
 @font-face {
     font-family: 'Sligoil';
@@ -193,7 +207,7 @@ html {
 }
 
 body {
-    font-family: 'Sligoil', 'Sligoil-fallback', monospace;
+    font-family: 'Sligoil', 'Hubballi', 'Sligoil-fallback', monospace;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.75;
@@ -202,7 +216,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bricolage Grotesque', 'Bricolage-fallback', sans-serif;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', sans-serif;
     line-height: 1.15;
     letter-spacing: -0.02em;
 }
@@ -860,7 +874,7 @@ button:focus-visible {
     color: var(--on-accent);
     border: none;
     border-radius: 8px;
-    font-family: 'Bricolage Grotesque', 'Bricolage-fallback', sans-serif;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', sans-serif;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
@@ -1087,7 +1101,7 @@ button:focus-visible {
 }
 
 .post-nav-title {
-    font-family: 'Bricolage Grotesque', 'Bricolage-fallback', sans-serif;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', sans-serif;
     font-weight: bold;
     font-size: 1.125rem;
     line-height: 1.3;
@@ -1177,7 +1191,7 @@ button:focus-visible {
     border-radius: 50%;
     background: var(--accent-color);
     color: var(--on-accent);
-    font-family: 'Bricolage Grotesque', 'Bricolage-fallback', sans-serif;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 0.02em;
@@ -1238,7 +1252,7 @@ button:focus-visible {
     border-radius: 10px;
     text-decoration: none;
     color: var(--link-color);
-    font-family: 'Bricolage Grotesque', 'Bricolage-fallback', -apple-system, sans-serif;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', -apple-system, sans-serif;
     transition: border-color 0.2s ease;
 }
 
@@ -1358,7 +1372,7 @@ button:focus-visible {
 }
 
 .empty-reset {
-    font-family: 'Bricolage Grotesque', 'Bricolage-fallback', -apple-system, sans-serif;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', -apple-system, sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--accent-strong);
@@ -1480,7 +1494,7 @@ button:focus-visible {
     border: none;
     padding: 0.75rem 1.5rem;
     min-height: 44px;
-    font-family: 'Bricolage Grotesque', 'Bricolage-fallback', sans-serif;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', sans-serif;
     font-size: 1rem;
     color: var(--link-color);
     cursor: pointer;
@@ -1571,7 +1585,7 @@ button:focus-visible {
     gap: 0.35rem;
     text-decoration: none;
     color: var(--link-color);
-    font-family: 'Bricolage Grotesque', 'Bricolage-fallback', -apple-system, sans-serif;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', -apple-system, sans-serif;
 }
 
 .book-fav img {
