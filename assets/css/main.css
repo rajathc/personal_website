@@ -574,8 +574,12 @@ button:focus-visible {
 }
 
 /* <picture> wraps responsive images; keep it block-level (it is inline by default)
-   so the inner img keeps the same max-width:100% sizing as a bare <img> */
-.post-content picture {
+   so the inner img keeps the same max-width:100% sizing as a bare <img>. The img
+   and videos are block-level too: inline media leave a descender gap under them,
+   which made the space below a phone image bigger than the space above it. */
+.post-content picture,
+.post-content picture img,
+.post-content video {
     display: block;
 }
 
@@ -584,7 +588,6 @@ button:focus-visible {
    scoped to >768px so the mobile edge-to-edge negative margins stay intact. */
 @media (min-width: 769px) {
     .post-content picture img {
-        display: block;
         margin-left: auto !important;
         margin-right: auto !important;
     }
@@ -1659,7 +1662,7 @@ button:focus-visible {
 .post-link-photo {
     display: grid;
     grid-template-columns: 110px minmax(0, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 1fr auto;
     column-gap: 1.25rem;
     align-items: start;
 }
@@ -1676,7 +1679,10 @@ button:focus-visible {
 .post-item-copy { min-width: 0; }
 .post-link-photo .post-item-copy { display: contents; }
 .post-link-photo .post-item-title { grid-column: 2; grid-row: 1; }
-.post-link-photo .post-item-meta { grid-column: 2; grid-row: 2; }
+/* Grid items don't collapse margins: the excerpt's own margin is the one gap
+   under whichever of thumb or meta ends lower. The middle row is 1fr so a tall
+   thumb stretches the meta row, not the title row. */
+.post-link-photo .post-item-meta { grid-column: 2; grid-row: 2; margin-bottom: 0; }
 .post-link-photo .post-item-excerpt {
     grid-column: 1 / -1;
     grid-row: 3;
@@ -1693,6 +1699,11 @@ button:focus-visible {
 .post-item:first-child .post-item-title {
     font-size: clamp(1.75rem, 4.5vw, 2.5rem);
 }
+/* The hero's excerpt sits under the meta, not under a thumb. Its tall
+   line-height already adds space above the first line, so a 0.5rem step
+   reads the same as the title-to-meta step. */
+.post-item:first-child .post-link-photo .post-item-meta { margin-bottom: 0.5rem; }
+.post-item:first-child .post-link-photo .post-item-excerpt { margin-top: 0; }
 
 /* One spacing system for article illustrations and their captions. */
 .post-content .image-container,
@@ -1739,7 +1750,21 @@ button:focus-visible {
     .post-link-photo { grid-template-columns: 96px minmax(0, 1fr); column-gap: 1rem; }
     .post-preview { width: 96px; }
 }
+/* Below 360px, or on a zoomed-in phone or one with a larger default font,
+   the date and read time no longer fit beside the 96px thumb and would wrap
+   with a stray bullet, so the thumb and title share the first row and the
+   meta runs full width under them. In em (359px at the default 16px) so it
+   scales with the user's font size, as the rem-based meta does. */
+@media (max-width: 22.4375em) {
+    .post-item:not(:first-child) .post-preview { grid-row: 1; }
+    .post-item:not(:first-child) .post-link-photo .post-item-title { margin-bottom: 0; }
+    .post-item:not(:first-child) .post-link-photo .post-item-meta { grid-column: 1 / -1; margin-top: 0.75rem; }
+    .post-item:not(:first-child) .post-link-photo .post-item-excerpt { margin-top: 0.5rem; }
+}
 @media (max-width: 768px) {
     .post-content .image-container,
     .post-content .image-container-portrait { margin-block: 2rem; }
+    /* 3rem gap plus 1.5rem item padding left 4.5rem between posts on a phone. */
+    .post-list { gap: 2.5rem; }
+    .post-item { padding-bottom: 0; }
 }

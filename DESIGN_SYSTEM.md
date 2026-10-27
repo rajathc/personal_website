@@ -173,7 +173,7 @@ between (0.35rem to 0.9rem).
   - H3: 2.5rem top, 1.25rem bottom
 - **Images and figures**: 3rem vertical (desktop), 2.5rem for bare images on tablet, 2rem (mobile)
 - **Lists in posts**: 1.5rem left padding, 1.5rem bottom margin, 0.5rem between items
-- **Post list items**: 3rem gap between items
+- **Post list items**: 3rem gap plus 1.5rem padding under each item (one 2.5rem gap at ≤768px)
 - **Footer**: 4rem above it
 
 #### Gaps
@@ -258,9 +258,9 @@ All buttons have a minimum 44px by 44px target.
 
 ### Post List
 
-- No cards: a column with a 3rem gap
-- **Latest post (hero)**: full-width 3:2 cover, 8px radius, bigger title
-- **Older posts**: compact rows with a 3:2 thumbnail on the left (110px, 96px at ≤600px, 6px radius), title and metadata beside it, excerpt below
+- No cards: a column with a 3rem gap and 1.5rem padding under each post (one 2.5rem gap at ≤768px)
+- **Latest post (hero)**: full-width 3:2 cover, 8px radius, bigger title; 0.75rem from title to metadata, 0.5rem from metadata to excerpt (the excerpt's line-height makes the two look equal)
+- **Older posts**: compact rows with a 3:2 thumbnail on the left (110px, 96px at ≤600px, 6px radius), title and metadata beside it (0.75rem apart; the thumbnail's extra height goes under the metadata), excerpt 0.875rem below whichever ends lower. Below 360px the metadata no longer fits beside the thumbnail, so only the title sits beside it and the metadata runs full width underneath (0.75rem, then 0.5rem to the excerpt)
 - **Hover / focus**: title turns var(--accent-strong) and underlines (2px, 4px offset)
 
 ### Links
@@ -280,7 +280,7 @@ All buttons have a minimum 44px by 44px target.
 - Border-radius: 0 (mobile, edge to edge)
 - Max-width: 100%
 - Height: auto
-- Responsive images use `<picture>` (WebP srcset + original fallback), displayed as a block
+- Responsive images use `<picture>` (WebP srcset + original fallback); the picture, its img and post videos are all block-level, so no inline descender gap sits under them
 - Captions (`.caption`): 0.875rem, left-aligned, opacity 0.8; camera details (`.caption-details`) on their own line at 0.8125rem
 - Portrait pairs (`.portrait-group`): side by side from 769px, stacked on mobile
 
@@ -321,6 +321,7 @@ All buttons have a minimum 44px by 44px target.
 @media (max-width: 768px)
 ```
 - Edge-to-edge images
+- Post list: one 2.5rem gap between posts
 - Smaller header, footer logo and Subscribe button
 - Newsletter form and label full width with 1rem margins
 - Tighter tabs; TOC drawer full width
@@ -330,6 +331,7 @@ All buttons have a minimum 44px by 44px target.
 ```css
 @media (max-width: 600px)   /* post list thumbnails 96px */
 @media (max-width: 480px)   /* smallest tab buttons */
+@media (max-width: 22.4375em) /* 359px at the default 16px, scales with the user's font size; post list metadata runs full width under the thumbnail */
 ```
 
 ### Desktop and tablet
