@@ -1,5 +1,15 @@
 [
  {
+  "id": "49207255-why-we-get-sick",
+  "title": "Why We Get Sick",
+  "series": "",
+  "author": "Benjamin Bikman",
+  "rating": 4,
+  "dateRead": "2026-10-30",
+  "goodreads": "https://www.goodreads.com/book/show/49207255-why-we-get-sick",
+  "cover": "/images/books/49207255-why-we-get-sick.jpg"
+ },
+ {
   "id": "59151-chess",
   "title": "Chess",
   "series": "",
@@ -1286,6 +1296,17 @@
   "cover": "/images/books/135479-cat-s-cradle.jpg"
  },
  {
+  "id": "37638098-creative-selection",
+  "title": "Creative Selection",
+  "series": "",
+  "author": "Ken Kocienda",
+  "rating": 0,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/37638098-creative-selection",
+  "cover": "/images/books/37638098-creative-selection.jpg",
+  "status": "reading"
+ },
+ {
   "id": "41695-dark-watch",
   "title": "Dark Watch",
   "series": "Oregon Files, #3",
@@ -1684,17 +1705,6 @@
   "dateRead": null,
   "goodreads": "https://www.goodreads.com/book/show/329957.The_Mystery_of_Edwin_Drood",
   "cover": "/images/books/329957-the-mystery-of-edwin-drood.jpg"
- },
- {
-  "id": "1381-the-odyssey",
-  "title": "The Odyssey",
-  "series": "",
-  "author": "Homer",
-  "rating": 0,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/1381.The_Odyssey",
-  "cover": "/images/books/1381-the-odyssey.jpg",
-  "status": "reading"
  },
  {
   "id": "31228-the-prometheus-deception",

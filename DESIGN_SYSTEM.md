@@ -64,6 +64,8 @@ Most display sizes are fluid `clamp()` values, so there is no separate mobile ta
 | Newsletter label | 0.875rem | Bricolage |
 | Newsletter field | `max(16px, 1rem)` | never under 16px, or iOS Safari zooms in on focus |
 | Bookshelf metadata | 0.6875rem to 0.9375rem | smallest is the 11px kicker |
+| Reading list title (posts) | 1.25rem | 800, Bricolage |
+| Reading list author (posts) | 0.875rem | Bricolage, `--dim-text` |
 
 ### Typography Scale
 - **Line Height**: 1.75 (body), 1.8 (post and page content), 1.15 (headings), 1.05 (post title)
@@ -305,6 +307,38 @@ All buttons have a minimum 44px by 44px target.
 - **Toolbar** (`.book-toolbar`, `.book-filter-row`): 44px selects with var(--control-border), 6px radius; they wrap on mobile
 - **Count and kicker** (`.book-count`, `.book-kicker`): var(--dim-text)
 - **Reading log**: year-grouped rows with 34px covers and a bottom border; dates hidden on mobile
+
+### Reading list (monthly "What I read in <month>" in posts)
+- Hand-written near the end of a post: an `h2`, an intro paragraph, then one `<ul class="reading-list" role="list">` (`role="list"` keeps list semantics in Safari once the bullets are gone). Styled by the "Reading list" block in `main.css`; no include
+- One `<li>` per read: `p.reading-head` (`<strong><a>Title</a></strong>`, `span.reading-by`, optional `span.stars` for books, separated by `<br>`, which are only for feed readers and hidden on the site), then an optional `img.reading-cover` for books, then the note paragraphs
+- No type labels, numbers or icons. Titles are `<strong>`, never h2/h3, so the TOC drawer only lists the section
+- Head: Bricolage, title 1.25rem/800 as a normal post link, author 0.875rem in `--dim-text`, stars in Sligoil 1.0625rem (`--accent-strong`), lines 0.35rem apart (room for the 3px focus ring)
+- Books: the bookshelf thumb (`/images/books/thumbs/<id>.webp`, 120px wide, `alt=""`, `loading="lazy"`) shown at 56px with a 3px radius and 1px `--border-color` outline, left of the head with a 1.25rem gap; the column only exists when a cover is present (`li:has(> .reading-cover)`). Whole stars from the book's `rating` in `_data/books.json` (no half stars, as on the bookshelf)
+- Spacing: a 1px `--border-color` rule above each read with 1.75rem either side, 1rem from head (or cover) to notes, notes at the full text width with normal paragraph rhythm; the section ends 3rem above the next h2 with no closing rule
+- Without CSS (`/feed.xml`) it reads as a plain bulleted list: title, author, stars, cover, notes
+
+Template for one month (pick a book's `id`, `goodreads`, `author` and `rating` from `_data/books.json`; thumb `height` is 180 or 181, check the file):
+
+```html
+<ul class="reading-list" role="list">
+    <li>
+        <p class="reading-head">
+            <strong><a href="URL" target="_blank" rel="noopener">TITLE</a></strong><br>
+            <span class="reading-by">by AUTHOR</span>
+        </p>
+        <p>NOTE</p>
+    </li>
+    <li>
+        <p class="reading-head">
+            <strong><a href="GOODREADS_URL" target="_blank" rel="noopener">BOOK TITLE</a></strong><br>
+            <span class="reading-by">by AUTHOR</span><br>
+            <span class="stars" role="img" aria-label="Rated 4 out of 5">★★★★</span>
+        </p>
+        <img class="reading-cover" src="/images/books/thumbs/BOOK_ID.webp" alt="" width="120" height="181" loading="lazy" decoding="async">
+        <p>NOTE</p>
+    </li>
+</ul>
+```
 
 ### Other
 - **Skip link**: accent fill, var(--on-accent) text, shown on focus

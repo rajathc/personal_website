@@ -1471,6 +1471,99 @@ button:focus-visible {
     }
 }
 
+/* ============ Reading list ("What I read in <month>" in posts) ============ */
+/* A monthly list of reads, hand-written in the post (template in
+   DESIGN_SYSTEM.md, "Reading list"). Each <li> is a head (title, author,
+   optional stars) and then the notes at the full text width. Books add their
+   bookshelf thumb, which sits left of the head: the same thumb-left row as the
+   homepage's older posts. A hairline sits above each read; no cards, labels or
+   icons. Titles are <strong>, never h2/h3, so the TOC drawer stays clean.
+   Without CSS (the RSS feed) it is a plain bulleted list: title, author, notes. */
+.post-content .reading-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.post-content .reading-list > li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    margin: 0 0 1.75rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.post-content .reading-list > li > * {
+    grid-column: 1 / -1;
+}
+
+/* Grid items keep their margins, so the last note drops its own: the li's
+   1.75rem (collapsing into the next h2's 3rem) is the only gap after it */
+.post-content .reading-list > li > :last-child {
+    margin-bottom: 0;
+}
+
+/* A read with a cover: cover left, head beside it, notes full width under
+   whichever ends lower */
+.post-content .reading-list > li:has(> .reading-cover) {
+    grid-template-columns: 56px minmax(0, 1fr);
+    column-gap: 1.25rem;
+}
+
+.post-content .reading-list > li:has(> .reading-cover) > .reading-head {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Beats .post-content img (3rem margins, 8px radius, edge to edge on phones) */
+.post-content .reading-list .reading-cover {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    width: 56px;
+    max-width: none;
+    height: auto;
+    margin: 0 0 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+
+.post-content .reading-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem; /* room for the title's 3px focus ring */
+    margin-bottom: 1rem;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', sans-serif;
+    line-height: 1.25;
+}
+
+/* The <br>s are for feed readers; here the flex column breaks the lines */
+.reading-head br {
+    display: none;
+}
+
+.reading-head strong {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+}
+
+.reading-by {
+    font-size: 0.875rem;
+    color: var(--dim-text);
+    transition: color 0.3s ease;
+}
+
+/* Sligoil carries the ★ (Bricolage has none); it draws small, so a size up
+   from the bookshelf's 0.9375rem */
+.reading-head .stars {
+    font-family: 'Sligoil', 'Sligoil-fallback', monospace;
+    font-size: 1.0625rem;
+    line-height: 1;
+}
+
 /* ============ Homepage tabs ============ */
 .tabs-container {
     margin-top: 2rem;
