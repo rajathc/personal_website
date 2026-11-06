@@ -142,6 +142,8 @@
     --drawer-text: #2C2C2C;
     --dim-text: #595959; /* 5.3:1 on the light bg — small metadata stays AA */
     --control-border: #8C8C8C; /* 3.1:1 on the light bg so selects read as controls */
+    --reading-bg: #E1F2EE; /* accent at 8% on the bg: the monthly reading panel */
+    --reading-rule: #C9EEE4; /* accent at 18%: hairlines on that panel */
 }
 
 :root[data-theme="dark"] {
@@ -159,6 +161,8 @@
     --drawer-text: #E8E8E8;
     --dim-text: #9E9E9E; /* 6.4:1 on the dark bg */
     --control-border: #6E6E6E;
+    --reading-bg: #172C27; /* accent at 10% on the dark bg */
+    --reading-rule: #153A31; /* accent at 18% */
 }
 
 /* No JS and a dark OS: same dark tokens as above */
@@ -178,6 +182,8 @@
         --drawer-text: #E8E8E8;
         --dim-text: #9E9E9E;
         --control-border: #6E6E6E;
+        --reading-bg: #172C27;
+        --reading-rule: #153A31;
     }
 }
 
@@ -1527,6 +1533,43 @@ button:focus-visible {
     margin: 0 0 1rem;
     border: 1px solid var(--border-color);
     border-radius: 3px;
+}
+
+/* The month's reads sit on their own ground: heading, intro and list share a
+   tinted panel (an accent tint, so it reads as part of the palette). On phones
+   it runs edge to edge like the images, so its text stays on the body's left
+   edge; from 769px it is a rounded panel inside the column. */
+.post-content .reading-section {
+    margin: 3rem 0;
+    padding: 2rem 2rem 2.25rem;
+    border-radius: 10px;
+    background: var(--reading-bg);
+    transition: background-color 0.3s ease;
+}
+
+.post-content .reading-section > h2 {
+    margin-top: 0;
+}
+
+.post-content .reading-section .reading-list > li {
+    border-top-color: var(--reading-rule);
+}
+
+.post-content .reading-section .reading-list > li:last-child {
+    margin-bottom: 0;
+}
+
+.post-content .reading-section .reading-cover {
+    border-color: var(--reading-rule);
+}
+
+@media (max-width: 768px) {
+    .post-content .reading-section {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        padding: 1.75rem 1rem 2rem;
+        border-radius: 0;
+    }
 }
 
 .post-content .reading-head {

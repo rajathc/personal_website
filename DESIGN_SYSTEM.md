@@ -98,6 +98,8 @@ light and `@media (prefers-color-scheme: dark)` applies the dark tokens.
 --drawer-text: #2C2C2C       /* TOC drawer text */
 --dim-text: #595959          /* Small metadata (5.3:1 on the light bg) */
 --control-border: #8C8C8C    /* Select and button outlines (3.1:1 on the light bg) */
+--reading-bg: #E1F2EE        /* Monthly reading panel: accent at 8% on the bg */
+--reading-rule: #C9EEE4      /* Hairlines and cover outline on that panel (accent at 18%) */
 ```
 
 ### Dark Mode (`:root[data-theme="dark"]`)
@@ -115,6 +117,8 @@ light and `@media (prefers-color-scheme: dark)` applies the dark tokens.
 --drawer-text: #E8E8E8       /* TOC drawer text */
 --dim-text: #9E9E9E          /* Small metadata (6.4:1 on the dark bg) */
 --control-border: #6E6E6E    /* Select and button outlines */
+--reading-bg: #172C27        /* Monthly reading panel: accent at 10% on the dark bg */
+--reading-rule: #153A31      /* Hairlines and cover outline on that panel (accent at 18%) */
 ```
 
 ### Theme-independent
@@ -309,17 +313,23 @@ All buttons have a minimum 44px by 44px target.
 - **Reading log**: year-grouped rows with 34px covers and a bottom border; dates hidden on mobile
 
 ### Reading list (monthly "What I read in <month>" in posts)
-- Hand-written near the end of a post: an `h2`, an intro paragraph, then one `<ul class="reading-list" role="list">` (`role="list"` keeps list semantics in Safari once the bullets are gone). Styled by the "Reading list" block in `main.css`; no include
+- Hand-written near the end of a post: a `<section class="reading-section" aria-labelledby="H2_ID">` holding the `h2`, an intro paragraph, then one `<ul class="reading-list" role="list">` (`role="list"` keeps list semantics in Safari once the bullets are gone). Styled by the "Reading list" block in `main.css`; no include
+- Panel: the section sits on its own ground, `--reading-bg` (an accent tint), with `--reading-rule` for the hairlines and cover outline. From 769px it is a 10px-radius panel inside the column with 2rem padding (2.25rem at the bottom); on phones it runs edge to edge (-1rem margins, no radius, 1rem side padding) like post images, so its text stays on the body's left edge. The `h2` drops its top margin inside it, and the panel keeps 3rem above and below
 - One `<li>` per read: `p.reading-head` (`<strong><a>Title</a></strong>`, `span.reading-by`, optional `span.stars` for books, separated by `<br>`, which are only for feed readers and hidden on the site), then an optional `img.reading-cover` for books, then the note paragraphs
 - No type labels, numbers or icons. Titles are `<strong>`, never h2/h3, so the TOC drawer only lists the section
 - Head: Bricolage, title 1.25rem/800 as a normal post link, author 0.875rem in `--dim-text`, stars in Sligoil 1.0625rem (`--accent-strong`), lines 0.35rem apart (room for the 3px focus ring)
 - Books: the bookshelf thumb (`/images/books/thumbs/<id>.webp`, 120px wide, `alt=""`, `loading="lazy"`) shown at 56px with a 3px radius and 1px `--border-color` outline, left of the head with a 1.25rem gap; the column only exists when a cover is present (`li:has(> .reading-cover)`). Whole stars from the book's `rating` in `_data/books.json` (no half stars, as on the bookshelf)
-- Spacing: a 1px `--border-color` rule above each read with 1.75rem either side, 1rem from head (or cover) to notes, notes at the full text width with normal paragraph rhythm; the section ends 3rem above the next h2 with no closing rule
-- Without CSS (`/feed.xml`) it reads as a plain bulleted list: title, author, stars, cover, notes
+- Spacing: a 1px `--reading-rule` hairline above each read with 1.75rem either side, 1rem from head (or cover) to notes, notes at the full text width with normal paragraph rhythm; the last read ends at the panel's bottom padding, with no closing rule
+- Without CSS (`/feed.xml`) it reads as a plain heading and bulleted list: title, author, stars, cover, notes
 
 Template for one month (pick a book's `id`, `goodreads`, `author` and `rating` from `_data/books.json`; thumb `height` is 180 or 181, check the file):
 
 ```html
+<section class="reading-section" aria-labelledby="what-i-read-in-MONTH">
+<h2 id="what-i-read-in-MONTH">What I read in MONTH</h2>
+
+<p>INTRO</p>
+
 <ul class="reading-list" role="list">
     <li>
         <p class="reading-head">
@@ -338,6 +348,7 @@ Template for one month (pick a book's `id`, `goodreads`, `author` and `rating` f
         <p>NOTE</p>
     </li>
 </ul>
+</section>
 ```
 
 ### Other
