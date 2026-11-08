@@ -289,6 +289,18 @@ All buttons have a minimum 44px by 44px target.
 - Responsive images use `<picture>` (WebP srcset + original fallback); the picture, its img and post videos are all block-level, so no inline descender gap sits under them
 - Captions (`.caption`): 0.875rem, left-aligned, opacity 0.8; camera details (`.caption-details`) on their own line at 0.8125rem
 - Portrait pairs (`.portrait-group`): side by side from 769px, stacked on mobile
+- Tap to open full size: see Lightbox
+
+### Lightbox
+- `lightbox.js` wraps each post `<picture>` in a `.lightbox-trigger` link to its biggest file, with no box of its own; cursor `zoom-in`. A link, not a button, because Safari Reader and Firefox Reader View drop buttons and the photos in them. Skipped: pictures already in a link, and `.media-card` covers
+- Keyboard focus rings the photo itself, inset (3px `--accent-strong`, offset -3px), so edge-to-edge phone photos keep the whole ring
+- Opens a full-screen `<dialog class="lightbox">`: opaque `--footer-bg` with `--footer-text`, dark in both themes; fades in over 0.2s (off with reduced motion)
+- Shows the copy already on screen at once, then swaps in the biggest file from the same `<source>` (the phone crop on phones for art-directed images)
+- Photo full width at its own shape but never past the file's own width, shrinking to fit; caption (the figcaption, or an older post's `p.caption`, links kept) centred under it at 0.875rem, opacity 0.8, max 800px wide
+- Padding: 4rem top (clears the close button), 1rem sides, 1.5rem bottom; 1rem between photo and caption. At 32rem tall or less (landscape phones): 0.75rem top and bottom, 4rem sides for the X, 0.5rem gap
+- Close: X button top right (0.75rem in, 44px target), Escape, Android back, or a tap anywhere except a caption link. Focus rings inside it use `--accent-color`
+- A second tap within 350ms of opening or closing is ignored, so a double-tap doesn't open and shut it
+- Focus: the X when opened from the keyboard, the dialog itself otherwise; back to the photo on close. Page scroll is locked while open
 
 ### TOC Drawer
 - Width: 90% (max 600px; full width at ≤768px)
@@ -423,6 +435,7 @@ Template for one month (pick a book's `id`, `goodreads`, `author` and `rating` f
 - **Sunglasses** (filled): Dark mode indicator (shown in light mode to switch to dark)
 - **Menu/Hamburger** (list icon): TOC drawer open state
 - **Arrow/Back**: TOC drawer close state
+- **X**: Lightbox close button
 - **Moon/Crescent**: Site icon (`favicon.svg`; `favicon.ico` and `apple-touch-icon.png` for older browsers and iOS)
 
 ### Icon Sizing
