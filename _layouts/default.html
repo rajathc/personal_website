@@ -51,14 +51,50 @@
          they never compete with fonts and the hero image for bandwidth, but
          capped at 4 seconds so short visits to heavy pages still count. Runs
          once, and only on the live domain so local dev servers don't count
-         as readers -->
+         as readers. Rajath's own browsers opt out: open any page with
+         ?analytics=off (?analytics=on undoes it). It lives in that browser's
+         storage, so every browser, Safari profile and in-app browser needs
+         its own, and Safari erases it after 7 days of use without a tap on
+         the site. While it holds, the footer says "analytics off" -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         (function () {
+            var params = new URLSearchParams(location.search);
+            var toggle = params.get('analytics');
+            var was = null;
+            var optedOut = false;
+            try {
+                was = localStorage.getItem('analytics');
+                if (toggle === 'off') localStorage.setItem('analytics', 'off');
+                if (toggle === 'on') localStorage.removeItem('analytics');
+                optedOut = localStorage.getItem('analytics') === 'off';
+            } catch (e) {}
+            if (optedOut) document.documentElement.setAttribute('data-analytics', 'off');
+            if (toggle === 'off' || toggle === 'on') {
+                // Drop the switch from the address bar so it isn't shared
+                // along with the link
+                params.delete('analytics');
+                var query = params.toString();
+                history.replaceState(history.state, '', location.pathname + (query ? '?' + query : '') + location.hash);
+            }
+            // Confirm what this browser now does. Re-opting out is silent, so
+            // a bookmark to ?analytics=off can be the everyday way in, putting
+            // back what Safari erased without a note on every visit
+            if (toggle === 'on' || (toggle === 'off' && was !== 'off')) {
+                document.addEventListener('DOMContentLoaded', function () {
+                    var note = document.createElement('div');
+                    note.className = 'analytics-note';
+                    note.setAttribute('role', 'status');
+                    note.textContent = optedOut ? 'Analytics off in this browser' : 'Analytics on in this browser';
+                    document.body.appendChild(note);
+                    setTimeout(function () { note.remove(); }, 4000);
+                });
+            }
+
             var started = false;
             function startAnalytics() {
-                if (started || location.hostname !== 'rajath.blog') return;
+                if (started || optedOut || location.hostname !== 'rajath.blog') return;
                 started = true;
                 var s = document.createElement('script');
                 s.async = true;

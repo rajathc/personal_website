@@ -365,6 +365,7 @@ Template for one month (pick a book's `id`, `goodreads`, `author` and `rating` f
 
 ### Other
 - **Skip link**: accent fill, var(--on-accent) text, shown on focus
+- **Analytics note** (`.analytics-note`): footer-coloured pill with a 1px `--border-color` edge, bottom centre, 0.875rem Bricolage; shown for 4 seconds after `?analytics=off` or `?analytics=on` changes the setting. While a browser is opted out, the footer copyright reads "© Rajath · analytics off"
 - **Scroll progress**: 4px accent bar fixed to the top of post pages
 - **Previous/next post**: 1px top border, 4rem above
 - **404 record** (`.disc-404`): 140px spinning disc with an accent label; it stops under reduced motion

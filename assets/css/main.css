@@ -1198,6 +1198,30 @@ button:focus-visible {
     top: 1rem;
 }
 
+/* Confirms ?analytics=off / ?analytics=on (default.html) for 4 seconds */
+.analytics-note {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    /* The footer fill is near the dark-mode page colour; the edge keeps it a pill */
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-family: 'Bricolage Grotesque', 'Hubballi', 'Bricolage-fallback', sans-serif;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+/* Only in a browser that has opted out, so a missing label means Safari
+   erased the opt-out and visits there are being counted again */
+:root[data-analytics="off"] .copyright::after {
+    content: " · analytics off";
+}
+
 .main-content:focus {
     outline: none;
 }
