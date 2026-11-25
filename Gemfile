@@ -14,4 +14,4 @@ gem 'jekyll-sitemap'
 gem 'jekyll-feed'
 gem 'jekyll-redirect-from'
 
-gem "addressable", "~> 2.9"
+gem "addressable", "~> 2.9", ">= 2.9.1"
