@@ -1,5 +1,15 @@
 [
  {
+  "id": "9189678-just-ride",
+  "title": "Just Ride: A Radically Practical Guide to Riding Your Bike",
+  "series": "",
+  "author": "Grant Petersen",
+  "rating": 5,
+  "dateRead": "2026-11-25",
+  "goodreads": "https://www.goodreads.com/book/show/9189678-just-ride",
+  "cover": "/images/books/9189678-just-ride.jpg"
+ },
+ {
   "id": "49207255-why-we-get-sick",
   "title": "Why We Get Sick",
   "series": "",
@@ -1296,17 +1306,6 @@
   "cover": "/images/books/135479-cat-s-cradle.jpg"
  },
  {
-  "id": "37638098-creative-selection",
-  "title": "Creative Selection",
-  "series": "",
-  "author": "Ken Kocienda",
-  "rating": 0,
-  "dateRead": null,
-  "goodreads": "https://www.goodreads.com/book/show/37638098-creative-selection",
-  "cover": "/images/books/37638098-creative-selection.jpg",
-  "status": "reading"
- },
- {
   "id": "41695-dark-watch",
   "title": "Dark Watch",
   "series": "Oregon Files, #3",
@@ -1615,6 +1614,17 @@
   "dateRead": null,
   "goodreads": "https://www.goodreads.com/book/show/22034.The_Godfather",
   "cover": "/images/books/22034-the-godfather.jpg"
+ },
+ {
+  "id": "11-the-hitchhiker-s-guide-to-the-galaxy",
+  "title": "The Hitchhiker's Guide to the Galaxy",
+  "series": "The Hitchhiker's Guide to the Galaxy, #1",
+  "author": "Douglas Adams",
+  "rating": 0,
+  "dateRead": null,
+  "goodreads": "https://www.goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy",
+  "cover": "/images/books/11-the-hitchhiker-s-guide-to-the-galaxy.jpg",
+  "status": "reading"
  },
  {
   "id": "573201-the-icarus-agenda",
